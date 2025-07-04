@@ -45,6 +45,7 @@ I’m always open to discussing new projects, collaborations, or sharing knowled
 
 📫 [muhammadhassaanjaved99@gmail.com](mailto:muhammadhassaanjaved99@gmail.com)
 
+---
 
 <!--
 
@@ -123,9 +124,13 @@ I’m always open to discussing new projects, collaborations, or sharing knowled
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=itxcrusher&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
 </div>
 
+---
+
 ###
 [![My github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=itxcrusher&bg_color=000000&color=ffffff&line=51f565&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 ###
+
+---
 
 ###
 
@@ -134,6 +139,8 @@ I’m always open to discussing new projects, collaborations, or sharing knowled
 <img src="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake.svg" alt="Snake animation" />
 
 ###
+
+---
 
 <p align="center"> 
   Visitor count<br>
