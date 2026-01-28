@@ -15,35 +15,43 @@ Here are some ideas to get you started:
 
 # Hi there 👋, I'm Muhammad Hassaan Javed!
 
-🚀 **Certified DevOps, Cloud, AI Engineer | 2xGoogle, 1xMicrosoft, 1xGitHub Certified**  
-🔧 **Expert in Docker, Terraform, Jenkins, Ansible, and Git**  
-⚙️ **Crafting Scalable Infrastructure with Automation**
+🚀 **Lead DevOps / Cloud / Platform Engineer**  
+🎓 **Certified: 2× Google, 1× Microsoft, 1× GitHub**  
+🧱 **IaC-first | Kubernetes | GitOps | CI/CD | Multi-Cloud**
 
 ---
 
 ## 😄 About Me
 
-I’m a DevOps and Cloud Architect passionate about transforming the cloud landscape through innovation and automation. With a deep focus on scalable infrastructure and CI/CD pipelines, I blend AI with cutting-edge DevOps practices to push the boundaries of what's possible.
+I’m a DevOps and Platform Engineer focused on building **infrastructure that survives growth, incidents, and real production pressure**.
 
-### 🌱 Currently Exploring
+My work sits at the intersection of **architecture and execution**. I design systems around failure modes, delivery constraints, and long-term operability, then implement them using **Terraform, Kubernetes, and GitOps-driven CI/CD**. I care less about tools in isolation and more about **predictability, ownership, and boring reliability**.
 
-- Serverless architectures
-- AI-driven DevOps solutions
-- Cloud-native applications
+I’ve worked across **AWS, GCP, and DigitalOcean**, helping teams move from fragile, manual setups to infrastructure that is version-controlled, observable, and safe to change.
+
+---
+
+### 🌱 Currently Deepening
+
+- Kubernetes platform engineering and production hardening  
+- GitOps workflows for multi-service and multi-environment systems  
+- Infrastructure as Code patterns that reduce drift and fear-of-apply  
+- Cost-aware and security-first cloud architecture
 
 ---
 
 ## ⚡ Fun Fact
 
-When I'm not automating infrastructure, I'm probably refining my AI-powered personality or dreaming up new ways to integrate technology into everyday life.
+If infrastructure feels exciting, something is probably wrong.  
+My goal is to make systems **quiet, predictable, and uninteresting** in production.
 
 ---
 
-## 💬 Let's Connect
+## 💬 Let’s Connect
 
-I’m always open to discussing new projects, collaborations, or sharing knowledge. Feel free to reach out!
+I’m always open to discussing infrastructure design, DevOps systems, and recovery work for production platforms.
 
-📫 [muhammadhassaanjaved99@gmail.com](mailto:muhammadhassaanjaved99@gmail.com)
+📫 **muhammadhassaanjaved99@gmail.com**
 
 ---
 
