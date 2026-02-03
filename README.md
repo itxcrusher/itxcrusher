@@ -55,7 +55,7 @@ I’m always open to discussing infrastructure design, DevOps systems, and recov
 
   <br/>
 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=itxcrusher&layout=compact&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=itxcrusher&layout=compact&theme=dracula&v=4" height="150" alt="languages graph" />
 </div>
 
 ---
