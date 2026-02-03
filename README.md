@@ -50,14 +50,9 @@ I’m always open to discussing infrastructure design, DevOps systems, and recov
     height="150"
     alt="GitHub stats"
   />
-
   <img src="https://streak-stats.demolab.com?user=itxcrusher&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="150" alt="streak graph" />
-
   <br/>
-
-  # <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=itxcrusher&layout=compact&theme=dracula&v=4" height="150" alt="languages graph" />
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=itxcrusher&layout=compact&theme=dracula&hide_border=false" height="150" alt="languages graph" />
-  # <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=itxcrusher&layout=compact&theme=dracula&hide_border=false" height="150" alt="languages graph" />
 </div>
 
 ---
