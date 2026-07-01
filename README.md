@@ -1,7 +1,7 @@
 # Hi there 👋, I'm Muhammad Hassaan Javed!
 
 🚀 **Lead DevOps / Cloud / Platform Engineer**  
-🎓 **Certified: 2× Google, 1× Microsoft, 1× GitHub**  
+🎓 **Certified: 2× Google, 1× Microsoft, 1× GitHub, 1× Cisco**  
 🧱 **IaC-first | Kubernetes | GitOps | CI/CD | Multi-Cloud**
 
 ---
@@ -14,7 +14,7 @@ My work sits at the intersection of **architecture and execution**. I design sys
 
 I care less about tools in isolation and more about **predictability, ownership, and boring reliability**.
 
-I’ve worked across **AWS, GCP, and DigitalOcean**, helping teams move from fragile, manual setups to infrastructure that is version-controlled, observable, and safe to change.
+I’ve worked across **AWS, Azure, GCP, and DigitalOcean**, helping teams move from fragile, manual setups to infrastructure that is version-controlled, observable, and safe to change.
 
 ---
 
