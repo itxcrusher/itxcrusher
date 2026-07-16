@@ -8,13 +8,13 @@
 
 ## 😄 About Me
 
-I’m a DevOps and Platform Engineer focused on building **infrastructure that survives growth, incidents, and real production pressure**.
+I'm a DevOps and Platform Engineer focused on building **infrastructure that survives growth, incidents, and real production pressure**.
 
 My work sits at the intersection of **architecture and execution**. I design systems around failure modes, delivery constraints, and long-term operability, then implement them using **Terraform, Kubernetes, and GitOps-driven CI/CD**.
 
 I care less about tools in isolation and more about **predictability, ownership, and boring reliability**.
 
-I’ve worked across **AWS, Azure, GCP, and DigitalOcean**, helping teams move from fragile, manual setups to infrastructure that is version-controlled, observable, and safe to change.
+I've worked across **AWS, Azure, GCP, and DigitalOcean**, helping teams move from fragile, manual setups to infrastructure that is version-controlled, observable, and safe to change.
 
 ---
 
@@ -34,9 +34,9 @@ My goal is to make systems **quiet, predictable, and uninteresting** in producti
 
 ---
 
-## 💬 Let’s Connect
+## 💬 Let's Connect
 
-I’m always open to discussing infrastructure design, DevOps systems, and recovery work for production platforms.
+I'm always open to discussing infrastructure design, DevOps systems, and recovery work for production platforms.
 
 📫 **muhammadhassaanjaved99@gmail.com**
 
