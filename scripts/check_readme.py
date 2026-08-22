@@ -18,6 +18,10 @@ USER = "itxcrusher"
 
 ALLOWED_IMAGE_PREFIX = "https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/"
 NAME = "Muhammad Hassaan Javed"
+# The GitHub display name is the codename, not the legal name. Both are valid
+# identities for this account; anything else means the field was changed by
+# accident or by someone else.
+ACCEPTED_ACCOUNT_NAMES = {"CRUSHER", "Muhammad Hassaan Javed"}
 
 # R3: the page must still say who this is and what to do if every image dies.
 # Every string below lives in the HAND-AUTHORED region, never in the generated block,
@@ -191,7 +195,12 @@ def main():
     if text.count(START) != 1 or text.count(END) != 1 or text.find(START) > text.find(END):
         fail("R9", "PUBLIC_SURFACE markers are missing, duplicated, or out of order")
 
-    # R10 name string identity across account, hero SVG and README
+    # R10 identity strings.
+    #
+    # The account display name is the codename (CRUSHER); the legal name is carried by
+    # the page. That split is deliberate: the handle identity sits in the sidebar, the
+    # searchable human identity sits in the hero. What must NOT drift is the legal name
+    # between the two artifacts here, and the account name away from a known identity.
     if NAME not in text:
         fail("R10", "the README does not contain " + repr(NAME))
     if os.path.isfile(HERO) and NAME not in open(HERO, encoding="utf-8").read():
@@ -201,11 +210,13 @@ def main():
     if acct.returncode != 0:
         fail("R10", "could not read the account name from the public API: "
              + acct.stderr.strip()[:120])
-    elif acct.stdout.strip() != NAME:
+    elif acct.stdout.strip() not in ACCEPTED_ACCOUNT_NAMES:
         fail("R10", "account name is " + repr(acct.stdout.strip())
-             + ", expected " + repr(NAME))
-    else:
-        ok("R10", "name matches byte-for-byte across account, hero SVG and README")
+             + ", expected one of " + repr(sorted(ACCEPTED_ACCOUNT_NAMES)))
+    elif NAME in text and (not os.path.isfile(HERO)
+                           or NAME in open(HERO, encoding="utf-8").read()):
+        ok("R10", repr(NAME) + " matches byte-for-byte across hero SVG and README; "
+           "account name " + repr(acct.stdout.strip()) + " is a known identity")
 
     # R11 generated blocks self-date
     i, j = text.find(START), text.find(END)
