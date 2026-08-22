@@ -194,12 +194,15 @@ def render(user, token, today):
         for r in picked:
             desc = ascii_only((r.get("description") or "").strip().rstrip("."),
                               "description of " + r["name"])
-            lang = r.get("language") or "n/a"
+            # GitHub reports no primary language for config-only repos. Print nothing
+            # rather than "n/a", which reads as a gap in the data.
+            lang = (r.get("language") or "").strip()
+            lang_part = lang + ". " if lang else ""
             date = r["pushed_at"].split("T")[0]
             home = (r.get("homepage") or "").strip()
             extra = " [Walkthrough](" + home + ")" if home.startswith("http") else ""
             lines.append("- **[" + r["name"] + "](" + r["html_url"] + ")** - " + desc
-                         + ". " + lang + ". Updated " + date + "." + extra)
+                         + ". " + lang_part + "Updated " + date + "." + extra)
         lines.append("")
     else:
         lines.append(
