@@ -42,20 +42,6 @@ I'm always open to discussing infrastructure design, DevOps systems, and recover
 
 ---
 
-<h2 align="center">📊 GitHub Stats</h2>
-
-<div align="center">
-  <img
-    src="https://github-stats-alpha.vercel.app/api?username=itxcrusher&cc=000&tc=fff&ic=fff&bc=000"
-    height="150"
-    alt="GitHub stats"
-  />
-  <img src="https://streak-stats.demolab.com?user=itxcrusher&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="150" alt="streak graph" />
-  <br/>
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=itxcrusher&layout=compact&theme=dracula&hide_border=false" height="150" alt="languages graph" />
-</div>
-
----
 
 [![My github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=itxcrusher&bg_color=000000&color=ffffff&line=51f565&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
