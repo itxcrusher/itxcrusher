@@ -62,11 +62,14 @@ jobs:
           set -euo pipefail
           # Orphan force-push keeps the output branch at exactly one commit forever,
           # so a daily binary never accumulates history in this repo.
-          git config user.name  'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           rm -rf .snake && mkdir .snake && cp dist/snake.svg .snake/snake.svg
           cd .snake
           git init -q
+          # Identity must be set INSIDE this fresh repo. Setting it in the checked-out
+          # repo above does not carry into a new `git init`, and the runner has no
+          # global identity, so the commit fails with "empty ident name".
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -q -b output
           git add snake.svg
           git commit -q -m 'chore: regenerate contribution snake'
