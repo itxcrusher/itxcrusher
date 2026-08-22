@@ -41,13 +41,13 @@ are quiet, predictable, and uninteresting in production.
 ## `// what is public`
 
 <!-- PUBLIC_SURFACE:START -->
-15 original public repositories. Most of the work is not here: over the last 12 months, 4,416 of 5,410 contributions were in private repositories (client delivery, product builds, and security research).
+15 original public repositories. Most of the work is not here: over the last 12 months, 4,425 of 5,420 contributions were in private repositories (client delivery, product builds, and security research).
 
 Most recent public work:
 
 - **[ripple-proof](https://github.com/itxcrusher/ripple-proof)** - Bounded PostgreSQL column-rename agent: turns DataHub lineage evidence into validated dbt repairs across repositories, refuses ambiguous or stale evidence, and stops at human-reviewed pull requests. Python. Updated 2026-08-09. [Walkthrough](https://itxcrusher.github.io/ripple-proof/)
 - **[vision-ai-poc](https://github.com/itxcrusher/vision-ai-poc)** - Real-time people detection and zone analytics from a webcam using YOLOv8, ByteTrack, and OpenCV, with live entry counts and dwell-time tracking. Python. Updated 2026-07-14.
-- **[elunic-challenge-devops](https://github.com/itxcrusher/elunic-challenge-devops)** - DevOps take-home challenge: provision a KIND Kubernetes cluster with Terraform over SSH, then debug crash-looping deployments and fix cluster services. HCL. Updated 2025-10-30.
+- **[kind-cluster-recovery](https://github.com/itxcrusher/kind-cluster-recovery)** - DevOps take-home challenge: provision a KIND Kubernetes cluster with Terraform over SSH, then debug crash-looping deployments and fix cluster services. HCL. Updated 2025-10-30.
 - **[wordpress-fargate-deployment](https://github.com/itxcrusher/wordpress-fargate-deployment)** - AWS CloudFormation template and helper scripts to deploy a production-ready WordPress environment on AWS Fargate with RDS, EFS, and an Application Load Balancer. Shell. Updated 2025-08-08.
 - **[azure-devops-demo](https://github.com/itxcrusher/azure-devops-demo)** - End-to-end Terraform and GitHub Actions pipeline that deploys a containerized service to Azure, with six reusable Terraform modules. HCL. Updated 2025-05-16.
 
