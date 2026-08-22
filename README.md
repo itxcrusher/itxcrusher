@@ -41,7 +41,7 @@ are quiet, predictable, and uninteresting in production.
 ## `// what is public`
 
 <!-- PUBLIC_SURFACE:START -->
-17 original public repositories. Most of the work is not here: over the last 12 months, 4,430 of 5,432 contributions were in private repositories (client delivery, product builds, and security research).
+17 original public repositories. Most of the work is not here: over the last 12 months, 4,356 of 5,432 contributions were in private repositories (client delivery, product builds, and security research).
 
 Most recent public work:
 

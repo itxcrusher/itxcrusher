@@ -77,31 +77,50 @@ def calendar_total(user):
 
 
 def contribution_split(user, token, total):
-    """Return (private_count, approximate)."""
+    """Return (private_count, approximate).
+
+    Two paths, because the answer depends on what the token can see:
+
+      restrictedContributionsCount  is what GitHub reports when the token CANNOT see
+        the private repositories. That is the Actions GITHUB_TOKEN case, and there the
+        number is the whole private total.
+
+      commitContributionsByRepository is per-repo and only lists what the token can
+        see. A token carrying `user` scope sees the private repos, and GitHub then
+        itemises those contributions into totalCommitContributions instead, collapsing
+        restrictedContributionsCount to near zero.
+
+    Taking the max of the two is correct under both, and it is why this function does
+    not simply trust `restricted`: on 2026-08-22 a scope upgrade silently dropped it
+    from 4,394 to 79 while the real private total was unchanged.
+    """
     q = ("query($login:String!){user(login:$login){contributionsCollection{"
-         "restrictedContributionsCount totalCommitContributions "
-         "totalPullRequestContributions totalIssueContributions "
-         "totalRepositoryContributions}}}")
-    public_visible = None
+         "restrictedContributionsCount "
+         "commitContributionsByRepository(maxRepositories:100){"
+         "repository{isPrivate} contributions{totalCount}}}}}")
     restricted = 0
+    by_repo_private = 0
     if token:
         try:
-            d = graphql(q, {"login": user}, token)
-            c = d["data"]["user"]["contributionsCollection"]
-            restricted = c["restrictedContributionsCount"]
-            public_visible = (c["totalCommitContributions"]
-                              + c["totalPullRequestContributions"]
-                              + c["totalIssueContributions"]
-                              + c["totalRepositoryContributions"])
+            c = graphql(q, {"login": user}, token)["data"]["user"]["contributionsCollection"]
+            restricted = c["restrictedContributionsCount"] or 0
+            by_repo_private = sum(
+                e["contributions"]["totalCount"]
+                for e in c["commitContributionsByRepository"]
+                if e["repository"]["isPrivate"])
         except Exception as e:  # noqa: BLE001
             print("warning: GraphQL split unavailable: " + str(e), file=sys.stderr)
-    if restricted > 0:
-        return restricted, False
-    # An installation token may report public-only counts. If the public calendar
-    # clearly exceeds public-visible contributions, derive the split and say "about".
-    if public_visible is not None and total - public_visible > 100:
-        return total - public_visible, True
-    return 0, False
+
+    private = max(restricted, by_repo_private)
+
+    # maxRepositories caps at 100, so a very wide year could undercount by-repo. The
+    # max() above already guards that. What is NOT guarded is a nonsense answer, so
+    # refuse rather than publish one.
+    if private > total:
+        raise SystemExit(
+            "FATAL: computed private contributions (" + str(private)
+            + ") exceeds the calendar total (" + str(total) + "). Refusing to publish.")
+    return private, False
 
 
 def repos(user, token):
