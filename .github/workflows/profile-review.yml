@@ -1,0 +1,31 @@
+name: profile-review
+
+# A profile rots quietly. This opens one issue a quarter with the checklist, because
+# nothing else will remind anyone that a description drifted or a link died.
+
+on:
+  schedule:
+    - cron: "0 9 1 1,4,7,10 *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  open-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      # Naming any permission sets every unnamed one to none, so contents:read has to
+      # be explicit or actions/checkout 403s and the -F below has no file to read.
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: open the quarterly review issue
+        run: |
+          set -euo pipefail
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Quarterly profile review: $(date -u '+%Y-%m')" \
+            -F docs/reference/profile-review.md
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

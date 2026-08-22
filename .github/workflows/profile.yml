@@ -1,0 +1,139 @@
+name: profile
+
+# One workflow, not two. The previous setup had Main.yml triggering on push to main
+# while nothing else wrote to main. Adding a second workflow that commits to main
+# would have raced it, so the snake job moved in here behind one concurrency group.
+#
+# The push:main trigger is deliberately gone: the snake output does not depend on
+# README content, so every human edit used to burn a run for no benefit.
+
+on:
+  schedule:
+    # 03:17 UTC. Off-hour minutes are less contended than on-the-hour crons, and
+    # nothing here needs a precise time.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: profile-publish
+  # Never cancel: a cancel between the output force-push and the README commit would
+  # leave a half-published state. Nothing here is time-critical.
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  snake:
+    # Third-party actions never hold write. This job can only read.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: generate snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: itxcrusher
+          outputs: dist/snake.svg?palette=github-dark
+      - uses: actions/upload-artifact@v4
+        with:
+          name: snake
+          path: dist/snake.svg
+          retention-days: 1
+
+  publish:
+    needs: snake
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      changed: ${{ steps.apply.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: snake
+          path: dist
+
+      - name: push snake.svg to the output branch
+        run: |
+          set -euo pipefail
+          # Orphan force-push keeps the output branch at exactly one commit forever,
+          # so a daily binary never accumulates history in this repo.
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -rf .snake && mkdir .snake && cp dist/snake.svg .snake/snake.svg
+          cd .snake
+          git init -q
+          git checkout -q -b output
+          git add snake.svg
+          git commit -q -m 'chore: regenerate contribution snake'
+          git push -q --force \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: render the public-surface block
+        run: python scripts/profile_surface.py render --user itxcrusher --out block.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: splice it into README.md
+        id: apply
+        run: |
+          python scripts/profile_surface.py apply \
+            --block block.md --readme README.md --max-stamp-age-days 7
+
+      - name: validate the rendering contract
+        if: steps.apply.outputs.changed == 'true'
+        run: python scripts/check_readme.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: commit
+        if: steps.apply.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          # Author as the bot on purpose. stefanzweifel/git-auto-commit-action defaults
+          # commit_author to github.actor, and scheduled runs on this repo report
+          # actor=itxcrusher, which would manufacture ~365 green squares a year on the
+          # exact contribution graph this profile uses as evidence.
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m 'chore(profile): refresh the public-surface block'
+          git push
+
+  notify-failure:
+    needs: [snake, publish]
+    if: failure()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      # Nobody reads the Actions tab of a profile repo. One reused issue is the entire
+      # mechanism standing between a dead generator and a page that lies quietly.
+      - name: open or update the failure issue
+        run: |
+          set -euo pipefail
+          title='profile automation is failing'
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          # '// empty' matters: jq prints the string "null" for a missing field, which
+          # would make the -n test true and send `gh issue comment null`.
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --search "$title in:title" --json number -q '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "Failed again: $run_url"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" \
+              --body "$(printf '%s\n\n%s\n\n%s\n' \
+                'The profile workflow failed. The README may now be stale.' \
+                "Run: $run_url" \
+                'Checklist: docs/reference/profile-review.md')"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

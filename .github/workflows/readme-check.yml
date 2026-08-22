@@ -1,0 +1,26 @@
+name: readme-check
+
+on:
+  push:
+    branches: [main, profile-v2]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: rendering contract
+        run: python scripts/check_readme.py
+        env:
+          # R10 compares the account name against the README and the hero SVG. It reads
+          # the PUBLIC users endpoint, because `gh api user` returns "Resource not
+          # accessible by integration" for an Actions token, which has no authed user.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
