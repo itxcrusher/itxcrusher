@@ -42,13 +42,13 @@ Every path that is not provably safe ends in the same place:
 
 ```mermaid
 flowchart LR
-  A[column rename] --> B{lineage unambiguous?}
+  A[rename] --> B{lineage clear?}
   B -- no --> R[refuse]
-  B -- yes --> C{cache-bypassed read agrees?}
+  B -- yes --> C{cache fresh?}
   C -- no --> R
-  C -- yes --> D[write dbt repairs]
-  D --> E[build in isolation]
-  E --> F[human-reviewed PR]
+  C -- yes --> D[write repairs]
+  D --> E[build isolated]
+  E --> F[reviewed PR]
 ```
 
 ## `// what is public`
