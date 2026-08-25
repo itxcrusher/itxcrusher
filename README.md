@@ -27,7 +27,6 @@ are quiet, predictable, and uninteresting in production.
 > **Want to check whether any of this is real?**
 > `ripple-proof` audits a full captured campaign offline in about a minute, with
 > Python 3.11 and nothing else. No install, no account, no credential, no network call.
-> It prints every point where it refused to act.
 >
 > ```
 > git clone https://github.com/itxcrusher/ripple-proof
@@ -36,11 +35,10 @@ are quiet, predictable, and uninteresting in production.
 > ```
 >
 > Expect `CAMPAIGN AUDIT: PASSED`, 11 of 11 checks. The
-> [walkthrough](https://itxcrusher.github.io/ripple-proof/) reads every captured run end
-> to end, including one that fails its dbt build on purpose and is kept in the corpus
-> rather than dropped.
+> [walkthrough](https://itxcrusher.github.io/ripple-proof/) keeps one run that fails its
+> dbt build on purpose rather than dropping it.
 
-Where it stops, and why that is the point:
+Every path that is not provably safe ends in the same place:
 
 ```mermaid
 flowchart LR
