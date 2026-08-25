@@ -1,6 +1,8 @@
-<p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Muhammad Hassaan Javed, GitHub handle itxcrusher." />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+  <img src="./assets/hero-light.svg" width="100%" alt="Muhammad Hassaan Javed, GitHub handle itxcrusher." />
+</picture>
 
 <p align="center">
   <a href="https://muhammadhassaanjaved.com">muhammadhassaanjaved.com</a>

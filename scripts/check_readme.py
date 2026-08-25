@@ -13,7 +13,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 README = "README.md"
-HERO = "assets/hero.svg"
+HERO_VARIANTS = ("assets/hero-dark.svg", "assets/hero-light.svg")
 USER = "itxcrusher"
 
 ALLOWED_IMAGE_PREFIX = "https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/"
@@ -45,6 +45,7 @@ APPROVED_FONT_TOKENS = (
 
 IMG_RE = re.compile(r"<img\b[^>]*>", re.I)
 ATTR_RE = re.compile(r'(\w[\w-]*)\s*=\s*"([^"]*)"')
+SRCSET_RE = re.compile(r'<source\b[^>]*srcset\s*=\s*"([^"]+)"[^>]*>', re.I)
 START = "<!-- PUBLIC_SURFACE:START -->"
 END = "<!-- PUBLIC_SURFACE:END -->"
 
@@ -81,10 +82,13 @@ def main():
         return 1
     text = open(README, encoding="utf-8").read()
     tags = imgs(text)
+    # <picture> theme variants are referenced by srcset on <source>, which the <img>
+    # regex cannot see. Validate them under the same R1/R2 rules or they ship unchecked.
+    srcsets = SRCSET_RE.findall(text)
 
     # R1 assets resolve
     missing = []
-    for t in tags:
+    for t in tags + [{"src": u} for u in srcsets]:
         src = t.get("src", "")
         if src.startswith("./") or (src and not src.startswith("http")):
             path = src[2:] if src.startswith("./") else src
@@ -101,9 +105,8 @@ def main():
         ok("R1", "every relative image src resolves to a tracked file")
 
     # R2 third-party image budget is zero
-    foreign = [t.get("src", "") for t in tags
-               if t.get("src", "").startswith("http")
-               and not t.get("src", "").startswith(ALLOWED_IMAGE_PREFIX)]
+    foreign = [u for u in [t.get("src", "") for t in tags] + srcsets
+               if u.startswith("http") and not u.startswith(ALLOWED_IMAGE_PREFIX)]
     if foreign:
         fail("R2", "third-party image host: " + ", ".join(foreign))
     else:
@@ -176,9 +179,14 @@ def main():
         if not forbidden:
             ok("R7", svg_path + " is self-contained, theme-agnostic, labelled")
 
-        # R8 no facts inside images: no multi-digit run in any rendered text node
+        # R8 no facts inside images: no multi-digit run in any RENDERED text node.
+        # Scoped to <text>/<tspan> only. <style> holds CSS (durations, dash offsets)
+        # and <title> holds the accessible label; neither is painted, so a number
+        # there cannot rot into a false claim the way a rendered one can.
+        rendered = ("{http://www.w3.org/2000/svg}text",
+                    "{http://www.w3.org/2000/svg}tspan")
         for el in root.iter():
-            if el.text and re.search(r"\d{2,}", el.text):
+            if el.tag in rendered and el.text and re.search(r"\d{2,}", el.text):
                 fail("R8", svg_path + " renders a number in text: " + repr(el.text))
         ok("R8", svg_path + " carries identity only, no facts")
 
@@ -203,8 +211,9 @@ def main():
     # between the two artifacts here, and the account name away from a known identity.
     if NAME not in text:
         fail("R10", "the README does not contain " + repr(NAME))
-    if os.path.isfile(HERO) and NAME not in open(HERO, encoding="utf-8").read():
-        fail("R10", HERO + " does not contain " + repr(NAME))
+    for hv in HERO_VARIANTS:
+        if os.path.isfile(hv) and NAME not in open(hv, encoding="utf-8").read():
+            fail("R10", hv + " does not contain " + repr(NAME))
     acct = subprocess.run(["gh", "api", "users/" + USER, "--jq", ".name"],
                           capture_output=True, text=True)
     if acct.returncode != 0:
@@ -213,8 +222,9 @@ def main():
     elif acct.stdout.strip() not in ACCEPTED_ACCOUNT_NAMES:
         fail("R10", "account name is " + repr(acct.stdout.strip())
              + ", expected one of " + repr(sorted(ACCEPTED_ACCOUNT_NAMES)))
-    elif NAME in text and (not os.path.isfile(HERO)
-                           or NAME in open(HERO, encoding="utf-8").read()):
+    elif NAME in text and all(
+            NAME in open(hv, encoding="utf-8").read()
+            for hv in HERO_VARIANTS if os.path.isfile(hv)):
         ok("R10", repr(NAME) + " matches byte-for-byte across hero SVG and README; "
            "account name " + repr(acct.stdout.strip()) + " is a known identity")
 
