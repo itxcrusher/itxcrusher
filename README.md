@@ -41,14 +41,12 @@ are quiet, predictable, and uninteresting in production.
 Every path that is not provably safe ends in the same place:
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[rename] --> B{lineage clear?}
   B -- no --> R[refuse]
   B -- yes --> C{cache fresh?}
   C -- no --> R
-  C -- yes --> D[write repairs]
-  D --> E[build isolated]
-  E --> F[reviewed PR]
+  C -- yes --> D[write repairs] --> E[build isolated] --> F[reviewed PR]
 ```
 
 ## `// what is public`
