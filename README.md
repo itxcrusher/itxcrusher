@@ -40,6 +40,19 @@ are quiet, predictable, and uninteresting in production.
 > to end, including one that fails its dbt build on purpose and is kept in the corpus
 > rather than dropped.
 
+Where it stops, and why that is the point:
+
+```mermaid
+flowchart LR
+  A[column rename] --> B{lineage unambiguous?}
+  B -- no --> R[refuse]
+  B -- yes --> C{cache-bypassed read agrees?}
+  C -- no --> R
+  C -- yes --> D[write dbt repairs]
+  D --> E[build in isolation]
+  E --> F[human-reviewed PR]
+```
+
 ## `// what is public`
 
 <!-- PUBLIC_SURFACE:START -->
