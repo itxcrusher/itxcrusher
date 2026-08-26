@@ -42,7 +42,7 @@ are quiet, predictable, and uninteresting in production.
 ## `// what is public`
 
 <!-- PUBLIC_SURFACE:START -->
-19 original public repositories. Most of the work is not here: over the last 12 months, 5,008 of 6,070 contributions were in private repositories (client delivery, product builds, and security research).
+19 original public repositories. Most of the work is not here: over the last 12 months, 5,095 of 6,164 contributions were in private repositories (client delivery, product builds, and security research).
 
 Most recent public work:
 
@@ -55,7 +55,7 @@ Most recent public work:
 
 Evidence trail for ripple-proof runs across four public sibling dbt repositories: [analytics](https://github.com/itxcrusher/ripple-proof-dbt-analytics/pull/6), [finance](https://github.com/itxcrusher/ripple-proof-dbt-finance/pull/6), [growth](https://github.com/itxcrusher/ripple-proof-dbt-growth/pull/5), [operations](https://github.com/itxcrusher/ripple-proof-dbt-operations/pull/5). All open and review-only.
 
-_Generated 2026-08-25 from the GitHub API._
+_Generated 2026-08-26 from the GitHub API._
 <!-- PUBLIC_SURFACE:END -->
 
 ## `// operating stack`
