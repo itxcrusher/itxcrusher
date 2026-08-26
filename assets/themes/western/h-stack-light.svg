@@ -1,0 +1,9 @@
+<svg width="900" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">the outfit</title>
+<style>@keyframes k2{to{stroke-dashoffset:0}}.a3{stroke-dasharray:565.969;stroke-dashoffset:565.969;animation:k2 1s cubic-bezier(.2,.7,.3,1) 0.1s forwards}</style>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f5e9d0" stop-opacity="1"/><stop offset="1" stop-color="#dcbe8c" stop-opacity="1"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="80" fill="url(#g1)"/>
+<text x="44" y="54" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#3a230c">the outfit</text>
+<line x1="306.031" y1="42" x2="872" y2="42" stroke="#a8561a" stroke-opacity="0.75" stroke-width="1.6" stroke-linecap="round" class="a3"/>
+<polygon points="862,33 864.351,38.764 870.56,39.219 865.804,43.236 867.29,49.281 862,46 856.71,49.281 858.196,43.236 853.44,39.219 859.649,38.764" fill="#a8561a" fill-opacity="0.95"/>
+</svg>

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+# build-time scratch, never committed
+data.json
+block.md
+preview.html
+dist/
+.snake/

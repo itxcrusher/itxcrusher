@@ -4,15 +4,24 @@ name: profile
 # while nothing else wrote to main. Adding a second workflow that commits to main
 # would have raced it, so the snake job moved in here behind one concurrency group.
 #
-# The push:main trigger is deliberately gone: the snake output does not depend on
-# README content, so every human edit used to burn a run for no benefit.
+# Every morning: pick today's theme (a deterministic draw, see themes/rotate.py),
+# regenerate the contribution snake in that theme's colours, read the facts from the
+# GitHub API, lay the page out in the theme, validate the rendering contract, commit.
+#
+# The push:main trigger is deliberately absent: a README-writing workflow that also
+# runs on push to main would trigger itself.
 
 on:
   schedule:
-    # 03:17 UTC. Off-hour minutes are less contended than on-the-hour crons, and
-    # nothing here needs a precise time.
+    # 03:17 UTC (08:17 in Karachi). Off-hour minutes are less contended than
+    # on-the-hour crons, and nothing here needs a precise time.
     - cron: "17 3 * * *"
   workflow_dispatch:
+    inputs:
+      theme:
+        description: "Wear this theme now (a slug from assets/themes/index.json). Blank means the daily draw."
+        required: false
+        default: ""
 
 concurrency:
   group: profile-publish
@@ -23,33 +32,65 @@ concurrency:
 permissions: {}
 
 jobs:
+  pick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      theme: ${{ steps.pick.outputs.theme }}
+      name: ${{ steps.pick.outputs.name }}
+      mode: ${{ steps.pick.outputs.mode }}
+      snake_dark: ${{ steps.pick.outputs.snake_dark }}
+      snake_light: ${{ steps.pick.outputs.snake_light }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: decide today's theme
+        id: pick
+        # The dispatch input goes through the environment, never into the script line:
+        # a value interpolated into `run:` would be a shell injection.
+        run: python scripts/profile_theme.py pick
+        env:
+          PROFILE_THEME: ${{ inputs.theme }}
+
   snake:
+    needs: pick
     # Third-party actions never hold write. This job can only read.
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: read
     steps:
-      - name: generate snake.svg
+      - name: generate the snake in today's theme colours
+        id: themed
+        continue-on-error: true
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: itxcrusher
-          outputs: dist/snake.svg?palette=github-dark
+          outputs: |
+            dist/snake-dark.svg?${{ needs.pick.outputs.snake_dark }}
+            dist/snake-light.svg?${{ needs.pick.outputs.snake_light }}
+      - name: fall back to the stock palettes if the themed colours were rejected
+        if: steps.themed.outcome == 'failure'
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: itxcrusher
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark
+            dist/snake-light.svg?palette=github-light
       - uses: actions/upload-artifact@v4
         with:
           name: snake
-          path: dist/snake.svg
+          path: dist/*.svg
           retention-days: 1
 
   publish:
-    needs: snake
+    needs: [pick, snake]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
       actions: read
-    outputs:
-      changed: ${{ steps.apply.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
@@ -57,12 +98,15 @@ jobs:
           name: snake
           path: dist
 
-      - name: push snake.svg to the output branch
+      - name: push the snakes to the output branch
         run: |
           set -euo pipefail
           # Orphan force-push keeps the output branch at exactly one commit forever,
           # so a daily binary never accumulates history in this repo.
-          rm -rf .snake && mkdir .snake && cp dist/snake.svg .snake/snake.svg
+          rm -rf .snake && mkdir .snake && cp dist/snake-dark.svg dist/snake-light.svg .snake/
+          # snake.svg stays as a copy of the dark one so a README from before the theme
+          # engine (or a branch that has not merged yet) never shows a dead image.
+          cp dist/snake-dark.svg .snake/snake.svg
           cd .snake
           git init -q
           # Identity must be set INSIDE this fresh repo. Setting it in the checked-out
@@ -71,7 +115,7 @@ jobs:
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -q -b output
-          git add snake.svg
+          git add snake.svg snake-dark.svg snake-light.svg
           git commit -q -m 'chore: regenerate contribution snake'
           git push -q --force \
             "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
@@ -79,39 +123,45 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: render the public-surface block
-        run: python scripts/profile_surface.py render --user itxcrusher --out block.md
+      - name: read the facts from the GitHub API
+        run: python scripts/profile_surface.py data --user itxcrusher --out data.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: splice it into README.md
-        id: apply
+      - name: lay the page out in today's theme
         run: |
-          python scripts/profile_surface.py apply \
-            --block block.md --readme README.md --max-stamp-age-days 7
+          python scripts/profile_theme.py render \
+            --theme "$THEME" --mode "$MODE" --data data.json --out README.md
+        env:
+          THEME: ${{ needs.pick.outputs.theme }}
+          MODE: ${{ needs.pick.outputs.mode }}
 
       - name: validate the rendering contract
-        if: steps.apply.outputs.changed == 'true'
         run: python scripts/check_readme.py
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: commit
-        if: steps.apply.outputs.changed == 'true'
         run: |
           set -euo pipefail
-          # Author as the bot on purpose. stefanzweifel/git-auto-commit-action defaults
-          # commit_author to github.actor, and scheduled runs on this repo report
-          # actor=itxcrusher, which would manufacture ~365 green squares a year on the
-          # exact contribution graph this profile uses as evidence.
+          if git diff --quiet -- README.md; then
+            echo "README.md unchanged; nothing to commit"
+            exit 0
+          fi
+          # Author as the bot on purpose. A scheduled run reports actor=itxcrusher, and
+          # committing as him would manufacture ~365 green squares a year on the exact
+          # contribution graph this profile uses as evidence.
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add README.md
-          git commit -m 'chore(profile): refresh the public-surface block'
+          git commit -m "chore(profile): today's look is ${NAME} (${MODE})"
           git push
+        env:
+          NAME: ${{ needs.pick.outputs.name }}
+          MODE: ${{ needs.pick.outputs.mode }}
 
   notify-failure:
-    needs: [snake, publish]
+    needs: [pick, snake, publish]
     if: failure()
     runs-on: ubuntu-latest
     permissions:

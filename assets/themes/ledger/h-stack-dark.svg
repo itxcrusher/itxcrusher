@@ -1,0 +1,30 @@
+<svg width="900" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">block: stack</title>
+<style>@keyframes k2{0%,100%{opacity:.35}50%{opacity:1}}.a3{animation:k2 3s ease-in-out infinite}</style>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#05080f" stop-opacity="1"/><stop offset="1" stop-color="#0a1426" stop-opacity="1"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="80" fill="url(#g1)"/>
+<rect x="30" y="16" width="362.25" height="52" rx="6" fill="#4f8cff" fill-opacity="0.16"/>
+<rect x="30" y="16" width="362.25" height="52" rx="6" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="1.8"/>
+<text x="44" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#e9f0ff">block: stack</text>
+<rect x="410.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-0s"/>
+<rect x="432.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-0.3s"/>
+<rect x="454.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-0.6s"/>
+<rect x="476.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-0.9s"/>
+<rect x="498.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-1.2s"/>
+<rect x="520.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-1.5s"/>
+<rect x="542.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-1.8s"/>
+<rect x="564.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-2.1s"/>
+<rect x="586.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-2.4s"/>
+<rect x="608.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-2.7s"/>
+<rect x="630.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-3s"/>
+<rect x="652.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-3.3s"/>
+<rect x="674.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-3.6s"/>
+<rect x="696.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-3.9s"/>
+<rect x="718.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-4.2s"/>
+<rect x="740.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-4.5s"/>
+<rect x="762.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-4.8s"/>
+<rect x="784.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-5.1s"/>
+<rect x="806.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-5.4s"/>
+<rect x="828.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-5.7s"/>
+<rect x="850.25" y="35" width="26" height="14" rx="7" fill="none" stroke="#4f8cff" stroke-opacity="0.9" stroke-width="2" class="a3" style="animation-delay:-6s"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="900" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">public</title>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f1f7f2" stop-opacity="1"/><stop offset="1" stop-color="#d9e9dc" stop-opacity="1"/></linearGradient><filter id="gl2" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/><feFlood flood-color="#0a7a3e" flood-opacity="0.3" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="g3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a7a3e" stop-opacity="0.95"/><stop offset="1" stop-color="#59b37f" stop-opacity="0"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="80" fill="url(#g1)"/>
+<text x="44" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#062814" filter="url(#gl2)">0x1  public</text>
+<rect x="372.562" y="40" width="487.438" height="3" rx="1.5" fill="url(#g3)"/>
+</svg>

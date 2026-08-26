@@ -2,7 +2,7 @@ name: readme-check
 
 on:
   push:
-    branches: [main, profile-v2]
+    branches: [main, profile-v2, profile-themes]
   pull_request:
     branches: [main]
   workflow_dispatch:

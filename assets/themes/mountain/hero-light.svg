@@ -1,0 +1,17 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Muhammad Hassaan Javed, GitHub handle itxcrusher. Mountain theme.</title>
+<style>@keyframes k5{from{transform:translate(0,0)}to{transform:translate(-60px,0px)}}.a6{animation:k5 26s ease-in-out 0s infinite alternate}</style>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef4fb" stop-opacity="1"/><stop offset="1" stop-color="#c9dcf0" stop-opacity="1"/></linearGradient><radialGradient id="r2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f2b04a" stop-opacity="0.4"/><stop offset="1" stop-color="#f2b04a" stop-opacity="0"/></radialGradient><linearGradient id="g3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#eef4fb" stop-opacity="0.66"/><stop offset="0.55" stop-color="#eef4fb" stop-opacity="0.561"/><stop offset="1" stop-color="#eef4fb" stop-opacity="0"/></linearGradient><filter id="b4" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter><clipPath id="c7"><rect x="0" y="0" width="900" height="240" rx="0"/></clipPath></defs>
+<rect x="0" y="0" width="900" height="240" fill="url(#g1)"/>
+<circle cx="700" cy="60" r="70.4" fill="url(#r2)"/>
+<circle cx="700" cy="60" r="22" fill="#f2b04a" fill-opacity="1"/>
+<polygon points="-40,191.435 58,187.239 156,173.993 254,171.538 352,178.775 450,189.285 548,210.736 646,200.198 744,177.592 842,179.465 940,139.004 940,250 -40,250" fill="#aebdd2" fill-opacity="1"/>
+<polygon points="-40,175.687 35.385,175.368 110.769,177.57 186.154,191.923 261.538,212.323 336.923,208.262 412.308,193.08 487.692,189.051 563.077,192.672 638.462,155.822 713.846,155.859 789.231,127.277 864.615,137.39 940,140.827 940,250 -40,250" fill="#96aac5" fill-opacity="1"/>
+<polygon points="-40,201.456 21.25,202.741 82.5,208.317 143.75,226.779 205,221.195 266.25,210.478 327.5,200.181 388.75,157.648 450,159.778 511.25,150.849 572.5,155.223 633.75,152.676 695,142.132 756.25,171.217 817.5,208.984 878.75,180.465 940,213.776 940,250 -40,250" fill="#f7fbff" fill-opacity="0.95"/>
+<polygon points="-40,215.456 21.25,226.376 82.5,227.472 143.75,247.657 205,244.029 266.25,226.629 327.5,224.166 388.75,174.839 450,182.056 511.25,172.468 572.5,173.425 633.75,176.544 695,157.21 756.25,194.508 817.5,229.032 878.75,200.52 940,237.064 940,250 -40,250" fill="#7f97b8" fill-opacity="1"/>
+<rect x="0" y="0" width="612" height="240" fill="url(#g3)"/>
+<text x="44" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="53" font-weight="700" fill="#10233b">Muhammad Hassaan Javed</text>
+<text x="44" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#2f5c9c">@itxcrusher</text>
+<text x="44" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="41" font-weight="400" fill="#4a6382">cloud + platform engineer</text>
+<g clip-path="url(#c7)" ><g class="a6"><rect x="-80" y="150" width="1120" height="56" rx="28" fill="#ffffff" fill-opacity="0.22" filter="url(#b4)"/></g></g>
+</svg>

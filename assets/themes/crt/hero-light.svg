@@ -1,0 +1,15 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Muhammad Hassaan Javed, GitHub handle itxcrusher. CRT theme.</title>
+<style>@keyframes k4{from{transform:translate(0,0)}to{transform:translate(0px,300px)}}.a5{animation:k4 5.5s linear 0s infinite}@keyframes k9{0%,49%{opacity:1}50%,100%{opacity:0}}.a10{animation:k9 1.1s steps(1) infinite}</style>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf6e4" stop-opacity="1"/><stop offset="1" stop-color="#cfe6c6" stop-opacity="1"/></linearGradient><pattern id="p2" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#0b2e12" fill-opacity="0.16"/></pattern><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#157a2e" stop-opacity="0"/><stop offset="0.5" stop-color="#157a2e" stop-opacity="0.1"/><stop offset="1" stop-color="#157a2e" stop-opacity="0"/></linearGradient><clipPath id="c6"><rect x="0" y="0" width="900" height="240" rx="0"/></clipPath><linearGradient id="g7" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#eaf6e4" stop-opacity="0.66"/><stop offset="0.55" stop-color="#eaf6e4" stop-opacity="0.561"/><stop offset="1" stop-color="#eaf6e4" stop-opacity="0"/></linearGradient><filter id="gl8" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/><feFlood flood-color="#157a2e" flood-opacity="0.35" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><radialGradient id="r11" cx="0.5" cy="0.5" r="0.75"><stop offset="0.45" stop-color="#cfe6c6" stop-opacity="0"/><stop offset="1" stop-color="#cfe6c6" stop-opacity="0.65"/></radialGradient></defs>
+<rect x="0" y="0" width="900" height="240" fill="url(#g1)"/>
+<rect x="0" y="0" width="900" height="240" fill="url(#p2)"/>
+<g clip-path="url(#c6)" ><g class="a5"><rect x="0" y="-60" width="900" height="60" fill="url(#g3)"/></g></g>
+<rect x="0" y="0" width="612" height="240" fill="url(#g7)"/>
+<text x="44" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="50" font-weight="700" fill="#0b2e12" filter="url(#gl8)">Muhammad Hassaan Javed</text>
+<text x="44" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#157a2e">@itxcrusher</text>
+<text x="44" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="41" font-weight="400" fill="#3c6b47">cloud + platform engineer</text>
+<rect x="332.094" y="136" width="16" height="38" fill="#157a2e" fill-opacity="0.95" class="a10"/>
+<rect x="0" y="0" width="900" height="240" fill="url(#r11)"/>
+<rect x="6" y="6" width="888" height="228" rx="18" fill="none" stroke="#157a2e" stroke-opacity="0.6" stroke-width="3"/>
+</svg>

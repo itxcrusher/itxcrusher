@@ -9,8 +9,10 @@ a scheduled reminder. Budget ten minutes.
       Look at it. Every past defect on this profile was visible and nobody was looking.
 - [ ] Does the snake render? If not, the `profile` workflow has been failing and the
       failure issue should already be open. Check the Actions tab.
-- [ ] Is the `_Generated YYYY-MM-DD_` stamp under `// what is public` less than two
-      weeks old? If it is older, the generator is dead and the block is lying.
+- [ ] Is the `_Generated YYYY-MM-DD_` stamp in the generated block less than two weeks
+      old? If it is older, the generator is dead and the block is lying.
+- [ ] Is the theme stamp at the top of `README.md` dated today or yesterday? The page
+      changes its look daily; a stale date means the `profile` workflow stopped.
 - [ ] Click every link in the README. The two domains, the repositories tab, the
       ripple-proof walkthrough, the four dbt PRs, both upstream PRs.
 
@@ -45,6 +47,10 @@ a scheduled reminder. Budget ten minutes.
       runs in a `contents: read` job so the blast radius is a missing snake.
 - [ ] Any new file under `assets/`? It must pass R6/R7/R8 in `scripts/check_readme.py`.
       Do not add an image that carries a fact.
+- [ ] Skim <https://github.com/itxcrusher/itxcrusher/blob/main/assets/themes/README.md>
+      in both colour modes. A theme that reads badly is removed from the draw by setting
+      `disabled=True` on its catalog entry and rebuilding; it never needs a hand edit to
+      the README.
 
 ## The standing rule
 

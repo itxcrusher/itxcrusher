@@ -1,0 +1,10 @@
+<svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">northern lights</title>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#082036" stop-opacity="1"/><stop offset="1" stop-color="#030914" stop-opacity="1"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
+<text x="450" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#7d9fb8" text-anchor="middle">northern lights</text>
+<line x1="40" y1="32" x2="247.484" y2="32" stroke="#4dffb0" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="652.516" y1="32" x2="860" y2="32" stroke="#4dffb0" stroke-opacity="0.6" stroke-width="1.5"/>
+<polygon points="662.516,23 664.867,28.764 671.075,29.219 666.32,33.236 667.806,39.281 662.516,36 657.226,39.281 658.711,33.236 653.956,29.219 660.164,28.764" fill="#4dffb0" fill-opacity="0.95"/>
+<polygon points="237.484,23 239.836,28.764 246.044,29.219 241.289,33.236 242.774,39.281 237.484,36 232.194,39.281 233.68,33.236 228.925,29.219 235.133,28.764" fill="#4dffb0" fill-opacity="0.95"/>
+</svg>

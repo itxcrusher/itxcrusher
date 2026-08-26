@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Render and apply the public-surface block for the itxcrusher profile README.
+"""Read the facts for the itxcrusher profile README from the GitHub API.
 
 Python 3.11+ stdlib only. No installs, no lockfile, no local toolchain.
 
-  render  queries the GitHub API and writes the block body to a file
-  apply   splices that body between the PUBLIC_SURFACE markers in README.md
+  data    queries the GitHub API and writes every fact the page states as JSON;
+          scripts/profile_theme.py render lays it out in today's theme (the daily path)
+  render  the pre-theme path: writes the block body as markdown
+  apply   the pre-theme path: splices that body between the PUBLIC_SURFACE markers
 """
 import argparse
 import datetime
@@ -182,6 +184,32 @@ def days_since(iso):
     return (datetime.datetime.now(datetime.timezone.utc) - d).days
 
 
+def collect(user, token, today):
+    """Every fact the page states, as data. The theme renderer lays it out."""
+    total = calendar_total(user)
+    private, approx = contribution_split(user, token, total)
+    all_public = repos(user, token)
+    picked = showcased(all_public)
+    links, all_open = dbt_evidence(user, token)
+    rows = []
+    for r in picked:
+        rows.append({
+            "name": r["name"], "url": r["html_url"],
+            "desc": ascii_only((r.get("description") or "").strip().rstrip("."),
+                               "description of " + r["name"]),
+            "lang": (r.get("language") or "").strip(),
+            "date": r["pushed_at"].split("T")[0],
+            "home": (r.get("homepage") or "").strip(),
+        })
+    return {
+        "n": len(all_public), "total": total, "private": private, "approx": approx,
+        "freshest_days": min([days_since(r["pushed_at"]) for r in picked] or [9999]),
+        "picked": rows,
+        "dbt_links": [(re.search(r"\[(\w+)\]", l).group(1), re.search(r"\((.*?)\)", l).group(1)) for l in links],
+        "all_open": all_open, "today": today,
+    }
+
+
 def render(user, token, today):
     total = calendar_total(user)
     private, approx = contribution_split(user, token, total)
@@ -285,9 +313,21 @@ def main():
     a.add_argument("--block", required=True)
     a.add_argument("--readme", required=True)
     a.add_argument("--max-stamp-age-days", type=int, default=7)
+    d = sub.add_parser("data", help="write the facts as JSON for scripts/profile_theme.py render")
+    d.add_argument("--user", required=True)
+    d.add_argument("--out", required=True)
     args = p.parse_args()
 
-    if args.cmd == "render":
+    if args.cmd == "data":
+        token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+        today = datetime.date.today().isoformat()
+        data = collect(args.user, token, today)
+        out_dir = os.path.dirname(args.out)
+        if out_dir:
+            os.makedirs(out_dir, exist_ok=True)
+        open(args.out, "w", encoding="utf-8", newline="\n").write(json.dumps(data, indent=2) + "\n")
+        print(json.dumps({k: v for k, v in data.items() if k != "picked"}, indent=2))
+    elif args.cmd == "render":
         token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
         today = datetime.date.today().isoformat()
         text = render(args.user, token, today)
