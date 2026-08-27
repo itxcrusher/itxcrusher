@@ -44,7 +44,7 @@ Cyan and amber instrument panel. Brackets, tick marks, a sweep. <sub>rows: table
   <img src="./circuit/hero-light.svg" width="100%" alt="Circuit theme hero: Traces draw themselves across the board. Pads pulse." />
 </picture>
 
-Traces draw themselves across the board. Pads pulse. <sub>rows: list, fence: hcl, callout: TIP</sub>
+Traces draw themselves across the board. Pads pulse. <sub>rows: table, fence: hcl, callout: TIP</sub>
 
 ### Neural
 
@@ -74,7 +74,7 @@ Hash-chained blocks along the top. The chain is intact. <sub>rows: numbered, fen
   <img src="./crt/hero-light.svg" width="100%" alt="CRT theme hero: Phosphor green behind curved glass. It flickers a little." />
 </picture>
 
-Phosphor green behind curved glass. It flickers a little. <sub>rows: list, fence: bash, callout: TIP</sub>
+Phosphor green behind curved glass. It flickers a little. <sub>rows: ls, fence: bash, callout: TIP</sub>
 
 ### Matrix
 
@@ -84,7 +84,7 @@ Phosphor green behind curved glass. It flickers a little. <sub>rows: list, fence
   <img src="./matrix/hero-light.svg" width="100%" alt="Matrix theme hero: Data rain. The name sits on a dark plate so it stays readable." />
 </picture>
 
-Data rain. The name sits on a dark plate so it stays readable. <sub>rows: list, fence: diff, callout: TIP</sub>
+Data rain. The name sits on a dark plate so it stays readable. <sub>rows: ls, fence: diff, callout: TIP</sub>
 
 ### Synthwave
 
@@ -114,7 +114,7 @@ Rack rails and a wall of blinking LEDs. Nothing glamorous, everything up. <sub>r
   <img src="./hologram/hero-light.svg" width="100%" alt="Hologram theme hero: Blue projection with slice glitches and a scan band." />
 </picture>
 
-Blue projection with slice glitches and a scan band. <sub>rows: list, fence: json, callout: NOTE</sub>
+Blue projection with slice glitches and a scan band. <sub>rows: table, fence: json, callout: NOTE</sub>
 
 ### Radar
 
@@ -154,7 +154,7 @@ Punch cards and green-bar paper. Batch job complete. <sub>rows: numbered, fence:
   <img src="./signal/hero-light.svg" width="100%" alt="Signal theme hero: An oscilloscope trace rolling under the name." />
 </picture>
 
-An oscilloscope trace rolling under the name. <sub>rows: list, fence: hcl, callout: NOTE</sub>
+An oscilloscope trace rolling under the name. <sub>rows: table, fence: hcl, callout: NOTE</sub>
 
 ### Pixel
 
@@ -216,7 +216,7 @@ Dunes at night under a crescent; midday glare in light mode. <sub>rows: list, fe
   <img src="./aurora/hero-light.svg" width="100%" alt="Aurora theme hero: Curtains of green and violet over a black ridge." />
 </picture>
 
-Curtains of green and violet over a black ridge. <sub>rows: list, fence: yaml, callout: TIP</sub>
+Curtains of green and violet over a black ridge. <sub>rows: quotes, fence: yaml, callout: TIP</sub>
 
 ### Abyss
 
@@ -256,7 +256,7 @@ Two layers of cloud drifting, one break of warm light behind them. <sub>rows: ta
   <img src="./storm/hero-light.svg" width="100%" alt="Storm theme hero: Rain driven sideways, lightning that fires when it feels like it." />
 </picture>
 
-Rain driven sideways, lightning that fires when it feels like it. <sub>rows: list, fence: diff, callout: NOTE</sub>
+Rain driven sideways, lightning that fires when it feels like it. <sub>rows: tasks, fence: diff, callout: NOTE</sub>
 
 ### Mountain
 
@@ -266,7 +266,7 @@ Rain driven sideways, lightning that fires when it feels like it. <sub>rows: lis
   <img src="./mountain/hero-light.svg" width="100%" alt="Mountain theme hero: Three ridges, a snowline, mist in the valley." />
 </picture>
 
-Three ridges, a snowline, mist in the valley. <sub>rows: list, fence: yaml, callout: NOTE</sub>
+Three ridges, a snowline, mist in the valley. <sub>rows: numbered, fence: yaml, callout: NOTE</sub>
 
 ### Sakura
 
@@ -286,7 +286,7 @@ Petals drifting under a spring moon. <sub>rows: quotes, fence: yaml, callout: TI
   <img src="./autumn/hero-light.svg" width="100%" alt="Autumn theme hero: Leaves turning and falling through warm light." />
 </picture>
 
-Leaves turning and falling through warm light. <sub>rows: list, fence: toml, callout: TIP</sub>
+Leaves turning and falling through warm light. <sub>rows: quotes, fence: toml, callout: TIP</sub>
 
 ### Ocean
 
@@ -296,7 +296,7 @@ Leaves turning and falling through warm light. <sub>rows: list, fence: toml, cal
   <img src="./ocean/hero-light.svg" width="100%" alt="Ocean theme hero: Three swells rolling under a moon; bright water by day." />
 </picture>
 
-Three swells rolling under a moon; bright water by day. <sub>rows: list, fence: yaml, callout: NOTE</sub>
+Three swells rolling under a moon; bright water by day. <sub>rows: quotes, fence: yaml, callout: NOTE</sub>
 
 ### Glacier
 
@@ -306,7 +306,7 @@ Three swells rolling under a moon; bright water by day. <sub>rows: list, fence: 
   <img src="./glacier/hero-light.svg" width="100%" alt="Glacier theme hero: Ice crystals catching light. Cold blue, very still." />
 </picture>
 
-Ice crystals catching light. Cold blue, very still. <sub>rows: list, fence: json, callout: NOTE</sub>
+Ice crystals catching light. Cold blue, very still. <sub>rows: numbered, fence: json, callout: NOTE</sub>
 
 ## Elemental and cosmic
 
@@ -368,7 +368,7 @@ The last of a fire. Sparks lifting off into the dark. <sub>rows: list, fence: to
   <img src="./lunar/hero-light.svg" width="100%" alt="Lunar theme hero: Craters, a grey horizon, Earth small in the sky." />
 </picture>
 
-Craters, a grey horizon, Earth small in the sky. <sub>rows: list, fence: ini, callout: NOTE</sub>
+Craters, a grey horizon, Earth small in the sky. <sub>rows: quotes, fence: ini, callout: NOTE</sub>
 
 ### Eclipse
 
@@ -430,7 +430,7 @@ Venetian blinds, film grain, pure greyscale. <sub>rows: quotes, fence: text, cal
   <img src="./wasteland/hero-light.svg" width="100%" alt="Wasteland theme hero: Cracked earth, dust on the wind, a dim sun. The road goes on." />
 </picture>
 
-Cracked earth, dust on the wind, a dim sun. The road goes on. <sub>rows: list, fence: bash, callout: TIP</sub>
+Cracked earth, dust on the wind, a dim sun. The road goes on. <sub>rows: tasks, fence: bash, callout: TIP</sub>
 
 ### Bunker
 

@@ -91,7 +91,7 @@ THEMES = [
       header=dict(style="trace", font="mono"),
       labels=dict(public="net: public", stack="net: stack", snake="net: activity"),
       signoff="EOF",
-      text=dict(rows="list", chip="code", fence="hcl", alert="TIP", sep="-")),
+      text=dict(rows="table", chip="code", fence="hcl", alert="TIP", sep="-")),
 
     T("neural", "Neural", "tech", "A node graph breathing. Signals travel the edges.",
       dark=dict(bg="#0a0716", bg2="#180c33", ink="#f2ecff", muted="#8c7fb8", acc="#b48cff", acc2="#ff7ad9"),
@@ -124,7 +124,7 @@ THEMES = [
       header=dict(style="glow", font="mono"),
       labels=dict(public="> public", stack="> stack", snake="> activity"),
       signoff="NO SIGNAL",
-      text=dict(rows="list", chip="code", fence="bash", alert="TIP", sep=">")),
+      text=dict(rows="ls", chip="code", fence="bash", alert="TIP", sep=">")),
 
     T("matrix", "Matrix", "tech", "Data rain. The name sits on a dark plate so it stays readable.",
       dark=dict(bg="#000000", bg2="#02130a", ink="#d8ffe0", muted="#3f8f5c", acc="#00ff66", acc2="#b6ffcf"),
@@ -135,7 +135,7 @@ THEMES = [
       header=dict(style="glow", font="mono", index="hex"),
       labels=dict(public="public", stack="stack", snake="activity"),
       signoff="there is no spoon",
-      text=dict(rows="list", chip="code", fence="diff", alert="TIP", sep="|")),
+      text=dict(rows="ls", chip="code", fence="diff", alert="TIP", sep="|")),
 
     T("synthwave", "Synthwave", "tech", "Sun on the horizon, grid rolling toward you, eighties gradients.",
       dark=dict(bg="#12062b", bg2="#33104f", ink="#ffe9ff", muted="#b07cc9", acc="#ff4fa3", acc2="#21d7ff"),
@@ -169,7 +169,7 @@ THEMES = [
       header=dict(style="glow", font="sans"),
       labels=dict(public="holo: public", stack="holo: stack", snake="holo: activity"),
       signoff="end projection",
-      text=dict(rows="list", chip="kbd", fence="json", alert="NOTE", sep="/")),
+      text=dict(rows="table", chip="kbd", fence="json", alert="NOTE", sep="/")),
 
     T("radar", "Radar", "tech", "A sweep finds four contacts. Green on near-black.",
       dark=dict(bg="#04140b", bg2="#082418", ink="#dcffe9", muted="#4f9370", acc="#4dff9e", acc2="#b8ffd6"),
@@ -211,7 +211,7 @@ THEMES = [
       header=dict(style="rule", font="mono", ornament="wave"),
       labels=dict(public="channel: public", stack="channel: stack", snake="channel: activity"),
       signoff="signal lost",
-      text=dict(rows="list", chip="code", fence="hcl", alert="NOTE", sep="~")),
+      text=dict(rows="table", chip="code", fence="hcl", alert="NOTE", sep="~")),
 
     T("pixel", "Pixel", "tech", "Eight-bit skies, a block floor, a blinking star field.",
       dark=dict(bg="#0d0d1a", bg2="#1a1a3a", ink="#f0f0ff", muted="#8383a8", acc="#ffd23f", acc2="#4dd0ff"),
@@ -288,7 +288,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="star"),
       labels=dict(public="what is public", stack="the stack", snake="night sky"),
       signoff="northern lights",
-      text=dict(rows="list", chip="plain", fence="yaml", alert="TIP", sep="+")),
+      text=dict(rows="quotes", chip="plain", fence="yaml", alert="TIP", sep="+")),
 
     T("abyss", "Abyss", "nature", "Bubbles rising through deep water, bioluminescence drifting past.",
       dark=dict(bg="#01060d", bg2="#042138", ink="#d9f1ff", muted="#5c8ea9", acc="#21d0ff", acc2="#7bffe0"),
@@ -333,7 +333,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="bolt"),
       labels=dict(public="what is public", stack="the stack", snake="the forecast"),
       signoff="weather it",
-      text=dict(rows="list", chip="plain", fence="diff", alert="NOTE", sep="/")),
+      text=dict(rows="tasks", chip="plain", fence="diff", alert="NOTE", sep="/")),
 
     T("mountain", "Mountain", "nature", "Three ridges, a snowline, mist in the valley.",
       dark=dict(bg="#0a1220", bg2="#1d2f4d", ink="#edf3ff", muted="#8ea0be", acc="#cfe3ff", acc2="#ffb36b"),
@@ -346,7 +346,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="mountain"),
       labels=dict(public="what is public", stack="the stack", snake="the climb"),
       signoff="keep climbing",
-      text=dict(rows="list", chip="plain", fence="yaml", alert="NOTE", sep="/")),
+      text=dict(rows="numbered", chip="plain", fence="yaml", alert="NOTE", sep="/")),
 
     T("sakura", "Sakura", "nature", "Petals drifting under a spring moon.",
       dark=dict(bg="#1a0a1f", bg2="#361336", ink="#ffe9f2", muted="#b98aaa", acc="#ff9ac8", acc2="#ffd6e6"),
@@ -370,7 +370,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="leaf"),
       labels=dict(public="what is public", stack="the stack", snake="falling leaves"),
       signoff="season's turning",
-      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="~")),
+      text=dict(rows="quotes", chip="plain", fence="toml", alert="TIP", sep="~")),
 
     T("ocean", "Ocean", "nature", "Three swells rolling under a moon; bright water by day.",
       dark=dict(bg="#031424", bg2="#053250", ink="#e5f6ff", muted="#6fa3bd", acc="#2fb8ff", acc2="#9ff0ff"),
@@ -383,7 +383,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="wave"),
       labels=dict(public="what is public", stack="the stack", snake="the tide"),
       signoff="tide's out",
-      text=dict(rows="list", chip="plain", fence="yaml", alert="NOTE", sep="~")),
+      text=dict(rows="quotes", chip="plain", fence="yaml", alert="NOTE", sep="~")),
 
     T("glacier", "Glacier", "nature", "Ice crystals catching light. Cold blue, very still.",
       dark=dict(bg="#041420", bg2="#0b2f44", ink="#eafaff", muted="#7fb0c4", acc="#7fe3ff", acc2="#cfffff"),
@@ -395,7 +395,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="flake"),
       labels=dict(public="what is public", stack="the stack", snake="ice core"),
       signoff="frozen solid",
-      text=dict(rows="list", chip="plain", fence="json", alert="NOTE", sep="+")),
+      text=dict(rows="numbered", chip="plain", fence="json", alert="NOTE", sep="+")),
 
     # ------------------------------------------------------------- ELEMENTAL
     T("lava", "Lava", "elemental", "Cracks glowing through cooled basalt. Sparks rising.",
@@ -468,7 +468,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="moon"),
       labels=dict(public="what is public", stack="the stack", snake="footprints"),
       signoff="one small step",
-      text=dict(rows="list", chip="plain", fence="ini", alert="NOTE", sep="..")),
+      text=dict(rows="quotes", chip="plain", fence="ini", alert="NOTE", sep="..")),
 
     T("eclipse", "Eclipse", "elemental", "A black disc and its corona. Everything else goes quiet.",
       dark=dict(bg="#04040a", bg2="#0d0a1e", ink="#f3efff", muted="#8f88ad", acc="#ffd28a", acc2="#c9b6ff"),
@@ -539,7 +539,7 @@ THEMES = [
       header=dict(style="rule", font="sans", case="upper", ls=1, ornament="sun"),
       labels=dict(public="what is public", stack="salvage", snake="the road"),
       signoff="keep walking",
-      text=dict(rows="list", chip="plain", fence="bash", alert="TIP", sep="..")),
+      text=dict(rows="tasks", chip="plain", fence="bash", alert="TIP", sep="..")),
 
     T("bunker", "Bunker", "gritty", "Concrete, rivets, a red beacon turning. Seal the door.",
       dark=dict(bg="#101214", bg2="#1c1f24", ink="#e6e9ec", muted="#8b929b", acc="#ff3b3b", acc2="#ffb000"),
