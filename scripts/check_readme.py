@@ -132,6 +132,32 @@ def main():
     else:
         ok("R1", "all %d relative image sources resolve to tracked files" % len(local))
 
+    # R1b the allowed absolute images resolve too.
+    # R1 only walks relative paths, so when the README started asking the output branch
+    # for snake-dark.svg and snake-light.svg before the workflow had ever published them,
+    # every rule passed while the live page showed a broken image. Verified over the
+    # network: a 404 is a real failure, an unreachable network is not.
+    remote = sorted(set(u for u in all_srcs if u.startswith(ALLOWED_IMAGE_PREFIX)))
+    if remote:
+        import urllib.error
+        import urllib.request
+        dead, unreachable = [], False
+        for u in remote:
+            try:
+                req = urllib.request.Request(u, method="HEAD",
+                                             headers={"User-Agent": "itxcrusher-contract"})
+                urllib.request.urlopen(req, timeout=15)
+            except urllib.error.HTTPError as e:
+                dead.append("%s (HTTP %s)" % (u.rsplit("/", 1)[-1], e.code))
+            except Exception:  # noqa: BLE001
+                unreachable = True
+        if dead:
+            fail("R1", "referenced but not published: " + ", ".join(dead))
+        elif unreachable:
+            ok("R1", "%d output-branch image(s) not verified (network unavailable)" % len(remote))
+        else:
+            ok("R1", "all %d output-branch image(s) resolve" % len(remote))
+
     # R2 third-party image budget is zero
     foreign = [u for u in all_srcs if u.startswith("http") and not u.startswith(ALLOWED_IMAGE_PREFIX)]
     if foreign:
