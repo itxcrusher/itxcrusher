@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The theme engine's command line. Python 3.11+ stdlib only at runtime.
 
-  build     render every theme into assets/themes/<slug>/ plus the gallery README
+  build     draw the two static page slices for every theme into assets/pages/<slug>/
   pick      decide today's theme (deterministic); writes GITHUB_OUTPUT when present
   render    write README.md for a theme from the data file profile_surface.py produced
   preview   write the self-contained gallery page (every theme, both colour modes)
@@ -20,11 +20,10 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from themes import badge, catalog, page, preview, render, rotate, textpanel  # noqa: E402
+from themes import catalog, page, page_art, preview, render, rotate, textpanel  # noqa: E402
 
-ASSETS = os.path.join(ROOT, "assets", "themes")
-BADGES = os.path.join(ROOT, "assets", "badges")
-PANELS = os.path.join(ROOT, "assets", "panels")
+PAGES = os.path.join(ROOT, "assets", "pages")
+TODAY = os.path.join(ROOT, "assets", "today")
 
 
 def write(path, text):
@@ -35,30 +34,31 @@ def write(path, text):
 
 
 def cmd_build(args):
+    """The two slices that do not depend on the API, for every theme.
+
+    The data-dependent slice is NOT built here. It carries live counts and dates, and a
+    committed copy per theme would be 46 pages of stale numbers the moment the rotation
+    moved on. It is written by `render` into assets/today/ instead, which is the only
+    directory the contract lets a number appear in.
+    """
     if args.clean:
-        for d in (ASSETS, BADGES, PANELS):
+        for d in (PAGES, TODAY):
             if os.path.isdir(d):
                 shutil.rmtree(d)
-    total = nbadge = npanel = 0
+    content = page.art_content(page.fixture_data(), datetime.date.today().isoformat())
+    total = n = 0
     for t in catalog.THEMES:
-        files = render.build_theme(t)
-        for fn, svg in files.items():
-            write(os.path.join(ASSETS, t["slug"], fn), svg)
+        for fn, svg in page_art.build_static(t, content).items():
+            write(os.path.join(PAGES, t["slug"], fn), svg)
             total += len(svg)
-        for fn, svg in badge.build_theme(t, page.STACK, [l for l, _ in page.LINKS]).items():
-            write(os.path.join(BADGES, t["slug"], fn), svg)
-            total += len(svg)
-            nbadge += 1
-        for fn, svg in textpanel.build_theme(t, {"intro": (page.INTRO, "intro")}).items():
-            write(os.path.join(PANELS, t["slug"], fn), svg)
-            total += len(svg)
-            npanel += 1
-    write(os.path.join(ASSETS, "README.md"), preview.gallery_markdown(catalog.THEMES, len(catalog.ACTIVE)))
-    write(os.path.join(ASSETS, "index.json"), json.dumps(
-        {"active": [t["slug"] for t in catalog.ACTIVE], "all": [t["slug"] for t in catalog.THEMES]}, indent=2) + "\n")
-    print("built %d themes (%d active), %d banner + %d badge + %d panel files, %.1f KB" % (
-        len(catalog.THEMES), len(catalog.ACTIVE), 8 * len(catalog.THEMES), nbadge, npanel,
-        total / 1024))
+            n += 1
+    write(os.path.join(PAGES, "README.md"),
+          preview.gallery_markdown(catalog.THEMES, len(catalog.ACTIVE)))
+    write(os.path.join(ROOT, "assets", "index.json"), json.dumps(
+        {"active": [t["slug"] for t in catalog.ACTIVE],
+         "all": [t["slug"] for t in catalog.THEMES]}, indent=2) + "\n")
+    print("built %d themes (%d active), %d page slices, %.1f KB"
+          % (len(catalog.THEMES), len(catalog.ACTIVE), n, total / 1024))
 
 
 def _date(s):
@@ -96,18 +96,25 @@ def cmd_render(args):
     else:
         data = json.load(open(args.data, encoding="utf-8"))
     today = args.date or data.get("today") or datetime.date.today().isoformat()
+    # The data-dependent slice is drawn here, not at build time, because it carries live
+    # counts and dates. assets/today/ is rewritten on every run, which is precisely why
+    # it is the one place the contract allows a number inside an image: it cannot go
+    # stale between runs the way a committed per-theme copy would.
+    content = page.art_content(data, today)
+    if os.path.isdir(TODAY):
+        shutil.rmtree(TODAY)
+    for fn, svg in page_art.build_work(t, content, data, today).items():
+        write(os.path.join(TODAY, fn), svg)
     md = page.render_readme(t, data, today, args.mode, len(catalog.ACTIVE))
     write(args.out, md)
-    print("wrote %s for theme %s (%s)" % (args.out, slug, today))
+    print("wrote %s and %d slices for theme %s (%s)"
+          % (args.out, len(page_art.build_work(t, content, data, today)), slug, today))
 
 
 def cmd_preview(args):
-    data = page.fixture_data(args.date) if args.data == "fixture" else json.load(open(args.data, encoding="utf-8"))
-    today = args.date or data.get("today") or datetime.date.today().isoformat()
-    snake = open(args.snake, encoding="utf-8").read() if args.snake and os.path.isfile(args.snake) else None
-    html = preview.preview_html(catalog.THEMES, data, today, snake, len(catalog.ACTIVE))
+    html = preview.preview_html(catalog.THEMES, PAGES, args.band)
     write(args.out, html)
-    print("wrote %s (%.1f MB)" % (args.out, len(html.encode()) / 1e6))
+    print("wrote %s: %d themes, %s band" % (args.out, len(catalog.THEMES), args.band))
 
 
 def cmd_schedule(args):
@@ -147,9 +154,7 @@ def main():
     r.set_defaults(fn=cmd_render)
     v = sub.add_parser("preview")
     v.add_argument("--out", default="preview.html")
-    v.add_argument("--data", default="fixture")
-    v.add_argument("--date", default=None)
-    v.add_argument("--snake", default=None, help="a snake.svg to recolour per theme in the preview")
+    v.add_argument("--band", default="lg", choices=[k for k, _m, _w, _s in textpanel.BANDS])
     v.set_defaults(fn=cmd_preview)
     s = sub.add_parser("schedule")
     s.add_argument("--date")

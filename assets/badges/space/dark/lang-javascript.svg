@@ -1,6 +1,0 @@
-<svg width="90" height="28" viewBox="0 0 90 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">JavaScript</title>
-<rect x="0" y="0" width="90" height="28" rx="5" fill="#040816" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="88.5" height="26.5" rx="4.25" fill="none" stroke="#8ea6ff" stroke-opacity="0.3" stroke-width="1.5"/>
-<text x="45" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#8390bd" text-anchor="middle">JavaScript</text>
-</svg>

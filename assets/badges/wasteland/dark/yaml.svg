@@ -1,7 +1,0 @@
-<svg width="77" height="28" viewBox="0 0 77 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">YAML</title>
-<rect x="0" y="0" width="77" height="28" rx="0" fill="#291f18" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="75.5" height="26.5" rx="0" fill="none" stroke="#e0a15a" stroke-opacity="0.55" stroke-width="1.5"/>
-<line x1="16" y1="18" x2="22" y2="10" stroke="#e0a15a" stroke-opacity="1" stroke-width="2"/>
-<text x="27" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#efe4d2">YAML</text>
-</svg>

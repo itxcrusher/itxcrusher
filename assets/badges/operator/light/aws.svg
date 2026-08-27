@@ -1,7 +1,0 @@
-<svg width="62" height="28" viewBox="0 0 62 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">AWS</title>
-<rect x="0" y="0" width="62" height="28" rx="2" fill="#e5ece2" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="60.5" height="26.5" rx="1.25" fill="none" stroke="#085f2f" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="15.5" y="10.5" width="7" height="7" rx="1" fill="#085f2f" fill-opacity="1"/>
-<text x="27" y="19.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#0f1a12">AWS</text>
-</svg>

@@ -8,7 +8,7 @@ import datetime
 import json
 import re
 
-from . import textpanel
+from . import page_art
 from .render import NAME, HANDLE
 
 USER = "itxcrusher"
@@ -35,6 +35,13 @@ INTRO = [
     "If infrastructure feels exciting, something is probably wrong. The goal is systems that "
     "are quiet, predictable, and uninteresting in production.",
 ]
+
+TOP_ALT = ("Opening panel: name, handle, and the statement that this account builds "
+           "infrastructure and bounded automation for other people's production systems, "
+           "most of it in private repositories, followed by a runnable check that the work "
+           "is real. The same words are in the plain-text copy at the foot of the page.")
+CLOSE_ALT = ("Closing panel reading %s, with the contact lines. The same words are in the "
+             "plain-text copy at the foot of the page.")
 
 INTRO_ALT = ("Opening statement: I build infrastructure and bounded automation for other "
              "people's production systems. Most of that work is in private client and product "
@@ -301,84 +308,145 @@ def render_block(data, text, today, slug):
 
 # -------------------------------------------------------------------------- README
 
+def art_content(data, today):
+    """Everything the artwork needs, as plain strings.
+
+    Kept apart from the drawing code so the words stay in one file. Markdown syntax is
+    stripped here rather than in the renderer: backticks and [text](url) mean nothing
+    inside an SVG, and a link cannot live in the artwork at all, so the destinations are
+    carried by the strip beneath it instead.
+    """
+    n, total, private = data["n"], data["total"], data["private"]
+    if private:
+        about = "about " if data.get("approx") else ""
+        stats = ("%d original public repositories. Most of the work is not here: over the "
+                 "last 12 months, %s%s of %s contributions were in private repositories "
+                 "(client delivery, product builds, and security research)."
+                 % (n, about, format(private, ","), format(total, ",")))
+    else:
+        stats = ("%d original public repositories, out of %s contributions in the last 12 "
+                 "months." % (n, format(total, ",")))
+    links = data.get("dbt_links") or []
+    evidence = ""
+    if links:
+        state = "All open and review-only." if data.get("all_open") else "Some have since been merged."
+        evidence = ("Evidence trail for ripple-proof runs across four public sibling dbt "
+                    "repositories: " + ", ".join(a for a, _ in links) + ". " + state)
+    return {
+        "name": NAME, "handle": HANDLE, "intro": INTRO,
+        "cta_title": CTA_TITLE,
+        "cta_body": _plain(CTA_BODY),
+        "cta_cmd": CTA_CMD,
+        "cta_after": _plain(CTA_AFTER),
+        "footer": [_plain(x) for x in FOOTER],
+        "stack": STACK, "stack_intro": STACK_INTRO,
+        "upstream": _plain(UPSTREAM),
+        "stats": stats, "evidence": evidence,
+    }
+
+
+def _plain(s):
+    """Markdown to plain text: drop code ticks, keep a link's label, drop its URL."""
+    s = re.sub(r"\[([^\]]+)\]\([^)\s]+\)", r"\1", s)
+    s = re.sub(r"<([\w.+-]+@[\w.-]+)>", r"\1", s)
+    return s.replace("`", "").replace("**", "")
+
+
+def link_strip(data):
+    """Every destination on the page, in one line.
+
+    GitHub strips <map> and <area>, so a clickable region inside an image is impossible
+    and only a whole image can be a link. With the page drawn as artwork, this is where
+    the links live."""
+    items = list(LINKS)
+    items.append(("walkthrough", "https://itxcrusher.github.io/ripple-proof/"))
+    for r in data.get("picked") or []:
+        items.append((r["name"], r["url"]))
+    for label, url in (data.get("dbt_links") or []):
+        items.append(("dbt " + label, url))
+    items.append(("skip_cache PR", "https://github.com/acryldata/mcp-server-datahub/pull/190"))
+    items.append(("repair-boundary PR", "https://github.com/datahub-project/datahub-skills/pull/125"))
+    return items
+
+
 def render_readme(theme, data, today, mode, n_themes):
-    from themes.badge import slug as bslug
     t = theme
     text = t["text"]
-    d = "assets/themes/" + t["slug"]
     sep = " %s " % text.get("sep", "|")
+    c = art_content(data, today)
+    pages = "%s/%s" % (page_art.PAGES_DIR, t["slug"])
     out = []
     out.append("<!-- theme: %s | mode: %s | date: %s -->" % (t["slug"], mode, today))
-    out.append(picture(d, "hero", "%s, GitHub handle %s. %s theme." % (NAME, HANDLE, t["name"])))
+    out.append(page_art.picture(pages, "top", _attr(TOP_ALT)))
     out.append("")
-    # The nav was three GitHub-blue links, which is the single most recognisable
-    # "this is a markdown preview" tell on the page. As linked pills it wears the theme
-    # and stays clickable; the footer below still carries both domains as plain text, so
-    # nothing here is the only copy of a fact.
-    out.append('<p align="center">')
-    out.append("  " + " ".join(
-        '<a href="%s">%s</a>' % (u, badge_picture(t["slug"], "link-" + bslug(l), l))
-        for l, u in LINKS))
-    out.append("</p>")
+    # The commands are drawn in the artwork, where they cannot be selected. This is the
+    # copyable original, collapsed so it does not repeat the panel above it.
+    out.append("<details><summary><sub>copy the commands</sub></summary>")
     out.append("")
-    # The three opening sentences, laid out inside the theme instead of in GitHub's grey.
-    # Four viewport bands (see themes/textpanel.py) keep the type between about 14px and
-    # 28px everywhere rather than the 10px-on-a-phone a single width="100%" image would
-    # give. Text in an image cannot be selected or searched, so the same words follow as
-    # collapsed markdown and R3 proves that copy is present.
-    out.append(textpanel.picture(t["slug"], "intro", _attr(INTRO_ALT)))
+    out.append("```")
+    for cmd in CTA_CMD:
+        out.append(cmd)
+    out.append("```")
     out.append("")
-    out.append("<details><summary><sub>the same three lines as plain text</sub></summary>")
-    out.append("")
-    for para in INTRO:
-        out.append(para)
-        out.append("")
     out.append("</details>")
     out.append("")
-    alert = text.get("alert", "NOTE")
-    out.append("> [!%s]" % alert)
-    out.append("> **%s**" % CTA_TITLE)
-    out.append("> " + CTA_BODY)
-    out.append(">")
-    out.append("> ```")
-    for cmd in CTA_CMD:
-        out.append("> " + cmd)
-    out.append("> ```")
-    out.append(">")
-    out.append("> " + CTA_AFTER)
-    out.append("")
-    out.append(heading_picture(d, "h-public", "%s" % t["labels"]["public"]))
-    out.append("")
     out.append(START)
-    out.append(render_block(data, text, today, t["slug"]).rstrip("\n"))
-    out.append(END)
     out.append("")
-    out.append(heading_picture(d, "h-stack", "%s" % t["labels"]["stack"]))
+    out.append("## " + page_art.picture(page_art.TODAY_DIR, "work",
+                                        _attr("%s and %s" % (t["labels"]["public"],
+                                                             t["labels"]["stack"]))))
     out.append("")
-    out.append(STACK_INTRO)
-    out.append("")
-    out.append(badge_rows(t["slug"]))
-    out.append("")
-    out.append(UPSTREAM)
-    out.append("")
-    # The snake is the one contribution visual that wears the theme, and GitHub's own
-    # green graph sits directly below this README. Collapsed inside a <details> it never
-    # showed, so the only contribution art on the profile clashed with every warm theme.
-    # It leads with its themed label so the band still reads as a section, not a stray
-    # image.
     out.append("## <picture>"
                '<source media="(prefers-color-scheme: dark)" srcset="%ssnake-dark.svg">'
                '<source media="(prefers-color-scheme: light)" srcset="%ssnake-light.svg">'
                '<img src="%ssnake-light.svg" width="100%%" alt="%s" />'
                "</picture>" % (OUTPUT_BRANCH, OUTPUT_BRANCH, OUTPUT_BRANCH, _attr(SNAKE_ALT)))
     out.append("")
-    out.append(picture(d, "signoff", "Closing line at the end of the page: %s" % t["signoff"]))
+    out.append(page_art.picture(pages, "close", _attr(CLOSE_ALT % t["signoff"])))
+    out.append("")
+    out.append('<p align="center">')
+    out.append("  " + sep.join('<a href="%s">%s</a>' % (u, l) for l, u in link_strip(data)))
+    out.append("</p>")
+    out.append("")
+    # The page above is artwork, so none of it can be selected, searched or translated.
+    # This is the same page as text. R3 fails the build if it goes missing.
+    out.append("<details><summary><sub>the whole page as plain text</sub></summary>")
+    out.append("")
+    for para in INTRO:
+        out.append(para)
+        out.append("")
+    out.append("**%s** %s" % (CTA_TITLE, CTA_BODY))
+    out.append("")
+    out.append(CTA_AFTER)
+    out.append("")
+    out.append(c["stats"])
+    out.append("")
+    for r in data["picked"]:
+        lang = (r.get("lang") + ". ") if r.get("lang") else ""
+        out.append("- **[%s](%s)** - %s. %sUpdated %s." % (
+            r["name"], r["url"], r["desc"].rstrip("."), lang, r["date"]))
+    out.append("")
+    if c["evidence"]:
+        out.append(c["evidence"])
+        out.append("")
+    out.append(STACK_INTRO)
+    out.append("")
+    for label, values in STACK:
+        out.append("- **%s** - %s" % (label, ", ".join(values)))
+    out.append("")
+    out.append(UPSTREAM)
     out.append("")
     for line in FOOTER:
         out.append(line)
         out.append("")
+    out.append("_Generated %s from the GitHub API._" % today)
+    out.append("")
+    out.append("</details>")
+    out.append("")
+    out.append(END)
+    out.append("")
     out.append("<sub>Today this page wears <b>%s</b>, one of %d looks it rotates through daily. "
-               "<a href=\"assets/themes/README.md\">See them all</a>.</sub>" % (t["name"], n_themes))
+               "<a href=\"assets/pages/README.md\">See them all</a>.</sub>" % (t["name"], n_themes))
     out.append("")
     md = "\n".join(out)
     assert all(ord(ch) < 128 for ch in md), "R5: README output is not plain ASCII"

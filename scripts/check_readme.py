@@ -10,13 +10,14 @@ because the theme engine could break it silently.
   R3   the required text survives image death
   R4   alt text carries content (a heading image may use its heading text)
   R5   README.md and every SVG are plain ASCII
-  R6   SVG canvas 900 wide, no rendered type under 41 units
+  R6   every page slice matches its viewport band: canvas width and type scale
   R7   SVGs are self-contained: no script, no imports, no external refs, no
        prefers-color-scheme (theme pairing is <picture>'s job), system fonts only,
        role="img" and a <title>
-  R8   no facts inside images (no multi-digit run in rendered text)
+  R8   a committed image may only render numbers that are hand-authored constants;
+       anything from the API belongs in assets/today/, which is rewritten every run
   R9   single source of truth for the repository list
-  R10  identity strings agree across README, hero SVGs and the account
+  R10  identity strings agree across README, the opening panel and the account
   R11  the generated block self-dates
   R12  the page wears exactly one theme, and it is a catalogued one
   R13  page weight: the images the README references stay under budget
@@ -33,11 +34,12 @@ import sys
 import xml.etree.ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from themes.fullpage import allowed_sizes  # noqa: E402
 from themes.textpanel import BAND_BY_KEY as PANEL_BANDS  # noqa: E402
 
 README = "README.md"
 USER = "itxcrusher"
-THEME_INDEX = "assets/themes/index.json"
+THEME_INDEX = "assets/index.json"
 
 ALLOWED_IMAGE_PREFIX = "https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/"
 NAME = "Muhammad Hassaan Javed"
@@ -77,19 +79,26 @@ FORBIDDEN_SVG_TOKENS = ("<script", "@import", 'href="http', "url(http", 'url("ht
                         "url('http", "prefers-color-scheme", "@font-face", "<image",
                         "<foreignObject", "<a ")
 PAGE_WEIGHT_BUDGET = 160 * 1024
-MIN_FONT = 41
-# Badge contract. These are not width="100%" art: they are height-pinned pills that
-# render one SVG unit to one CSS pixel, so their floor is a real pixel size and their
-# ceiling is the narrowest README column measured on the live profile (238px at a 320
-# viewport), past which GitHub's max-width:100% would start scaling them.
-BADGE_DIR = "assets/badges/"
-BADGE_H = 28
-BADGE_MAX_W = 238
-BADGE_MIN_FONT = 14
-# Prose panels are the third contract. They ARE width-scaled, so they cannot hold one
-# size: each viewport band gets its own canvas width and its own type size, and the
-# checker verifies each file against the same table the builder lays out from.
-PANEL_DIR = "assets/panels/"
+# The page is drawn per viewport band, so there is no single canvas width or type floor
+# any more: each band declares both, and every slice is checked against the same table
+# the builder lays out from.
+TODAY_DIR = "assets/today/"
+
+
+def _authored_numbers():
+    """Every number that appears in the hand-authored strings in themes/page.py."""
+    from themes import page as P
+    blob = " ".join([P.NAME, P.HANDLE, P.EMAIL, P.CTA_TITLE, P.CTA_BODY, P.CTA_AFTER,
+                     P.STACK_INTRO, P.UPSTREAM] + list(P.INTRO) + list(P.CTA_CMD)
+                    + list(P.FOOTER) + [l for l, _ in P.LINKS]
+                    + [x for _, v in P.STACK for x in v]
+                    + [t["signoff"] for t in __import__("themes.catalog", fromlist=["x"]).THEMES]
+                    + [t["labels"][k] for t in __import__("themes.catalog", fromlist=["x"]).THEMES
+                       for k in ("public", "stack", "snake")])
+    return set(tok.rstrip(".,") for tok in re.findall(r"\d[\d.,]*", blob))
+
+
+AUTHORED_NUMBERS = _authored_numbers()
 
 IMG_RE = re.compile(r"<img\b[^>]*>", re.I)
 ATTR_RE = re.compile(r'(\w[\w-]*)\s*=\s*"([^"]*)"')
@@ -204,15 +213,6 @@ def main():
     bad_alt = []
     for t in tags:
         alt = t.get("alt", "")
-        src = t.get("src", "")
-        # A badge is a pill with one word painted in it. Its correct alt is that word,
-        # so the length floor would force a screen reader through a sentence per chip.
-        # The floor is still doing its job everywhere else: it exists to catch alt like
-        # "banner" on a picture that carries real content.
-        if src.lstrip("./").startswith(BADGE_DIR):
-            if not alt.strip():
-                bad_alt.append("empty alt on " + src)
-            continue
         if not alt.strip():
             bad_alt.append("empty alt")
         elif len(alt) < 20 and alt not in heading_alts:
@@ -249,51 +249,27 @@ def main():
             svg_fail += 1
             continue
         rel = svg_path.replace(os.sep, "/")
-        is_badge = rel.startswith(BADGE_DIR.lstrip("./"))
-        is_panel = rel.startswith(PANEL_DIR.lstrip("./"))
+        is_today = rel.startswith(TODAY_DIR)
         vb = (root.get("viewBox") or "").split()
-        sizes = [int(s) for s in re.findall(r'font-size="(\d+)"', raw)]
-        if is_badge:
-            # A badge is height-pinned, not width-scaled: GitHub turns height="28" into
-            # height:auto + max-height:28px, so one unit is one pixel and 14 units is
-            # 14px on every viewport. That only holds while the badge stays narrower
-            # than the narrowest README column, measured at 238px on a 320 viewport.
-            # Past that GitHub's max-width:100% starts shrinking it and the type with it.
-            if len(vb) != 4 or vb[3] != str(BADGE_H):
-                fail("R6", svg_path + " badge viewBox height must be %d, got %r" % (BADGE_H, vb))
-                bad = True
-            elif float(vb[2]) > BADGE_MAX_W:
-                fail("R6", svg_path + " badge is %s units wide, over the %d cap where "
-                     "GitHub starts scaling it" % (vb[2], BADGE_MAX_W))
-                bad = True
-            small = [x for x in sizes if x < BADGE_MIN_FONT]
-            if small:
-                fail("R6", svg_path + " badge type below the %d-unit floor: %s"
-                     % (BADGE_MIN_FONT, small))
-                bad = True
-        elif is_panel:
-            band = os.path.basename(rel).rsplit("-", 2)[-2]
-            spec = PANEL_BANDS.get(band)
-            if spec is None:
-                fail("R6", svg_path + " is not named for a known viewport band")
-                bad = True
-            else:
-                if len(vb) != 4 or vb[2] != str(spec[2]):
-                    fail("R6", svg_path + " band %s must be %d units wide, got %r"
-                         % (band, spec[2], vb))
-                    bad = True
-                off = [x for x in sizes if x != spec[3]]
-                if off:
-                    fail("R6", svg_path + " band %s must set type at %d units, found %s"
-                         % (band, spec[3], sorted(set(off))))
-                    bad = True
+        sizes = [int(x) for x in re.findall(r'font-size="(\d+)"', raw)]
+        band = os.path.basename(rel).rsplit("-", 2)[-2]
+        spec = PANEL_BANDS.get(band)
+        if spec is None:
+            fail("R6", svg_path + " is not named for a known viewport band")
+            bad = True
         else:
-            if len(vb) != 4 or vb[2] != "900":
-                fail("R6", svg_path + " viewBox width must be 900, got " + repr(vb))
+            # Each band declares its canvas width and its base type size. Everything the
+            # page draws must sit on that band's scale: a size between the rungs is how a
+            # hand-tuned heading ends up at 6px on a phone.
+            if len(vb) != 4 or vb[2] != str(spec[2]):
+                fail("R6", svg_path + " band %s must be %d units wide, got %r"
+                     % (band, spec[2], vb))
                 bad = True
-            small = [x for x in sizes if x < MIN_FONT]
-            if small:
-                fail("R6", svg_path + " font-size below the %d-unit floor: %s" % (MIN_FONT, small))
+            allowed = allowed_sizes(spec[3])
+            off = sorted(set(x for x in sizes if x not in allowed))
+            if off:
+                fail("R6", svg_path + " band %s uses type off the scale %s: %s"
+                     % (band, sorted(allowed), off))
                 bad = True
             if sizes:
                 smallest = min(smallest, min(sizes))
@@ -312,19 +288,29 @@ def main():
         if root.find("{http://www.w3.org/2000/svg}title") is None:
             fail("R7", svg_path + " is missing a <title> element")
             bad = True
-        # R8 no facts inside images: no multi-digit run in any RENDERED text node.
-        rendered = ("{http://www.w3.org/2000/svg}text", "{http://www.w3.org/2000/svg}tspan")
-        for el in root.iter():
-            if el.tag in rendered and el.text and re.search(r"\d{2,}", el.text):
-                fail("R8", svg_path + " renders a number in text: " + repr(el.text))
-                bad = True
+        # R8. A live fact inside a committed image goes stale silently: the file is
+        # written once and the fact moves on. But "Python 3.11" and "11 of 11 checks" are
+        # hand-authored constants that cannot drift, so a flat ban on digits is the wrong
+        # rule. The rule is: a committed image may only render numbers that appear in the
+        # authored constants. Anything the API produced has nowhere to hide but
+        # assets/today/, which is rewritten on every run.
+        if not is_today:
+            rendered = ("{http://www.w3.org/2000/svg}text", "{http://www.w3.org/2000/svg}tspan")
+            for el in root.iter():
+                if el.tag not in rendered or not el.text:
+                    continue
+                for tok in re.findall(r"\d[\d.,]*", el.text):
+                    if tok.rstrip(".,") not in AUTHORED_NUMBERS:
+                        fail("R8", svg_path + " renders %r, which is not a hand-authored "
+                             "constant: a live fact in a committed image goes stale"
+                             % tok)
+                        bad = True
         svg_fail += bad
     if svgs and not svg_fail:
-        nb = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(BADGE_DIR.lstrip("./")))
-        np_ = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(PANEL_DIR.lstrip("./")))
-        ok("R6", "%d banner SVGs on a 900 canvas (smallest type %d units), %d badges under "
-                 "the %dpx no-scale cap, %d prose panels matching their band"
-                 % (len(svgs) - nb - np_, smallest, nb, BADGE_MAX_W, np_))
+        nt = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(TODAY_DIR))
+        ok("R6", "%d page slices match their band's canvas and type scale (%d of them "
+                 "data-dependent), smallest type %d units"
+                 % (len(svgs), nt, smallest))
         ok("R7", "every SVG is self-contained, system-font, labelled")
         ok("R8", "no SVG renders a number")
 
@@ -340,11 +326,11 @@ def main():
 
     # R10 identity strings: the legal name in the README and in every hero variant the
     # README references; the account name a known identity.
-    hero_variants = [p for p in local if os.path.basename(p).startswith("hero-")]
+    hero_variants = [p for p in local if os.path.basename(p).startswith("top-")]
     if NAME not in text:
         fail("R10", "the README does not contain " + repr(NAME))
     if not hero_variants:
-        fail("R10", "the README references no hero SVG")
+        fail("R10", "the README references no opening panel")
     for hv in hero_variants:
         if os.path.isfile(hv) and NAME not in open(hv, encoding="utf-8").read():
             fail("R10", hv + " does not contain " + repr(NAME))
@@ -380,7 +366,7 @@ def main():
         fail("R12", "no theme stamp (<!-- theme: slug | mode: ... | date: ... -->) at the top of the README")
     else:
         slug = m.group(1)
-        used = set(re.findall(r"assets/themes/([a-z0-9-]+)/", text))
+        used = set(re.findall(r"assets/pages/([a-z0-9-]+)/", text))
         if used != {slug}:
             fail("R12", "README wears theme %r but references assets from %r" % (slug, sorted(used)))
         try:
@@ -388,8 +374,9 @@ def main():
             if slug not in idx.get("all", []):
                 fail("R12", "theme %r is not in %s" % (slug, THEME_INDEX))
             else:
-                expected = {"hero", "h-public", "h-stack", "signoff"}
-                stems = set(re.findall(r"assets/themes/%s/([a-z-]+)-(?:dark|light)\.svg" % slug, text))
+                expected = {"top", "close"}
+                stems = set(re.findall(r"assets/pages/%s/([a-z]+)-(?:xs|sm|md|lg)-(?:dark|light)\.svg"
+                                       % slug, text))
                 if stems != expected:
                     fail("R12", "theme %r is missing pieces: %s" % (slug, sorted(expected - stems)))
                 else:
@@ -397,12 +384,28 @@ def main():
         except (OSError, ValueError) as e:
             fail("R12", "cannot read %s: %s" % (THEME_INDEX, e))
 
-    # R13 page weight
-    weight = sum(os.path.getsize(p) for p in local if os.path.isfile(p))
+    # R13 page weight, measured as what ONE reader downloads.
+    # The page is drawn per viewport band, so the README references four canvases of
+    # every panel but a browser fetches exactly one of them, plus one colour scheme.
+    # Summing all of them would fail a page nobody actually downloads. The worst real
+    # case is the widest band, which is the largest file, in one scheme.
+    per_band = {}
+    for p in local:
+        if not os.path.isfile(p):
+            continue
+        m = re.search(r"-(xs|sm|md|lg)-(dark|light)\.svg$", p.replace(os.sep, "/"))
+        key = (m.group(1), m.group(2)) if m else ("*", "*")
+        per_band[key] = per_band.get(key, 0) + os.path.getsize(p)
+    fixed = per_band.pop(("*", "*"), 0)
+    worst = max(per_band.values()) if per_band else 0
+    weight = fixed + worst
     if weight > PAGE_WEIGHT_BUDGET:
-        fail("R13", "referenced images weigh %d KB, budget is %d KB" % (weight // 1024, PAGE_WEIGHT_BUDGET // 1024))
+        fail("R13", "the heaviest single load is %d KB, budget is %d KB"
+             % (weight // 1024, PAGE_WEIGHT_BUDGET // 1024))
     else:
-        ok("R13", "referenced images weigh %d KB of a %d KB budget" % (weight // 1024, PAGE_WEIGHT_BUDGET // 1024))
+        ok("R13", "the heaviest single load is %d KB of a %d KB budget; the contribution "
+                  "snake is generated elsewhere and not counted here"
+           % (weight // 1024, PAGE_WEIGHT_BUDGET // 1024))
 
     # R14 light accents carry weight.
     # Measured 2026-08-27 before this rule existed: accent contrast averaged 10.7:1 on

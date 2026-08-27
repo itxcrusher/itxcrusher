@@ -1,9 +1,0 @@
-<svg width="900" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">what is public</title>
-<style>@keyframes k2{to{stroke-dashoffset:0}}.a3{stroke-dasharray:489.304;stroke-dashoffset:489.304;animation:k2 1s cubic-bezier(.2,.7,.3,1) 0.1s forwards}</style>
-<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#031424" stop-opacity="1"/><stop offset="1" stop-color="#053250" stop-opacity="1"/></linearGradient></defs>
-<rect x="0" y="0" width="900" height="80" fill="url(#g1)"/>
-<text x="44" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="#e5f6ff">what is public</text>
-<line x1="382.696" y1="42" x2="872" y2="42" stroke="#2fb8ff" stroke-opacity="0.75" stroke-width="1.6" stroke-linecap="round" class="a3"/>
-<path d="M848,40.264 L849.75,38.224 L851.5,38.396 L853.25,40.679 L855,43.736 L856.75,45.776 L858.5,45.604 L860.25,43.321 L862,40.264 L863.75,38.224 L865.5,38.396 L867.25,40.679 L869,43.736 L870.75,45.776 L872.5,45.604 L874.25,43.321 L876,40.264" fill="none" stroke="#2fb8ff" stroke-opacity="0.95" stroke-width="2"/>
-</svg>

@@ -1,0 +1,41 @@
+<svg width="600" height="1234" viewBox="0 0 600 1234" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Muhammad Hassaan Javed, @itxcrusher. CRT theme.</title>
+<desc>I build infrastructure and bounded automation for other people's production systems. Terraform, Kubernetes, CI/CD, and lately agents that act on evidence they can prove instead of guessing. Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. The contribution graph counts it. The repository list cannot show it. If infrastructure feels exciting, something is probably wrong. The goal is systems that are quiet, predictable, and uninteresting in production.</desc>
+<rect x="0" y="0" width="600" height="1234" fill="#061006"/>
+<line x1="32" y1="155.22" x2="257.12" y2="155.22" stroke="#35ff5a" stroke-opacity="0.8" stroke-width="2.444"/>
+<rect x="32" y="884.33" width="536" height="169.25" rx="3.3" fill="#040a04" fill-opacity="1"/>
+<rect x="32" y="678.82" width="536" height="512.46" rx="4.4" fill="#0a180a" fill-opacity="1"/>
+<rect x="32.75" y="679.57" width="534.5" height="510.96" rx="3.65" fill="none" stroke="#35ff5a" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="32" y="678.82" width="3.143" height="512.46" rx="0" fill="#35ff5a" fill-opacity="0.9"/>
+<text x="32" y="73.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="35" font-weight="700" fill="#b8ffb8">Muhammad Hassaan Javed</text>
+<text x="32" y="132.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#35ff5a">@itxcrusher</text>
+<text x="32" y="201.42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">I build infrastructure and bounded</text>
+<text x="32" y="233.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">automation for other people's production</text>
+<text x="32" y="265.22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">systems. Terraform, Kubernetes, CI/CD,</text>
+<text x="32" y="297.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">and lately agents that act on evidence</text>
+<text x="32" y="329.02" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">they can prove instead of guessing.</text>
+<text x="32" y="377.42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">Most of that work is in private client</text>
+<text x="32" y="409.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">and product repositories, so what is</text>
+<text x="32" y="441.22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">public here is a sample rather than the</text>
+<text x="32" y="473.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">volume. The contribution graph counts it.</text>
+<text x="32" y="505.02" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">The repository list cannot show it.</text>
+<text x="32" y="553.42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">If infrastructure feels exciting,</text>
+<text x="32" y="585.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">something is probably wrong. The goal is</text>
+<text x="32" y="617.22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">systems that are quiet, predictable, and</text>
+<text x="32" y="649.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#b8ffb8">uninteresting in production.</text>
+<text x="50.7" y="725.52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="#35ff5a">Want to check whether any of this is real?</text>
+<text x="32" y="756.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">ripple-proof audits a full captured campaign</text>
+<text x="32" y="784.33" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">offline in about a minute, with Python 3.11</text>
+<text x="32" y="811.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">and nothing else. No install, no account, no</text>
+<text x="32" y="839.43" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">credential, no network call. It prints every</text>
+<text x="32" y="866.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">point where it refused to act.</text>
+<text x="43" y="914.33" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">git clone https://github.com/itxcrusher/rip</text>
+<text x="43" y="943.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">ple-proof</text>
+<text x="43" y="973.23" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">cd ripple-proof</text>
+<text x="43" y="1002.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">PYTHONPATH=src python -S -m lineage_agent.c</text>
+<text x="43" y="1032.13" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#b8ffb8">li demo</text>
+<text x="32" y="1081.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#4f9a4f">Expect CAMPAIGN AUDIT: PASSED, 11 of 11</text>
+<text x="32" y="1108.93" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#4f9a4f">checks. The walkthrough keeps one run that</text>
+<text x="32" y="1136.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#4f9a4f">fails its dbt build on purpose rather than</text>
+<text x="32" y="1164.03" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400" fill="#4f9a4f">dropping it.</text>
+</svg>

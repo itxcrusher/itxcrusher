@@ -1,7 +1,7 @@
 """The theme catalog. One dict per theme; the engine does the rest.
 
 Adding a theme: append a T(...) entry, run `python scripts/profile_theme.py build`,
-look at assets/themes/<slug>/ and the gallery, commit. The daily picker includes every
+look at assets/pages/<slug>/ and the gallery, commit. The daily picker includes every
 entry that is not marked disabled=True.
 
 Palette keys per variant: bg, bg2 (gradient end), ink (type), muted (secondary type),

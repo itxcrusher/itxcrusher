@@ -19,7 +19,7 @@ on:
   workflow_dispatch:
     inputs:
       theme:
-        description: "Wear this theme now (a slug from assets/themes/index.json). Blank means the daily draw."
+        description: "Wear this theme now (a slug from assets/index.json). Blank means the daily draw."
         required: false
         default: ""
 
@@ -128,7 +128,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: lay the page out in today's theme
+      - name: draw today's page
+        # This writes README.md AND the eight data-dependent slices under assets/today/.
+        # Those carry live counts and dates, which is why they are redrawn on every run
+        # instead of committed per theme: a per-theme copy would be 46 pages of stale
+        # numbers the moment the rotation moved on.
         run: |
           python scripts/profile_theme.py render \
             --theme "$THEME" --mode "$MODE" --data data.json --out README.md
@@ -144,8 +148,9 @@ jobs:
       - name: commit
         run: |
           set -euo pipefail
-          if git diff --quiet -- README.md; then
-            echo "README.md unchanged; nothing to commit"
+          if git diff --quiet -- README.md assets/today \
+             && [ -z "$(git status --porcelain -- assets/today)" ]; then
+            echo "README.md and today's slices are unchanged; nothing to commit"
             exit 0
           fi
           # Author as the bot on purpose. A scheduled run reports actor=itxcrusher, and
@@ -153,7 +158,7 @@ jobs:
           # contribution graph this profile uses as evidence.
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md
+          git add README.md assets/today
           git commit -m "chore(profile): today's look is ${NAME} (${MODE})"
           git push
         env:

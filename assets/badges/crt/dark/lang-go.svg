@@ -1,6 +1,0 @@
-<svg width="38" height="28" viewBox="0 0 38 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">Go</title>
-<rect x="0" y="0" width="38" height="28" rx="2" fill="#081408" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="36.5" height="26.5" rx="1.25" fill="none" stroke="#35ff5a" stroke-opacity="0.3" stroke-width="1.5"/>
-<text x="19" y="19.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#4f9a4f" text-anchor="middle">Go</text>
-</svg>

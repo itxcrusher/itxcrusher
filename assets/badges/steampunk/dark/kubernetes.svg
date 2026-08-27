@@ -1,7 +1,0 @@
-<svg width="113" height="28" viewBox="0 0 113 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">Kubernetes</title>
-<rect x="0" y="0" width="113" height="28" rx="0" fill="#2d1e0e" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="111.5" height="26.5" rx="0" fill="none" stroke="#d4a24c" stroke-opacity="0.55" stroke-width="1.5"/>
-<line x1="16" y1="18" x2="22" y2="10" stroke="#d4a24c" stroke-opacity="1" stroke-width="2"/>
-<text x="27" y="19.04" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f4e6cf">Kubernetes</text>
-</svg>
