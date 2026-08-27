@@ -30,7 +30,7 @@ If infrastructure feels exciting, something is probably wrong. The goal is syste
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/themes/ember/h-public-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/themes/ember/h-public-light.svg"><img src="./assets/themes/ember/h-public-light.svg" width="100%" alt="what is public" /></picture>
 
 <!-- PUBLIC_SURFACE:START -->
-19 original public repositories. Most of the work is not here: over the last 12 months, 5,266 of 6,341 contributions were in private repositories (client delivery, product builds, and security research).
+18 original public repositories. Most of the work is not here: over the last 12 months, 5,013 of 6,358 contributions were in private repositories (client delivery, product builds, and security research).
 
 Most recent public work:
 
@@ -61,17 +61,7 @@ languages = ["Python", "Bash", "HCL", "YAML"]
 
 Upstream, open: [skip_cache for get_lineage](https://github.com/acryldata/mcp-server-datahub/pull/190) in acryldata/mcp-server-datahub, and a [repair-boundary skill](https://github.com/datahub-project/datahub-skills/pull/125) in datahub-project/datahub-skills.
 
-<details>
-<summary><b>the last light</b></summary>
-<br />
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-light.svg">
-  <img src="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-light.svg" alt="Contribution snake: an animation eating this account's GitHub contribution squares, regenerated daily from the output branch in today's theme colours." />
-</picture>
-</p>
-</details>
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-light.svg"><img src="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-light.svg" width="100%" alt="Contribution snake: an animation eating this account's GitHub contribution squares, regenerated daily from the output branch in today's theme colours." /></picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/themes/ember/signoff-dark.svg">

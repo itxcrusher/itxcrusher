@@ -279,13 +279,16 @@ def render_readme(theme, data, today, mode, n_themes):
     out.append("")
     out.append(UPSTREAM)
     out.append("")
-    out.append("<details>")
-    out.append("<summary><b>%s</b></summary>" % t["labels"]["snake"])
-    out.append("<br />")
-    out.append('<p align="center">')
-    out.append(snake_picture())
-    out.append("</p>")
-    out.append("</details>")
+    # The snake is the one contribution visual that wears the theme, and GitHub's own
+    # green graph sits directly below this README. Collapsed inside a <details> it never
+    # showed, so the only contribution art on the profile clashed with every warm theme.
+    # It leads with its themed label so the band still reads as a section, not a stray
+    # image.
+    out.append("## <picture>"
+               '<source media="(prefers-color-scheme: dark)" srcset="%ssnake-dark.svg">'
+               '<source media="(prefers-color-scheme: light)" srcset="%ssnake-light.svg">'
+               '<img src="%ssnake-light.svg" width="100%%" alt="%s" />'
+               "</picture>" % (OUTPUT_BRANCH, OUTPUT_BRANCH, OUTPUT_BRANCH, _attr(SNAKE_ALT)))
     out.append("")
     out.append(picture(d, "signoff", "Closing line at the end of the page: %s" % t["signoff"]))
     out.append("")

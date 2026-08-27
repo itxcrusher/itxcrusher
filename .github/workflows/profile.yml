@@ -186,7 +186,7 @@ jobs:
               --body "$(printf '%s\n\n%s\n\n%s\n' \
                 'The profile workflow failed. The README may now be stale.' \
                 "Run: $run_url" \
-                'Checklist: docs/reference/profile-review.md')"
+                'Checklist is in the workspace: docs/channels/github/repo-control-plane/profile-review.md')"
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

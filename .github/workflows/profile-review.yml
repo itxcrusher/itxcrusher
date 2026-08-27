@@ -15,17 +15,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
-      # Naming any permission sets every unnamed one to none, so contents:read has to
-      # be explicit or actions/checkout 403s and the -F below has no file to read.
-      contents: read
       issues: write
     steps:
-      - uses: actions/checkout@v4
+      # No checkout. The body is inline because the full review procedure is
+      # control-plane material and lives in the private workspace, not in this public
+      # repository, so there is no file here to read.
       - name: open the quarterly review issue
         run: |
           set -euo pipefail
           gh issue create --repo "$GITHUB_REPOSITORY" \
             --title "Quarterly profile review: $(date -u '+%Y-%m')" \
-            -F docs/reference/profile-review.md
+            --body "- [ ] Open the profile logged out, in light mode, on a phone. Look at it.
+          - [ ] Does the snake render? Is the Generated stamp under two weeks old?
+          - [ ] Click every link in the README.
+          - [ ] Run the demo from a fresh clone; it must still print CAMPAIGN AUDIT: PASSED.
+          - [ ] Are both upstream PRs still open? Does every stack line still have a public artifact?
+          - [ ] Do the showcased repo descriptions still match what those repos contain?"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
