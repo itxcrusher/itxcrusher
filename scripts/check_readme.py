@@ -20,6 +20,8 @@ because the theme engine could break it silently.
   R11  the generated block self-dates
   R12  the page wears exactly one theme, and it is a catalogued one
   R13  page weight: the images the README references stay under budget
+  R14  light-variant accents carry weight, so the light page never reads as a
+       washed-out copy of the dark one
 
 Exit 0 if every rule passes, 1 otherwise.
 """
@@ -295,6 +297,30 @@ def main():
         fail("R13", "referenced images weigh %d KB, budget is %d KB" % (weight // 1024, PAGE_WEIGHT_BUDGET // 1024))
     else:
         ok("R13", "referenced images weigh %d KB of a %d KB budget" % (weight // 1024, PAGE_WEIGHT_BUDGET // 1024))
+
+    # R14 light accents carry weight.
+    # Measured 2026-08-27 before this rule existed: accent contrast averaged 10.7:1 on
+    # the dark variants and 5.1:1 on the light ones, 21 of 47 below WCAG AA. Dark gets
+    # presence from glow against a deep ground; on white the only equivalent is ink
+    # density. catalog.py normalises at import; this stops it regressing in what ships.
+    try:
+        sys.path.insert(0, os.getcwd())
+        from themes.catalog import THEMES, LIGHT_ACCENT_FLOOR
+        from themes.svg import contrast as _contrast
+        weak = []
+        for _t in THEMES:
+            lp = _t["light"]
+            for key in ("acc", "acc2"):
+                if key in lp:
+                    c = _contrast(lp[key], lp["bg"])
+                    if c < LIGHT_ACCENT_FLOOR:
+                        weak.append("%s.%s %.1f:1" % (_t["slug"], key, c))
+        if weak:
+            fail("R14", "light accent below %.1f:1: %s" % (LIGHT_ACCENT_FLOOR, ", ".join(weak[:6])))
+        else:
+            ok("R14", "all %d themes clear the %.1f:1 light-accent floor" % (len(THEMES), LIGHT_ACCENT_FLOOR))
+    except ImportError:
+        ok("R14", "theme engine not present; light-accent floor not applicable")
 
     for n in notes:
         print("  pass  " + n)

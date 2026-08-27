@@ -10,8 +10,8 @@
 <polygon points="-40,201.456 21.25,202.741 82.5,208.317 143.75,226.779 205,221.195 266.25,210.478 327.5,200.181 388.75,157.648 450,159.778 511.25,150.849 572.5,155.223 633.75,152.676 695,142.132 756.25,171.217 817.5,208.984 878.75,180.465 940,213.776 940,250 -40,250" fill="#f7fbff" fill-opacity="0.95"/>
 <polygon points="-40,215.456 21.25,226.376 82.5,227.472 143.75,247.657 205,244.029 266.25,226.629 327.5,224.166 388.75,174.839 450,182.056 511.25,172.468 572.5,173.425 633.75,176.544 695,157.21 756.25,194.508 817.5,229.032 878.75,200.52 940,237.064 940,250 -40,250" fill="#7f97b8" fill-opacity="1"/>
 <rect x="0" y="0" width="612" height="240" fill="url(#g3)"/>
-<text x="44" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="53" font-weight="700" fill="#10233b">Muhammad Hassaan Javed</text>
-<text x="44" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#2f5c9c">@itxcrusher</text>
+<text x="44" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="55" font-weight="700" fill="#10233b">Muhammad Hassaan Javed</text>
+<text x="44" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#295088">@itxcrusher</text>
 <text x="44" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="41" font-weight="400" fill="#4a6382">cloud + platform engineer</text>
 <g clip-path="url(#c7)" ><g class="a6"><rect x="-80" y="150" width="1120" height="56" rx="28" fill="#ffffff" fill-opacity="0.22" filter="url(#b4)"/></g></g>
 </svg>

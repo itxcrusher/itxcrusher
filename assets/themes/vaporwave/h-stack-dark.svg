@@ -3,5 +3,5 @@
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b0b3a" stop-opacity="1"/><stop offset="1" stop-color="#43106a" stop-opacity="1"/></linearGradient><filter id="gl2" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/><feFlood flood-color="#ff6ad5" flood-opacity="0.9" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="g3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff6ad5" stop-opacity="0.95"/><stop offset="1" stop-color="#6ef0ff" stop-opacity="0"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="80" fill="url(#g1)"/>
 <text x="44" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="#ffbcec" letter-spacing="4" filter="url(#gl2)">STACK</text>
-<rect x="249.922" y="40" width="610.078" height="3" rx="1.5" fill="url(#g3)"/>
+<rect x="235.8" y="40" width="624.2" height="3" rx="1.5" fill="url(#g3)"/>
 </svg>

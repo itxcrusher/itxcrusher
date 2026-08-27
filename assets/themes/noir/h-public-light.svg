@@ -1,8 +1,8 @@
 <svg width="900" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">what is public</title>
-<style>@keyframes k2{to{stroke-dashoffset:0}}.a3{stroke-dasharray:445.781;stroke-dashoffset:445.781;animation:k2 1s cubic-bezier(.2,.7,.3,1) 0.1s forwards}</style>
+<style>@keyframes k2{to{stroke-dashoffset:0}}.a3{stroke-dasharray:368.08;stroke-dashoffset:368.08;animation:k2 1s cubic-bezier(.2,.7,.3,1) 0.1s forwards}</style>
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4f4f4" stop-opacity="1"/><stop offset="1" stop-color="#d6d6d6" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="80" fill="url(#g1)"/>
 <text x="44" y="54" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#101012">what is public</text>
-<line x1="426.219" y1="42" x2="872" y2="42" stroke="#202024" stroke-opacity="0.75" stroke-width="1.6" stroke-linecap="round" class="a3"/>
+<line x1="503.92" y1="42" x2="872" y2="42" stroke="#202024" stroke-opacity="0.75" stroke-width="1.6" stroke-linecap="round" class="a3"/>
 </svg>

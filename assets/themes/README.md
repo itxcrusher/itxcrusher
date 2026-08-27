@@ -14,7 +14,7 @@ Each theme changes the hero, the section headers, the sign-off strip, the contri
   <img src="./cyberpunk/hero-light.svg" width="100%" alt="Cyberpunk theme hero: Neon grid, chromatic type, a scanline sweep." />
 </picture>
 
-Neon grid, chromatic type, a scanline sweep. <sub>rows: table, fence: yaml, callout: IMPORTANT</sub>
+Neon grid, chromatic type, a scanline sweep. <sub>rows: table, fence: yaml, callout: TIP</sub>
 
 ### Operator
 
@@ -54,7 +54,7 @@ Traces draw themselves across the board. Pads pulse. <sub>rows: list, fence: hcl
   <img src="./neural/hero-light.svg" width="100%" alt="Neural theme hero: A node graph breathing. Signals travel the edges." />
 </picture>
 
-A node graph breathing. Signals travel the edges. <sub>rows: list, fence: python, callout: IMPORTANT</sub>
+A node graph breathing. Signals travel the edges. <sub>rows: list, fence: python, callout: TIP</sub>
 
 ### Ledger
 
@@ -94,7 +94,7 @@ Data rain. The name sits on a dark plate so it stays readable. <sub>rows: list, 
   <img src="./synthwave/hero-light.svg" width="100%" alt="Synthwave theme hero: Sun on the horizon, grid rolling toward you, eighties gradients." />
 </picture>
 
-Sun on the horizon, grid rolling toward you, eighties gradients. <sub>rows: table, fence: toml, callout: IMPORTANT</sub>
+Sun on the horizon, grid rolling toward you, eighties gradients. <sub>rows: table, fence: toml, callout: TIP</sub>
 
 ### Datacenter
 
@@ -134,7 +134,7 @@ A sweep finds four contacts. Green on near-black. <sub>rows: table, fence: ini, 
   <img src="./mech/hero-light.svg" width="100%" alt="Mech theme hero: Armour plates, hex bolts, a piston, warning amber. Robotic." />
 </picture>
 
-Armour plates, hex bolts, a piston, warning amber. Robotic. <sub>rows: tasks, fence: toml, callout: WARNING</sub>
+Armour plates, hex bolts, a piston, warning amber. Robotic. <sub>rows: tasks, fence: toml, callout: TIP</sub>
 
 ### Mainframe
 
@@ -206,7 +206,7 @@ Pines in two depths, light shafts, fireflies after dusk. <sub>rows: quotes, fenc
   <img src="./desert/hero-light.svg" width="100%" alt="Desert theme hero: Dunes at night under a crescent; midday glare in light mode." />
 </picture>
 
-Dunes at night under a crescent; midday glare in light mode. <sub>rows: list, fence: toml, callout: WARNING</sub>
+Dunes at night under a crescent; midday glare in light mode. <sub>rows: list, fence: toml, callout: TIP</sub>
 
 ### Aurora
 
@@ -236,7 +236,7 @@ Bubbles rising through deep water, bioluminescence drifting past. <sub>rows: quo
   <img src="./sunny/hero-light.svg" width="100%" alt="Sunny theme hero: Golden hour after dark; full noon in light mode with rays turning." />
 </picture>
 
-Golden hour after dark; full noon in light mode with rays turning. <sub>rows: list, fence: toml, callout: WARNING</sub>
+Golden hour after dark; full noon in light mode with rays turning. <sub>rows: list, fence: toml, callout: TIP</sub>
 
 ### Cloudy
 
@@ -256,7 +256,7 @@ Two layers of cloud drifting, one break of warm light behind them. <sub>rows: ta
   <img src="./storm/hero-light.svg" width="100%" alt="Storm theme hero: Rain driven sideways, lightning that fires when it feels like it." />
 </picture>
 
-Rain driven sideways, lightning that fires when it feels like it. <sub>rows: list, fence: diff, callout: CAUTION</sub>
+Rain driven sideways, lightning that fires when it feels like it. <sub>rows: list, fence: diff, callout: NOTE</sub>
 
 ### Mountain
 
@@ -286,7 +286,7 @@ Petals drifting under a spring moon. <sub>rows: quotes, fence: yaml, callout: TI
   <img src="./autumn/hero-light.svg" width="100%" alt="Autumn theme hero: Leaves turning and falling through warm light." />
 </picture>
 
-Leaves turning and falling through warm light. <sub>rows: list, fence: toml, callout: WARNING</sub>
+Leaves turning and falling through warm light. <sub>rows: list, fence: toml, callout: TIP</sub>
 
 ### Ocean
 
@@ -318,7 +318,7 @@ Ice crystals catching light. Cold blue, very still. <sub>rows: list, fence: json
   <img src="./lava/hero-light.svg" width="100%" alt="Lava theme hero: Cracks glowing through cooled basalt. Sparks rising." />
 </picture>
 
-Cracks glowing through cooled basalt. Sparks rising. <sub>rows: list, fence: diff, callout: CAUTION</sub>
+Cracks glowing through cooled basalt. Sparks rising. <sub>rows: list, fence: diff, callout: NOTE</sub>
 
 ### Space
 
@@ -348,7 +348,7 @@ Rock strata and grain. The only theme with no motion at all. <sub>rows: table, f
   <img src="./toxic/hero-light.svg" width="100%" alt="Toxic theme hero: Acid drips and hazard stripes. Wash your hands." />
 </picture>
 
-Acid drips and hazard stripes. Wash your hands. <sub>rows: tasks, fence: diff, callout: CAUTION</sub>
+Acid drips and hazard stripes. Wash your hands. <sub>rows: tasks, fence: diff, callout: NOTE</sub>
 
 ### Ember
 
@@ -358,7 +358,7 @@ Acid drips and hazard stripes. Wash your hands. <sub>rows: tasks, fence: diff, c
   <img src="./ember/hero-light.svg" width="100%" alt="Ember theme hero: The last of a fire. Sparks lifting off into the dark." />
 </picture>
 
-The last of a fire. Sparks lifting off into the dark. <sub>rows: list, fence: toml, callout: WARNING</sub>
+The last of a fire. Sparks lifting off into the dark. <sub>rows: list, fence: toml, callout: TIP</sub>
 
 ### Lunar
 
@@ -390,7 +390,7 @@ A black disc and its corona. Everything else goes quiet. <sub>rows: quotes, fenc
   <img src="./war/hero-light.svg" width="100%" alt="War theme hero: Stencil caps, hazard chevrons, sitrep numbering." />
 </picture>
 
-Stencil caps, hazard chevrons, sitrep numbering. <sub>rows: tasks, fence: ini, callout: CAUTION</sub>
+Stencil caps, hazard chevrons, sitrep numbering. <sub>rows: tasks, fence: ini, callout: NOTE</sub>
 
 ### Survival
 
@@ -400,7 +400,7 @@ Stencil caps, hazard chevrons, sitrep numbering. <sub>rows: tasks, fence: ini, c
   <img src="./survival/hero-light.svg" width="100%" alt="Survival theme hero: Riveted plate, rust bloom, scratches. Still here." />
 </picture>
 
-Riveted plate, rust bloom, scratches. Still here. <sub>rows: tasks, fence: bash, callout: WARNING</sub>
+Riveted plate, rust bloom, scratches. Still here. <sub>rows: tasks, fence: bash, callout: TIP</sub>
 
 ### Timber
 
@@ -430,7 +430,7 @@ Venetian blinds, film grain, pure greyscale. <sub>rows: quotes, fence: text, cal
   <img src="./wasteland/hero-light.svg" width="100%" alt="Wasteland theme hero: Cracked earth, dust on the wind, a dim sun. The road goes on." />
 </picture>
 
-Cracked earth, dust on the wind, a dim sun. The road goes on. <sub>rows: list, fence: bash, callout: WARNING</sub>
+Cracked earth, dust on the wind, a dim sun. The road goes on. <sub>rows: list, fence: bash, callout: TIP</sub>
 
 ### Bunker
 
@@ -440,7 +440,7 @@ Cracked earth, dust on the wind, a dim sun. The road goes on. <sub>rows: list, f
   <img src="./bunker/hero-light.svg" width="100%" alt="Bunker theme hero: Concrete, rivets, a red beacon turning. Seal the door." />
 </picture>
 
-Concrete, rivets, a red beacon turning. Seal the door. <sub>rows: tasks, fence: ini, callout: CAUTION</sub>
+Concrete, rivets, a red beacon turning. Seal the door. <sub>rows: tasks, fence: ini, callout: NOTE</sub>
 
 ### Western
 
@@ -450,7 +450,7 @@ Concrete, rivets, a red beacon turning. Seal the door. <sub>rows: tasks, fence: 
   <img src="./western/hero-light.svg" width="100%" alt="Western theme hero: A low sun over the mesa, a tumbleweed, sepia by day." />
 </picture>
 
-A low sun over the mesa, a tumbleweed, sepia by day. <sub>rows: quotes, fence: bash, callout: WARNING</sub>
+A low sun over the mesa, a tumbleweed, sepia by day. <sub>rows: quotes, fence: bash, callout: TIP</sub>
 
 ### Steampunk
 
@@ -470,7 +470,7 @@ Brass gears turning at three speeds, verdigris, engraved plates. <sub>rows: numb
   <img src="./vaporwave/hero-light.svg" width="100%" alt="Vaporwave theme hero: A cut sun, a cyan grid, pastel everything." />
 </picture>
 
-A cut sun, a cyan grid, pastel everything. <sub>rows: table, fence: css, callout: IMPORTANT</sub>
+A cut sun, a cyan grid, pastel everything. <sub>rows: table, fence: css, callout: TIP</sub>
 
 ### Anamorphic
 

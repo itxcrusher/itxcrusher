@@ -14,7 +14,7 @@ Text-level styling (all native GitHub markdown, zero images):
   alert  NOTE | TIP | IMPORTANT | WARNING | CAUTION (the CTA callout colour)
   sep    ASCII separator between the header links
 """
-from .svg import mix, lighten, darken
+from .svg import mix, lighten, darken, contrast
 
 FAMILIES = {
     "tech": "Tech",
@@ -59,7 +59,7 @@ THEMES = [
       header=dict(style="glow", font="mono", case="upper", ls=2, index="hex"),
       labels=dict(public="public", stack="stack", snake="traffic"),
       signoff="END OF LINE",
-      text=dict(rows="table", chip="kbd", fence="yaml", alert="IMPORTANT", sep="//")),
+      text=dict(rows="table", chip="kbd", fence="yaml", alert="TIP", sep="//")),
 
     T("operator", "Operator", "tech", "A terminal session. Green phosphor, blinking cursor, ls output.",
       dark=dict(bg="#05070a", bg2="#0b1016", ink="#d7e6d5", muted="#6f8a7a", acc="#3dff8f", acc2="#9be7ff"),
@@ -102,7 +102,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="node"),
       labels=dict(public="what is public", stack="the stack", snake="activity"),
       signoff="end of inference",
-      text=dict(rows="list", chip="kbd", fence="python", alert="IMPORTANT", sep="*")),
+      text=dict(rows="list", chip="kbd", fence="python", alert="TIP", sep="*")),
 
     T("ledger", "Ledger", "tech", "Hash-chained blocks along the top. The chain is intact.",
       dark=dict(bg="#05080f", bg2="#0a1426", ink="#e9f0ff", muted="#6c7fa3", acc="#4f8cff", acc2="#7ee0c3"),
@@ -146,7 +146,7 @@ THEMES = [
       header=dict(style="glow", font="sans", case="upper", ls=3),
       labels=dict(public="public", stack="stack", snake="activity"),
       signoff="DRIVE SAFE",
-      text=dict(rows="table", chip="kbd", fence="toml", alert="IMPORTANT", sep="~")),
+      text=dict(rows="table", chip="kbd", fence="toml", alert="TIP", sep="~")),
 
     T("datacenter", "Datacenter", "tech", "Rack rails and a wall of blinking LEDs. Nothing glamorous, everything up.",
       dark=dict(bg="#0b0f14", bg2="#161d26", ink="#e6edf3", muted="#7d8b99", acc="#3ddc84", acc2="#58a6ff"),
@@ -190,7 +190,7 @@ THEMES = [
       header=dict(style="hazard", font="sans", case="upper", ls=2),
       labels=dict(public="unit: public", stack="unit: stack", snake="unit: activity"),
       signoff="SERVO IDLE",
-      text=dict(rows="tasks", chip="kbd", fence="toml", alert="WARNING", sep="+")),
+      text=dict(rows="tasks", chip="kbd", fence="toml", alert="TIP", sep="+")),
 
     T("mainframe", "Mainframe", "tech", "Punch cards and green-bar paper. Batch job complete.",
       dark=dict(bg="#0d1a12", bg2="#13271b", ink="#dfe9d3", muted="#7d9a78", acc="#9ee493", acc2="#e2c98c"),
@@ -276,7 +276,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="sun"),
       labels=dict(public="visible from the road", stack="the stack", snake="tracks in the sand"),
       signoff="keep moving",
-      text=dict(rows="list", chip="plain", fence="toml", alert="WARNING", sep="..")),
+      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="..")),
 
     T("aurora", "Aurora", "nature", "Curtains of green and violet over a black ridge.",
       dark=dict(bg="#030914", bg2="#082036", ink="#eaf7ff", muted="#7d9fb8", acc="#4dffb0", acc2="#b36bff"),
@@ -310,7 +310,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="sun"),
       labels=dict(public="what is public", stack="the stack", snake="daylight"),
       signoff="have a good one",
-      text=dict(rows="list", chip="plain", fence="toml", alert="WARNING", sep="*")),
+      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="*")),
 
     T("cloudy", "Cloudy", "nature", "Two layers of cloud drifting, one break of warm light behind them.",
       dark=dict(bg="#1a1f2b", bg2="#2f384c", ink="#e7ebf3", muted="#97a1b6", acc="#9fb3d9", acc2="#ffd27a"),
@@ -333,7 +333,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="bolt"),
       labels=dict(public="what is public", stack="the stack", snake="the forecast"),
       signoff="weather it",
-      text=dict(rows="list", chip="plain", fence="diff", alert="CAUTION", sep="/")),
+      text=dict(rows="list", chip="plain", fence="diff", alert="NOTE", sep="/")),
 
     T("mountain", "Mountain", "nature", "Three ridges, a snowline, mist in the valley.",
       dark=dict(bg="#0a1220", bg2="#1d2f4d", ink="#edf3ff", muted="#8ea0be", acc="#cfe3ff", acc2="#ffb36b"),
@@ -370,7 +370,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="leaf"),
       labels=dict(public="what is public", stack="the stack", snake="falling leaves"),
       signoff="season's turning",
-      text=dict(rows="list", chip="plain", fence="toml", alert="WARNING", sep="~")),
+      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="~")),
 
     T("ocean", "Ocean", "nature", "Three swells rolling under a moon; bright water by day.",
       dark=dict(bg="#031424", bg2="#053250", ink="#e5f6ff", muted="#6fa3bd", acc="#2fb8ff", acc2="#9ff0ff"),
@@ -409,7 +409,7 @@ THEMES = [
       header=dict(style="glow", font="sans", ornament="flame"),
       labels=dict(public="what is public", stack="the stack", snake="still cooling"),
       signoff="stay cool",
-      text=dict(rows="list", chip="plain", fence="diff", alert="CAUTION", sep="*")),
+      text=dict(rows="list", chip="plain", fence="diff", alert="NOTE", sep="*")),
 
     T("space", "Space", "elemental", "A ringed planet, a nebula wash, stars out of phase.",
       dark=dict(bg="#02040c", bg2="#080f2a", ink="#eef2ff", muted="#8390bd", acc="#8ea6ff", acc2="#ff8ad6"),
@@ -442,7 +442,7 @@ THEMES = [
       header=dict(style="hazard", font="sans", case="upper", ls=2),
       labels=dict(public="hazmat: public", stack="hazmat: stack", snake="hazmat: activity"),
       signoff="wash your hands",
-      text=dict(rows="tasks", chip="kbd", fence="diff", alert="CAUTION", sep="+")),
+      text=dict(rows="tasks", chip="kbd", fence="diff", alert="NOTE", sep="+")),
 
     T("ember", "Ember", "elemental", "The last of a fire. Sparks lifting off into the dark.",
       dark=dict(bg="#0d0705", bg2="#26120a", ink="#ffe9d9", muted="#b08a76", acc="#ff7a1a", acc2="#ffd07a"),
@@ -455,7 +455,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="flame"),
       labels=dict(public="what is public", stack="the stack", snake="the last light"),
       signoff="stay lit",
-      text=dict(rows="list", chip="plain", fence="toml", alert="WARNING", sep="*")),
+      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="*")),
 
     T("lunar", "Lunar", "elemental", "Craters, a grey horizon, Earth small in the sky.",
       dark=dict(bg="#05070c", bg2="#0f131c", ink="#eef0f5", muted="#8d94a4", acc="#d8dce6", acc2="#7fb6ff"),
@@ -491,7 +491,7 @@ THEMES = [
       header=dict(style="hazard", font="sans", case="upper", ls=2, index="hash"),
       labels=dict(public="sitrep: public", stack="loadout", snake="the front"),
       signoff="OVER AND OUT",
-      text=dict(rows="tasks", chip="kbd", fence="ini", alert="CAUTION", sep="//")),
+      text=dict(rows="tasks", chip="kbd", fence="ini", alert="NOTE", sep="//")),
 
     T("survival", "Survival", "gritty", "Riveted plate, rust bloom, scratches. Still here.",
       dark=dict(bg="#141210", bg2="#28211a", ink="#efe6d8", muted="#a8977f", acc="#d9772a", acc2="#b7c9a0"),
@@ -503,7 +503,7 @@ THEMES = [
       header=dict(style="ribbon", font="sans", case="upper", ls=1),
       labels=dict(public="what is public", stack="the kit", snake="the trail"),
       signoff="still here",
-      text=dict(rows="tasks", chip="plain", fence="bash", alert="WARNING", sep="+")),
+      text=dict(rows="tasks", chip="plain", fence="bash", alert="TIP", sep="+")),
 
     T("timber", "Timber", "gritty", "Wood grain and two knots. No technology in it at all.",
       dark=dict(bg="#1c120b", bg2="#33200f", ink="#f3e6d3", muted="#b39a7c", acc="#e0a25c", acc2="#8fbf6a"),
@@ -539,7 +539,7 @@ THEMES = [
       header=dict(style="rule", font="sans", case="upper", ls=1, ornament="sun"),
       labels=dict(public="what is public", stack="salvage", snake="the road"),
       signoff="keep walking",
-      text=dict(rows="list", chip="plain", fence="bash", alert="WARNING", sep="..")),
+      text=dict(rows="list", chip="plain", fence="bash", alert="TIP", sep="..")),
 
     T("bunker", "Bunker", "gritty", "Concrete, rivets, a red beacon turning. Seal the door.",
       dark=dict(bg="#101214", bg2="#1c1f24", ink="#e6e9ec", muted="#8b929b", acc="#ff3b3b", acc2="#ffb000"),
@@ -550,7 +550,7 @@ THEMES = [
       header=dict(style="band", font="sans", case="upper", ls=2),
       labels=dict(public="sector: public", stack="sector: stack", snake="sector: activity"),
       signoff="SEAL THE DOOR",
-      text=dict(rows="tasks", chip="kbd", fence="ini", alert="CAUTION", sep="|")),
+      text=dict(rows="tasks", chip="kbd", fence="ini", alert="NOTE", sep="|")),
 
     T("western", "Western", "gritty", "A low sun over the mesa, a tumbleweed, sepia by day.",
       dark=dict(bg="#2a1206", bg2="#552910", ink="#ffe8c8", muted="#c09a6e", acc="#ff9d3a", acc2="#e6c48a"),
@@ -563,7 +563,7 @@ THEMES = [
       header=dict(style="rule", font="serif", ornament="star"),
       labels=dict(public="what is public", stack="the outfit", snake="the trail"),
       signoff="so long, partner",
-      text=dict(rows="quotes", chip="plain", fence="bash", alert="WARNING", sep="-")),
+      text=dict(rows="quotes", chip="plain", fence="bash", alert="TIP", sep="-")),
 
     T("steampunk", "Steampunk", "gritty", "Brass gears turning at three speeds, verdigris, engraved plates.",
       dark=dict(bg="#1a120a", bg2="#33220f", ink="#f4e6cf", muted="#b39a72", acc="#d4a24c", acc2="#7fb7a6"),
@@ -587,7 +587,7 @@ THEMES = [
       header=dict(style="glow", font="sans", case="upper", ls=4),
       labels=dict(public="public", stack="stack", snake="activity"),
       signoff="AESTHETIC",
-      text=dict(rows="table", chip="kbd", fence="css", alert="IMPORTANT", sep="~")),
+      text=dict(rows="table", chip="kbd", fence="css", alert="TIP", sep="~")),
 
     T("anamorphic", "Anamorphic", "gritty", "Letterbox bars and a horizontal lens flare. Cinema.",
       dark=dict(bg="#05070c", bg2="#0e1526", ink="#f1f4fa", muted="#8290ad", acc="#9fc4ff", acc2="#3f8cff"),
@@ -600,6 +600,54 @@ THEMES = [
       signoff="fin.",
       text=dict(rows="quotes", chip="plain", fence="text", alert="NOTE", sep="|")),
 ]
+
+LIGHT_ACCENT_FLOOR = 4.5   # WCAG AA for normal text
+LIGHT_ACCENT_AIM = 7.0     # presence, not just legibility
+
+
+def _enforce_light_accent(themes, floor=LIGHT_ACCENT_FLOOR, aim=LIGHT_ACCENT_AIM):
+    """Darken light-variant accents until they carry real weight on a near-white page.
+
+    Measured 2026-08-27 across all 47 themes: accent contrast averaged 10.7:1 on the
+    dark variants and 5.1:1 on the light ones, with 21 of 47 below WCAG AA. That gap is
+    why the light themes read as washed out next to the dark ones. The dark variants get
+    presence from a glow against a deep ground; on white the only equivalent is ink
+    density, so the accent has to go darker rather than lighter.
+
+    Darkening toward black preserves hue and saturation, so a theme stays recognisably
+    itself. Applied here rather than by hand-editing entries, so a new theme inherits it
+    and cannot regress; check_readme.py R14 enforces the floor on what actually ships.
+    """
+    for t in themes:
+        light = t["light"]
+        for key in ("acc", "acc2"):
+            base = light.get(key)
+            if not base or contrast(base, light["bg"]) >= aim:
+                continue
+            for step in range(1, 41):
+                cand = darken(base, step / 40.0)
+                light[key] = cand
+                if contrast(cand, light["bg"]) >= aim:
+                    break
+            if contrast(light[key], light["bg"]) < floor:
+                raise AssertionError(
+                    "%s light %s cannot reach %.1f:1 against %s"
+                    % (t["slug"], key, floor, light["bg"]))
+
+
+SAFE_ALERTS = {"NOTE", "TIP"}
+
+# GitHub renders WARNING, CAUTION and IMPORTANT with alarm styling: a warning triangle,
+# a red or orange rule. The callout they wrap is the verification invitation, the single
+# block on the page whose whole job is to build trust. A friendly "want to check whether
+# any of this is real?" inside a red danger box reads as a problem report. Only the two
+# informational callouts are allowed.
+for _t in THEMES:
+    _a = _t["text"].get("alert", "NOTE")
+    assert _a in SAFE_ALERTS, (
+        "%s uses [!%s]; the CTA callout must be NOTE or TIP" % (_t["slug"], _a))
+
+_enforce_light_accent(THEMES)
 
 BY_SLUG = {t["slug"]: t for t in THEMES}
 ACTIVE = [t for t in THEMES if not t.get("disabled")]

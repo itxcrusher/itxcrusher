@@ -84,6 +84,27 @@ def picture(theme_dir, stem, alt, width="100%"):
     ])
 
 
+def heading_picture(theme_dir, stem, alt, level=2):
+    """A section heading that is a themed image AND a real heading element.
+
+    The themed page carries its section headings as artwork, which until now meant the
+    rendered document had zero <h1>-<h6> elements: no screen-reader heading navigation,
+    no anchor links, and an empty outline menu on GitHub. A markdown heading must sit on
+    one line, so the picture is emitted inline rather than pretty-printed; GitHub then
+    renders <h2><themed-picture>...</themed-picture></h2> and both properties hold at
+    once. Verified against GitHub's own markdown API.
+    """
+    alt = _attr(alt)
+    inner = (
+        "<picture>"
+        '<source media="(prefers-color-scheme: dark)" srcset="./%s/%s-dark.svg">'
+        '<source media="(prefers-color-scheme: light)" srcset="./%s/%s-light.svg">'
+        '<img src="./%s/%s-light.svg" width="100%%" alt="%s" />'
+        "</picture>"
+    ) % (theme_dir, stem, theme_dir, stem, theme_dir, stem, alt)
+    return "%s %s" % ("#" * level, inner)
+
+
 def snake_picture():
     return "\n".join([
         "<picture>",
@@ -242,13 +263,13 @@ def render_readme(theme, data, today, mode, n_themes):
     out.append(">")
     out.append("> " + CTA_AFTER)
     out.append("")
-    out.append(picture(d, "h-public", "Section heading, %s" % t["labels"]["public"]))
+    out.append(heading_picture(d, "h-public", "%s" % t["labels"]["public"]))
     out.append("")
     out.append(START)
     out.append(render_block(data, text, today).rstrip("\n"))
     out.append(END)
     out.append("")
-    out.append(picture(d, "h-stack", "Section heading, %s" % t["labels"]["stack"]))
+    out.append(heading_picture(d, "h-stack", "%s" % t["labels"]["stack"]))
     out.append("")
     out.append(STACK_INTRO)
     out.append("")

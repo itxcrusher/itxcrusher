@@ -3,8 +3,8 @@
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bcdcee" stop-opacity="1"/><stop offset="1" stop-color="#e7f4fb" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
 <text x="450" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#386884" text-anchor="middle">surface when ready</text>
-<line x1="40" y1="32" x2="192.531" y2="32" stroke="#0a6fa6" stroke-opacity="0.6" stroke-width="1.5"/>
-<line x1="707.469" y1="32" x2="860" y2="32" stroke="#0a6fa6" stroke-opacity="0.6" stroke-width="1.5"/>
-<path d="M703.469,36 L705.219,34.868 L706.969,32.056 L708.719,29.212 L710.469,28 L712.219,29.132 L713.969,31.944 L715.719,34.788 L717.469,36 L719.219,34.868 L720.969,32.056 L722.719,29.212 L724.469,28 L726.219,29.132 L727.969,31.944 L729.719,34.788 L731.469,36" fill="none" stroke="#0a6fa6" stroke-opacity="0.95" stroke-width="2"/>
-<path d="M168.531,32.945 L170.281,35.416 L172.031,35.887 L173.781,34.08 L175.531,31.055 L177.281,28.584 L179.031,28.113 L180.781,29.92 L182.531,32.945 L184.281,35.416 L186.031,35.887 L187.781,34.08 L189.531,31.055 L191.281,28.584 L193.031,28.113 L194.781,29.92 L196.531,32.945" fill="none" stroke="#0a6fa6" stroke-opacity="0.95" stroke-width="2"/>
+<line x1="40" y1="32" x2="176.52" y2="32" stroke="#085681" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="723.48" y1="32" x2="860" y2="32" stroke="#085681" stroke-opacity="0.6" stroke-width="1.5"/>
+<path d="M719.48,34.522 L721.23,31.588 L722.98,28.895 L724.73,28.021 L726.48,29.478 L728.23,32.412 L729.98,35.105 L731.73,35.979 L733.48,34.522 L735.23,31.588 L736.98,28.895 L738.73,28.021 L740.48,29.478 L742.23,32.412 L743.98,35.105 L745.73,35.979 L747.48,34.522" fill="none" stroke="#085681" stroke-opacity="0.95" stroke-width="2"/>
+<path d="M152.52,29.534 L154.27,32.484 L156.02,35.15 L157.77,35.971 L159.52,34.466 L161.27,31.516 L163.02,28.85 L164.77,28.029 L166.52,29.534 L168.27,32.484 L170.02,35.15 L171.77,35.971 L173.52,34.466 L175.27,31.516 L177.02,28.85 L178.77,28.029 L180.52,29.534" fill="none" stroke="#085681" stroke-opacity="0.95" stroke-width="2"/>
 </svg>

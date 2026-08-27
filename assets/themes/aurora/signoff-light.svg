@@ -3,8 +3,8 @@
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cfe5f3" stop-opacity="1"/><stop offset="1" stop-color="#edf6fb" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
 <text x="450" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#3f6580" text-anchor="middle">northern lights</text>
-<line x1="40" y1="32" x2="247.484" y2="32" stroke="#0e8f5f" stroke-opacity="0.6" stroke-width="1.5"/>
-<line x1="652.516" y1="32" x2="860" y2="32" stroke="#0e8f5f" stroke-opacity="0.6" stroke-width="1.5"/>
-<polygon points="662.516,23 664.867,28.764 671.075,29.219 666.32,33.236 667.806,39.281 662.516,36 657.226,39.281 658.711,33.236 653.956,29.219 660.164,28.764" fill="#0e8f5f" fill-opacity="0.95"/>
-<polygon points="237.484,23 239.836,28.764 246.044,29.219 241.289,33.236 242.774,39.281 237.484,36 232.194,39.281 233.68,33.236 228.925,29.219 235.133,28.764" fill="#0e8f5f" fill-opacity="0.95"/>
+<line x1="40" y1="32" x2="218.1" y2="32" stroke="#095d3e" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="681.9" y1="32" x2="860" y2="32" stroke="#095d3e" stroke-opacity="0.6" stroke-width="1.5"/>
+<polygon points="691.9,23 694.251,28.764 700.46,29.219 695.704,33.236 697.19,39.281 691.9,36 686.61,39.281 688.096,33.236 683.34,29.219 689.549,28.764" fill="#095d3e" fill-opacity="0.95"/>
+<polygon points="208.1,23 210.451,28.764 216.66,29.219 211.904,33.236 213.39,39.281 208.1,36 202.81,39.281 204.296,33.236 199.54,29.219 205.749,28.764" fill="#095d3e" fill-opacity="0.95"/>
 </svg>

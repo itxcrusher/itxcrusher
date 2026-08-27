@@ -124,6 +124,16 @@ class Converter:
             if not s or s.startswith("<!--"):
                 i += 1
                 continue
+            # A section heading that is also artwork: "## <picture>...</picture>" on one
+            # line, which is the only form a markdown heading accepts. GitHub renders
+            # this as <h2><picture>...</picture></h2>; mirror that here so the gallery
+            # shows what actually ships.
+            m_h = re.match(r"^(#{1,6})\s+(<picture>.*</picture>)\s*$", s)
+            if m_h:
+                lvl = len(m_h.group(1))
+                out.append("<h%d>%s</h%d>" % (lvl, self.picture_tag(m_h.group(2)), lvl))
+                i += 1
+                continue
             if s.startswith("<picture>"):
                 j = i
                 while not lines[j].strip().startswith("</picture>"):
