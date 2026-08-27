@@ -1,39 +1,33 @@
-<svg width="460" height="954" viewBox="0 0 460 954" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">Muhammad Hassaan Javed, @itxcrusher. Sakura theme.</title>
+<svg width="460" height="671" viewBox="0 0 460 671" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Opening statement and the runnable check</title>
 <desc>I build infrastructure and bounded automation for other people's production systems. Terraform, Kubernetes, CI/CD, and lately agents that act on evidence they can prove instead of guessing. Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. The contribution graph counts it. The repository list cannot show it. If infrastructure feels exciting, something is probably wrong. The goal is systems that are quiet, predictable, and uninteresting in production.</desc>
-<rect x="0" y="0" width="460" height="954" fill="#fff4f8"/>
-<line x1="26" y1="127.74" x2="197.36" y2="127.74" stroke="#962a55" stroke-opacity="0.8" stroke-width="2"/>
-<rect x="26" y="697.38" width="408" height="134.25" rx="2.7" fill="#fffafc" fill-opacity="1"/>
-<rect x="26" y="556.14" width="408" height="363.24" rx="3.6" fill="#ffdce9" fill-opacity="1"/>
-<rect x="26.75" y="556.89" width="406.5" height="361.74" rx="2.85" fill="none" stroke="#962a55" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="26" y="556.14" width="3" height="363.24" rx="0" fill="#962a55" fill-opacity="0.9"/>
-<text x="26" y="60.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="29" font-weight="700" fill="#3a1030">Muhammad Hassaan Javed</text>
-<text x="26" y="109.28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" fill="#962a55">@itxcrusher</text>
-<text x="26" y="165.54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">I build infrastructure and bounded automation</text>
-<text x="26" y="191.64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">for other people's production systems.</text>
-<text x="26" y="217.74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">Terraform, Kubernetes, CI/CD, and lately agents</text>
-<text x="26" y="243.84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">that act on evidence they can prove instead of</text>
-<text x="26" y="269.94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">guessing.</text>
-<text x="26" y="309.54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">Most of that work is in private client and</text>
-<text x="26" y="335.64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">product repositories, so what is public here is a</text>
-<text x="26" y="361.74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">sample rather than the volume. The contribution</text>
-<text x="26" y="387.84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">graph counts it. The repository list cannot show</text>
-<text x="26" y="413.94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">it.</text>
-<text x="26" y="453.54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">If infrastructure feels exciting, something is</text>
-<text x="26" y="479.64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">probably wrong. The goal is systems that are</text>
-<text x="26" y="505.74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">quiet, predictable, and uninteresting in</text>
-<text x="26" y="531.84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#3a1030">production.</text>
-<text x="41.3" y="593.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#962a55">Want to check whether any of this is real?</text>
-<text x="26" y="618.18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#3a1030">ripple-proof audits a full captured campaign offline in</text>
-<text x="26" y="639.93" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#3a1030">about a minute, with Python 3.11 and nothing else.</text>
-<text x="26" y="661.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#3a1030">No install, no account, no credential, no network call.</text>
-<text x="26" y="683.43" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#3a1030">It prints every point where it refused to act.</text>
-<text x="35" y="721.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="400" fill="#3a1030">git clone https://github.com/itxcrusher/r</text>
-<text x="35" y="744.63" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="400" fill="#3a1030">ipple-proof</text>
-<text x="35" y="767.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="400" fill="#3a1030">cd ripple-proof</text>
-<text x="35" y="791.13" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="400" fill="#3a1030">PYTHONPATH=src python -S -m lineage_agent</text>
-<text x="35" y="814.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="400" fill="#3a1030">.cli demo</text>
-<text x="26" y="853.83" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8a5a78">Expect CAMPAIGN AUDIT: PASSED, 11 of 11 checks.</text>
-<text x="26" y="875.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8a5a78">The walkthrough keeps one run that fails its dbt build</text>
-<text x="26" y="897.33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8a5a78">on purpose rather than dropping it.</text>
+<rect x="0" y="0" width="460" height="671" fill="#fff4f8"/>
+<rect x="26" y="431.88" width="408" height="124.5" rx="2.4" fill="#fffafc" fill-opacity="1"/>
+<rect x="26" y="303.2" width="408" height="334.08" rx="3.2" fill="#ffdce9" fill-opacity="1"/>
+<rect x="26.75" y="303.95" width="406.5" height="332.58" rx="2.45" fill="none" stroke="#962a55" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="26" y="303.2" width="3" height="334.08" rx="0" fill="#962a55" fill-opacity="0.9"/>
+<text x="26" y="25.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">I build infrastructure and bounded automation for</text>
+<text x="26" y="48.8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">other people's production systems. Terraform,</text>
+<text x="26" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">Kubernetes, CI/CD, and lately agents that act on</text>
+<text x="26" y="95.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">evidence they can prove instead of guessing.</text>
+<text x="26" y="130.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">Most of that work is in private client and product</text>
+<text x="26" y="153.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">repositories, so what is public here is a sample rather</text>
+<text x="26" y="176.8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">than the volume. The contribution graph counts it.</text>
+<text x="26" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">The repository list cannot show it.</text>
+<text x="26" y="235.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">If infrastructure feels exciting, something is probably</text>
+<text x="26" y="258.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">wrong. The goal is systems that are quiet, predictable,</text>
+<text x="26" y="281.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#3a1030">and uninteresting in production.</text>
+<text x="39.6" y="335.8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#962a55">Want to check whether any of this is real?</text>
+<text x="26" y="358.28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#3a1030">ripple-proof audits a full captured campaign offline in</text>
+<text x="26" y="378.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#3a1030">about a minute, with Python 3.11 and nothing else. No</text>
+<text x="26" y="398.88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#3a1030">install, no account, no credential, no network call. It prints</text>
+<text x="26" y="419.18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#3a1030">every point where it refused to act.</text>
+<text x="34" y="453.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a1030">git clone https://github.com/itxcrusher/ripp</text>
+<text x="34" y="475.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a1030">le-proof</text>
+<text x="34" y="497.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a1030">cd ripple-proof</text>
+<text x="34" y="518.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a1030">PYTHONPATH=src python -S -m lineage_agent.cl</text>
+<text x="34" y="540.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a1030">i demo</text>
+<text x="26" y="576.78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a5a78">Expect CAMPAIGN AUDIT: PASSED, 11 of 11 checks. The</text>
+<text x="26" y="597.08" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a5a78">walkthrough keeps one run that fails its dbt build on</text>
+<text x="26" y="617.38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a5a78">purpose rather than dropping it.</text>
 </svg>

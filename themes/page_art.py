@@ -2,12 +2,12 @@
 
 Three slices, and the split is forced by what GitHub allows rather than by taste.
 
-  top    hero, the opening statement, the trust callout.  Static per theme.
+  top    the opening statement and the trust callout.  Static per theme.
   work   what is public, the repository cards, the stack.  Depends on live API data,
          so it is rewritten on every run into assets/today/ and never committed per
          theme. That directory is the only place the contract permits a number inside
          an image, because it is the only place a number cannot go stale.
-  close  the sign-off and the contact lines.  Static per theme.
+  close  the contact lines.  Static per theme.
 
 A link cannot live inside the artwork (`<map>`/`<area>` are stripped, so clickable
 regions are impossible and only a whole image can be a link), so every destination is
@@ -24,28 +24,21 @@ TODAY_DIR = "assets/today"
 
 def _top(theme, variant, band, content):
     fl = Flow(theme, variant, band)
-    fl.hero(content["name"], content["handle"])
+    fl.space(fl.base * 0.6)
     fl.paras(content["intro"], fl.s["body"], fl.p["ink"])
     fl.space(fl.base * 0.9)
     fl.note(content["cta_title"], content["cta_body"], content["cta_cmd"], content["cta_after"])
-    return fl.render("%s, %s. %s theme." % (content["name"], content["handle"], theme["name"]),
+    return fl.render("Opening statement and the runnable check",
                      desc=" ".join(content["intro"]))
 
 
 def _close(theme, variant, band, content):
     fl = Flow(theme, variant, band)
-    fl.space(fl.base * 0.4)
-    size = fl._fit(theme["signoff"], 700, fl.s["head"], fl.inner, fl.s["lead"])
-    fl.text(theme["signoff"], size, fl.p["acc"], 700)
-    fl.space(fl.base * 0.35)
-    y = fl.y
-    fl.bg.append(lambda c: c.line(fl.x, y, fl.x + fl.inner * 0.5, y, fl.p["acc"], 0.7,
-                                  max(2, fl.base / 10.0)))
-    fl.space(fl.base * 0.9)
+    fl.space(fl.base * 0.5)
     for line in content["footer"]:
         fl.wrap(line, fl.s["micro"], fl.p["muted"])
         fl.space(fl.base * 0.25)
-    return fl.render("Closing panel: %s" % theme["signoff"],
+    return fl.render("Contact lines at the foot of the page",
                      desc=" ".join(content["footer"]))
 
 

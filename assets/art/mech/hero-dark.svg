@@ -1,0 +1,33 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Muhammad Hassaan Javed, GitHub handle itxcrusher. Mech theme.</title>
+<style>@keyframes k2{0%,100%{transform:translateX(0)}50%{transform:translateX(26px)}}.a3{animation:k2 2.6s ease-in-out infinite}@keyframes k4{0%,49%{opacity:1}50%,100%{opacity:.2}}.a5{animation:k4 1.4s steps(1) infinite}</style>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101214" stop-opacity="1"/><stop offset="1" stop-color="#1d2126" stop-opacity="1"/></linearGradient><linearGradient id="g6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#101214" stop-opacity="0.72"/><stop offset="0.55" stop-color="#101214" stop-opacity="0.612"/><stop offset="1" stop-color="#101214" stop-opacity="0"/></linearGradient><pattern id="p7" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="24" height="24" fill="#101214"/><rect width="12" height="24" fill="#ffb000"/></pattern></defs>
+<rect x="0" y="0" width="900" height="240" fill="url(#g1)"/>
+<path d="M24,10 h530 l14,14 v192 l-14,14 h-530 l-14,-14 v-192 Z" fill="#1d2126" fill-opacity="0.9" stroke="#8a929c" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="32" cy="32" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="32" cy="32" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="546" cy="32" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="546" cy="32" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="32" cy="208" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="32" cy="208" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="546" cy="208" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="546" cy="208" r="2" fill="#101214" fill-opacity="1"/>
+<path d="M596,10 h280 l14,14 v76 l-14,14 h-280 l-14,-14 v-76 Z" fill="#1d2126" fill-opacity="0.9" stroke="#8a929c" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="604" cy="32" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="604" cy="32" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="868" cy="32" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="868" cy="32" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="604" cy="92" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="604" cy="92" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="868" cy="92" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="868" cy="92" r="2" fill="#101214" fill-opacity="1"/>
+<path d="M596,126 h280 l14,14 v76 l-14,14 h-280 l-14,-14 v-76 Z" fill="#1d2126" fill-opacity="0.9" stroke="#8a929c" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="604" cy="148" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="604" cy="148" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="868" cy="148" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="868" cy="148" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="604" cy="208" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="604" cy="208" r="2" fill="#101214" fill-opacity="1"/>
+<circle cx="868" cy="208" r="5" fill="#8a929c" fill-opacity="0.9"/><circle cx="868" cy="208" r="2" fill="#101214" fill-opacity="1"/>
+<rect x="598" y="173" width="70" height="14" rx="3" fill="#8a929c" fill-opacity="0.8"/>
+<g class="a3"><rect x="658" y="176" width="60" height="8" rx="2" fill="#adb3ba" fill-opacity="1"/><rect x="716" y="169" width="16" height="22" rx="2" fill="#ffb000" fill-opacity="1"/></g>
+<circle cx="602" cy="30" r="4" fill="#ffb000" fill-opacity="1" class="a5" style="animation-delay:-1.048s"/>
+<circle cx="618" cy="30" r="4" fill="#4fd1ff" fill-opacity="1" class="a5" style="animation-delay:-0.673s"/>
+<circle cx="634" cy="30" r="4" fill="#ffb000" fill-opacity="1" class="a5" style="animation-delay:-0.795s"/>
+<circle cx="650" cy="30" r="4" fill="#4fd1ff" fill-opacity="1" class="a5" style="animation-delay:-0.331s"/>
+<circle cx="666" cy="30" r="4" fill="#ffb000" fill-opacity="1" class="a5" style="animation-delay:-0.3s"/>
+<rect x="0" y="0" width="612" height="240" fill="url(#g6)"/>
+<text x="44" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="41" font-weight="700" fill="#eef0f2" letter-spacing="2">MUHAMMAD HASSAAN JAVED</text>
+<rect x="30" y="92.38" width="718.684" height="44.28" fill="none" stroke="#ffb000" stroke-opacity="0.9" stroke-width="2.5"/>
+<text x="44" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#ffb000">@itxcrusher</text>
+<rect x="0" y="224" width="900" height="16" fill="url(#p7)"/>
+</svg>

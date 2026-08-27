@@ -32,7 +32,7 @@ from themes.textpanel import BAND_BY_KEY
 # Type scale as multiples of the band's base size. Deliberately a short fixed set: the
 # rendering contract verifies that every font-size in a generated page belongs to it,
 # which is what stops a stray hand-tuned size from shipping at 6px on a phone.
-SCALE = {"micro": 0.85, "body": 1.0, "lead": 1.25, "sub": 1.6, "head": 2.1, "hero": 3.2}
+SCALE = {"micro": 0.85, "body": 1.0, "lead": 1.2, "sub": 1.45, "head": 1.75, "hero": 2.3}
 
 PAD = {"xs": 18, "sm": 26, "md": 32, "lg": 44}
 

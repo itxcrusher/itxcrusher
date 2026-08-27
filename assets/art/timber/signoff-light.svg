@@ -1,0 +1,10 @@
+<svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">measure twice</title>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#dfbf8c" stop-opacity="1"/><stop offset="1" stop-color="#f6ead6" stop-opacity="1"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
+<text x="450" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" fill="#7a5a38" text-anchor="middle">measure twice</text>
+<line x1="40" y1="32" x2="260.452" y2="32" stroke="#773f18" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="639.548" y1="32" x2="860" y2="32" stroke="#773f18" stroke-opacity="0.6" stroke-width="1.5"/>
+<path d="M639.548,22 c14,-2 22,8 20,20 c-12,2 -22,-6 -20,-20 Z" fill="#773f18" fill-opacity="0.95"/>
+<path d="M240.452,22 c14,-2 22,8 20,20 c-12,2 -22,-6 -20,-20 Z" fill="#773f18" fill-opacity="0.95"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">surface when ready</title>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bcdcee" stop-opacity="1"/><stop offset="1" stop-color="#e7f4fb" stop-opacity="1"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
+<text x="450" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#386884" text-anchor="middle">surface when ready</text>
+<line x1="40" y1="32" x2="223.078" y2="32" stroke="#085681" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="676.922" y1="32" x2="860" y2="32" stroke="#085681" stroke-opacity="0.6" stroke-width="1.5"/>
+<path d="M672.922,33.609 L674.672,35.727 L676.422,35.662 L678.172,33.452 L679.922,30.391 L681.672,28.273 L683.422,28.338 L685.172,30.548 L686.922,33.609 L688.672,35.727 L690.422,35.662 L692.172,33.452 L693.922,30.391 L695.672,28.273 L697.422,28.338 L699.172,30.548 L700.922,33.609" fill="none" stroke="#085681" stroke-opacity="0.95" stroke-width="2"/>
+<path d="M199.078,35.928 L200.828,35.311 L202.578,32.753 L204.328,29.755 L206.078,28.072 L207.828,28.689 L209.578,31.247 L211.328,34.245 L213.078,35.928 L214.828,35.311 L216.578,32.753 L218.328,29.755 L220.078,28.072 L221.828,28.689 L223.578,31.247 L225.328,34.245 L227.078,35.928" fill="none" stroke="#085681" stroke-opacity="0.95" stroke-width="2"/>
+</svg>

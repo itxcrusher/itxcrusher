@@ -364,12 +364,18 @@ def signoff(theme, variant):
 
 
 def build_theme(theme):
-    """Return {filename: svg} for one theme."""
+    """The two motif pieces, {filename: svg}.
+
+    The section headings used to be built here too. The drawn page sets its own section
+    bands now, in the same type and rhythm as the rest of the composition, so a separate
+    heading image would only be a second style competing with it.
+
+    The hero and the sign-off stayed, because flattening them into the page cost them
+    their motifs: the embers, the glow, the ornament beside the rule. Those two are the
+    page's only real ornament and they were worse for being redrawn plainly."""
     out = {}
     for v in ("dark", "light"):
         out["hero-%s.svg" % v] = hero(theme, v)
-        for key in SECTIONS:
-            out["h-%s-%s.svg" % (key, v)] = header(theme, v, key)
         out["signoff-%s.svg" % v] = signoff(theme, v)
     return out
 

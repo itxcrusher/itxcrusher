@@ -29,9 +29,9 @@ from themes.svg import Canvas, f, mix, width
 # simply continue the desktop scale.
 BANDS = [
     ("xs", "(max-width: 479px)", 280, 16),
-    ("sm", "(max-width: 767px)", 460, 18),
-    ("md", "(max-width: 1199px)", 600, 22),
-    ("lg", None, 900, 24),
+    ("sm", "(max-width: 767px)", 460, 16),
+    ("md", "(max-width: 1199px)", 600, 21),
+    ("lg", None, 900, 19),
 ]
 BAND_BY_KEY = {b[0]: b for b in BANDS}
 

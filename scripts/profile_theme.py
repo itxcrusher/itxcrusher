@@ -22,6 +22,7 @@ sys.path.insert(0, ROOT)
 
 from themes import catalog, page, page_art, preview, render, rotate, textpanel  # noqa: E402
 
+ART = os.path.join(ROOT, "assets", "art")
 PAGES = os.path.join(ROOT, "assets", "pages")
 TODAY = os.path.join(ROOT, "assets", "today")
 
@@ -42,12 +43,19 @@ def cmd_build(args):
     directory the contract lets a number appear in.
     """
     if args.clean:
-        for d in (PAGES, TODAY):
+        for d in (ART, PAGES, TODAY):
             if os.path.isdir(d):
                 shutil.rmtree(d)
     content = page.art_content(page.fixture_data(), datetime.date.today().isoformat())
     total = n = 0
     for t in catalog.THEMES:
+        # The two motif pieces first. They are not part of the drawn flow: redrawing them
+        # in it cost them their embers, glow and ornament, which is the page's only real
+        # ornament, so they stayed as their own images.
+        for fn, svg in render.build_theme(t).items():
+            write(os.path.join(ART, t["slug"], fn), svg)
+            total += len(svg)
+            n += 1
         for fn, svg in page_art.build_static(t, content).items():
             write(os.path.join(PAGES, t["slug"], fn), svg)
             total += len(svg)
@@ -57,7 +65,7 @@ def cmd_build(args):
     write(os.path.join(ROOT, "assets", "index.json"), json.dumps(
         {"active": [t["slug"] for t in catalog.ACTIVE],
          "all": [t["slug"] for t in catalog.THEMES]}, indent=2) + "\n")
-    print("built %d themes (%d active), %d page slices, %.1f KB"
+    print("built %d themes (%d active), %d motif and page files, %.1f KB"
           % (len(catalog.THEMES), len(catalog.ACTIVE), n, total / 1024))
 
 

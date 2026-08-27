@@ -10,7 +10,8 @@ because the theme engine could break it silently.
   R3   the required text survives image death
   R4   alt text carries content (a heading image may use its heading text)
   R5   README.md and every SVG are plain ASCII
-  R6   every page slice matches its viewport band: canvas width and type scale
+  R6   every drawn slice matches its viewport band (canvas width, and type on the
+       band's scale); the two motif images keep the 900 canvas and the 41-unit floor
   R7   SVGs are self-contained: no script, no imports, no external refs, no
        prefers-color-scheme (theme pairing is <picture>'s job), system fonts only,
        role="img" and a <title>
@@ -61,8 +62,8 @@ REQUIRED_TEXT = [
     "If infrastructure feels exciting",
     "operating stack",
     "private client and product repositories",
-    # The stack moved into badges, which are images. These prove the text fallback
-    # under them is still there, so the section does not vanish when images do.
+    # The whole page is drawn now, so these prove the plain-text copy beneath the
+    # artwork is still there and the page does not go silent when images do.
     "Kubernetes", "Terraform", "GitHub Actions", "computer vision",
 ]
 
@@ -79,10 +80,14 @@ FORBIDDEN_SVG_TOKENS = ("<script", "@import", 'href="http', "url(http", 'url("ht
                         "url('http", "prefers-color-scheme", "@font-face", "<image",
                         "<foreignObject", "<a ")
 PAGE_WEIGHT_BUDGET = 160 * 1024
-# The page is drawn per viewport band, so there is no single canvas width or type floor
-# any more: each band declares both, and every slice is checked against the same table
-# the builder lays out from.
+# The drawn page has no single canvas width or type floor: each viewport band declares
+# both, and every slice is checked against the same table the builder lays out from.
 TODAY_DIR = "assets/today/"
+ART_DIR = "assets/art/"
+# The hero and the sign-off are one image for every viewport, not a per-band set, so
+# their type has to survive the column shrinking to 238px: 41 units renders about
+# 11px there, which is the floor the original contract was built on.
+MOTIF_MIN_FONT = 41
 
 
 def _authored_numbers():
@@ -250,29 +255,46 @@ def main():
             continue
         rel = svg_path.replace(os.sep, "/")
         is_today = rel.startswith(TODAY_DIR)
+        is_motif = rel.startswith(ART_DIR)
         vb = (root.get("viewBox") or "").split()
         sizes = [int(x) for x in re.findall(r'font-size="(\d+)"', raw)]
-        band = os.path.basename(rel).rsplit("-", 2)[-2]
-        spec = PANEL_BANDS.get(band)
-        if spec is None:
-            fail("R6", svg_path + " is not named for a known viewport band")
-            bad = True
-        else:
-            # Each band declares its canvas width and its base type size. Everything the
-            # page draws must sit on that band's scale: a size between the rungs is how a
-            # hand-tuned heading ends up at 6px on a phone.
-            if len(vb) != 4 or vb[2] != str(spec[2]):
-                fail("R6", svg_path + " band %s must be %d units wide, got %r"
-                     % (band, spec[2], vb))
+        if is_motif:
+            # Motif art, not laid-out prose: one image for every viewport, nothing in it
+            # wraps, so there is no per-band scale for it to sit on. It keeps the original
+            # contract instead, a 900 canvas and a type floor high enough to stay legible
+            # when the column shrinks to 238px.
+            if len(vb) != 4 or vb[2] != "900":
+                fail("R6", svg_path + " motif art must be 900 units wide, got " + repr(vb))
                 bad = True
-            allowed = allowed_sizes(spec[3])
-            off = sorted(set(x for x in sizes if x not in allowed))
-            if off:
-                fail("R6", svg_path + " band %s uses type off the scale %s: %s"
-                     % (band, sorted(allowed), off))
+            small = [x for x in sizes if x < MOTIF_MIN_FONT]
+            if small:
+                fail("R6", svg_path + " motif type below the %d-unit floor: %s"
+                     % (MOTIF_MIN_FONT, small))
                 bad = True
             if sizes:
                 smallest = min(smallest, min(sizes))
+        else:
+            band = os.path.basename(rel).rsplit("-", 2)[-2]
+            spec = PANEL_BANDS.get(band)
+            if spec is None:
+                fail("R6", svg_path + " is not named for a known viewport band")
+                bad = True
+            else:
+                # Each band declares its canvas width and its base type size. Everything
+                # the page draws must sit on that band's scale: a size between the rungs
+                # is how a hand-tuned heading ends up at 6px on a phone.
+                if len(vb) != 4 or vb[2] != str(spec[2]):
+                    fail("R6", svg_path + " band %s must be %d units wide, got %r"
+                         % (band, spec[2], vb))
+                    bad = True
+                allowed = allowed_sizes(spec[3])
+                off = sorted(set(x for x in sizes if x not in allowed))
+                if off:
+                    fail("R6", svg_path + " band %s uses type off the scale %s: %s"
+                         % (band, sorted(allowed), off))
+                    bad = True
+                if sizes:
+                    smallest = min(smallest, min(sizes))
         forbidden = [tok for tok in FORBIDDEN_SVG_TOKENS if tok in raw]
         if forbidden:
             fail("R7", svg_path + " contains forbidden token(s): " + str(forbidden))
@@ -308,9 +330,10 @@ def main():
         svg_fail += bad
     if svgs and not svg_fail:
         nt = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(TODAY_DIR))
-        ok("R6", "%d page slices match their band's canvas and type scale (%d of them "
-                 "data-dependent), smallest type %d units"
-                 % (len(svgs), nt, smallest))
+        nm = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(ART_DIR))
+        ok("R6", "%d drawn slices match their band's canvas and type scale (%d of them "
+                 "data-dependent), and %d motif images hold the 900 canvas"
+                 % (len(svgs) - nm, nt, nm))
         ok("R7", "every SVG is self-contained, system-font, labelled")
         ok("R8", "no SVG renders a number")
 
@@ -326,11 +349,11 @@ def main():
 
     # R10 identity strings: the legal name in the README and in every hero variant the
     # README references; the account name a known identity.
-    hero_variants = [p for p in local if os.path.basename(p).startswith("top-")]
+    hero_variants = [p for p in local if os.path.basename(p).startswith("hero-")]
     if NAME not in text:
         fail("R10", "the README does not contain " + repr(NAME))
     if not hero_variants:
-        fail("R10", "the README references no opening panel")
+        fail("R10", "the README references no hero image")
     for hv in hero_variants:
         if os.path.isfile(hv) and NAME not in open(hv, encoding="utf-8").read():
             fail("R10", hv + " does not contain " + repr(NAME))
@@ -366,7 +389,7 @@ def main():
         fail("R12", "no theme stamp (<!-- theme: slug | mode: ... | date: ... -->) at the top of the README")
     else:
         slug = m.group(1)
-        used = set(re.findall(r"assets/pages/([a-z0-9-]+)/", text))
+        used = set(re.findall(r"assets/(?:pages|art)/([a-z0-9-]+)/", text))
         if used != {slug}:
             fail("R12", "README wears theme %r but references assets from %r" % (slug, sorted(used)))
         try:
@@ -374,9 +397,11 @@ def main():
             if slug not in idx.get("all", []):
                 fail("R12", "theme %r is not in %s" % (slug, THEME_INDEX))
             else:
-                expected = {"top", "close"}
-                stems = set(re.findall(r"assets/pages/%s/([a-z]+)-(?:xs|sm|md|lg)-(?:dark|light)\.svg"
-                                       % slug, text))
+                expected = {"top", "close", "hero", "signoff"}
+                stems = set(re.findall(
+                    r"assets/pages/%s/([a-z]+)-(?:xs|sm|md|lg)-(?:dark|light)\.svg" % slug, text))
+                stems |= set(re.findall(r"assets/art/%s/([a-z]+)-(?:dark|light)\.svg"
+                                        % slug, text))
                 if stems != expected:
                     fail("R12", "theme %r is missing pieces: %s" % (slug, sorted(expected - stems)))
                 else:

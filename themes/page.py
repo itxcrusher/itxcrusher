@@ -36,12 +36,13 @@ INTRO = [
     "are quiet, predictable, and uninteresting in production.",
 ]
 
-TOP_ALT = ("Opening panel: name, handle, and the statement that this account builds "
+TOP_ALT = ("Opening statement: this account builds "
            "infrastructure and bounded automation for other people's production systems, "
            "most of it in private repositories, followed by a runnable check that the work "
            "is real. The same words are in the plain-text copy at the foot of the page.")
-CLOSE_ALT = ("Closing panel reading %s, with the contact lines. The same words are in the "
-             "plain-text copy at the foot of the page.")
+CLOSE_ALT = ("Contact lines: how to reach Muhammad Hassaan Javed, by the agency site, the "
+             "personal site, or directly by email. The same words are in the plain-text "
+             "copy at the foot of the page.")
 
 INTRO_ALT = ("Opening statement: I build infrastructure and bounded automation for other "
              "people's production systems. Most of that work is in private client and product "
@@ -376,7 +377,11 @@ def render_readme(theme, data, today, mode, n_themes):
     c = art_content(data, today)
     pages = "%s/%s" % (page_art.PAGES_DIR, t["slug"])
     out = []
+    art = "assets/art/" + t["slug"]
     out.append("<!-- theme: %s | mode: %s | date: %s -->" % (t["slug"], mode, today))
+    out.append(picture(art, "hero", "%s, GitHub handle %s. %s theme."
+                       % (NAME, HANDLE, t["name"])))
+    out.append("")
     out.append(page_art.picture(pages, "top", _attr(TOP_ALT)))
     out.append("")
     # The commands are drawn in the artwork, where they cannot be selected. This is the
@@ -402,7 +407,10 @@ def render_readme(theme, data, today, mode, n_themes):
                '<img src="%ssnake-light.svg" width="100%%" alt="%s" />'
                "</picture>" % (OUTPUT_BRANCH, OUTPUT_BRANCH, OUTPUT_BRANCH, _attr(SNAKE_ALT)))
     out.append("")
-    out.append(page_art.picture(pages, "close", _attr(CLOSE_ALT % t["signoff"])))
+    out.append(picture(art, "signoff", "Closing line at the end of the page: %s"
+                       % t["signoff"]))
+    out.append("")
+    out.append(page_art.picture(pages, "close", _attr(CLOSE_ALT)))
     out.append("")
     out.append('<p align="center">')
     out.append("  " + sep.join('<a href="%s">%s</a>' % (u, l) for l, u in link_strip(data)))

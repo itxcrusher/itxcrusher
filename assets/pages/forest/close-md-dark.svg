@@ -1,11 +1,9 @@
-<svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">Closing panel: keep growing</title>
+<svg width="600" height="157" viewBox="0 0 600 157" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Contact lines at the foot of the page</title>
 <desc>Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work: infraforge.agency. Personal site: muhammadhassaanjaved.com Direct: muhammadhassaanjaved99@gmail.com</desc>
-<rect x="0" y="0" width="600" height="250" fill="#04110a"/>
-<line x1="32" y1="77.22" x2="300" y2="77.22" stroke="#62d98a" stroke-opacity="0.7" stroke-width="2.2"/>
-<text x="32" y="54.8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="#62d98a">keep growing</text>
-<text x="32" y="116.02" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="400" fill="#7aa287">Muhammad Hassaan Javed (@itxcrusher). Infrastructure</text>
-<text x="32" y="143.57" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="400" fill="#7aa287">recovery and platform work: infraforge.agency. Personal</text>
-<text x="32" y="171.12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="400" fill="#7aa287">site: muhammadhassaanjaved.com</text>
-<text x="32" y="204.17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="400" fill="#7aa287">Direct: muhammadhassaanjaved99@gmail.com</text>
+<rect x="0" y="0" width="600" height="157" fill="#04110a"/>
+<text x="32" y="28.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#7aa287">Muhammad Hassaan Javed (@itxcrusher). Infrastructure</text>
+<text x="32" y="54.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#7aa287">recovery and platform work: infraforge.agency. Personal site:</text>
+<text x="32" y="80.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#7aa287">muhammadhassaanjaved.com</text>
+<text x="32" y="112.05" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#7aa287">Direct: muhammadhassaanjaved99@gmail.com</text>
 </svg>

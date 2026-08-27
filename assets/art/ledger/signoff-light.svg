@@ -1,0 +1,8 @@
+<svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">chain intact</title>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e0e7f5" stop-opacity="1"/><stop offset="1" stop-color="#f4f7fc" stop-opacity="1"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
+<text x="450" y="42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#4b5d80" text-anchor="middle">chain intact</text>
+<line x1="40" y1="32" x2="279.084" y2="32" stroke="#1c47c1" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="620.916" y1="32" x2="860" y2="32" stroke="#1c47c1" stroke-opacity="0.6" stroke-width="1.5"/>
+</svg>

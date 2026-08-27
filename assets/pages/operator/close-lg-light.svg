@@ -1,11 +1,8 @@
-<svg width="900" height="278" viewBox="0 0 900 278" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
-<title id="t">Closing panel: $ exit</title>
+<svg width="900" height="133" viewBox="0 0 900 133" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Contact lines at the foot of the page</title>
 <desc>Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work: infraforge.agency. Personal site: muhammadhassaanjaved.com Direct: muhammadhassaanjaved99@gmail.com</desc>
-<rect x="0" y="0" width="900" height="278" fill="#f3f6f2"/>
-<line x1="44" y1="84" x2="450" y2="84" stroke="#085f2f" stroke-opacity="0.7" stroke-width="2.4"/>
-<text x="44" y="59.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="50" font-weight="700" fill="#085f2f">$ exit</text>
-<text x="44" y="125.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="400" fill="#4f6656">Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and</text>
-<text x="44" y="154.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="400" fill="#4f6656">platform work: infraforge.agency. Personal site:</text>
-<text x="44" y="183.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="400" fill="#4f6656">muhammadhassaanjaved.com</text>
-<text x="44" y="218.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="400" fill="#4f6656">Direct: muhammadhassaanjaved99@gmail.com</text>
+<rect x="0" y="0" width="900" height="133" fill="#f3f6f2"/>
+<text x="44" y="25.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#4f6656">Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work:</text>
+<text x="44" y="48.7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#4f6656">infraforge.agency. Personal site: muhammadhassaanjaved.com</text>
+<text x="44" y="76.65" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#4f6656">Direct: muhammadhassaanjaved99@gmail.com</text>
 </svg>
