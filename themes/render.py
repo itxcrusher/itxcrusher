@@ -170,6 +170,7 @@ def hero(theme, variant):
         M.shade(c, p, box, **(sh if isinstance(sh, dict) else {}))
     type_block(c, p, theme, box)
     _run_motifs(c, p, box, spec, variant, "front")
+    _hem(c, p, HERO_H)
     return c.render()
 
 
@@ -343,6 +344,18 @@ def _ornament(c, p, kind, cx, cy, col):
         M.moon(c, p, (cx - 12, cy - 12, 24, 24), cx, cy, 9, col, 0, True)
 
 
+def _hem(c, p, h, depth=44):
+    """Fade the last few units to the page ground.
+
+    The motif pieces are separate images stacked against the drawn page, and the drawn
+    page is a flat p["bg"]. Without this the hero's warm glow stopped dead at its own
+    bottom edge and the join read as a band across the page.
+    """
+    g = c.lin_grad([(0, p["bg"], 0), (1, p["bg"], 1)], x1=0, y1=0, x2=0, y2=1)
+    c.add('<rect x="0" y="%s" width="900" height="%s" fill="%s"/>'
+          % (f(h - depth), f(depth), g))
+
+
 # -------------------------------------------------------------------------- sign-off
 
 def signoff(theme, variant):
@@ -351,7 +364,11 @@ def signoff(theme, variant):
     hs = theme.get("header", {})
     c = Canvas(SIGN_H, text, seed="%s:%s:signoff" % (theme["slug"], variant))
     box = (0, 0, 900, SIGN_H)
-    M.gradient_bg(c, p, box, top=p["bg2"], bottom=p["bg"], horizontal=True)
+    # Vertical, not horizontal. This band sits directly on top of the drawn contact
+    # slice, which is a flat p["bg"]. A left-to-right gradient leaves the bottom edge at
+    # bg2 on one side and bg on the other, and the join showed as a step across the page.
+    # Ending the gradient at bg means the two images meet on the same colour.
+    M.gradient_bg(c, p, box, top=p["bg2"], bottom=p["bg"])
     kind = hs.get("font", "mono")
     size, w, _ = fit(text, kind, 700, 500, 42)
     c.text(450, 42, text, size, p["muted"], kind, 700, "middle")

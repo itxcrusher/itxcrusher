@@ -1,6 +1,6 @@
 <svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">$ exit</title>
-<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e0e8dc" stop-opacity="1"/><stop offset="1" stop-color="#f3f6f2" stop-opacity="1"/></linearGradient></defs>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0e8dc" stop-opacity="1"/><stop offset="1" stop-color="#f3f6f2" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
 <text x="450" y="42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#4f6656" text-anchor="middle">$ exit</text>
 <line x1="40" y1="32" x2="352.542" y2="32" stroke="#085f2f" stroke-opacity="0.6" stroke-width="1.5"/>

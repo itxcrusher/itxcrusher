@@ -1,7 +1,7 @@
 <svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Muhammad Hassaan Javed, GitHub handle itxcrusher. Datacenter theme.</title>
 <style>@keyframes k2{0%,49%{opacity:1}50%,100%{opacity:.15}}.a3{animation:k2 1.2s steps(1) infinite}</style>
-<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8fa" stop-opacity="1"/><stop offset="1" stop-color="#e1e7ee" stop-opacity="1"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f6f8fa" stop-opacity="0.66"/><stop offset="0.55" stop-color="#f6f8fa" stop-opacity="0.561"/><stop offset="1" stop-color="#f6f8fa" stop-opacity="0"/></linearGradient></defs>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8fa" stop-opacity="1"/><stop offset="1" stop-color="#e1e7ee" stop-opacity="1"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f6f8fa" stop-opacity="0.66"/><stop offset="0.55" stop-color="#f6f8fa" stop-opacity="0.561"/><stop offset="1" stop-color="#f6f8fa" stop-opacity="0"/></linearGradient><linearGradient id="g5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8fa" stop-opacity="0"/><stop offset="1" stop-color="#f6f8fa" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="240" fill="url(#g1)"/>
 <rect x="558" y="19.6" width="8" height="200.8" rx="0" fill="#57606a" fill-opacity="0.45"/>
 <rect x="560" y="27.6" width="4" height="4" rx="1" fill="#f6f8fa" fill-opacity="0.9"/>
@@ -40,4 +40,5 @@
 <rect x="0" y="0" width="612" height="240" fill="url(#g4)"/>
 <text x="44" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="41" font-weight="700" fill="#0d1117">Muhammad Hassaan Javed</text>
 <text x="44" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#14622b">@itxcrusher</text>
+<rect x="0" y="196" width="900" height="44" fill="url(#g5)"/>
 </svg>
