@@ -32,6 +32,9 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from themes.textpanel import BAND_BY_KEY as PANEL_BANDS  # noqa: E402
+
 README = "README.md"
 USER = "itxcrusher"
 THEME_INDEX = "assets/themes/index.json"
@@ -83,6 +86,10 @@ BADGE_DIR = "assets/badges/"
 BADGE_H = 28
 BADGE_MAX_W = 238
 BADGE_MIN_FONT = 14
+# Prose panels are the third contract. They ARE width-scaled, so they cannot hold one
+# size: each viewport band gets its own canvas width and its own type size, and the
+# checker verifies each file against the same table the builder lays out from.
+PANEL_DIR = "assets/panels/"
 
 IMG_RE = re.compile(r"<img\b[^>]*>", re.I)
 ATTR_RE = re.compile(r'(\w[\w-]*)\s*=\s*"([^"]*)"')
@@ -241,7 +248,9 @@ def main():
             fail("R7", svg_path + " is not valid XML: " + str(e))
             svg_fail += 1
             continue
-        is_badge = svg_path.replace(os.sep, "/").startswith(BADGE_DIR.lstrip("./"))
+        rel = svg_path.replace(os.sep, "/")
+        is_badge = rel.startswith(BADGE_DIR.lstrip("./"))
+        is_panel = rel.startswith(PANEL_DIR.lstrip("./"))
         vb = (root.get("viewBox") or "").split()
         sizes = [int(s) for s in re.findall(r'font-size="(\d+)"', raw)]
         if is_badge:
@@ -262,6 +271,22 @@ def main():
                 fail("R6", svg_path + " badge type below the %d-unit floor: %s"
                      % (BADGE_MIN_FONT, small))
                 bad = True
+        elif is_panel:
+            band = os.path.basename(rel).rsplit("-", 2)[-2]
+            spec = PANEL_BANDS.get(band)
+            if spec is None:
+                fail("R6", svg_path + " is not named for a known viewport band")
+                bad = True
+            else:
+                if len(vb) != 4 or vb[2] != str(spec[2]):
+                    fail("R6", svg_path + " band %s must be %d units wide, got %r"
+                         % (band, spec[2], vb))
+                    bad = True
+                off = [x for x in sizes if x != spec[3]]
+                if off:
+                    fail("R6", svg_path + " band %s must set type at %d units, found %s"
+                         % (band, spec[3], sorted(set(off))))
+                    bad = True
         else:
             if len(vb) != 4 or vb[2] != "900":
                 fail("R6", svg_path + " viewBox width must be 900, got " + repr(vb))
@@ -296,8 +321,10 @@ def main():
         svg_fail += bad
     if svgs and not svg_fail:
         nb = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(BADGE_DIR.lstrip("./")))
-        ok("R6", "%d banner SVGs on a 900 canvas (smallest type %d units) and %d badges "
-                 "under the %dpx no-scale cap" % (len(svgs) - nb, smallest, nb, BADGE_MAX_W))
+        np_ = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(PANEL_DIR.lstrip("./")))
+        ok("R6", "%d banner SVGs on a 900 canvas (smallest type %d units), %d badges under "
+                 "the %dpx no-scale cap, %d prose panels matching their band"
+                 % (len(svgs) - nb - np_, smallest, nb, BADGE_MAX_W, np_))
         ok("R7", "every SVG is self-contained, system-font, labelled")
         ok("R8", "no SVG renders a number")
 

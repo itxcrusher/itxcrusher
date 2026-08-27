@@ -8,6 +8,7 @@ import datetime
 import json
 import re
 
+from . import textpanel
 from .render import NAME, HANDLE
 
 USER = "itxcrusher"
@@ -34,6 +35,12 @@ INTRO = [
     "If infrastructure feels exciting, something is probably wrong. The goal is systems that "
     "are quiet, predictable, and uninteresting in production.",
 ]
+
+INTRO_ALT = ("Opening statement: I build infrastructure and bounded automation for other "
+             "people's production systems. Most of that work is in private client and product "
+             "repositories, so what is public here is a sample rather than the volume. If "
+             "infrastructure feels exciting, something is probably wrong; the goal is systems "
+             "that are quiet, predictable, and uninteresting in production.")
 
 CTA_TITLE = "Want to check whether any of this is real?"
 CTA_BODY = ("`ripple-proof` audits a full captured campaign offline in about a minute, with "
@@ -314,9 +321,20 @@ def render_readme(theme, data, today, mode, n_themes):
         for l, u in LINKS))
     out.append("</p>")
     out.append("")
+    # The three opening sentences, laid out inside the theme instead of in GitHub's grey.
+    # Four viewport bands (see themes/textpanel.py) keep the type between about 14px and
+    # 28px everywhere rather than the 10px-on-a-phone a single width="100%" image would
+    # give. Text in an image cannot be selected or searched, so the same words follow as
+    # collapsed markdown and R3 proves that copy is present.
+    out.append(textpanel.picture(t["slug"], "intro", _attr(INTRO_ALT)))
+    out.append("")
+    out.append("<details><summary><sub>the same three lines as plain text</sub></summary>")
+    out.append("")
     for para in INTRO:
         out.append(para)
         out.append("")
+    out.append("</details>")
+    out.append("")
     alert = text.get("alert", "NOTE")
     out.append("> [!%s]" % alert)
     out.append("> **%s**" % CTA_TITLE)

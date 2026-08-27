@@ -1,0 +1,20 @@
+<svg width="900" height="674" viewBox="0 0 900 674" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">intro</title>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8dcf5" stop-opacity="1"/><stop offset="1" stop-color="#f4f4ff" stop-opacity="1"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="674" fill="url(#g1)"/>
+<rect x="0" y="0" width="6" height="674" rx="0" fill="#764700" fill-opacity="0.9"/>
+<text x="40" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">I build infrastructure and bounded automation</text>
+<text x="40" y="99" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">for other people's production systems.</text>
+<text x="40" y="140" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">Terraform, Kubernetes, CI/CD, and lately agents</text>
+<text x="40" y="181" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">that act on evidence they can prove instead of</text>
+<text x="40" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">guessing.</text>
+<text x="40" y="283" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">Most of that work is in private client and</text>
+<text x="40" y="324" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">product repositories, so what is public here is</text>
+<text x="40" y="365" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">a sample rather than the volume. The</text>
+<text x="40" y="406" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">contribution graph counts it. The repository</text>
+<text x="40" y="447" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">list cannot show it.</text>
+<text x="40" y="508" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">If infrastructure feels exciting, something is</text>
+<text x="40" y="549" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">probably wrong. The goal is systems that are</text>
+<text x="40" y="590" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">quiet, predictable, and uninteresting in</text>
+<text x="40" y="631" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="400" fill="#14143a">production.</text>
+</svg>

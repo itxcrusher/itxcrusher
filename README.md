@@ -9,11 +9,17 @@
   <a href="https://muhammadhassaanjaved.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/link-muhammadhassaanjaved-com.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/link-muhammadhassaanjaved-com.svg"><img src="./assets/badges/ember/light/link-muhammadhassaanjaved-com.svg" height="28" alt="muhammadhassaanjaved.com" /></picture></a> <a href="https://infraforge.agency"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/link-infraforge-agency.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/link-infraforge-agency.svg"><img src="./assets/badges/ember/light/link-infraforge-agency.svg" height="28" alt="infraforge.agency" /></picture></a> <a href="https://github.com/itxcrusher?tab=repositories&type=source&sort=pushed"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/link-repositories.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/link-repositories.svg"><img src="./assets/badges/ember/light/link-repositories.svg" height="28" alt="repositories" /></picture></a>
 </p>
 
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 479px)" srcset="./assets/panels/ember/intro-xs-dark.svg"><source media="(max-width: 479px)" srcset="./assets/panels/ember/intro-xs-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="./assets/panels/ember/intro-sm-dark.svg"><source media="(max-width: 767px)" srcset="./assets/panels/ember/intro-sm-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 1199px)" srcset="./assets/panels/ember/intro-md-dark.svg"><source media="(max-width: 1199px)" srcset="./assets/panels/ember/intro-md-light.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/panels/ember/intro-lg-dark.svg"><img src="./assets/panels/ember/intro-lg-light.svg" width="100%" alt="Opening statement: I build infrastructure and bounded automation for other people's production systems. Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. If infrastructure feels exciting, something is probably wrong; the goal is systems that are quiet, predictable, and uninteresting in production." /></picture>
+
+<details><summary><sub>the same three lines as plain text</sub></summary>
+
 I build infrastructure and bounded automation for other people's production systems. Terraform, Kubernetes, CI/CD, and lately agents that act on evidence they can prove instead of guessing.
 
 Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. The contribution graph counts it. The repository list cannot show it.
 
 If infrastructure feels exciting, something is probably wrong. The goal is systems that are quiet, predictable, and uninteresting in production.
+
+</details>
 
 > [!TIP]
 > **Want to check whether any of this is real?**

@@ -20,10 +20,11 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from themes import badge, catalog, page, preview, render, rotate  # noqa: E402
+from themes import badge, catalog, page, preview, render, rotate, textpanel  # noqa: E402
 
 ASSETS = os.path.join(ROOT, "assets", "themes")
 BADGES = os.path.join(ROOT, "assets", "badges")
+PANELS = os.path.join(ROOT, "assets", "panels")
 
 
 def write(path, text):
@@ -35,10 +36,10 @@ def write(path, text):
 
 def cmd_build(args):
     if args.clean:
-        for d in (ASSETS, BADGES):
+        for d in (ASSETS, BADGES, PANELS):
             if os.path.isdir(d):
                 shutil.rmtree(d)
-    total = nbadge = 0
+    total = nbadge = npanel = 0
     for t in catalog.THEMES:
         files = render.build_theme(t)
         for fn, svg in files.items():
@@ -48,11 +49,16 @@ def cmd_build(args):
             write(os.path.join(BADGES, t["slug"], fn), svg)
             total += len(svg)
             nbadge += 1
+        for fn, svg in textpanel.build_theme(t, {"intro": (page.INTRO, "intro")}).items():
+            write(os.path.join(PANELS, t["slug"], fn), svg)
+            total += len(svg)
+            npanel += 1
     write(os.path.join(ASSETS, "README.md"), preview.gallery_markdown(catalog.THEMES, len(catalog.ACTIVE)))
     write(os.path.join(ASSETS, "index.json"), json.dumps(
         {"active": [t["slug"] for t in catalog.ACTIVE], "all": [t["slug"] for t in catalog.THEMES]}, indent=2) + "\n")
-    print("built %d themes (%d active), %d banner + %d badge files, %.1f KB" % (
-        len(catalog.THEMES), len(catalog.ACTIVE), 8 * len(catalog.THEMES), nbadge, total / 1024))
+    print("built %d themes (%d active), %d banner + %d badge + %d panel files, %.1f KB" % (
+        len(catalog.THEMES), len(catalog.ACTIVE), 8 * len(catalog.THEMES), nbadge, npanel,
+        total / 1024))
 
 
 def _date(s):
