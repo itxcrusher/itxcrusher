@@ -8,7 +8,7 @@ because the theme engine could break it silently.
   R1   every relative image resolves to a tracked file
   R2   third-party image hosts: zero (own output branch excepted)
   R3   the required text survives image death
-  R4   alt text carries content
+  R4   alt text carries content (a heading image may use its heading text)
   R5   README.md and every SVG are plain ASCII
   R6   SVG canvas 900 wide, no rendered type under 41 units
   R7   SVGs are self-contained: no script, no imports, no external refs, no
@@ -147,11 +147,21 @@ def main():
     else:
         ok("R3", "%d required strings survive image removal" % len(REQUIRED_TEXT))
 
-    # R4 alt text carries content
+    # R4 alt text carries content.
+    # An image that IS a heading is exempt from the length floor: its correct alt is the
+    # heading text, which is short by design, and the surrounding <h2> already tells a
+    # screen reader what it is. The floor exists to catch lazy alt like "banner", and the
+    # artifact-label check below still applies to every image.
+    heading_alts = set()
+    for line in text.splitlines():
+        if re.match(r"^#{1,6}\s", line):
+            heading_alts.update(m.get("alt", "") for m in imgs(line))
     bad_alt = []
     for t in tags:
         alt = t.get("alt", "")
-        if len(alt) < 20:
+        if not alt.strip():
+            bad_alt.append("empty alt")
+        elif len(alt) < 20 and alt not in heading_alts:
             bad_alt.append(repr(alt) + " (under 20 chars)")
         elif re.search(r"\b(card|banner|image|graph|animation|icon)s?$", alt.strip().rstrip("."), re.I):
             bad_alt.append(repr(alt) + " (ends in an artifact label)")
