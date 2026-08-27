@@ -144,8 +144,14 @@ def fit(text, kind, weight, max_w, max_size, min_size=MIN_FONT, ls=0.0):
 # ------------------------------------------------------------------------------ canvas
 
 class Canvas:
-    def __init__(self, h, title, seed="", desc=None):
-        self.w, self.h = W, h
+    def __init__(self, h, title, seed="", desc=None, w=W, min_font=MIN_FONT):
+        # Width and the type floor are parameters because badges are a different
+        # contract from the banner art. A banner is width="100%", so GitHub scales it
+        # with the README column (846px down to 238px measured) and its type has to
+        # survive that. A badge is height-pinned and narrower than the narrowest
+        # column, so it renders 1:1 everywhere and 14 units means 14 pixels.
+        self.w, self.h = w, h
+        self.min_font = min_font
         self.title = title
         self.desc = desc
         self.defs, self.css, self.body = [], [], []
@@ -264,7 +270,7 @@ class Canvas:
     # -- text ----------------------------------------------------------------------
     def text(self, x, y, s, size, fill, kind="sans", weight=700, anchor="start",
              ls=0.0, op=1.0, extra=""):
-        assert size >= MIN_FONT, "R6: text below %d units: %r" % (MIN_FONT, s)
+        assert size >= self.min_font, "R6: text below %d units: %r" % (self.min_font, s)
         assert all(ord(ch) < 128 for ch in s), "R5: non-ASCII text %r" % s
         s = s.replace("&", "&amp;").replace("<", "&lt;")
         a = ['<text x="%s" y="%s"' % (f(x), f(y)),

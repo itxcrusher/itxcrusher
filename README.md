@@ -30,7 +30,7 @@ If infrastructure feels exciting, something is probably wrong. The goal is syste
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/themes/ember/h-public-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/themes/ember/h-public-light.svg"><img src="./assets/themes/ember/h-public-light.svg" width="100%" alt="what is public" /></picture>
 
 <!-- PUBLIC_SURFACE:START -->
-20 original public repositories. Most of the work is not here: over the last 12 months, 5,310 of 6,398 contributions were in private repositories (client delivery, product builds, and security research).
+20 original public repositories. Most of the work is not here: over the last 12 months, 5,044 of 6,393 contributions were in private repositories (client delivery, product builds, and security research).
 
 Most recent public work:
 
@@ -50,14 +50,43 @@ _Generated 2026-08-27 from the GitHub API._
 
 Everything in the operating stack below has a public artifact in this account. Work that does not is in private repositories and is not listed here.
 
-```toml
-cloud     = ["AWS", "Azure"]
-platform  = ["Kubernetes", "Docker", "Terraform", "Helm"]
-delivery  = ["GitHub Actions", "CI/CD pipelines", "ArgoCD", "GitOps"]
-systems   = ["Linux", "networking", "shell automation"]
-ai        = ["bounded agents", "MCP", "LLM workflows", "computer vision"]
-languages = ["Python", "Bash", "HCL", "YAML"]
-```
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/cloud.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/cloud.svg"><img src="./assets/badges/ember/light/cloud.svg" height="28" alt="cloud" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/aws.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/aws.svg"><img src="./assets/badges/ember/light/aws.svg" height="28" alt="AWS" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/azure.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/azure.svg"><img src="./assets/badges/ember/light/azure.svg" height="28" alt="Azure" /></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/platform.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/platform.svg"><img src="./assets/badges/ember/light/platform.svg" height="28" alt="platform" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/kubernetes.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/kubernetes.svg"><img src="./assets/badges/ember/light/kubernetes.svg" height="28" alt="Kubernetes" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/docker.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/docker.svg"><img src="./assets/badges/ember/light/docker.svg" height="28" alt="Docker" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/terraform.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/terraform.svg"><img src="./assets/badges/ember/light/terraform.svg" height="28" alt="Terraform" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/helm.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/helm.svg"><img src="./assets/badges/ember/light/helm.svg" height="28" alt="Helm" /></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/delivery.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/delivery.svg"><img src="./assets/badges/ember/light/delivery.svg" height="28" alt="delivery" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/github-actions.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/github-actions.svg"><img src="./assets/badges/ember/light/github-actions.svg" height="28" alt="GitHub Actions" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/ci-cd-pipelines.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/ci-cd-pipelines.svg"><img src="./assets/badges/ember/light/ci-cd-pipelines.svg" height="28" alt="CI/CD pipelines" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/argocd.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/argocd.svg"><img src="./assets/badges/ember/light/argocd.svg" height="28" alt="ArgoCD" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/gitops.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/gitops.svg"><img src="./assets/badges/ember/light/gitops.svg" height="28" alt="GitOps" /></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/systems.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/systems.svg"><img src="./assets/badges/ember/light/systems.svg" height="28" alt="systems" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/linux.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/linux.svg"><img src="./assets/badges/ember/light/linux.svg" height="28" alt="Linux" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/networking.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/networking.svg"><img src="./assets/badges/ember/light/networking.svg" height="28" alt="networking" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/shell-automation.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/shell-automation.svg"><img src="./assets/badges/ember/light/shell-automation.svg" height="28" alt="shell automation" /></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/ai.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/ai.svg"><img src="./assets/badges/ember/light/ai.svg" height="28" alt="ai" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/bounded-agents.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/bounded-agents.svg"><img src="./assets/badges/ember/light/bounded-agents.svg" height="28" alt="bounded agents" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/mcp.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/mcp.svg"><img src="./assets/badges/ember/light/mcp.svg" height="28" alt="MCP" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/llm-workflows.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/llm-workflows.svg"><img src="./assets/badges/ember/light/llm-workflows.svg" height="28" alt="LLM workflows" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/computer-vision.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/computer-vision.svg"><img src="./assets/badges/ember/light/computer-vision.svg" height="28" alt="computer vision" /></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/languages.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/languages.svg"><img src="./assets/badges/ember/light/languages.svg" height="28" alt="languages" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/python.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/python.svg"><img src="./assets/badges/ember/light/python.svg" height="28" alt="Python" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/bash.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/bash.svg"><img src="./assets/badges/ember/light/bash.svg" height="28" alt="Bash" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/hcl.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/hcl.svg"><img src="./assets/badges/ember/light/hcl.svg" height="28" alt="HCL" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/badges/ember/dark/yaml.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/badges/ember/light/yaml.svg"><img src="./assets/badges/ember/light/yaml.svg" height="28" alt="YAML" /></picture></p>
+<details><summary><sub>the same stack as plain text</sub></summary>
+
+- **cloud** - AWS, Azure
+- **platform** - Kubernetes, Docker, Terraform, Helm
+- **delivery** - GitHub Actions, CI/CD pipelines, ArgoCD, GitOps
+- **systems** - Linux, networking, shell automation
+- **ai** - bounded agents, MCP, LLM workflows, computer vision
+- **languages** - Python, Bash, HCL, YAML
+
+</details>
 
 Upstream, open: [skip_cache for get_lineage](https://github.com/acryldata/mcp-server-datahub/pull/190) in acryldata/mcp-server-datahub, and a [repair-boundary skill](https://github.com/datahub-project/datahub-skills/pull/125) in datahub-project/datahub-skills.
 

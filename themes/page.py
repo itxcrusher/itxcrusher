@@ -84,6 +84,44 @@ def picture(theme_dir, stem, alt, width="100%"):
     ])
 
 
+def badge_picture(slug, variant_file, label):
+    """One themed badge. height=28 and nothing else: GitHub turns that into
+    height:auto + max-height:28px, and because every badge is narrower than the
+    narrowest measured README column (238px) the max-width cap never binds either.
+    So it renders at its authored size on every viewport, which is the only way real
+    words on this page get to carry the theme's colours instead of GitHub's grey."""
+    d = "./assets/badges/" + slug
+    return (
+        "<picture>"
+        '<source media="(prefers-color-scheme: dark)" srcset="%s/dark/%s.svg">'
+        '<source media="(prefers-color-scheme: light)" srcset="%s/light/%s.svg">'
+        '<img src="%s/light/%s.svg" height="28" alt="%s" />'
+        "</picture>"
+    ) % (d, variant_file, d, variant_file, d, variant_file, _attr(label))
+
+
+def badge_rows(slug):
+    """The stack as themed pills, one line per category, replacing the code fence.
+    The fence was the largest block on the page that GitHub painted in its own grey."""
+    from themes.badge import slug as bslug
+    out = []
+    for label, values in STACK:
+        row = [badge_picture(slug, bslug(label), label)]
+        row += [badge_picture(slug, bslug(v), v) for v in values]
+        out.append("<p>" + "\n".join(row) + "</p>")
+    # The badges are images, and this page's contract says the facts survive with
+    # images off (R3). Every badge carries its word as alt text, but a hostile network
+    # drops both, so the same list stays here as text. Collapsed on purpose: it is a
+    # fallback, not a second copy of the section.
+    out.append("<details><summary><sub>the same stack as plain text</sub></summary>")
+    out.append("")
+    for label, values in STACK:
+        out.append("- **%s** - %s" % (label, ", ".join(values)))
+    out.append("")
+    out.append("</details>")
+    return "\n".join(out)
+
+
 def heading_picture(theme_dir, stem, alt, level=2):
     """A section heading that is a themed image AND a real heading element.
 
@@ -273,9 +311,7 @@ def render_readme(theme, data, today, mode, n_themes):
     out.append("")
     out.append(STACK_INTRO)
     out.append("")
-    out.append("```" + text.get("fence", "text"))
-    out.append(format_stack(text.get("fence", "text")))
-    out.append("```")
+    out.append(badge_rows(t["slug"]))
     out.append("")
     out.append(UPSTREAM)
     out.append("")

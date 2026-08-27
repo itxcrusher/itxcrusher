@@ -1,0 +1,7 @@
+<svg width="151" height="28" viewBox="0 0 151 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">LLM workflows</title>
+<rect x="0" y="0" width="151" height="28" rx="0" fill="#e5ca9e" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="149.5" height="26.5" rx="0" fill="none" stroke="#773f18" stroke-opacity="0.55" stroke-width="1.5"/>
+<line x1="16" y1="18" x2="22" y2="10" stroke="#773f18" stroke-opacity="1" stroke-width="2"/>
+<text x="27" y="19.04" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#3a2410">LLM workflows</text>
+</svg>

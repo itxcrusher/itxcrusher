@@ -18,6 +18,18 @@ from .rotate import schedule
 
 # ------------------------------------------------------------------ gallery README
 
+# A short row rather than all 27: the gallery already carries 47 heroes, and the point
+# here is the badge's shape and colour in this theme, not the stack's contents.
+BADGE_SAMPLE = ("platform", "Kubernetes", "Terraform", "GitHub Actions", "Python")
+
+
+def _badge_sample(slug):
+    from themes.badge import slug as bslug
+    from themes.page import badge_picture
+    row = [badge_picture(slug, bslug(x), x) for x in BADGE_SAMPLE]
+    return "<p>" + "\n".join(row).replace("./assets/badges/", "../badges/") + "</p>"
+
+
 def gallery_markdown(themes, n_active):
     out = ["# The themes", "",
            "This profile wears a different look every day. The pick is a date-seeded draw from "
@@ -25,8 +37,8 @@ def gallery_markdown(themes, n_active):
            "`.github/workflows/profile.yml` at 03:17 UTC. Every asset is a committed SVG in "
            "this directory; nothing is fetched from a third party." % n_active, "",
            "Each theme changes the hero, the section headers, the sign-off strip, the "
-           "contribution snake colours, the repository row style, the stack fence language, "
-           "and the callout colour. The prose is the same every day.", ""]
+           "contribution snake colours, the repository row style, the stack badges, and the "
+           "callout colour. The prose is the same every day.", ""]
     for fam, title in FAMILIES.items():
         rows = [t for t in themes if t["family"] == fam]
         if not rows:
@@ -39,8 +51,10 @@ def gallery_markdown(themes, n_active):
             out.append("")
             out.append(P.picture(d, "hero", "%s theme hero: %s" % (t["name"], t["tagline"])).replace("./assets/themes/", "./"))
             out.append("")
-            out.append("%s <sub>rows: %s, fence: %s, callout: %s%s</sub>" % (
-                t["tagline"], t["text"].get("rows", "list"), t["text"].get("fence", "text"),
+            out.append(_badge_sample(t["slug"]))
+            out.append("")
+            out.append("%s <sub>rows: %s, callout: %s%s</sub>" % (
+                t["tagline"], t["text"].get("rows", "list"),
                 t["text"].get("alert", "NOTE"), ", disabled" if t.get("disabled") else ""))
             out.append("")
     out.append("To add one: append an entry to `themes/catalog.py`, run "

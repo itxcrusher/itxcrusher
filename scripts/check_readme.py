@@ -55,6 +55,9 @@ REQUIRED_TEXT = [
     "If infrastructure feels exciting",
     "operating stack",
     "private client and product repositories",
+    # The stack moved into badges, which are images. These prove the text fallback
+    # under them is still there, so the section does not vanish when images do.
+    "Kubernetes", "Terraform", "GitHub Actions", "computer vision",
 ]
 
 APPROVED_FONT_TOKENS = (
@@ -71,6 +74,14 @@ FORBIDDEN_SVG_TOKENS = ("<script", "@import", 'href="http', "url(http", 'url("ht
                         "<foreignObject", "<a ")
 PAGE_WEIGHT_BUDGET = 160 * 1024
 MIN_FONT = 41
+# Badge contract. These are not width="100%" art: they are height-pinned pills that
+# render one SVG unit to one CSS pixel, so their floor is a real pixel size and their
+# ceiling is the narrowest README column measured on the live profile (238px at a 320
+# viewport), past which GitHub's max-width:100% would start scaling them.
+BADGE_DIR = "assets/badges/"
+BADGE_H = 28
+BADGE_MAX_W = 238
+BADGE_MIN_FONT = 14
 
 IMG_RE = re.compile(r"<img\b[^>]*>", re.I)
 ATTR_RE = re.compile(r'(\w[\w-]*)\s*=\s*"([^"]*)"')
@@ -185,6 +196,15 @@ def main():
     bad_alt = []
     for t in tags:
         alt = t.get("alt", "")
+        src = t.get("src", "")
+        # A badge is a pill with one word painted in it. Its correct alt is that word,
+        # so the length floor would force a screen reader through a sentence per chip.
+        # The floor is still doing its job everywhere else: it exists to catch alt like
+        # "banner" on a picture that carries real content.
+        if src.lstrip("./").startswith(BADGE_DIR):
+            if not alt.strip():
+                bad_alt.append("empty alt on " + src)
+            continue
         if not alt.strip():
             bad_alt.append("empty alt")
         elif len(alt) < 20 and alt not in heading_alts:
@@ -220,17 +240,37 @@ def main():
             fail("R7", svg_path + " is not valid XML: " + str(e))
             svg_fail += 1
             continue
+        is_badge = svg_path.replace(os.sep, "/").startswith(BADGE_DIR.lstrip("./"))
         vb = (root.get("viewBox") or "").split()
-        if len(vb) != 4 or vb[2] != "900":
-            fail("R6", svg_path + " viewBox width must be 900, got " + repr(vb))
-            bad = True
         sizes = [int(s) for s in re.findall(r'font-size="(\d+)"', raw)]
-        small = [s for s in sizes if s < MIN_FONT]
-        if small:
-            fail("R6", svg_path + " font-size below the %d-unit floor: %s" % (MIN_FONT, small))
-            bad = True
-        if sizes:
-            smallest = min(smallest, min(sizes))
+        if is_badge:
+            # A badge is height-pinned, not width-scaled: GitHub turns height="28" into
+            # height:auto + max-height:28px, so one unit is one pixel and 14 units is
+            # 14px on every viewport. That only holds while the badge stays narrower
+            # than the narrowest README column, measured at 238px on a 320 viewport.
+            # Past that GitHub's max-width:100% starts shrinking it and the type with it.
+            if len(vb) != 4 or vb[3] != str(BADGE_H):
+                fail("R6", svg_path + " badge viewBox height must be %d, got %r" % (BADGE_H, vb))
+                bad = True
+            elif float(vb[2]) > BADGE_MAX_W:
+                fail("R6", svg_path + " badge is %s units wide, over the %d cap where "
+                     "GitHub starts scaling it" % (vb[2], BADGE_MAX_W))
+                bad = True
+            small = [x for x in sizes if x < BADGE_MIN_FONT]
+            if small:
+                fail("R6", svg_path + " badge type below the %d-unit floor: %s"
+                     % (BADGE_MIN_FONT, small))
+                bad = True
+        else:
+            if len(vb) != 4 or vb[2] != "900":
+                fail("R6", svg_path + " viewBox width must be 900, got " + repr(vb))
+                bad = True
+            small = [x for x in sizes if x < MIN_FONT]
+            if small:
+                fail("R6", svg_path + " font-size below the %d-unit floor: %s" % (MIN_FONT, small))
+                bad = True
+            if sizes:
+                smallest = min(smallest, min(sizes))
         forbidden = [tok for tok in FORBIDDEN_SVG_TOKENS if tok in raw]
         if forbidden:
             fail("R7", svg_path + " contains forbidden token(s): " + str(forbidden))
@@ -254,7 +294,9 @@ def main():
                 bad = True
         svg_fail += bad
     if svgs and not svg_fail:
-        ok("R6", "%d SVGs on a 900 canvas, smallest rendered type %d units" % (len(svgs), smallest))
+        nb = sum(1 for x in svgs if x.replace(os.sep, "/").startswith(BADGE_DIR.lstrip("./")))
+        ok("R6", "%d banner SVGs on a 900 canvas (smallest type %d units) and %d badges "
+                 "under the %dpx no-scale cap" % (len(svgs) - nb, smallest, nb, BADGE_MAX_W))
         ok("R7", "every SVG is self-contained, system-font, labelled")
         ok("R8", "no SVG renders a number")
 
