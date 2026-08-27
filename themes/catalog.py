@@ -102,7 +102,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="node"),
       labels=dict(public="what is public", stack="the stack", snake="activity"),
       signoff="end of inference",
-      text=dict(rows="list", chip="kbd", fence="python", alert="TIP", sep="*")),
+      text=dict(rows="list", chip="kbd", fence="python", alert="TIP", sep="+")),
 
     T("ledger", "Ledger", "tech", "Hash-chained blocks along the top. The chain is intact.",
       dark=dict(bg="#05080f", bg2="#0a1426", ink="#e9f0ff", muted="#6c7fa3", acc="#4f8cff", acc2="#7ee0c3"),
@@ -250,7 +250,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="flake"),
       labels=dict(public="what is public", stack="the stack", snake="the snowfield"),
       signoff="stay warm",
-      text=dict(rows="list", chip="plain", fence="yaml", alert="NOTE", sep="*")),
+      text=dict(rows="list", chip="plain", fence="yaml", alert="NOTE", sep="+")),
 
     T("forest", "Forest", "nature", "Pines in two depths, light shafts, fireflies after dusk.",
       dark=dict(bg="#04110a", bg2="#0b2416", ink="#e6f4e8", muted="#7aa287", acc="#62d98a", acc2="#f6ff9a"),
@@ -288,7 +288,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="star"),
       labels=dict(public="what is public", stack="the stack", snake="night sky"),
       signoff="northern lights",
-      text=dict(rows="list", chip="plain", fence="yaml", alert="TIP", sep="*")),
+      text=dict(rows="list", chip="plain", fence="yaml", alert="TIP", sep="+")),
 
     T("abyss", "Abyss", "nature", "Bubbles rising through deep water, bioluminescence drifting past.",
       dark=dict(bg="#01060d", bg2="#042138", ink="#d9f1ff", muted="#5c8ea9", acc="#21d0ff", acc2="#7bffe0"),
@@ -310,7 +310,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="sun"),
       labels=dict(public="what is public", stack="the stack", snake="daylight"),
       signoff="have a good one",
-      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="*")),
+      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="-")),
 
     T("cloudy", "Cloudy", "nature", "Two layers of cloud drifting, one break of warm light behind them.",
       dark=dict(bg="#1a1f2b", bg2="#2f384c", ink="#e7ebf3", muted="#97a1b6", acc="#9fb3d9", acc2="#ffd27a"),
@@ -358,7 +358,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="dot"),
       labels=dict(public="what is public", stack="the stack", snake="in bloom"),
       signoff="petals fall",
-      text=dict(rows="quotes", chip="plain", fence="yaml", alert="TIP", sep="*")),
+      text=dict(rows="quotes", chip="plain", fence="yaml", alert="TIP", sep="-")),
 
     T("autumn", "Autumn", "nature", "Leaves turning and falling through warm light.",
       dark=dict(bg="#1a0f06", bg2="#33190a", ink="#ffe9cf", muted="#b8936a", acc="#ff8a2a", acc2="#ffc857"),
@@ -395,7 +395,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="flake"),
       labels=dict(public="what is public", stack="the stack", snake="ice core"),
       signoff="frozen solid",
-      text=dict(rows="list", chip="plain", fence="json", alert="NOTE", sep="*")),
+      text=dict(rows="list", chip="plain", fence="json", alert="NOTE", sep="+")),
 
     # ------------------------------------------------------------- ELEMENTAL
     T("lava", "Lava", "elemental", "Cracks glowing through cooled basalt. Sparks rising.",
@@ -409,7 +409,7 @@ THEMES = [
       header=dict(style="glow", font="sans", ornament="flame"),
       labels=dict(public="what is public", stack="the stack", snake="still cooling"),
       signoff="stay cool",
-      text=dict(rows="list", chip="plain", fence="diff", alert="NOTE", sep="*")),
+      text=dict(rows="list", chip="plain", fence="diff", alert="NOTE", sep="-")),
 
     T("space", "Space", "elemental", "A ringed planet, a nebula wash, stars out of phase.",
       dark=dict(bg="#02040c", bg2="#080f2a", ink="#eef2ff", muted="#8390bd", acc="#8ea6ff", acc2="#ff8ad6"),
@@ -420,7 +420,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="star"),
       labels=dict(public="what is public", stack="the stack", snake="orbit"),
       signoff="see you in orbit",
-      text=dict(rows="list", chip="code", fence="json", alert="NOTE", sep="*")),
+      text=dict(rows="list", chip="code", fence="json", alert="NOTE", sep="+")),
 
     T("granite", "Granite", "elemental", "Rock strata and grain. The only theme with no motion at all.",
       dark=dict(bg="#15161a", bg2="#26282e", ink="#e9eaee", muted="#9a9da6", acc="#c9ccd4", acc2="#b0b6c4"),
@@ -455,7 +455,7 @@ THEMES = [
       header=dict(style="rule", font="sans", ornament="flame"),
       labels=dict(public="what is public", stack="the stack", snake="the last light"),
       signoff="stay lit",
-      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="*")),
+      text=dict(rows="list", chip="plain", fence="toml", alert="TIP", sep="-")),
 
     T("lunar", "Lunar", "elemental", "Craters, a grey horizon, Earth small in the sky.",
       dark=dict(bg="#05070c", bg2="#0f131c", ink="#eef0f5", muted="#8d94a4", acc="#d8dce6", acc2="#7fb6ff"),
@@ -635,6 +635,8 @@ def _enforce_light_accent(themes, floor=LIGHT_ACCENT_FLOOR, aim=LIGHT_ACCENT_AIM
                     % (t["slug"], key, floor, light["bg"]))
 
 
+UNSAFE_SEPS = {"*", "_"}   # markdown emphasis characters; also read as footnote marks
+
 SAFE_ALERTS = {"NOTE", "TIP"}
 
 # GitHub renders WARNING, CAUTION and IMPORTANT with alarm styling: a warning triangle,
@@ -643,6 +645,10 @@ SAFE_ALERTS = {"NOTE", "TIP"}
 # any of this is real?" inside a red danger box reads as a problem report. Only the two
 # informational callouts are allowed.
 for _t in THEMES:
+    _s = _t["text"].get("sep", "|")
+    assert _s not in UNSAFE_SEPS, (
+        "%s uses sep=%r; '*' and '_' are emphasis characters and read as footnote "
+        "markers between the header links" % (_t["slug"], _s))
     _a = _t["text"].get("alert", "NOTE")
     assert _a in SAFE_ALERTS, (
         "%s uses [!%s]; the CTA callout must be NOTE or TIP" % (_t["slug"], _a))

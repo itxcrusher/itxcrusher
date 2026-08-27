@@ -71,6 +71,8 @@ rules that bite most often:
 
 ## How to edit
 
+Full theme workflow, verified command by command: [`docs/reference/themes.md`](docs/reference/themes.md).
+
 - **Prose, links, the stack:** edit `themes/page.py`, then re-render:
   `python scripts/profile_theme.py render --theme <slug> --data fixture` and run
   `python scripts/check_readme.py`. The workflow re-renders with live data next morning.

@@ -38,6 +38,18 @@ def _raw(date, slugs, salt=SALT):
     return slugs[int(h, 16) % len(slugs)]
 
 
+# A handful of days get their own small pool. Verified rather than invented: the
+# account anniversary is github.com/itxcrusher's real created_at, 2022-04-12.
+# Each pool is drawn from deterministically like any other day, so two consecutive
+# Halloweens do not have to look the same. Add a date here and it just works.
+SPECIAL_DAYS = {
+    (10, 31): ("halloween", ["noir", "eclipse", "toxic", "wasteland"]),
+    (12, 31): ("new-year", ["aurora", "space", "synthwave"]),
+    (1, 1):   ("new-year", ["aurora", "space", "synthwave"]),
+    (4, 12):  ("anniversary", ["crt", "pixel", "mainframe"]),
+}
+
+
 EPOCH = datetime.date(2026, 8, 1)
 WINDOW = 7          # a theme cannot come back within a week
 
@@ -72,6 +84,12 @@ def pick(date=None, mode=None, override=None):
         if override not in BY_SLUG:
             raise SystemExit("unknown theme %r; known: %s" % (override, ", ".join(sorted(BY_SLUG))))
         return override, "override"
+    special = SPECIAL_DAYS.get((date.month, date.day))
+    if special and not mode.startswith("fixed:"):
+        label, pool_ = special
+        eligible = [s for s in pool_ if s in BY_SLUG and s in slugs]
+        if eligible:
+            return _raw(date, eligible), "special:" + label
     if mode.startswith("fixed:"):
         slug = mode.split(":", 1)[1]
         if slug not in BY_SLUG:
