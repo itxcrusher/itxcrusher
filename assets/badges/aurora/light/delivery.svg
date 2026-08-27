@@ -1,6 +1,6 @@
-<svg width="112" height="28" viewBox="0 0 112 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="94" height="28" viewBox="0 0 94 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">delivery</title>
-<rect x="0" y="0" width="112" height="28" rx="14" fill="#095d3e" fill-opacity="1"/>
+<rect x="0" y="0" width="94" height="28" rx="14" fill="#095d3e" fill-opacity="1"/>
 <circle cx="19" cy="14" r="3.5" fill="#edf6fb" fill-opacity="1"/>
 <text x="27" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#edf6fb">delivery</text>
 </svg>

@@ -3,8 +3,8 @@
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e0e6f2" stop-opacity="1"/><stop offset="1" stop-color="#f5f7fb" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
 <text x="450" y="42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#4c5f80" text-anchor="middle">signal lost</text>
-<line x1="40" y1="32" x2="282.78" y2="32" stroke="#744a07" stroke-opacity="0.6" stroke-width="1.5"/>
-<line x1="617.22" y1="32" x2="860" y2="32" stroke="#744a07" stroke-opacity="0.6" stroke-width="1.5"/>
-<path d="M613.22,28.207 L614.97,30.216 L616.72,33.27 L618.47,35.58 L620.22,35.793 L621.97,33.784 L623.72,30.73 L625.47,28.42 L627.22,28.207 L628.97,30.216 L630.72,33.27 L632.47,35.58 L634.22,35.793 L635.97,33.784 L637.72,30.73 L639.47,28.42 L641.22,28.207" fill="none" stroke="#744a07" stroke-opacity="0.95" stroke-width="2"/>
-<path d="M258.78,32.394 L260.53,29.464 L262.28,28.019 L264.03,28.907 L265.78,31.606 L267.53,34.536 L269.28,35.981 L271.03,35.093 L272.78,32.394 L274.53,29.464 L276.28,28.019 L278.03,28.907 L279.78,31.606 L281.53,34.536 L283.28,35.981 L285.03,35.093 L286.78,32.394" fill="none" stroke="#744a07" stroke-opacity="0.95" stroke-width="2"/>
+<line x1="40" y1="32" x2="291.327" y2="32" stroke="#744a07" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="608.673" y1="32" x2="860" y2="32" stroke="#744a07" stroke-opacity="0.6" stroke-width="1.5"/>
+<path d="M604.673,35.728 L606.423,35.662 L608.173,33.451 L609.923,30.39 L611.673,28.272 L613.423,28.338 L615.173,30.549 L616.923,33.61 L618.673,35.728 L620.423,35.662 L622.173,33.451 L623.923,30.39 L625.673,28.272 L627.423,28.338 L629.173,30.549 L630.923,33.61 L632.673,35.728" fill="none" stroke="#744a07" stroke-opacity="0.95" stroke-width="2"/>
+<path d="M267.327,34.244 L269.077,35.928 L270.827,35.311 L272.577,32.755 L274.327,29.756 L276.077,28.072 L277.827,28.689 L279.577,31.245 L281.327,34.244 L283.077,35.928 L284.827,35.311 L286.577,32.755 L288.327,29.756 L290.077,28.072 L291.827,28.689 L293.577,31.245 L295.327,34.244" fill="none" stroke="#744a07" stroke-opacity="0.95" stroke-width="2"/>
 </svg>

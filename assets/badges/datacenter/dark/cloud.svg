@@ -1,6 +1,6 @@
-<svg width="81" height="28" viewBox="0 0 81 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="79" height="28" viewBox="0 0 79 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">cloud</title>
-<rect x="0" y="0" width="81" height="28" rx="2" fill="#3ddc84" fill-opacity="1"/>
+<rect x="0" y="0" width="79" height="28" rx="2" fill="#3ddc84" fill-opacity="1"/>
 <rect x="15.5" y="10.5" width="7" height="7" rx="1" fill="#0b0f14" fill-opacity="1"/>
 <text x="27" y="19.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0b0f14">cloud</text>
 </svg>

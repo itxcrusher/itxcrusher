@@ -6,12 +6,12 @@
 <text x="40" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">I build infrastructure and bounded</text>
 <text x="40" y="74" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">automation for other people's</text>
 <text x="40" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">production systems. Terraform,</text>
-<text x="40" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">Kubernetes, CI/CD, and lately</text>
-<text x="40" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">agents that act on evidence they</text>
-<text x="40" y="178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">can prove instead of guessing.</text>
+<text x="40" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">Kubernetes, CI/CD, and lately agents</text>
+<text x="40" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">that act on evidence they can prove</text>
+<text x="40" y="178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">instead of guessing.</text>
 <text x="40" y="217" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">Most of that work is in private</text>
-<text x="40" y="243" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">client and product repositories,</text>
-<text x="40" y="269" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">so what is public here is a sample</text>
+<text x="40" y="243" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">client and product repositories, so</text>
+<text x="40" y="269" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">what is public here is a sample</text>
 <text x="40" y="295" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">rather than the volume. The</text>
 <text x="40" y="321" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">contribution graph counts it. The</text>
 <text x="40" y="347" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0b2e12">repository list cannot show it.</text>

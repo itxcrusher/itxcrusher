@@ -1,37 +1,29 @@
-<svg width="280" height="795" viewBox="0 0 280 795" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="280" height="611" viewBox="0 0 280 611" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">intro</title>
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dfbf8c" stop-opacity="1"/><stop offset="1" stop-color="#f6ead6" stop-opacity="1"/></linearGradient></defs>
-<rect x="0" y="0" width="280" height="795" fill="url(#g1)"/>
-<rect x="0" y="0" width="6" height="795" rx="0" fill="#773f18" fill-opacity="0.9"/>
-<text x="40" y="46" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">I build</text>
-<text x="40" y="69" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">infrastructure and</text>
-<text x="40" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">bounded automation</text>
-<text x="40" y="115" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">for other people's</text>
-<text x="40" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">production systems.</text>
-<text x="40" y="161" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">Terraform,</text>
-<text x="40" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">Kubernetes, CI/CD,</text>
-<text x="40" y="207" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">and lately agents</text>
-<text x="40" y="230" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">that act on evidence</text>
-<text x="40" y="253" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">they can prove</text>
-<text x="40" y="276" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">instead of guessing.</text>
-<text x="40" y="310" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">Most of that work is</text>
-<text x="40" y="333" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">in private client</text>
-<text x="40" y="356" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">and product</text>
-<text x="40" y="379" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">repositories, so</text>
-<text x="40" y="402" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">what is public here</text>
-<text x="40" y="425" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">is a sample rather</text>
-<text x="40" y="448" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">than the volume. The</text>
-<text x="40" y="471" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">contribution graph</text>
-<text x="40" y="494" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">counts it. The</text>
-<text x="40" y="517" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">repository list</text>
-<text x="40" y="540" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">cannot show it.</text>
-<text x="40" y="574" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">If infrastructure</text>
-<text x="40" y="597" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">feels exciting,</text>
-<text x="40" y="620" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">something is</text>
-<text x="40" y="643" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">probably wrong. The</text>
-<text x="40" y="666" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">goal is systems that</text>
-<text x="40" y="689" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">are quiet,</text>
-<text x="40" y="712" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">predictable, and</text>
-<text x="40" y="735" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">uninteresting in</text>
-<text x="40" y="758" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">production.</text>
+<rect x="0" y="0" width="280" height="611" fill="url(#g1)"/>
+<rect x="0" y="0" width="6" height="611" rx="0" fill="#773f18" fill-opacity="0.9"/>
+<text x="40" y="46" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">I build infrastructure and</text>
+<text x="40" y="69" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">bounded automation for</text>
+<text x="40" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">other people's production</text>
+<text x="40" y="115" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">systems. Terraform,</text>
+<text x="40" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">Kubernetes, CI/CD, and</text>
+<text x="40" y="161" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">lately agents that act on</text>
+<text x="40" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">evidence they can prove</text>
+<text x="40" y="207" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">instead of guessing.</text>
+<text x="40" y="241" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">Most of that work is in</text>
+<text x="40" y="264" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">private client and product</text>
+<text x="40" y="287" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">repositories, so what is</text>
+<text x="40" y="310" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">public here is a sample</text>
+<text x="40" y="333" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">rather than the volume.</text>
+<text x="40" y="356" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">The contribution graph</text>
+<text x="40" y="379" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">counts it. The repository</text>
+<text x="40" y="402" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">list cannot show it.</text>
+<text x="40" y="436" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">If infrastructure feels</text>
+<text x="40" y="459" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">exciting, something is</text>
+<text x="40" y="482" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">probably wrong. The goal</text>
+<text x="40" y="505" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">is systems that are quiet,</text>
+<text x="40" y="528" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">predictable, and</text>
+<text x="40" y="551" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">uninteresting in</text>
+<text x="40" y="574" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#3a2410">production.</text>
 </svg>

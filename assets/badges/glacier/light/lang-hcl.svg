@@ -1,6 +1,6 @@
-<svg width="47" height="28" viewBox="0 0 47 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="49" height="28" viewBox="0 0 49 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">HCL</title>
-<rect x="0" y="0" width="47" height="28" rx="14" fill="#dff5fd" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="45.5" height="26.5" rx="13.25" fill="none" stroke="#065973" stroke-opacity="0.3" stroke-width="1.5"/>
-<text x="23.5" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#3f7a8f" text-anchor="middle">HCL</text>
+<rect x="0" y="0" width="49" height="28" rx="14" fill="#dff5fd" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="47.5" height="26.5" rx="13.25" fill="none" stroke="#065973" stroke-opacity="0.3" stroke-width="1.5"/>
+<text x="24.5" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#3f7a8f" text-anchor="middle">HCL</text>
 </svg>

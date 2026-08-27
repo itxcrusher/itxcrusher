@@ -3,5 +3,5 @@
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#061006" stop-opacity="1"/><stop offset="1" stop-color="#0b1c0b" stop-opacity="1"/></linearGradient><filter id="gl2" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/><feFlood flood-color="#35ff5a" flood-opacity="0.9" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="g3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#35ff5a" stop-opacity="0.95"/><stop offset="1" stop-color="#9dff9d" stop-opacity="0"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="80" fill="url(#g1)"/>
 <text x="44" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#a4ffb5" filter="url(#gl2)">> stack</text>
-<rect x="267.64" y="40" width="592.36" height="3" rx="1.5" fill="url(#g3)"/>
+<rect x="255.726" y="40" width="604.274" height="3" rx="1.5" fill="url(#g3)"/>
 </svg>

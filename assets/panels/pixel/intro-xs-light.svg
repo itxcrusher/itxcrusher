@@ -1,37 +1,34 @@
-<svg width="280" height="795" viewBox="0 0 280 795" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="280" height="726" viewBox="0 0 280 726" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">intro</title>
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8dcf5" stop-opacity="1"/><stop offset="1" stop-color="#f4f4ff" stop-opacity="1"/></linearGradient></defs>
-<rect x="0" y="0" width="280" height="795" fill="url(#g1)"/>
-<rect x="0" y="0" width="6" height="795" rx="0" fill="#764700" fill-opacity="0.9"/>
-<text x="40" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">I build</text>
-<text x="40" y="69" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">infrastructure and</text>
-<text x="40" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">bounded automation</text>
-<text x="40" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">for other people's</text>
-<text x="40" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">production systems.</text>
-<text x="40" y="161" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">Terraform,</text>
-<text x="40" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">Kubernetes, CI/CD,</text>
-<text x="40" y="207" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">and lately agents</text>
-<text x="40" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">that act on evidence</text>
-<text x="40" y="253" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">they can prove</text>
-<text x="40" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">instead of guessing.</text>
-<text x="40" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">Most of that work is</text>
-<text x="40" y="333" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">in private client</text>
-<text x="40" y="356" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">and product</text>
-<text x="40" y="379" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">repositories, so</text>
-<text x="40" y="402" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">what is public here</text>
-<text x="40" y="425" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">is a sample rather</text>
-<text x="40" y="448" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">than the volume. The</text>
-<text x="40" y="471" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">contribution graph</text>
-<text x="40" y="494" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">counts it. The</text>
-<text x="40" y="517" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">repository list</text>
-<text x="40" y="540" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">cannot show it.</text>
-<text x="40" y="574" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">If infrastructure</text>
-<text x="40" y="597" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">feels exciting,</text>
-<text x="40" y="620" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">something is</text>
-<text x="40" y="643" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">probably wrong. The</text>
-<text x="40" y="666" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">goal is systems that</text>
-<text x="40" y="689" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">are quiet,</text>
-<text x="40" y="712" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">predictable, and</text>
-<text x="40" y="735" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">uninteresting in</text>
-<text x="40" y="758" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">production.</text>
+<rect x="0" y="0" width="280" height="726" fill="url(#g1)"/>
+<rect x="0" y="0" width="6" height="726" rx="0" fill="#764700" fill-opacity="0.9"/>
+<text x="40" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">I build infrastructure</text>
+<text x="40" y="69" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">and bounded automation</text>
+<text x="40" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">for other people's</text>
+<text x="40" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">production systems.</text>
+<text x="40" y="138" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">Terraform, Kubernetes,</text>
+<text x="40" y="161" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">CI/CD, and lately</text>
+<text x="40" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">agents that act on</text>
+<text x="40" y="207" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">evidence they can</text>
+<text x="40" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">prove instead of</text>
+<text x="40" y="253" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">guessing.</text>
+<text x="40" y="287" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">Most of that work is</text>
+<text x="40" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">in private client and</text>
+<text x="40" y="333" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">product repositories,</text>
+<text x="40" y="356" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">so what is public here</text>
+<text x="40" y="379" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">is a sample rather</text>
+<text x="40" y="402" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">than the volume. The</text>
+<text x="40" y="425" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">contribution graph</text>
+<text x="40" y="448" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">counts it. The</text>
+<text x="40" y="471" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">repository list cannot</text>
+<text x="40" y="494" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">show it.</text>
+<text x="40" y="528" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">If infrastructure</text>
+<text x="40" y="551" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">feels exciting,</text>
+<text x="40" y="574" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">something is probably</text>
+<text x="40" y="597" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">wrong. The goal is</text>
+<text x="40" y="620" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">systems that are</text>
+<text x="40" y="643" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">quiet, predictable,</text>
+<text x="40" y="666" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">and uninteresting in</text>
+<text x="40" y="689" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#14143a">production.</text>
 </svg>

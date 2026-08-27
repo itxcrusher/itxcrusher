@@ -3,8 +3,8 @@
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#dcbe8c" stop-opacity="1"/><stop offset="1" stop-color="#f5e9d0" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
 <text x="450" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" fill="#7f5f38" text-anchor="middle">so long, partner</text>
-<line x1="40" y1="32" x2="197.52" y2="32" stroke="#763c12" stroke-opacity="0.6" stroke-width="1.5"/>
-<line x1="702.48" y1="32" x2="860" y2="32" stroke="#763c12" stroke-opacity="0.6" stroke-width="1.5"/>
-<polygon points="712.48,23 714.831,28.764 721.04,29.219 716.284,33.236 717.77,39.281 712.48,36 707.19,39.281 708.676,33.236 703.92,29.219 710.129,28.764" fill="#763c12" fill-opacity="0.95"/>
-<polygon points="187.52,23 189.871,28.764 196.08,29.219 191.324,33.236 192.81,39.281 187.52,36 182.23,39.281 183.716,33.236 178.96,29.219 185.169,28.764" fill="#763c12" fill-opacity="0.95"/>
+<line x1="40" y1="32" x2="243.802" y2="32" stroke="#763c12" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="656.198" y1="32" x2="860" y2="32" stroke="#763c12" stroke-opacity="0.6" stroke-width="1.5"/>
+<polygon points="666.198,23 668.549,28.764 674.758,29.219 670.002,33.236 671.488,39.281 666.198,36 660.908,39.281 662.394,33.236 657.639,29.219 663.847,28.764" fill="#763c12" fill-opacity="0.95"/>
+<polygon points="233.802,23 236.153,28.764 242.361,29.219 237.606,33.236 239.092,39.281 233.802,36 228.512,39.281 229.998,33.236 225.242,29.219 231.451,28.764" fill="#763c12" fill-opacity="0.95"/>
 </svg>

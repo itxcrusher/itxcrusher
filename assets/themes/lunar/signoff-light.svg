@@ -1,10 +1,10 @@
 <svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">one small step</title>
-<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cdd2dc" stop-opacity="1"/><stop offset="1" stop-color="#eceef3" stop-opacity="1"/></linearGradient><mask id="m2"><circle cx="678.04" cy="32" r="9" fill="#fff"/><circle cx="681.82" cy="30.02" r="7.74" fill="#000"/></mask><mask id="m3"><circle cx="221.96" cy="32" r="9" fill="#fff"/><circle cx="225.74" cy="30.02" r="7.74" fill="#000"/></mask></defs>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cdd2dc" stop-opacity="1"/><stop offset="1" stop-color="#eceef3" stop-opacity="1"/></linearGradient><mask id="m2"><circle cx="634.5" cy="32" r="9" fill="#fff"/><circle cx="638.28" cy="30.02" r="7.74" fill="#000"/></mask><mask id="m3"><circle cx="265.5" cy="32" r="9" fill="#fff"/><circle cx="269.28" cy="30.02" r="7.74" fill="#000"/></mask></defs>
 <rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
 <text x="450" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#545b6b" text-anchor="middle">one small step</text>
-<line x1="40" y1="32" x2="231.96" y2="32" stroke="#3d4a63" stroke-opacity="0.6" stroke-width="1.5"/>
-<line x1="668.04" y1="32" x2="860" y2="32" stroke="#3d4a63" stroke-opacity="0.6" stroke-width="1.5"/>
-<circle cx="678.04" cy="32" r="9" fill="#3d4a63" mask="url(#m2)"/>
-<circle cx="221.96" cy="32" r="9" fill="#3d4a63" mask="url(#m3)"/>
+<line x1="40" y1="32" x2="275.5" y2="32" stroke="#3d4a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="624.5" y1="32" x2="860" y2="32" stroke="#3d4a63" stroke-opacity="0.6" stroke-width="1.5"/>
+<circle cx="634.5" cy="32" r="9" fill="#3d4a63" mask="url(#m2)"/>
+<circle cx="265.5" cy="32" r="9" fill="#3d4a63" mask="url(#m3)"/>
 </svg>

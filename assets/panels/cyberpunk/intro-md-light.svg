@@ -1,23 +1,20 @@
-<svg width="600" height="634" viewBox="0 0 600 634" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="600" height="538" viewBox="0 0 600 538" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">intro</title>
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2d6ff" stop-opacity="1"/><stop offset="1" stop-color="#f4f0ff" stop-opacity="1"/></linearGradient></defs>
-<rect x="0" y="0" width="600" height="634" fill="url(#g1)"/>
-<rect x="0" y="0" width="6" height="634" rx="0" fill="#96007b" fill-opacity="0.9"/>
+<rect x="0" y="0" width="600" height="538" fill="url(#g1)"/>
+<rect x="0" y="0" width="6" height="538" rx="0" fill="#96007b" fill-opacity="0.9"/>
 <text x="40" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">I build infrastructure and bounded</text>
-<text x="40" y="84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">automation for other people's</text>
-<text x="40" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">production systems. Terraform,</text>
-<text x="40" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">Kubernetes, CI/CD, and lately agents</text>
-<text x="40" y="180" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">that act on evidence they can prove</text>
-<text x="40" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">instead of guessing.</text>
-<text x="40" y="259" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">Most of that work is in private client</text>
-<text x="40" y="291" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">and product repositories, so what is</text>
-<text x="40" y="323" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">public here is a sample rather than</text>
-<text x="40" y="355" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">the volume. The contribution graph</text>
-<text x="40" y="387" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">counts it. The repository list cannot</text>
-<text x="40" y="419" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">show it.</text>
-<text x="40" y="466" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">If infrastructure feels exciting,</text>
-<text x="40" y="498" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">something is probably wrong. The goal</text>
-<text x="40" y="530" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">is systems that are quiet,</text>
-<text x="40" y="562" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">predictable, and uninteresting in</text>
-<text x="40" y="594" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">production.</text>
+<text x="40" y="84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">automation for other people's production</text>
+<text x="40" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">systems. Terraform, Kubernetes, CI/CD,</text>
+<text x="40" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">and lately agents that act on evidence</text>
+<text x="40" y="180" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">they can prove instead of guessing.</text>
+<text x="40" y="227" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">Most of that work is in private client</text>
+<text x="40" y="259" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">and product repositories, so what is</text>
+<text x="40" y="291" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">public here is a sample rather than the</text>
+<text x="40" y="323" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">volume. The contribution graph counts it.</text>
+<text x="40" y="355" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">The repository list cannot show it.</text>
+<text x="40" y="402" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">If infrastructure feels exciting,</text>
+<text x="40" y="434" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">something is probably wrong. The goal is</text>
+<text x="40" y="466" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">systems that are quiet, predictable, and</text>
+<text x="40" y="498" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" font-weight="400" fill="#14082e">uninteresting in production.</text>
 </svg>

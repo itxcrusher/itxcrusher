@@ -1,6 +1,6 @@
-<svg width="109" height="28" viewBox="0 0 109 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="104" height="28" viewBox="0 0 104 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">JavaScript</title>
-<rect x="0" y="0" width="109" height="28" rx="2" fill="#121225" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="107.5" height="26.5" rx="1.25" fill="none" stroke="#ffd23f" stroke-opacity="0.3" stroke-width="1.5"/>
-<text x="54.5" y="19.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#8383a8" text-anchor="middle">JavaScript</text>
+<rect x="0" y="0" width="104" height="28" rx="2" fill="#121225" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="102.5" height="26.5" rx="1.25" fill="none" stroke="#ffd23f" stroke-opacity="0.3" stroke-width="1.5"/>
+<text x="52" y="19.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#8383a8" text-anchor="middle">JavaScript</text>
 </svg>

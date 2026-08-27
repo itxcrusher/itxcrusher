@@ -1,6 +1,6 @@
-<svg width="74" height="28" viewBox="0 0 74 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="69" height="28" viewBox="0 0 69 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Python</title>
-<rect x="0" y="0" width="74" height="28" rx="0" fill="#23180c" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="72.5" height="26.5" rx="0" fill="none" stroke="#d4a24c" stroke-opacity="0.3" stroke-width="1.5"/>
-<text x="37" y="19.04" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#b39a72" text-anchor="middle">Python</text>
+<rect x="0" y="0" width="69" height="28" rx="0" fill="#23180c" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="67.5" height="26.5" rx="0" fill="none" stroke="#d4a24c" stroke-opacity="0.3" stroke-width="1.5"/>
+<text x="34.5" y="19.04" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#b39a72" text-anchor="middle">Python</text>
 </svg>

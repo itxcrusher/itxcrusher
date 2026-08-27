@@ -1,36 +1,29 @@
-<svg width="280" height="772" viewBox="0 0 280 772" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="280" height="611" viewBox="0 0 280 611" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">intro</title>
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c1f24" stop-opacity="1"/><stop offset="1" stop-color="#101214" stop-opacity="1"/></linearGradient></defs>
-<rect x="0" y="0" width="280" height="772" fill="url(#g1)"/>
-<rect x="0" y="0" width="6" height="772" rx="0" fill="#ff3b3b" fill-opacity="0.9"/>
-<text x="40" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">I build</text>
-<text x="40" y="69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">infrastructure and</text>
-<text x="40" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">bounded automation</text>
-<text x="40" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">for other people's</text>
-<text x="40" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">production systems.</text>
-<text x="40" y="161" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">Terraform,</text>
-<text x="40" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">Kubernetes, CI/CD,</text>
-<text x="40" y="207" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">and lately agents</text>
-<text x="40" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">that act on evidence</text>
-<text x="40" y="253" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">they can prove</text>
-<text x="40" y="276" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">instead of guessing.</text>
-<text x="40" y="310" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">Most of that work is</text>
-<text x="40" y="333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">in private client and</text>
-<text x="40" y="356" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">product repositories,</text>
-<text x="40" y="379" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">so what is public</text>
-<text x="40" y="402" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">here is a sample</text>
-<text x="40" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">rather than the</text>
-<text x="40" y="448" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">volume. The</text>
-<text x="40" y="471" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">contribution graph</text>
-<text x="40" y="494" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">counts it. The</text>
-<text x="40" y="517" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">repository list</text>
-<text x="40" y="540" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">cannot show it.</text>
-<text x="40" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">If infrastructure</text>
-<text x="40" y="597" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">feels exciting,</text>
-<text x="40" y="620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">something is probably</text>
-<text x="40" y="643" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">wrong. The goal is</text>
-<text x="40" y="666" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">systems that are</text>
-<text x="40" y="689" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">quiet, predictable,</text>
-<text x="40" y="712" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">and uninteresting in</text>
-<text x="40" y="735" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">production.</text>
+<rect x="0" y="0" width="280" height="611" fill="url(#g1)"/>
+<rect x="0" y="0" width="6" height="611" rx="0" fill="#ff3b3b" fill-opacity="0.9"/>
+<text x="40" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">I build infrastructure and</text>
+<text x="40" y="69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">bounded automation for</text>
+<text x="40" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">other people's production</text>
+<text x="40" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">systems. Terraform,</text>
+<text x="40" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">Kubernetes, CI/CD, and</text>
+<text x="40" y="161" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">lately agents that act on</text>
+<text x="40" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">evidence they can prove</text>
+<text x="40" y="207" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">instead of guessing.</text>
+<text x="40" y="241" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">Most of that work is in</text>
+<text x="40" y="264" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">private client and product</text>
+<text x="40" y="287" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">repositories, so what is</text>
+<text x="40" y="310" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">public here is a sample</text>
+<text x="40" y="333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">rather than the volume.</text>
+<text x="40" y="356" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">The contribution graph</text>
+<text x="40" y="379" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">counts it. The repository</text>
+<text x="40" y="402" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">list cannot show it.</text>
+<text x="40" y="436" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">If infrastructure feels</text>
+<text x="40" y="459" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">exciting, something is</text>
+<text x="40" y="482" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">probably wrong. The goal</text>
+<text x="40" y="505" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">is systems that are quiet,</text>
+<text x="40" y="528" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">predictable, and</text>
+<text x="40" y="551" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">uninteresting in</text>
+<text x="40" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6e9ec">production.</text>
 </svg>

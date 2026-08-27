@@ -3,6 +3,6 @@
 <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#161618" stop-opacity="1"/><stop offset="1" stop-color="#08080a" stop-opacity="1"/></linearGradient></defs>
 <rect x="0" y="0" width="900" height="64" fill="url(#g1)"/>
 <text x="450" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" fill="#9a9a9f" text-anchor="middle">fade to black</text>
-<line x1="40" y1="32" x2="240.36" y2="32" stroke="#e6e6e6" stroke-opacity="0.6" stroke-width="1.5"/>
-<line x1="659.64" y1="32" x2="860" y2="32" stroke="#e6e6e6" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="40" y1="32" x2="280.998" y2="32" stroke="#e6e6e6" stroke-opacity="0.6" stroke-width="1.5"/>
+<line x1="619.002" y1="32" x2="860" y2="32" stroke="#e6e6e6" stroke-opacity="0.6" stroke-width="1.5"/>
 </svg>

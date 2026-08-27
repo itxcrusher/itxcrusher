@@ -1,7 +1,7 @@
-<svg width="122" height="28" viewBox="0 0 122 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="115" height="28" viewBox="0 0 115 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">networking</title>
-<rect x="0" y="0" width="122" height="28" rx="14" fill="#4b2507" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="120.5" height="26.5" rx="13.25" fill="none" stroke="#ffb020" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="0" y="0" width="115" height="28" rx="14" fill="#4b2507" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="113.5" height="26.5" rx="13.25" fill="none" stroke="#ffb020" stroke-opacity="0.55" stroke-width="1.5"/>
 <circle cx="19" cy="14" r="3.5" fill="#ffb020" fill-opacity="1"/>
 <text x="27" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#fff1dc">networking</text>
 </svg>

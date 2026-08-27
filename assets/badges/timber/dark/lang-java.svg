@@ -1,6 +1,6 @@
-<svg width="57" height="28" viewBox="0 0 57 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="52" height="28" viewBox="0 0 52 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Java</title>
-<rect x="0" y="0" width="57" height="28" rx="0" fill="#24170c" fill-opacity="1"/>
-<rect x="0.75" y="0.75" width="55.5" height="26.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.3" stroke-width="1.5"/>
-<text x="28.5" y="19.04" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#b39a7c" text-anchor="middle">Java</text>
+<rect x="0" y="0" width="52" height="28" rx="0" fill="#24170c" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="50.5" height="26.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.3" stroke-width="1.5"/>
+<text x="26" y="19.04" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#b39a7c" text-anchor="middle">Java</text>
 </svg>

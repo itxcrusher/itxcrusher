@@ -1,8 +1,8 @@
 """SVG primitives for the profile theme engine.
 
-Python 3.11+ stdlib only at runtime. Pillow is used ONLY for text measurement when it
-is installed (the build step); the rendered files never depend on it. Without Pillow a
-conservative width table is used, so `build` still works on a bare runner.
+Python 3.11+ stdlib only. Text measurement comes from themes/metrics.py, a committed
+table measured in a real browser, so a build produces byte-identical output on a laptop
+and on a CI runner.
 
 Every rule the checker enforces is respected here by construction:
   R5  no non-ASCII in any output
@@ -11,8 +11,9 @@ Every rule the checker enforces is respected here by construction:
   R8  no multi-digit numbers in rendered text (labels are words)
 """
 import math
-import os
 import random
+
+from themes import metrics
 
 W = 900
 
@@ -87,48 +88,19 @@ f = _f
 
 # ------------------------------------------------------------------------ measurement
 
-_PIL_FONTS = {
-    ("sans", 700): "DejaVuSans-Bold.ttf", ("sans", 400): "DejaVuSans.ttf",
-    ("mono", 700): "DejaVuSansMono-Bold.ttf", ("mono", 400): "DejaVuSansMono.ttf",
-    ("serif", 700): "DejaVuSerif-Bold.ttf", ("serif", 400): "DejaVuSerif.ttf",
-}
-_FONT_DIRS = ("/usr/share/fonts/truetype/dejavu", "/usr/share/fonts/dejavu",
-              "C:/Windows/Fonts", "/Library/Fonts")
-# Fallback average advance widths (em units) when Pillow is unavailable. DejaVu-like,
-# deliberately wide so that a fallback build never overflows.
-_AVG_EM = {("sans", 700): 0.66, ("sans", 400): 0.60, ("mono", 700): 0.62,
-           ("mono", 400): 0.62, ("serif", 700): 0.68, ("serif", 400): 0.62}
 _cache = {}
 
 
-def _pil_font(kind, weight, size):
-    key = (kind, weight, size)
-    if key in _cache:
-        return _cache[key]
-    font = None
-    try:
-        from PIL import ImageFont  # noqa: WPS433
-        name = _PIL_FONTS[(kind, 700 if weight >= 600 else 400)]
-        for d in _FONT_DIRS:
-            p = os.path.join(d, name)
-            if os.path.isfile(p):
-                font = ImageFont.truetype(p, size)
-                break
-    except Exception:  # noqa: BLE001
-        font = None
-    _cache[key] = font
-    return font
-
-
 def width(text, kind="sans", weight=700, size=48, ls=0.0):
-    """Measured advance width in SVG user units. Wide-font estimate on purpose:
-    DejaVu is roughly Verdana-width, the widest fallback GitHub readers resolve to."""
-    font = _pil_font(kind, weight, size)
-    if font is not None:
-        w = font.getlength(text)
-    else:
-        w = len(text) * _AVG_EM[(kind, 700 if weight >= 600 else 400)] * size
-    return w + max(0, len(text) - 1) * ls
+    """Measured advance width in SVG user units.
+
+    Backed by themes/metrics.py, a table measured in a real browser at the exact font
+    stacks these SVGs declare. This used to call Pillow against a DejaVu TTF and fall
+    back to a flat per-character average when the file was absent, which made the same
+    build produce different output on a CI runner than on a laptop. The files are
+    committed, so that was a correctness bug, not just an inaccuracy.
+    """
+    return metrics.advance(text, kind, weight, size) * metrics.SAFETY         + max(0, len(text) - 1) * ls
 
 
 def fit(text, kind, weight, max_w, max_size, min_size=MIN_FONT, ls=0.0):
