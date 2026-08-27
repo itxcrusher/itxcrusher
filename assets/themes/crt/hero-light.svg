@@ -6,10 +6,9 @@
 <rect x="0" y="0" width="900" height="240" fill="url(#p2)"/>
 <g clip-path="url(#c6)" ><g class="a5"><rect x="0" y="-60" width="900" height="60" fill="url(#g3)"/></g></g>
 <rect x="0" y="0" width="612" height="240" fill="url(#g7)"/>
-<text x="44" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="50" font-weight="700" fill="#0b2e12" filter="url(#gl8)">Muhammad Hassaan Javed</text>
-<text x="44" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#105f24">@itxcrusher</text>
-<text x="44" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="41" font-weight="400" fill="#3c6b47">cloud + platform engineer</text>
-<rect x="340.44" y="136" width="16" height="38" fill="#105f24" fill-opacity="0.95" class="a10"/>
+<text x="44" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="50" font-weight="700" fill="#0b2e12" filter="url(#gl8)">Muhammad Hassaan Javed</text>
+<text x="44" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="700" fill="#105f24">@itxcrusher</text>
+<rect x="340.44" y="152" width="16" height="38" fill="#105f24" fill-opacity="0.95" class="a10"/>
 <rect x="0" y="0" width="900" height="240" fill="url(#r11)"/>
 <rect x="6" y="6" width="888" height="228" rx="18" fill="none" stroke="#105f24" stroke-opacity="0.6" stroke-width="3"/>
 </svg>

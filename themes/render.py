@@ -67,7 +67,10 @@ def type_block(c, p, theme, box):
     layout = h.get("layout", "left")
     kind = h.get("font", "sans")
     ls = h.get("ls", 0)
-    show_tag = h.get("tagline", True)
+    # The name and the handle are enough; the hero no longer carries a job title.
+    # Kept as an opt-in flag rather than deleted so a theme can reintroduce a line
+    # of type under the handle if a composition ever needs the third weight.
+    show_tag = h.get("tagline", False)
     reserve = h.get("reserve", 0)          # width kept clear on the far side for a focal
     max_w = 900 - 2 * LEFT - reserve
     name, _ = _name_text(theme)
@@ -92,9 +95,10 @@ def type_block(c, p, theme, box):
         size, w, _ = fit(name, "mono", 700, max_w, 50)
         c.text(x, 124, name, size, ink, "mono", 700)
         c.text(x, 170, HANDLE, 42, acc, "mono", 700)
-        c.text(x, 214, TAGLINE, MIN_FONT, muted, "mono", 400)
-        tw2 = width(TAGLINE, "mono", 400, MIN_FONT)
-        M.cursor(c, p, x + tw2 + 10, 184, 18, 36, acc)
+        # The console answers with the handle and stops. The cursor follows it rather
+        # than a third line, so the session reads as finished instead of truncated.
+        hw = width(HANDLE, "mono", 700, 42)
+        M.cursor(c, p, x + hw + 12, 138, 18, 38, acc)
         return
 
     # vertical rhythm
