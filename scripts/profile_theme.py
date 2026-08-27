@@ -44,7 +44,7 @@ def cmd_build(args):
         for fn, svg in files.items():
             write(os.path.join(ASSETS, t["slug"], fn), svg)
             total += len(svg)
-        for fn, svg in badge.build_theme(t, page.STACK).items():
+        for fn, svg in badge.build_theme(t, page.STACK, [l for l, _ in page.LINKS]).items():
             write(os.path.join(BADGES, t["slug"], fn), svg)
             total += len(svg)
             nbadge += 1

@@ -60,7 +60,8 @@ def measure(theme, label, role):
     kind = _font(theme)
     weight = 700 if role == "group" else 500
     tw = width(label, kind, weight, FONT)
-    return PAD + MARK + tw + PAD
+    mark = 0 if role in ("link", "lang") else MARK
+    return PAD + mark + tw + PAD
 
 
 def badge(theme, variant, label, role="token"):
@@ -81,6 +82,21 @@ def badge(theme, variant, label, role="token"):
         c.rect(0, 0, c.w, H, ground, 1, rx)
         _marker(c, mark, PAD + MARK / 2.0, H / 2.0, ink)
         c.text(PAD + MARK, H / 2.0 + FONT * 0.36, label, FONT, ink, kind, weight)
+        return c.render()
+
+    if role in ("link", "lang"):
+        # No marker: these carry the longest labels on the page ("muhammadhassaanjaved.com"
+        # is 230 of the 238 units available in the widest theme font) and the marker cell
+        # would push them past the cap into GitHub's scaler. A link pill speaks in the
+        # accent so it still reads as something to click; a language pill stays muted so
+        # a repository row is not six competing colours.
+        ink = p["acc"] if role == "link" else p["muted"]
+        ground = mix(p["bg"], p["bg2"], 0.6 if role == "link" else 0.35)
+        c.rect(0, 0, c.w, H, ground, 1, rx)
+        c.add('<rect x="0.75" y="0.75" width="%s" height="%s" rx="%s" fill="none" %s/>'
+              % (f(c.w - 1.5), f(H - 1.5), f(max(0, rx - 0.75)),
+                 so(p["acc"], 0.65 if role == "link" else 0.3, 1.5)))
+        c.text(c.w / 2.0, H / 2.0 + FONT * 0.36, label, FONT, ink, kind, weight, "middle")
         return c.render()
 
     # Token: the theme's raised surface, an accent hairline, accent marker. Deliberately
@@ -109,7 +125,13 @@ def slug(label):
     return s.strip("-")
 
 
-def build_theme(theme, groups):
+# Languages are live data, so a repository whose language is not in this list simply
+# keeps its plain-text label rather than pointing at a badge that was never built.
+LANGUAGES = ["Python", "HCL", "Shell", "TypeScript", "JavaScript", "Go", "Rust",
+             "Dockerfile", "Java", "Ruby"]
+
+
+def build_theme(theme, groups, links=()):
     """Return {relative path: svg} for every badge one theme needs."""
     out = {}
     for variant in ("dark", "light"):
@@ -117,4 +139,8 @@ def build_theme(theme, groups):
             out["%s/%s.svg" % (variant, slug(label))] = badge(theme, variant, label, "group")
             for v in values:
                 out["%s/%s.svg" % (variant, slug(v))] = badge(theme, variant, v, "token")
+        for label in links:
+            out["%s/link-%s.svg" % (variant, slug(label))] = badge(theme, variant, label, "link")
+        for label in LANGUAGES:
+            out["%s/lang-%s.svg" % (variant, slug(label))] = badge(theme, variant, label, "lang")
     return out

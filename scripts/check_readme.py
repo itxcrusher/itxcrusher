@@ -51,6 +51,7 @@ REQUIRED_TEXT = [
     "@" + USER,
     "muhammadhassaanjaved99@gmail.com",
     "infraforge.agency",
+    "muhammadhassaanjaved.com",
     "CAMPAIGN AUDIT: PASSED",
     "If infrastructure feels exciting",
     "operating stack",

@@ -1,0 +1,6 @@
+<svg width="72" height="28" viewBox="0 0 72 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Python</title>
+<rect x="0" y="0" width="72" height="28" rx="5" fill="#070611" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="70.5" height="26.5" rx="4.25" fill="none" stroke="#ffd28a" stroke-opacity="0.3" stroke-width="1.5"/>
+<text x="36" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#8f88ad" text-anchor="middle">Python</text>
+</svg>

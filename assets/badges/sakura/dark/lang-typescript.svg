@@ -1,0 +1,6 @@
+<svg width="106" height="28" viewBox="0 0 106 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">TypeScript</title>
+<rect x="0" y="0" width="106" height="28" rx="14" fill="#240d27" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="104.5" height="26.5" rx="13.25" fill="none" stroke="#ff9ac8" stroke-opacity="0.3" stroke-width="1.5"/>
+<text x="53" y="19.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#b98aaa" text-anchor="middle">TypeScript</text>
+</svg>

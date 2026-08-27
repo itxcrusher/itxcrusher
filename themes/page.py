@@ -62,7 +62,8 @@ UPSTREAM = ("Upstream, open: [skip_cache for get_lineage](https://github.com/acr
 SNAKE_ALT = ("Contribution snake: an animation eating this account's GitHub contribution squares, "
              "regenerated daily from the output branch in today's theme colours.")
 FOOTER = [
-    "%s (%s). Infrastructure recovery and platform work: [infraforge.agency](https://infraforge.agency)" % (NAME, HANDLE),
+    "%s (%s). Infrastructure recovery and platform work: [infraforge.agency](https://infraforge.agency). "
+    "Personal site: [muhammadhassaanjaved.com](https://muhammadhassaanjaved.com)" % (NAME, HANDLE),
     "Direct: <%s>" % EMAIL,
 ]
 
@@ -197,7 +198,7 @@ def format_stack(lang):
 
 # --------------------------------------------------------------------- the block
 
-def _row_bits(r, chip_style):
+def _row_bits(r, chip_style, slug=None):
     desc = r["desc"].rstrip(".")
     lang = r.get("lang") or ""
     home = r.get("home") or ""
@@ -205,7 +206,19 @@ def _row_bits(r, chip_style):
     return desc, lang, walk
 
 
-def render_block(data, text, today):
+def lang_pill(slug, lang):
+    """A themed language chip, or the plain word when no badge was built for it.
+    Languages come from the live API, so an unlisted one must not point at a file that
+    does not exist: R1 would fail the build rather than ship a broken image."""
+    from themes.badge import LANGUAGES, slug as bslug
+    if not lang:
+        return ""
+    if lang not in LANGUAGES:
+        return lang
+    return badge_picture(slug, "lang-" + bslug(lang), lang)
+
+
+def render_block(data, text, today, slug):
     """The PUBLIC_SURFACE block. Same facts and the same guards as the original
     generator; only the row style is themed."""
     rows_style = text.get("rows", "list")
@@ -232,12 +245,14 @@ def render_block(data, text, today):
             lines.append("| --- | --- | --- | --- |")
             for r in picked:
                 desc, lang, walk = _row_bits(r, chip_style)
+                pill = lang_pill(slug, lang)
                 lines.append("| **[%s](%s)** | %s.%s | %s | %s |" % (
-                    r["name"], r["url"], _esc_cell(desc), walk, chip(lang, chip_style), r["date"]))
+                    r["name"], r["url"], _esc_cell(desc), walk, pill, r["date"]))
         else:
             for i, r in enumerate(picked, 1):
                 desc, lang, walk = _row_bits(r, chip_style)
-                meta = ", ".join(x for x in (chip(lang, chip_style), "updated " + r["date"]) if x)
+                pill = lang_pill(slug, lang)
+                meta = ", ".join(x for x in (pill, "updated " + r["date"]) if x)
                 if rows_style == "tasks":
                     lines.append("- [x] **[%s](%s)** - %s. <sub>%s.</sub>%s" % (r["name"], r["url"], desc, meta, walk))
                 elif rows_style == "numbered":
@@ -247,9 +262,9 @@ def render_block(data, text, today):
                     lines.append("")
                 elif rows_style == "ls":
                     lines.append("- `drwxr-xr-x` **[%s](%s)** %s `%s`<br>%s.%s" % (
-                        r["name"], r["url"], chip(lang, "code"), r["date"], desc, walk))
+                        r["name"], r["url"], pill, r["date"], desc, walk))
                 else:
-                    lang_part = (lang + ". ") if lang else ""
+                    lang_part = (pill + ". ") if pill else ""
                     lines.append("- **[%s](%s)** - %s. %sUpdated %s.%s" % (
                         r["name"], r["url"], desc, lang_part, r["date"], walk))
         if lines[-1] != "":
@@ -274,6 +289,7 @@ def render_block(data, text, today):
 # -------------------------------------------------------------------------- README
 
 def render_readme(theme, data, today, mode, n_themes):
+    from themes.badge import slug as bslug
     t = theme
     text = t["text"]
     d = "assets/themes/" + t["slug"]
@@ -282,8 +298,14 @@ def render_readme(theme, data, today, mode, n_themes):
     out.append("<!-- theme: %s | mode: %s | date: %s -->" % (t["slug"], mode, today))
     out.append(picture(d, "hero", "%s, GitHub handle %s. %s theme." % (NAME, HANDLE, t["name"])))
     out.append("")
+    # The nav was three GitHub-blue links, which is the single most recognisable
+    # "this is a markdown preview" tell on the page. As linked pills it wears the theme
+    # and stays clickable; the footer below still carries both domains as plain text, so
+    # nothing here is the only copy of a fact.
     out.append('<p align="center">')
-    out.append("  " + sep.join('<a href="%s">%s</a>' % (u, l) for l, u in LINKS))
+    out.append("  " + " ".join(
+        '<a href="%s">%s</a>' % (u, badge_picture(t["slug"], "link-" + bslug(l), l))
+        for l, u in LINKS))
     out.append("</p>")
     out.append("")
     for para in INTRO:
@@ -304,7 +326,7 @@ def render_readme(theme, data, today, mode, n_themes):
     out.append(heading_picture(d, "h-public", "%s" % t["labels"]["public"]))
     out.append("")
     out.append(START)
-    out.append(render_block(data, text, today).rstrip("\n"))
+    out.append(render_block(data, text, today, t["slug"]).rstrip("\n"))
     out.append(END)
     out.append("")
     out.append(heading_picture(d, "h-stack", "%s" % t["labels"]["stack"]))

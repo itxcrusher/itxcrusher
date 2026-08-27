@@ -1,0 +1,6 @@
+<svg width="57" height="28" viewBox="0 0 57 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Rust</title>
+<rect x="0" y="0" width="57" height="28" rx="2" fill="#0c081b" fill-opacity="1"/>
+<rect x="0.75" y="0.75" width="55.5" height="26.5" rx="1.25" fill="none" stroke="#ff2bd6" stroke-opacity="0.3" stroke-width="1.5"/>
+<text x="28.5" y="19.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#9b90c9" text-anchor="middle">Rust</text>
+</svg>
