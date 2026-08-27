@@ -30,7 +30,7 @@ If infrastructure feels exciting, something is probably wrong. The goal is syste
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/themes/ember/h-public-dark.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/themes/ember/h-public-light.svg"><img src="./assets/themes/ember/h-public-light.svg" width="100%" alt="what is public" /></picture>
 
 <!-- PUBLIC_SURFACE:START -->
-20 original public repositories. Most of the work is not here: over the last 12 months, 5,044 of 6,393 contributions were in private repositories (client delivery, product builds, and security research).
+21 original public repositories. Most of the work is not here: over the last 12 months, 5,408 of 6,509 contributions were in private repositories (client delivery, product builds, and security research).
 
 Most recent public work:
 
