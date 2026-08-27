@@ -252,21 +252,27 @@ def render_block(data, text, today, slug):
             for i, r in enumerate(picked, 1):
                 desc, lang, walk = _row_bits(r, chip_style)
                 pill = lang_pill(slug, lang)
-                meta = ", ".join(x for x in (pill, "updated " + r["date"]) if x)
+                # The pill closes the row rather than sitting inside the sentence: an
+                # inline image mid-paragraph interrupts the line and pushes the leading
+                # around it, which read as clutter once the rows were laid out live.
+                meta = "updated " + r["date"]
+                tail = (" " + pill) if pill else ""
                 if rows_style == "tasks":
-                    lines.append("- [x] **[%s](%s)** - %s. <sub>%s.</sub>%s" % (r["name"], r["url"], desc, meta, walk))
+                    lines.append("- [x] **[%s](%s)** - %s. <sub>%s.</sub>%s%s" % (
+                        r["name"], r["url"], desc, meta, walk, tail))
                 elif rows_style == "numbered":
-                    lines.append("%d. **[%s](%s)** - %s. <sub>%s.</sub>%s" % (i, r["name"], r["url"], desc, meta, walk))
+                    lines.append("%d. **[%s](%s)** - %s. <sub>%s.</sub>%s%s" % (
+                        i, r["name"], r["url"], desc, meta, walk, tail))
                 elif rows_style == "quotes":
-                    lines.append("> **[%s](%s)**<br>%s.<br><sub>%s.%s</sub>" % (r["name"], r["url"], desc, meta, walk))
+                    lines.append("> **[%s](%s)**<br>%s.<br><sub>%s.%s</sub>%s" % (
+                        r["name"], r["url"], desc, meta, walk, tail))
                     lines.append("")
                 elif rows_style == "ls":
-                    lines.append("- `drwxr-xr-x` **[%s](%s)** %s `%s`<br>%s.%s" % (
-                        r["name"], r["url"], pill, r["date"], desc, walk))
+                    lines.append("- `drwxr-xr-x` **[%s](%s)** `%s`<br>%s.%s%s" % (
+                        r["name"], r["url"], r["date"], desc, walk, tail))
                 else:
-                    lang_part = (pill + ". ") if pill else ""
-                    lines.append("- **[%s](%s)** - %s. %sUpdated %s.%s" % (
-                        r["name"], r["url"], desc, lang_part, r["date"], walk))
+                    lines.append("- **[%s](%s)** - %s. Updated %s.%s%s" % (
+                        r["name"], r["url"], desc, r["date"], walk, tail))
         if lines[-1] != "":
             lines.append("")
     else:
