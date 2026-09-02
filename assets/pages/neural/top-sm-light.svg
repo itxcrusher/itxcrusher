@@ -1,7 +1,11 @@
 <svg width="460" height="671" viewBox="0 0 460 671" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Opening statement and the runnable check</title>
 <desc>I build infrastructure and bounded automation for other people's production systems. Terraform, Kubernetes, CI/CD, and lately agents that act on evidence they can prove instead of guessing. Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. The contribution graph counts it. The repository list cannot show it. If infrastructure feels exciting, something is probably wrong. The goal is systems that are quiet, predictable, and uninteresting in production.</desc>
+<defs><pattern id="p1" width="45.033" height="78" patternUnits="userSpaceOnUse"><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#5734c6" stroke-opacity="0.5" stroke-width="1"/><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#5734c6" stroke-opacity="0.5" stroke-width="1" transform="translate(22.517,39)"/></pattern></defs>
 <rect x="0" y="0" width="460" height="671" fill="#f7f4ff"/>
+<g opacity="0.09">
+<rect x="0" y="0" width="460" height="671" fill="url(#p1)"/>
+</g>
 <rect x="26" y="431.88" width="408" height="124.5" rx="2.4" fill="#fbfaff" fill-opacity="1"/>
 <rect x="26" y="303.2" width="408" height="334.08" rx="1.6" fill="#ebe4ff" fill-opacity="1"/>
 <rect x="26.75" y="303.95" width="406.5" height="332.58" rx="0.85" fill="none" stroke="#5734c6" stroke-opacity="0.45" stroke-width="1.4"/>

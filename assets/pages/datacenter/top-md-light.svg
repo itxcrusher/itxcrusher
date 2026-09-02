@@ -1,7 +1,12 @@
 <svg width="600" height="990" viewBox="0 0 600 990" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Opening statement and the runnable check</title>
 <desc>I build infrastructure and bounded automation for other people's production systems. Terraform, Kubernetes, CI/CD, and lately agents that act on evidence they can prove instead of guessing. Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. The contribution graph counts it. The repository list cannot show it. If infrastructure feels exciting, something is probably wrong. The goal is systems that are quiet, predictable, and uninteresting in production.</desc>
+<style>@keyframes k2{0%,49%{opacity:1}50%,100%{opacity:0}}.a3{animation:k2 1.1s steps(1) infinite}</style>
+<defs><pattern id="p1" width="45.033" height="78" patternUnits="userSpaceOnUse"><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#14622b" stroke-opacity="0.5" stroke-width="1"/><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#14622b" stroke-opacity="0.5" stroke-width="1" transform="translate(22.517,39)"/></pattern></defs>
 <rect x="0" y="0" width="600" height="990" fill="#f6f8fa"/>
+<g opacity="0.09">
+<rect x="0" y="0" width="600" height="990" fill="url(#p1)"/>
+</g>
 <rect x="32" y="682.2" width="536" height="160.5" rx="3.15" fill="#fbfcfd" fill-opacity="1"/>
 <rect x="32" y="489.3" width="536" height="457.95" rx="2.1" fill="#e7ecf2" fill-opacity="1"/>
 <rect x="32.75" y="490.05" width="534.5" height="456.45" rx="1.35" fill="none" stroke="#14622b" stroke-opacity="0.45" stroke-width="1.4"/>
@@ -35,6 +40,7 @@
 <text x="42.5" y="766.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0d1117">cd ripple-proof</text>
 <text x="42.5" y="794.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0d1117">PYTHONPATH=src python -S -m lineage_agent.cli</text>
 <text x="42.5" y="822.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#0d1117"> demo</text>
+<rect x="120.02" y="807.9" width="9" height="18" fill="#14622b" fill-opacity="0.95" class="a3"/>
 <text x="32" y="869.1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#57606a">Expect CAMPAIGN AUDIT: PASSED, 11 of 11 checks.</text>
 <text x="32" y="895.2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#57606a">The walkthrough keeps one run that fails its</text>
 <text x="32" y="921.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#57606a">dbt build on purpose rather than dropping it.</text>

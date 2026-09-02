@@ -1,7 +1,11 @@
 <svg width="280" height="139" viewBox="0 0 280 139" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Contact: how to reach Muhammad Hassaan Javed</title>
 <desc>Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work: infraforge.agency. Personal site: muhammadhassaanjaved.com Direct: muhammadhassaanjaved99@gmail.com</desc>
+<defs><pattern id="p1" width="34.641" height="60" patternUnits="userSpaceOnUse"><polygon points="34.641,30 17.321,40 0,30 0,10 17.321,0 34.641,10" fill="none" stroke="#744a07" stroke-opacity="0.08" stroke-width="1"/><polygon points="34.641,30 17.321,40 0,30 0,10 17.321,0 34.641,10" fill="none" stroke="#744a07" stroke-opacity="0.08" stroke-width="1" transform="translate(17.321,30)"/></pattern></defs>
 <rect x="0" y="0" width="280" height="139" fill="#f5f7fb"/>
+<g opacity="0.09">
+<rect x="0" y="0" width="280" height="139" fill="url(#p1)"/>
+</g>
 <text x="18" y="27.2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#0c1a33">Muhammad Hassaan Javed</text>
 <text x="223.216" y="27.2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#744a07">  @itxcrusher</text>
 <text x="18" y="55.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#4c5f80">agency</text>

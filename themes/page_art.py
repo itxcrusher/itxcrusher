@@ -69,9 +69,9 @@ def _work(theme, variant, band, content, data, today):
     fl.section(theme["labels"]["public"])
     fl.wrap(content["stats"], fl.s["micro"], fl.p["muted"])
     fl.space(fl.base * 0.6)
-    for row in data["picked"]:
+    for i, row in enumerate(data["picked"], 1):
         meta = ", ".join(x for x in (row.get("lang") or "", "updated " + row["date"]) if x)
-        fl.card(row["name"], row["desc"].rstrip("."), meta)
+        fl.card(row["name"], row["desc"].rstrip("."), meta, index=i)
     if content["evidence"]:
         fl.space(fl.base * 0.15)
         fl.wrap(content["evidence"], fl.s["micro"], fl.p["muted"])

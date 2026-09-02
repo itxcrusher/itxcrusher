@@ -26,6 +26,7 @@ has to sit behind text that was measured before the card's height was known, so 
 queue closures into `bg` and `fg` lists rather than drawing immediately. When the flow
 is finished the height is known, the Canvas is made, and the two lists run in order.
 """
+from themes import motifs as M
 from themes.svg import Canvas, contrast, f, mix, so, width
 from themes.textpanel import BAND_BY_KEY
 
@@ -55,6 +56,31 @@ def _break_mono(line, size, maxw):
     return out or [""]
 
 
+# Field motifs that read as atmosphere at low opacity anywhere on a tall canvas.
+# Anything anchored to a horizon or an edge (mountains, dunes, waves, letterbox) is
+# excluded on purpose: mid-page it stops being weather and starts being furniture.
+AMBIENT_SAFE = {"stars", "speckle", "rain", "snow", "dust", "embers", "bubbles",
+                "petals", "fireflies", "scanlines", "hexgrid", "halftone", "crystals"}
+AMBIENT_FALLBACK = {"tech": ("hexgrid", {"op": 0.5}), "nature": ("speckle", {"n": 90}),
+                    "elemental": ("dust", {"n": 40}), "gritty": ("speckle", {"n": 60})}
+
+
+def ambient_spec(theme):
+    """What falls, drifts or glows behind this theme's page body.
+
+    Prefers whatever field motif the hero already uses, so the page continues the same
+    weather rather than inventing a second kind; falls back per family."""
+    for stage in ("mid", "back"):
+        for item in theme["hero"].get(stage, []) or []:
+            name = item if isinstance(item, str) else item[0]
+            if name in AMBIENT_SAFE:
+                kw = {} if isinstance(item, str) else dict(item[1])
+                for k in ("region", "skip", "dark", "light"):
+                    kw.pop(k, None)
+                return name, kw
+    return AMBIENT_FALLBACK[theme["family"]]
+
+
 def family_geom(family, base):
     """How a family shapes a box. The pills already differ by family; until now every
     card and callout was the same rounded rectangle with the same rail, so 47 looks
@@ -79,8 +105,11 @@ def allowed_sizes(base):
 
 class Flow:
     def __init__(self, theme, variant, band):
+        from themes.render import palette
         self.t = theme
-        self.p = theme[variant]
+        # Through render.palette, not theme[variant] raw: it stamps the variant into the
+        # dict (motifs test _dark(p) with it) and fills the muted/acc2 defaults.
+        self.p = palette(theme, variant)
         self.variant = variant
         self.band = band
         self.key, _media, self.w, self.base = BAND_BY_KEY[band]
@@ -192,21 +221,79 @@ class Flow:
         self.space(self.base * 1.1)
 
     def section(self, label):
+        """A section heading in the theme's own register.
+
+        The catalog has always carried header.style and header.case; the retired heading
+        images honoured them and the first drawn page did not, which is a big part of why
+        47 looks felt like one design wearing different colours. prompt themes get a
+        shell prompt and a blinking cursor, bracket themes get HUD brackets, hazard
+        themes get a striped rule, plate themes set the label on a filled block, glow
+        themes glow (dark only; on light, density does the work, per R14's philosophy)."""
+        style = self.t["header"].get("style", "rule")
+        if self.t["header"].get("case") == "upper":
+            label = label.upper()
+        prefix = "> " if style == "prompt" else ("[ " if style == "bracket" else "")
+        suffix = " ]" if style == "bracket" else ""
+        shown = prefix + label + suffix
+        ls = self.base * 0.09 if self.t["header"].get("case") == "upper" else 0
         self.space(self.base * 1.6)
-        size = self._fit(label, 700, self.s["head"], self.inner * 0.7, self.s["lead"])
+        size = self._fit(shown, 700, self.s["head"], self.inner * 0.72, self.s["lead"])
         base_y = self.y
-        self.text(label, size, self.p["acc"], 700)
-        tw = width(label, self.font, 700, size)
+        y = base_y + size
+        tw = width(shown, self.font, 700, size) + ls * max(0, len(shown) - 1)
         ry = base_y + size * 0.66
-        gx = self.x + tw + self.base * 0.7
+
+        use_glow = style == "glow" and self.variant == "dark"
+        def draw_label(c):
+            extra = 'letter-spacing="%s"' % f(ls) if ls else ""
+            if use_glow:
+                extra = (extra + " " if extra else "") + 'filter="%s"' % c.glow(
+                    self.base / 5.0, self.p["acc"], 0.8)
+            c.text(self.x, y, shown, size, self.p["acc"], self.font, 700, extra=extra)
+        self.fg.append(draw_label)
+        self.y = y + size * 0.32
+
+        if style == "plate" or style == "band" or style == "ribbon":
+            ground = mix(self.p["bg"], self.p["bg2"], 0.85)
+            self.bg.append(lambda c: c.rect(self.x - self.base * 0.4, base_y - self.base * 0.25,
+                                            tw + self.base * 1.1, size * 1.55, ground, 1,
+                                            0 if self.t["family"] == "gritty" else self.base * 0.14))
+
         orn = self.t["header"].get("ornament")
+        gx = self.x + tw + self.base * 0.7
         end = self.x + self.inner - (self.base * 1.1 if orn else 0)
-        self.bg.append(lambda c: c.line(gx, ry, end, ry,
-                                        self.p["acc"], 0.5, max(1.5, self.base / 13.0)))
+        if style == "hazard":
+            hb = max(4, self.base / 3.0)
+            self.bg.append(lambda c: M.hazard(c, self.p, (gx, 0, end - gx, 0),
+                                              ry - hb / 2, hb, stripe=self.base * 0.55))
+        elif style == "trace":
+            mid = gx + (end - gx) * 0.6
+            self.bg.append(lambda c: (
+                c.line(gx, ry, mid, ry, self.p["acc"], 0.6, max(1.5, self.base / 13.0)),
+                c.add('<circle cx="%s" cy="%s" r="%s" fill="%s">'
+                      '<animate attributeName="opacity" values=".4;1;.4" dur="3s" '
+                      'repeatCount="indefinite"/></circle>'
+                      % (f(mid), f(ry), f(max(3, self.base / 5.5)), self.p["acc"])),
+                c.line(mid, ry, end, ry, self.p["acc"], 0.35, max(1.5, self.base / 13.0))))
+        elif style == "chain":
+            step = self.base * 1.05
+            def links(c, gx=gx, end=end, ry=ry):
+                x = gx
+                while x + step * 0.7 <= end:
+                    c.add('<rect x="%s" y="%s" width="%s" height="%s" rx="%s" fill="none" %s/>'
+                          % (f(x), f(ry - self.base * 0.16), f(step * 0.62),
+                             f(self.base * 0.32), f(self.base * 0.1),
+                             so(self.p["acc"], 0.55, max(1.2, self.base / 16.0))))
+                    x += step
+            self.bg.append(links)
+        else:
+            self.bg.append(lambda c: c.line(gx, ry, end, ry,
+                                            self.p["acc"], 0.5, max(1.5, self.base / 13.0)))
+        if style == "prompt":
+            cx = self.x + tw + self.base * 0.35
+            self.bg.append(lambda c: M.cursor(c, self.p, cx, base_y + size * 0.12,
+                                              max(4, size * 0.14), size * 0.9, self.p["acc"]))
         if orn:
-            # The retired heading images each ended in the theme's ornament: the flame,
-            # the flake, the leaf. That was the one piece of their personality worth
-            # keeping, so the drawn rule ends the same way.
             from themes.render import _ornament
             ox = self.x + self.inner - self.base * 0.5
             k = self.base / 44.0
@@ -233,12 +320,21 @@ class Flow:
         self.y += cpad
         mono = self.s["micro"]
         avail = self.inner - cpad * 2
+        last_end = None
         for ln in lines:
             for piece in _break_mono(ln, mono, avail):
                 y = self.y + mono
                 self.fg.append(lambda c, piece=piece, y=y:
                                c.text(self.x + cpad, y, piece, mono, self.p["ink"], "mono", 400))
+                last_end = (self.x + cpad + width(piece, "mono", 400, mono), y)
                 self.y = y + mono * 0.55
+        if last_end and self.font == "mono":
+            # The command box belongs to a terminal-voiced theme, so it gets the one
+            # blinking cursor on the page: a single live point, not scattered effects.
+            cx2, cy2 = last_end
+            self.fg.append(lambda c: M.cursor(c, self.p, cx2 + mono * 0.4,
+                                              cy2 - mono * 0.8, max(3, mono * 0.5),
+                                              mono, self.p["acc"]))
         self.y += cpad
         cbot = self.y
         cground = mix(self.p["bg"], "#000000", 0.35) if self.variant == "dark" \
@@ -292,14 +388,38 @@ class Flow:
                 x += w2 + gap
             self.y += h + gap * 1.4
 
-    def card(self, name, desc, meta):
+    def card(self, name, desc, meta, index=0):
+        """One repository. The name line leads with the theme's row register, another
+        piece of catalogued personality (text.rows) that died in the rewrite: numbered
+        themes count their work like operations, ls themes prefix mode bits, tasks
+        themes tick a box, quotes themes speak in blockquotes (their rail is the quote
+        bar, so they carry no marker)."""
+        rows = self.t["text"].get("rows", "list")
         top = self.y
         pad = self.base * 0.7
         self.y += pad
         sx, si = self.x, self.inner
         self.x += pad
         self.inner -= pad * 2
-        self.text(name, self.s["lead"], self.p["acc"], 700)
+        mark = ""
+        if rows == "numbered":
+            mark = "%02d " % index
+        elif rows == "ls":
+            mark = "drwxr-xr-x "
+        elif rows == "tasks":
+            mark = "[x] "
+        if mark:
+            msize = self.s["micro"]
+            y = self.y + self.s["lead"]
+            self.fg.append(lambda c, mark=mark, y=y: c.text(
+                self.x, y - (self.s["lead"] - msize) * 0.35, mark.rstrip() + " ",
+                msize, self.p["muted"], "mono", 500))
+            moff = width(mark, "mono", 500, msize)
+            self.fg.append(lambda c, name=name, y=y, moff=moff: c.text(
+                self.x + moff, y, name, self.s["lead"], self.p["acc"], self.font, 700))
+            self.y = y + self.s["lead"] * 0.32
+        else:
+            self.text(name, self.s["lead"], self.p["acc"], 700)
         self.space(self.base * 0.08)
         self.wrap(desc, self.s["micro"], self.p["ink"])
         self.space(self.base * 0.12)
@@ -318,6 +438,19 @@ class Flow:
         # bands across the page. A single ground makes the seams disappear; the depth comes
         # from the panels and cards drawn on top of it.
         c.add('<rect x="0" y="0" width="%s" height="%s" fill="%s"/>' % (f(self.w), f(h), self.p["bg"]))
+        # The theme's weather continues behind the page at low opacity: the same rain,
+        # stars or embers the hero opens with, quiet enough that the prose stays the
+        # loudest thing. This is what stops the body reading as a flat grey document
+        # pinned under a decorated banner. Edges stay exactly bg (the layer is faded,
+        # never the ground), so the seam-free stacking is untouched.
+        name, kw = ambient_spec(self.t)
+        gid = "amb"
+        c.add('<g opacity="%s">' % f(0.14 if self.variant == "dark" else 0.09))
+        try:
+            getattr(M, name)(c, self.p, (0, 0, self.w, h), **kw)
+        except TypeError:
+            getattr(M, name)(c, self.p, (0, 0, self.w, h))
+        c.add("</g>")
         for op in self.bg:
             op(c)
         for op in self.fg:

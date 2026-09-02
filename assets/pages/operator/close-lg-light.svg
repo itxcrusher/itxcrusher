@@ -1,7 +1,13 @@
 <svg width="900" height="184" viewBox="0 0 900 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Contact: how to reach Muhammad Hassaan Javed</title>
 <desc>Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work: infraforge.agency. Personal site: muhammadhassaanjaved.com Direct: muhammadhassaanjaved99@gmail.com</desc>
+<style>@keyframes k3{from{transform:translate(0,0)}to{transform:translate(0px,244px)}}.a4{animation:k3 5.5s linear 0s infinite}</style>
+<defs><pattern id="p1" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#0f1a12" fill-opacity="0.07"/></pattern><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#085f2f" stop-opacity="0"/><stop offset="0.5" stop-color="#085f2f" stop-opacity="0.1"/><stop offset="1" stop-color="#085f2f" stop-opacity="0"/></linearGradient><clipPath id="c5"><rect x="0" y="0" width="900" height="184" rx="0"/></clipPath></defs>
 <rect x="0" y="0" width="900" height="184" fill="#f3f6f2"/>
+<g opacity="0.09">
+<rect x="0" y="0" width="900" height="184" fill="url(#p1)"/>
+<g clip-path="url(#c5)" ><g class="a4"><rect x="0" y="-60" width="900" height="60" fill="url(#g2)"/></g></g>
+</g>
 <text x="44" y="32.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#0f1a12">Muhammad Hassaan Javed</text>
 <text x="287.694" y="32.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#085f2f">  @itxcrusher</text>
 <text x="44" y="64.83" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#4f6656">agency</text>

@@ -1,7 +1,11 @@
 <svg width="600" height="189" viewBox="0 0 600 189" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Contact: how to reach Muhammad Hassaan Javed</title>
 <desc>Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work: infraforge.agency. Personal site: muhammadhassaanjaved.com Direct: muhammadhassaanjaved99@gmail.com</desc>
+<defs><pattern id="p1" width="38.105" height="66" patternUnits="userSpaceOnUse"><polygon points="38.105,33 19.053,44 0,33 0,11 19.053,0 38.105,11" fill="none" stroke="#ffb02e" stroke-opacity="0.12" stroke-width="1"/><polygon points="38.105,33 19.053,44 0,33 0,11 19.053,0 38.105,11" fill="none" stroke="#ffb02e" stroke-opacity="0.12" stroke-width="1" transform="translate(19.053,33)"/></pattern></defs>
 <rect x="0" y="0" width="600" height="189" fill="#041016"/>
+<g opacity="0.14">
+<rect x="0" y="0" width="600" height="189" fill="url(#p1)"/>
+</g>
 <text x="32" y="35.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#e6fbff">Muhammad Hassaan Javed</text>
 <text x="316.772" y="35.7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="21" font-weight="700" fill="#ffb02e">  @itxcrusher</text>
 <text x="32" y="71.97" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="#6aa3b5">agency</text>
