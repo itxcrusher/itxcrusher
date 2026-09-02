@@ -3,9 +3,13 @@
 <desc>I build infrastructure and bounded automation for other people's production systems. Terraform, Kubernetes, CI/CD, and lately agents that act on evidence they can prove instead of guessing. Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. The contribution graph counts it. The repository list cannot show it. If infrastructure feels exciting, something is probably wrong. The goal is systems that are quiet, predictable, and uninteresting in production.</desc>
 <rect x="0" y="0" width="460" height="781" fill="#05070a"/>
 <rect x="26" y="521.78" width="408" height="124.5" rx="2.4" fill="#030506" fill-opacity="1"/>
-<rect x="26" y="372.8" width="408" height="374.68" rx="3.2" fill="#090d12" fill-opacity="1"/>
-<rect x="26.75" y="373.55" width="406.5" height="373.18" rx="2.45" fill="none" stroke="#3dff8f" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="26" y="372.8" width="408" height="374.68" rx="1.6" fill="#090d12" fill-opacity="1"/>
+<rect x="26.75" y="373.55" width="406.5" height="373.18" rx="0.85" fill="none" stroke="#3dff8f" stroke-opacity="0.45" stroke-width="1.4"/>
 <rect x="26" y="372.8" width="3" height="374.68" rx="0" fill="#3dff8f" fill-opacity="0.9"/>
+<line x1="416.4" y1="372.8" x2="434" y2="372.8" stroke="#3dff8f" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="434" y1="372.8" x2="434" y2="390.4" stroke="#3dff8f" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="26" y1="729.88" x2="26" y2="747.48" stroke="#3dff8f" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="26" y1="747.48" x2="43.6" y2="747.48" stroke="#3dff8f" stroke-opacity="0.9" stroke-width="2"/>
 <text x="26" y="25.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#d7e6d5">I build infrastructure and bounded</text>
 <text x="26" y="48.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#d7e6d5">automation for other people's production</text>
 <text x="26" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#d7e6d5">systems. Terraform, Kubernetes, CI/CD, and</text>

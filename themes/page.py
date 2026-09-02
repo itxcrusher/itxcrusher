@@ -334,7 +334,7 @@ def art_content(data, today):
         evidence = ("Evidence trail for ripple-proof runs across four public sibling dbt "
                     "repositories: " + ", ".join(a for a, _ in links) + ". " + state)
     return {
-        "name": NAME, "handle": HANDLE, "intro": INTRO,
+        "name": NAME, "handle": HANDLE, "email": EMAIL, "intro": INTRO,
         "cta_title": CTA_TITLE,
         "cta_body": _plain(CTA_BODY),
         "cta_cmd": CTA_CMD,
@@ -412,9 +412,9 @@ def render_readme(theme, data, today, mode, n_themes):
     out.append("")
     out.append(page_art.picture(pages, "close", _attr(CLOSE_ALT)))
     out.append("")
-    out.append('<p align="center">')
+    out.append('<p align="center"><sub>')
     out.append("  " + sep.join('<a href="%s">%s</a>' % (u, l) for l, u in link_strip(data)))
-    out.append("</p>")
+    out.append("</sub></p>")
     out.append("")
     # The page above is artwork, so none of it can be selected, searched or translated.
     # This is the same page as text. R3 fails the build if it goes missing.

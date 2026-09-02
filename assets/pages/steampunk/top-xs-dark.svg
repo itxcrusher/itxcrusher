@@ -3,9 +3,9 @@
 <desc>I build infrastructure and bounded automation for other people's production systems. Terraform, Kubernetes, CI/CD, and lately agents that act on evidence they can prove instead of guessing. Most of that work is in private client and product repositories, so what is public here is a sample rather than the volume. The contribution graph counts it. The repository list cannot show it. If infrastructure feels exciting, something is probably wrong. The goal is systems that are quiet, predictable, and uninteresting in production.</desc>
 <rect x="0" y="0" width="280" height="994" fill="#1a120a"/>
 <rect x="18" y="678.38" width="244" height="167.9" rx="2.4" fill="#110c06" fill-opacity="1"/>
-<rect x="18" y="488.8" width="244" height="478.98" rx="3.2" fill="#2c1d0e" fill-opacity="1"/>
-<rect x="18.75" y="489.55" width="242.5" height="477.48" rx="2.45" fill="none" stroke="#d4a24c" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="488.8" width="3" height="478.98" rx="0" fill="#d4a24c" fill-opacity="0.9"/>
+<rect x="18" y="488.8" width="244" height="478.98" rx="0" fill="#2c1d0e" fill-opacity="1"/>
+<rect x="18.75" y="489.55" width="242.5" height="477.48" rx="0" fill="none" stroke="#d4a24c" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="488.8" width="4" height="478.98" rx="0" fill="#d4a24c" fill-opacity="0.9"/>
 <text x="18" y="25.6" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f4e6cf">I build infrastructure and</text>
 <text x="18" y="48.8" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f4e6cf">bounded automation for other</text>
 <text x="18" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f4e6cf">people's production systems.</text>

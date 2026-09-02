@@ -55,6 +55,20 @@ def _break_mono(line, size, maxw):
     return out or [""]
 
 
+def family_geom(family, base):
+    """How a family shapes a box. The pills already differ by family; until now every
+    card and callout was the same rounded rectangle with the same rail, so 47 looks
+    shared one silhouette. radius, rail width, and whether tech corner ticks are drawn.
+    """
+    if family == "gritty":
+        return 0, max(4, base / 4.0), False
+    if family == "nature":
+        return base * 0.55, max(3, base / 7.0), False
+    if family == "tech":
+        return base * 0.1, max(3, base / 7.0), True
+    return base * 0.24, max(3, base / 6.0), False
+
+
 def sizes_for(base):
     return {k: max(1, int(round(base * v))) for k, v in SCALE.items()}
 
@@ -106,6 +120,18 @@ class Flow:
         self.y = y + size * 0.32
         return y
 
+    def run(self, segments, size):
+        """One line built from (text, colour, weight, kind) segments, measured end to
+        end. This is how a line gets two colours: SVG has no spans, only positions."""
+        y = self.y + size
+        x = self.x
+        for txt, colour, weight, kind in segments:
+            k = kind or self.font
+            self.fg.append(lambda c, txt=txt, x=x, y=y, colour=colour, weight=weight, k=k:
+                           c.text(x, y, txt, size, colour, k, weight))
+            x += width(txt, k, weight, size)
+        self.y = y + size * 0.32
+
     def wrap(self, body, size, colour, weight=400, lead=1.45):
         lines, line = [], ""
         for wd in body.split():
@@ -131,8 +157,8 @@ class Flow:
                 self.space(size * 0.75)
             self.wrap(para, size, colour, weight)
 
-    def box(self, top, bot, tint, rail=True, radius=None):
-        rx = self.base * 0.2 if radius is None else radius
+    def box(self, top, bot, tint, rail=True):
+        rx, rail_w, ticks = family_geom(self.t["family"], self.base)
         ground = mix(self.p["bg"], self.p["bg2"], tint)
         self.bg.append(lambda c: c.rect(self.x, top, self.inner, bot - top, ground, 1, rx))
         self.bg.append(lambda c: c.add(
@@ -140,8 +166,16 @@ class Flow:
             % (f(self.x + 0.75), f(top + 0.75), f(self.inner - 1.5), f(bot - top - 1.5),
                f(max(0, rx - 0.75)), so(self.p["acc"], 0.45, 1.4))))
         if rail:
-            self.bg.append(lambda c: c.rect(self.x, top, max(3, self.base / 7.0),
-                                            bot - top, self.p["acc"], 0.9))
+            self.bg.append(lambda c: c.rect(self.x, top, rail_w, bot - top, self.p["acc"], 0.9))
+        if ticks:
+            t_len = self.base * 1.1
+            t_w = max(2, self.base / 10.0)
+            x2, y2 = self.x + self.inner, bot
+            self.bg.append(lambda c: (
+                c.line(x2 - t_len, top, x2, top, self.p["acc"], 0.9, t_w),
+                c.line(x2, top, x2, top + t_len, self.p["acc"], 0.9, t_w),
+                c.line(self.x, y2 - t_len, self.x, y2, self.p["acc"], 0.9, t_w),
+                c.line(self.x, y2, self.x + t_len, y2, self.p["acc"], 0.9, t_w)))
 
     # -- blocks -------------------------------------------------------------------
 
@@ -165,8 +199,21 @@ class Flow:
         tw = width(label, self.font, 700, size)
         ry = base_y + size * 0.66
         gx = self.x + tw + self.base * 0.7
-        self.bg.append(lambda c: c.line(gx, ry, self.x + self.inner, ry,
+        orn = self.t["header"].get("ornament")
+        end = self.x + self.inner - (self.base * 1.1 if orn else 0)
+        self.bg.append(lambda c: c.line(gx, ry, end, ry,
                                         self.p["acc"], 0.5, max(1.5, self.base / 13.0)))
+        if orn:
+            # The retired heading images each ended in the theme's ornament: the flame,
+            # the flake, the leaf. That was the one piece of their personality worth
+            # keeping, so the drawn rule ends the same way.
+            from themes.render import _ornament
+            ox = self.x + self.inner - self.base * 0.5
+            k = self.base / 44.0
+            self.bg.append(lambda c: (
+                c.add('<g transform="translate(%s,%s) scale(%s)">' % (f(ox), f(ry), f(k))),
+                _ornament(c, self.p, orn, 0, 0, self.p["acc"]),
+                c.add("</g>")))
         self.space(self.base * 0.5)
 
     def note(self, title, body, lines, after):

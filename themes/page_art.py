@@ -33,13 +33,34 @@ def _top(theme, variant, band, content):
 
 
 def _close(theme, variant, band, content):
+    """The colophon. It used to be three muted lines floating on the ground, which made
+    the page trail off; now the name carries ink, the handle carries the accent, and the
+    contact rows keep their labels muted and their values in ink, so the ending has the
+    same hierarchy as everything above it."""
     fl = Flow(theme, variant, band)
-    fl.space(fl.base * 0.5)
-    for line in content["footer"]:
-        fl.wrap(line, fl.s["micro"], fl.p["muted"])
-        fl.space(fl.base * 0.25)
-    return fl.render("Contact lines at the foot of the page",
+    fl.space(fl.base * 0.7)
+    fl.run([(content["name"], fl.p["ink"], 700, None),
+            ("  " + content["handle"], fl.p["acc"], 700, "mono")], fl.s["body"])
+    fl.space(fl.base * 0.55)
+    rows = [("agency", "infraforge.agency"),
+            ("site", "muhammadhassaanjaved.com"),
+            ("direct", content["email"])]
+    label_w = max(width_of(fl, lab) for lab, _ in rows) + fl.base * 0.9
+    for lab, val in rows:
+        y = fl.y + fl.s["micro"]
+        fl.fg.append(lambda c, lab=lab, y=y: c.text(fl.x, y, lab, fl.s["micro"],
+                                                    fl.p["muted"], fl.font, 500))
+        fl.fg.append(lambda c, val=val, y=y: c.text(fl.x + label_w, y, val, fl.s["micro"],
+                                                    fl.p["ink"], "mono", 500))
+        fl.y = y + fl.s["micro"] * 0.75
+    fl.space(fl.base * 0.4)
+    return fl.render("Contact: how to reach %s" % content["name"],
                      desc=" ".join(content["footer"]))
+
+
+def width_of(fl, text):
+    from themes.svg import width
+    return width(text, fl.font, 500, fl.s["micro"])
 
 
 def _work(theme, variant, band, content, data, today):
