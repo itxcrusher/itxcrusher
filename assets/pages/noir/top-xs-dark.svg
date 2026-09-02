@@ -7,7 +7,7 @@
 <g opacity="0.06">
 <g clip-path="url(#c3)" ><g class="a2"><g transform="rotate(-10 140 497)"><rect x="-100" y="-165.667" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="0" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="165.667" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="331.333" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="497" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="662.667" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="828.333" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="994" width="480" height="74.55" fill="#ffffff" fill-opacity="0.09"/></g></g></g>
 </g>
-<rect x="18" y="678.38" width="244" height="167.9" rx="2.4" fill="#050506" fill-opacity="1"/>
+<rect x="35.6" y="678.38" width="212.8" height="167.9" rx="2.4" fill="#050506" fill-opacity="1"/>
 <rect x="18" y="488.8" width="244" height="478.98" rx="0" fill="#121214" fill-opacity="1"/>
 <rect x="18.75" y="489.55" width="242.5" height="477.48" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
 <rect x="18" y="488.8" width="4" height="478.98" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
@@ -30,24 +30,24 @@
 <text x="18" y="420.8" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">The goal is systems that are</text>
 <text x="18" y="444" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">quiet, predictable, and</text>
 <text x="18" y="467.2" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">uninteresting in production.</text>
-<text x="31.6" y="521.4" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">Want to check whether any of this is real?</text>
-<text x="18" y="543.88" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">ripple-proof audits a full</text>
-<text x="18" y="564.18" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">captured campaign offline in</text>
-<text x="18" y="584.48" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">about a minute, with Python 3.11</text>
-<text x="18" y="604.78" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">and nothing else. No install, no</text>
-<text x="18" y="625.08" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">account, no credential, no</text>
-<text x="18" y="645.38" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">network call. It prints every</text>
-<text x="18" y="665.68" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">point where it refused to act.</text>
-<text x="26" y="700.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">git clone https://github</text>
-<text x="26" y="722.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">.com/itxcrusher/ripple-p</text>
-<text x="26" y="743.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">roof</text>
-<text x="26" y="765.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">cd ripple-proof</text>
-<text x="26" y="787.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">PYTHONPATH=src python -S</text>
-<text x="26" y="808.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2"> -m lineage_agent.cli de</text>
-<text x="26" y="830.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">mo</text>
-<text x="18" y="866.68" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">Expect CAMPAIGN AUDIT:</text>
-<text x="18" y="886.98" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">PASSED, 11 of 11 checks. The</text>
-<text x="18" y="907.28" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">walkthrough keeps one run that</text>
-<text x="18" y="927.58" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">fails its dbt build on purpose</text>
-<text x="18" y="947.88" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">rather than dropping it.</text>
+<text x="35.6" y="521.4" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">Want to check whether any of this is real?</text>
+<text x="35.6" y="543.88" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">ripple-proof audits a full</text>
+<text x="35.6" y="564.18" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">captured campaign offline in</text>
+<text x="35.6" y="584.48" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">about a minute, with Python</text>
+<text x="35.6" y="604.78" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">3.11 and nothing else. No install,</text>
+<text x="35.6" y="625.08" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">no account, no credential, no</text>
+<text x="35.6" y="645.38" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">network call. It prints every</text>
+<text x="35.6" y="665.68" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">point where it refused to act.</text>
+<text x="43.6" y="700.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">git clone https://github</text>
+<text x="43.6" y="722.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">.com/itxcrusher/ripple-p</text>
+<text x="43.6" y="743.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">roof</text>
+<text x="43.6" y="765.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">cd ripple-proof</text>
+<text x="43.6" y="787.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">PYTHONPATH=src python -S</text>
+<text x="43.6" y="808.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2"> -m lineage_agent.cli de</text>
+<text x="43.6" y="830.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f2f2f2">mo</text>
+<text x="35.6" y="866.68" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">Expect CAMPAIGN AUDIT:</text>
+<text x="35.6" y="886.98" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">PASSED, 11 of 11 checks. The</text>
+<text x="35.6" y="907.28" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">walkthrough keeps one run that</text>
+<text x="35.6" y="927.58" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">fails its dbt build on purpose</text>
+<text x="35.6" y="947.88" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">rather than dropping it.</text>
 </svg>

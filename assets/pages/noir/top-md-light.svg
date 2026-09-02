@@ -7,7 +7,7 @@
 <g opacity="0.06">
 <g clip-path="url(#c3)" ><g class="a2"><g transform="rotate(-10 300 436)"><rect x="-100" y="-145.333" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/><rect x="-100" y="0" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/><rect x="-100" y="145.333" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/><rect x="-100" y="290.667" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/><rect x="-100" y="436" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/><rect x="-100" y="581.333" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/><rect x="-100" y="726.667" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/><rect x="-100" y="872" width="800" height="65.4" fill="#101012" fill-opacity="0.08"/></g></g></g>
 </g>
-<rect x="32" y="564.75" width="536" height="160.5" rx="3.15" fill="#fafafa" fill-opacity="1"/>
+<rect x="55.1" y="564.75" width="495.05" height="160.5" rx="3.15" fill="#fafafa" fill-opacity="1"/>
 <rect x="32" y="397.95" width="536" height="431.85" rx="0" fill="#dfdfdf" fill-opacity="1"/>
 <rect x="32.75" y="398.7" width="534.5" height="430.35" rx="0" fill="none" stroke="#202024" stroke-opacity="0.45" stroke-width="1.4"/>
 <rect x="32" y="397.95" width="5.25" height="431.85" rx="0" fill="#202024" fill-opacity="0.9"/>
@@ -22,17 +22,17 @@
 <text x="32" y="308.7" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="400" fill="#101012">If infrastructure feels exciting, something is probably</text>
 <text x="32" y="339.15" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="400" fill="#101012">wrong. The goal is systems that are quiet, predictable,</text>
 <text x="32" y="369.6" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="400" fill="#101012">and uninteresting in production.</text>
-<text x="49.85" y="440.8" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#202024">Want to check whether any of this is real?</text>
-<text x="32" y="469.95" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">ripple-proof audits a full captured campaign offline in</text>
-<text x="32" y="496.05" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">about a minute, with Python 3.11 and nothing else. No</text>
-<text x="32" y="522.15" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">install, no account, no credential, no network call. It prints</text>
-<text x="32" y="548.25" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">every point where it refused to act.</text>
-<text x="42.5" y="593.25" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">git clone https://github.com/itxcrusher/rippl</text>
-<text x="42.5" y="621.15" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">e-proof</text>
-<text x="42.5" y="649.05" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">cd ripple-proof</text>
-<text x="42.5" y="676.95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">PYTHONPATH=src python -S -m lineage_agent.cli</text>
-<text x="42.5" y="704.85" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012"> demo</text>
-<text x="32" y="751.65" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#55555a">Expect CAMPAIGN AUDIT: PASSED, 11 of 11 checks. The</text>
-<text x="32" y="777.75" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#55555a">walkthrough keeps one run that fails its dbt build on</text>
-<text x="32" y="803.85" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#55555a">purpose rather than dropping it.</text>
+<text x="55.1" y="440.8" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#202024">Want to check whether any of this is real?</text>
+<text x="55.1" y="469.95" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">ripple-proof audits a full captured campaign offline in</text>
+<text x="55.1" y="496.05" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">about a minute, with Python 3.11 and nothing else. No</text>
+<text x="55.1" y="522.15" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">install, no account, no credential, no network call. It prints</text>
+<text x="55.1" y="548.25" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#101012">every point where it refused to act.</text>
+<text x="65.6" y="593.25" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">git clone https://github.com/itxcrusher/rippl</text>
+<text x="65.6" y="621.15" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">e-proof</text>
+<text x="65.6" y="649.05" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">cd ripple-proof</text>
+<text x="65.6" y="676.95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012">PYTHONPATH=src python -S -m lineage_agent.cli</text>
+<text x="65.6" y="704.85" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="400" fill="#101012"> demo</text>
+<text x="55.1" y="751.65" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#55555a">Expect CAMPAIGN AUDIT: PASSED, 11 of 11 checks. The</text>
+<text x="55.1" y="777.75" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#55555a">walkthrough keeps one run that fails its dbt build on</text>
+<text x="55.1" y="803.85" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#55555a">purpose rather than dropping it.</text>
 </svg>

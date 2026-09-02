@@ -1,11 +1,12 @@
 """Two ways to look at every theme before it ships.
 
   gallery_markdown(themes)   assets/pages/README.md, browsable on GitHub
-  preview_html(themes, root) one self-contained local page, every theme, both schemes
+  preview_html(themes)       one local page: every theme's COMPLETE page, both schemes
 
-Both show the two STATIC slices. The data-dependent slice is deliberately absent: it
-carries live repository counts and dates, and only today's theme has a current copy of
-it, so rendering 46 others here would put stale numbers on a public page.
+The gallery shows the opening panel only, because it is public and the data-dependent
+slice would carry stale numbers for every theme but today's. The local preview has no
+such constraint: it renders the whole page on fixture data, for review before a change
+ships.
 
 This file used to be ten times longer. Most of it was a markdown-subset-to-HTML
 converter whose whole job was to imitate the way GitHub lays out a README, because the
@@ -13,7 +14,6 @@ page was a README with artwork in it. The page is now artwork; there is nothing 
 imitate.
 """
 import base64
-import os
 
 from . import page_art
 from .catalog import FAMILIES
@@ -60,45 +60,62 @@ def gallery_markdown(themes, n_active):
     return md
 
 
-def _uri(path):
-    with open(path, "rb") as fh:
-        return "data:image/svg+xml;base64," + base64.b64encode(fh.read()).decode("ascii")
+def _b64(svg):
+    return "data:image/svg+xml;base64," + base64.b64encode(svg.encode("utf-8")).decode("ascii")
 
 
-def preview_html(themes, root, band="lg"):
-    """Every theme, both colour schemes, side by side, in one dependency-free file.
+def preview_html(themes, band="lg", only=None):
+    """Every theme as the COMPLETE page it would ship as, both colour schemes, in one
+    dependency-free file: hero, opening slice, work slice on fixture data, sign-off
+    band and colophon, stacked exactly as the README stacks them.
 
-    Reads the built SVGs off disk rather than re-rendering them, so what is on screen is
-    byte for byte what will ship.
+    Rendered from the engine directly rather than read off disk, so it previews the
+    code as it is now, built or not. The work slice uses fixture data, which is why
+    this file is never committed: its numbers are sample numbers.
     """
+    from . import page as P, page_art as A, render as R
+    data = P.fixture_data()
+    content = P.art_content(data, data["today"])
+    picked = [t for t in themes if not only or t["slug"] in only]
+    sections = []
+    for t in picked:
+        cols = []
+        for v in ("dark", "light"):
+            imgs = [
+                R.hero(t, v),
+                A._top(t, v, band, content),
+                A._work(t, v, band, content, data, data["today"]),
+                R.signoff(t, v),
+                A._close(t, v, band, content),
+            ]
+            cols.append('<div class="v %s">%s</div>' % (
+                v, "".join('<img src="%s">' % _b64(x) for x in imgs)))
+        sections.append(
+            '<section id="%s"><h2>%s <small>%s &middot; %s &middot; header %s &middot; rows %s</small></h2>'
+            '<div class="pair">%s</div></section>'
+            % (t["slug"], t["name"], t["family"], t["slug"], t["header"].get("style", "rule"),
+               t["text"].get("rows", "list"), "".join(cols)))
+    nav = " ".join('<a href="#%s">%s</a>' % (t["slug"], t["name"]) for t in picked)
     width = dict((k, w) for k, _m, w, _s in BANDS)[band]
-    cards = []
-    for t in themes:
-        d = os.path.join(root, t["slug"])
-        pair = []
-        for variant in ("dark", "light"):
-            cell = []
-            for stem in ("top", "close"):
-                p = os.path.join(d, "%s-%s-%s.svg" % (stem, band, variant))
-                if os.path.isfile(p):
-                    cell.append('<img src="%s">' % _uri(p))
-            pair.append('<div class="v %s">%s</div>' % (variant, "".join(cell)))
-        cards.append('<section><h2>%s <small>%s / %s</small></h2><div class="pair">%s</div>'
-                     "</section>" % (t["name"], t["family"], t["slug"], "".join(pair)))
     return (
         "<!doctype html><meta charset=utf-8><title>Theme preview</title>"
         "<style>"
-        "body{margin:0;padding:24px;background:#161b22;color:#e6edf3;"
+        "body{margin:0;padding:20px 24px 60px;background:#161b22;color:#e6edf3;"
         "font:14px/1.5 ui-sans-serif,system-ui,sans-serif}"
-        "h1{font-size:20px;margin:0 0 4px}p.lede{color:#8b949e;margin:0 0 24px}"
-        "section{margin:0 0 40px}h2{font-size:16px;margin:0 0 8px}"
-        "h2 small{color:#8b949e;font-weight:400}"
+        "h1{font-size:20px;margin:0 0 6px}p.lede{color:#8b949e;margin:0 0 14px}"
+        "nav{position:sticky;top:0;background:#161b22;padding:10px 0;margin:0 0 20px;"
+        "border-bottom:1px solid #30363d;line-height:2;z-index:2}"
+        "nav a{color:#8b949e;text-decoration:none;margin-right:12px;font-size:12px}"
+        "nav a:hover{color:#e6edf3}"
+        "section{margin:0 0 48px;scroll-margin-top:70px}h2{font-size:16px;margin:0 0 8px}"
+        "h2 small{color:#8b949e;font-weight:400;font-size:12px}"
         ".pair{display:flex;gap:16px;align-items:flex-start}"
-        ".v{flex:1;min-width:0;padding:12px;border-radius:8px}"
+        ".v{flex:1;min-width:0;padding:14px;border-radius:8px}"
         ".v.dark{background:#0d1117}.v.light{background:#fff}"
         ".v img{display:block;width:100%%;max-width:%dpx}"
         "</style>"
-        "<h1>%d themes, %s band, both colour schemes</h1>"
-        "<p class=lede>Opening and closing panels, read from the built files. The middle "
-        "panel is data-dependent and only exists for today's theme.</p>%s"
-        % (width, len(themes), band, "".join(cards)))
+        "<h1>%d themes, %s band, dark and light, full page</h1>"
+        "<p class=lede>Rendered from the engine as it is right now, on fixture data. "
+        "Jump with the index; each section is the page exactly as the README stacks it.</p>"
+        "<nav>%s</nav>%s"
+        % (width, len(picked), band, nav, "".join(sections)))

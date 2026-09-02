@@ -120,9 +120,13 @@ def cmd_render(args):
 
 
 def cmd_preview(args):
-    html = preview.preview_html(catalog.THEMES, PAGES, args.band)
+    """Every theme's complete page, both schemes, one local HTML file. Fixture data, so
+    never commit the output; it is for looking at a change before it ships."""
+    only = set(args.only.split(",")) if args.only else None
+    html = preview.preview_html(catalog.THEMES, args.band, only)
     write(args.out, html)
-    print("wrote %s: %d themes, %s band" % (args.out, len(catalog.THEMES), args.band))
+    n = len(only) if only else len(catalog.THEMES)
+    print("wrote %s: %d theme(s), %s band, full page, both schemes" % (args.out, n, args.band))
 
 
 def cmd_schedule(args):
@@ -163,6 +167,7 @@ def main():
     v = sub.add_parser("preview")
     v.add_argument("--out", default="preview.html")
     v.add_argument("--band", default="lg", choices=[k for k, _m, _w, _s in textpanel.BANDS])
+    v.add_argument("--only", default="", help="comma-separated slugs, e.g. ember,noir")
     v.set_defaults(fn=cmd_preview)
     s = sub.add_parser("schedule")
     s.add_argument("--date")

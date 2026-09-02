@@ -7,7 +7,7 @@
 <g opacity="0.5">
 <g fill="#f6ff9a" filter="url(#gl3)"><circle cx="33.407" cy="32.261" r="1.817" class="a2" style="animation-delay:-2.579s;animation-duration:4.671s"/><circle cx="208.433" cy="553.187" r="2.336" class="a2" style="animation-delay:-4.557s;animation-duration:4.775s"/><circle cx="43.671" cy="161.201" r="2.433" class="a2" style="animation-delay:-4.113s;animation-duration:6.143s"/><circle cx="146.929" cy="562.545" r="2.291" class="a2" style="animation-delay:-4.919s;animation-duration:5.005s"/><circle cx="127.566" cy="883.779" r="1.601" class="a2" style="animation-delay:-1.634s;animation-duration:4.477s"/><circle cx="104.965" cy="193.258" r="2.559" class="a2" style="animation-delay:-2.496s;animation-duration:4.615s"/><circle cx="193.25" cy="259.513" r="1.528" class="a2" style="animation-delay:-4.865s;animation-duration:4.596s"/><circle cx="132.405" cy="96.307" r="2.437" class="a2" style="animation-delay:-0.074s;animation-duration:4.884s"/><circle cx="207.263" cy="211.777" r="2.44" class="a2" style="animation-delay:-3.892s;animation-duration:5.504s"/><circle cx="127.644" cy="963.331" r="2.341" class="a2" style="animation-delay:-5.415s;animation-duration:4.827s"/></g>
 </g>
-<rect x="18" y="678.38" width="244" height="167.9" rx="2.4" fill="#030b06" fill-opacity="1"/>
+<rect x="34.6" y="678.38" width="213.8" height="167.9" rx="2.4" fill="#030b06" fill-opacity="1"/>
 <rect x="18" y="488.8" width="244" height="478.98" rx="8.8" fill="#091e12" fill-opacity="1"/>
 <rect x="18.75" y="489.55" width="242.5" height="477.48" rx="8.05" fill="none" stroke="#62d98a" stroke-opacity="0.45" stroke-width="1.4"/>
 <rect x="18" y="488.8" width="3" height="478.98" rx="0" fill="#62d98a" fill-opacity="0.9"/>
@@ -30,24 +30,24 @@
 <text x="18" y="420.8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6f4e8">The goal is systems that are</text>
 <text x="18" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6f4e8">quiet, predictable, and</text>
 <text x="18" y="467.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#e6f4e8">uninteresting in production.</text>
-<text x="31.6" y="521.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#62d98a">Want to check whether any of this is real?</text>
-<text x="18" y="543.88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">ripple-proof audits a full</text>
-<text x="18" y="564.18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">captured campaign offline in</text>
-<text x="18" y="584.48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">about a minute, with Python 3.11</text>
-<text x="18" y="604.78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">and nothing else. No install, no</text>
-<text x="18" y="625.08" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">account, no credential, no</text>
-<text x="18" y="645.38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">network call. It prints every point</text>
-<text x="18" y="665.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">where it refused to act.</text>
-<text x="26" y="700.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">git clone https://github</text>
-<text x="26" y="722.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">.com/itxcrusher/ripple-p</text>
-<text x="26" y="743.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">roof</text>
-<text x="26" y="765.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">cd ripple-proof</text>
-<text x="26" y="787.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">PYTHONPATH=src python -S</text>
-<text x="26" y="808.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8"> -m lineage_agent.cli de</text>
-<text x="26" y="830.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">mo</text>
-<text x="18" y="866.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">Expect CAMPAIGN AUDIT:</text>
-<text x="18" y="886.98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">PASSED, 11 of 11 checks. The</text>
-<text x="18" y="907.28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">walkthrough keeps one run that</text>
-<text x="18" y="927.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">fails its dbt build on purpose</text>
-<text x="18" y="947.88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">rather than dropping it.</text>
+<text x="34.6" y="521.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#62d98a">Want to check whether any of this is real?</text>
+<text x="34.6" y="543.88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">ripple-proof audits a full</text>
+<text x="34.6" y="564.18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">captured campaign offline in</text>
+<text x="34.6" y="584.48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">about a minute, with Python</text>
+<text x="34.6" y="604.78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">3.11 and nothing else. No install,</text>
+<text x="34.6" y="625.08" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">no account, no credential, no</text>
+<text x="34.6" y="645.38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">network call. It prints every</text>
+<text x="34.6" y="665.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e6f4e8">point where it refused to act.</text>
+<text x="42.6" y="700.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">git clone https://github</text>
+<text x="42.6" y="722.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">.com/itxcrusher/ripple-p</text>
+<text x="42.6" y="743.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">roof</text>
+<text x="42.6" y="765.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">cd ripple-proof</text>
+<text x="42.6" y="787.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">PYTHONPATH=src python -S</text>
+<text x="42.6" y="808.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8"> -m lineage_agent.cli de</text>
+<text x="42.6" y="830.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e6f4e8">mo</text>
+<text x="34.6" y="866.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">Expect CAMPAIGN AUDIT:</text>
+<text x="34.6" y="886.98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">PASSED, 11 of 11 checks. The</text>
+<text x="34.6" y="907.28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">walkthrough keeps one run that</text>
+<text x="34.6" y="927.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">fails its dbt build on purpose</text>
+<text x="34.6" y="947.88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7aa287">rather than dropping it.</text>
 </svg>

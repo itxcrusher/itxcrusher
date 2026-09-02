@@ -178,9 +178,10 @@ class Flow:
         if line:
             lines.append(line)
         step = size * lead
+        x0 = self.x  # bound NOW: closures run after the enclosing box restores the margin
         for ln in lines:
             y = self.y + size
-            self.fg.append(lambda c, ln=ln, y=y: c.text(self.x, y, ln, size, colour,
+            self.fg.append(lambda c, ln=ln, y=y: c.text(x0, y, ln, size, colour,
                                                         self.font, weight))
             self.y = y + (step - size)
         return len(lines)
@@ -317,10 +318,11 @@ class Flow:
             return self._note_terminal(title, body, lines, after)
         top = self.y
         pad = self.base * 0.85
+        inset = self._inset()
         self.y += pad
         sx, si = self.x, self.inner
-        self.x += pad
-        self.inner -= pad * 2
+        self.x += inset
+        self.inner -= inset + pad
         self.text(title, self.s["lead"], self.p["acc"], 700)
         self.space(self.base * 0.15)
         self.wrap(body, self.s["micro"], self.p["ink"])
@@ -330,13 +332,14 @@ class Flow:
         self.y += cpad
         mono = self.s["micro"]
         avail = self.inner - cpad * 2
+        bx, bw = self.x, self.inner  # the inset, bound now
         last_end = None
         for ln in lines:
             for piece in _break_mono(ln, mono, avail):
                 y = self.y + mono
                 self.fg.append(lambda c, piece=piece, y=y:
-                               c.text(self.x + cpad, y, piece, mono, self.p["ink"], "mono", 400))
-                last_end = (self.x + cpad + width(piece, "mono", 400, mono), y)
+                               c.text(bx + cpad, y, piece, mono, self.p["ink"], "mono", 400))
+                last_end = (bx + cpad + width(piece, "mono", 400, mono), y)
                 self.y = y + mono * 0.55
         if last_end and self.font == "mono":
             # The command box belongs to a terminal-voiced theme, so it gets the one
@@ -349,7 +352,7 @@ class Flow:
         cbot = self.y
         cground = mix(self.p["bg"], "#000000", 0.35) if self.variant == "dark" \
             else mix(self.p["bg"], "#ffffff", 0.55)
-        self.bg.append(lambda c: c.rect(self.x, ctop, self.inner, cbot - ctop, cground, 1,
+        self.bg.append(lambda c: c.rect(bx, ctop, bw, cbot - ctop, cground, 1,
                                         self.base * 0.15))
         self.space(self.base * 0.4)
         self.wrap(after, self.s["micro"], self.p["muted"])
@@ -361,7 +364,7 @@ class Flow:
     def _note_terminal(self, title, body, lines, after):
         top = self.y
         bar = self.base * 1.5
-        pad = self.base * 0.85
+        pad = self.base * 0.95
         self.y += bar + pad * 0.6
         sx, si = self.x, self.inner
         self.x += pad
@@ -373,6 +376,7 @@ class Flow:
         self.y += cpad
         mono = self.s["micro"]
         avail = self.inner - cpad * 2 - width("$ ", "mono", 700, mono)
+        bx, bw = self.x, self.inner  # the inset, bound now
         last_end = None
         for ln in lines:
             first = True
@@ -396,7 +400,7 @@ class Flow:
         self.y += cpad
         cbot = self.y
         screen = mix(self.p["bg"], "#000000", 0.4) if self.variant == "dark"             else mix(self.p["bg"], "#ffffff", 0.6)
-        self.bg.append(lambda c: c.rect(self.x, ctop, self.inner, cbot - ctop, screen, 1,
+        self.bg.append(lambda c: c.rect(bx, ctop, bw, cbot - ctop, screen, 1,
                                         self.base * 0.12))
         self.space(self.base * 0.4)
         self.wrap(after, self.s["micro"], self.p["muted"])
@@ -464,6 +468,12 @@ class Flow:
                 x += w2 + gap
             self.y += h + gap * 1.4
 
+    def _inset(self):
+        """How far content sits from a box wall: the padding plus the rail's width, so
+        the first character never touches the accent bar."""
+        _rx, rail_w, _t = family_geom(self.t["family"], self.base)
+        return self.base * 0.85 + rail_w
+
     def card(self, name, desc, meta, index=0):
         """One repository. The name line leads with the theme's row register, another
         piece of catalogued personality (text.rows) that died in the rewrite: numbered
@@ -473,10 +483,11 @@ class Flow:
         rows = self.t["text"].get("rows", "list")
         top = self.y
         pad = self.base * 0.7
+        inset = self._inset()
         self.y += pad
         sx, si = self.x, self.inner
-        self.x += pad
-        self.inner -= pad * 2
+        self.x += inset
+        self.inner -= inset + pad * 1.1
         mark = ""
         if rows == "numbered":
             mark = "%02d " % index
@@ -487,12 +498,13 @@ class Flow:
         if mark:
             msize = self.s["micro"]
             y = self.y + self.s["lead"]
-            self.fg.append(lambda c, mark=mark, y=y: c.text(
-                self.x, y - (self.s["lead"] - msize) * 0.35, mark.rstrip() + " ",
+            cx0 = self.x  # inset, bound now
+            self.fg.append(lambda c, mark=mark, y=y, cx0=cx0: c.text(
+                cx0, y - (self.s["lead"] - msize) * 0.35, mark.rstrip() + " ",
                 msize, self.p["muted"], "mono", 500))
             moff = width(mark, "mono", 500, msize)
-            self.fg.append(lambda c, name=name, y=y, moff=moff: c.text(
-                self.x + moff, y, name, self.s["lead"], self.p["acc"], self.font, 700))
+            self.fg.append(lambda c, name=name, y=y, moff=moff, cx0=cx0: c.text(
+                cx0 + moff, y, name, self.s["lead"], self.p["acc"], self.font, 700))
             self.y = y + self.s["lead"] * 0.32
         else:
             self.text(name, self.s["lead"], self.p["acc"], 700)

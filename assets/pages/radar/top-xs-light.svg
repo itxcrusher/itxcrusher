@@ -7,7 +7,7 @@
 <g opacity="0.09">
 <rect x="0" y="0" width="280" height="1147" fill="url(#p1)"/>
 </g>
-<rect x="18" y="811.78" width="244" height="167.9" rx="2.4" fill="#f8fbf9" fill-opacity="1"/>
+<rect x="34.6" y="811.78" width="213.8" height="167.9" rx="2.4" fill="#f8fbf9" fill-opacity="1"/>
 <rect x="18" y="581.6" width="244" height="539.88" rx="1.6" fill="#deece2" fill-opacity="1"/>
 <rect x="18.75" y="582.35" width="242.5" height="538.38" rx="0.85" fill="none" stroke="#0a5f35" stroke-opacity="0.45" stroke-width="1.4"/>
 <rect x="18" y="581.6" width="3" height="539.88" rx="0" fill="#0a5f35" fill-opacity="0.9"/>
@@ -38,28 +38,28 @@
 <text x="18" y="513.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#072415">predictable, and</text>
 <text x="18" y="536.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#072415">uninteresting in</text>
 <text x="18" y="560" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#072415">production.</text>
-<text x="31.6" y="614.2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#0a5f35">Want to check whether any of this is real?</text>
-<text x="18" y="636.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">ripple-proof audits a full</text>
-<text x="18" y="656.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">captured campaign offline</text>
-<text x="18" y="677.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">in about a minute, with</text>
-<text x="18" y="697.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">Python 3.11 and nothing</text>
-<text x="18" y="717.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">else. No install, no</text>
-<text x="18" y="738.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">account, no credential, no</text>
-<text x="18" y="758.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">network call. It prints</text>
-<text x="18" y="778.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">every point where it</text>
-<text x="18" y="799.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">refused to act.</text>
-<text x="26" y="833.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">git clone https://github</text>
-<text x="26" y="855.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">.com/itxcrusher/ripple-p</text>
-<text x="26" y="877.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">roof</text>
-<text x="26" y="898.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">cd ripple-proof</text>
-<text x="26" y="920.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">PYTHONPATH=src python -S</text>
-<text x="26" y="942.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415"> -m lineage_agent.cli de</text>
-<text x="26" y="963.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">mo</text>
-<rect x="61.524" y="952.78" width="7" height="14" fill="#0a5f35" fill-opacity="0.95" class="a3"/>
-<text x="18" y="1000.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">Expect CAMPAIGN AUDIT:</text>
-<text x="18" y="1020.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">PASSED, 11 of 11 checks.</text>
-<text x="18" y="1040.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">The walkthrough keeps one</text>
-<text x="18" y="1060.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">run that fails its dbt</text>
-<text x="18" y="1081.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">build on purpose rather</text>
-<text x="18" y="1101.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">than dropping it.</text>
+<text x="34.6" y="614.2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#0a5f35">Want to check whether any of this is real?</text>
+<text x="34.6" y="636.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">ripple-proof audits a full</text>
+<text x="34.6" y="656.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">captured campaign offline</text>
+<text x="34.6" y="677.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">in about a minute, with</text>
+<text x="34.6" y="697.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">Python 3.11 and nothing</text>
+<text x="34.6" y="717.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">else. No install, no</text>
+<text x="34.6" y="738.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">account, no credential, no</text>
+<text x="34.6" y="758.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">network call. It prints</text>
+<text x="34.6" y="778.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">every point where it</text>
+<text x="34.6" y="799.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">refused to act.</text>
+<text x="42.6" y="833.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">git clone https://github</text>
+<text x="42.6" y="855.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">.com/itxcrusher/ripple-p</text>
+<text x="42.6" y="877.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">roof</text>
+<text x="42.6" y="898.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">cd ripple-proof</text>
+<text x="42.6" y="920.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">PYTHONPATH=src python -S</text>
+<text x="42.6" y="942.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415"> -m lineage_agent.cli de</text>
+<text x="42.6" y="963.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#072415">mo</text>
+<rect x="64.524" y="952.78" width="7" height="14" fill="#0a5f35" fill-opacity="0.95" class="a3"/>
+<text x="34.6" y="1000.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">Expect CAMPAIGN AUDIT:</text>
+<text x="34.6" y="1020.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">PASSED, 11 of 11 checks.</text>
+<text x="34.6" y="1040.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">The walkthrough keeps one</text>
+<text x="34.6" y="1060.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">run that fails its dbt</text>
+<text x="34.6" y="1081.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">build on purpose rather</text>
+<text x="34.6" y="1101.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#3a6b4f">than dropping it.</text>
 </svg>
