@@ -1,7 +1,7 @@
 <svg width="600" height="189" viewBox="0 0 600 189" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Contact: how to reach Muhammad Hassaan Javed</title>
 <desc>Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work: infraforge.agency. Personal site: muhammadhassaanjaved.com Direct: muhammadhassaanjaved99@gmail.com</desc>
-<defs><pattern id="p1" width="45.033" height="78" patternUnits="userSpaceOnUse"><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#ffb000" stroke-opacity="0.5" stroke-width="1"/><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#ffb000" stroke-opacity="0.5" stroke-width="1" transform="translate(22.517,39)"/></pattern></defs>
+<defs><pattern id="p1" width="45.033" height="78" patternUnits="userSpaceOnUse"><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#ffb000" stroke-opacity="0.5" stroke-width="1"/><polygon points="45.033,39 22.517,52 0,39 0,13 22.517,0 45.033,13" fill="none" stroke="#ffb000" stroke-opacity="0.5" stroke-width="1" transform="translate(22.517,39)"/></pattern><pattern id="p2" width="29.4" height="29.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="29.4" height="29.4" fill="#101214"/><rect width="14.7" height="29.4" fill="#ffb000"/></pattern></defs>
 <rect x="0" y="0" width="600" height="189" fill="#101214"/>
 <g opacity="0.14">
 <rect x="0" y="0" width="600" height="189" fill="url(#p1)"/>
@@ -14,4 +14,5 @@
 <text x="112.28" y="103.47" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="500" fill="#eef0f2">muhammadhassaanjaved.com</text>
 <text x="32" y="134.97" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="500" fill="#8a929c">direct</text>
 <text x="112.28" y="134.97" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="500" fill="#eef0f2">muhammadhassaanjaved99@gmail.com</text>
+<rect x="0" y="178.5" width="600" height="10.5" fill="url(#p2)"/>
 </svg>

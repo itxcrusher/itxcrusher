@@ -104,9 +104,14 @@ def allowed_sizes(base):
 
 
 class Flow:
-    def __init__(self, theme, variant, band):
+    def __init__(self, theme, variant, band, edge_pos=None):
+        from themes.catalog import BODY
         from themes.render import palette
         self.t = theme
+        self.body = BODY.get(theme["slug"], {})
+        # Which outer edge of the page this slice owns, for themes framed by an edge
+        # treatment: "top" on the first drawn slice, "bottom" on the last.
+        self.edge_pos = edge_pos
         # Through render.palette, not theme[variant] raw: it stamps the variant into the
         # dict (motifs test _dark(p) with it) and fills the muted/acc2 defaults.
         self.p = palette(theme, variant)
@@ -304,7 +309,12 @@ class Flow:
         self.space(self.base * 0.5)
 
     def note(self, title, body, lines, after):
-        """The trust block: a callout the theme owns, instead of GitHub's fixed colour."""
+        """The trust block: a callout the theme owns, instead of GitHub's fixed colour.
+        Terminal-voiced themes (catalog BODY note="terminal") draw it as a window: a
+        title bar with the three lights, the title as the window name, and the command
+        area as the screen."""
+        if self.body.get("note") == "terminal":
+            return self._note_terminal(title, body, lines, after)
         top = self.y
         pad = self.base * 0.85
         self.y += pad
@@ -346,6 +356,72 @@ class Flow:
         self.x, self.inner = sx, si
         self.y += pad
         self.box(top, self.y, 0.7)
+        self.space(self.base * 0.5)
+
+    def _note_terminal(self, title, body, lines, after):
+        top = self.y
+        bar = self.base * 1.5
+        pad = self.base * 0.85
+        self.y += bar + pad * 0.6
+        sx, si = self.x, self.inner
+        self.x += pad
+        self.inner -= pad * 2
+        self.wrap(body, self.s["micro"], self.p["ink"])
+        self.space(self.base * 0.4)
+        ctop = self.y
+        cpad = self.base * 0.5
+        self.y += cpad
+        mono = self.s["micro"]
+        avail = self.inner - cpad * 2 - width("$ ", "mono", 700, mono)
+        last_end = None
+        for ln in lines:
+            first = True
+            for piece in _break_mono(ln, mono, avail):
+                y = self.y + mono
+                px = self.x + cpad
+                if first:
+                    self.fg.append(lambda c, y=y, px=px: c.text(px, y, "$", mono,
+                                                                self.p["acc"], "mono", 700))
+                    px += width("$ ", "mono", 700, mono)
+                    first = False
+                self.fg.append(lambda c, piece=piece, y=y, px=px:
+                               c.text(px, y, piece, mono, self.p["ink"], "mono", 400))
+                last_end = (px + width(piece, "mono", 400, mono), y)
+                self.y = y + mono * 0.55
+        if last_end:
+            cx2, cy2 = last_end
+            self.fg.append(lambda c: M.cursor(c, self.p, cx2 + mono * 0.4,
+                                              cy2 - mono * 0.8, max(3, mono * 0.5),
+                                              mono, self.p["acc"]))
+        self.y += cpad
+        cbot = self.y
+        screen = mix(self.p["bg"], "#000000", 0.4) if self.variant == "dark"             else mix(self.p["bg"], "#ffffff", 0.6)
+        self.bg.append(lambda c: c.rect(self.x, ctop, self.inner, cbot - ctop, screen, 1,
+                                        self.base * 0.12))
+        self.space(self.base * 0.4)
+        self.wrap(after, self.s["micro"], self.p["muted"])
+        self.x, self.inner = sx, si
+        self.y += pad
+        bot = self.y
+        rx, _rail, _t = family_geom(self.t["family"], self.base)
+        chrome = mix(self.p["bg"], self.p["bg2"], 0.9)
+        ground = mix(self.p["bg"], self.p["bg2"], 0.55)
+        self.bg.append(lambda c: c.rect(self.x, top, self.inner, bot - top, ground, 1, rx))
+        self.bg.append(lambda c: c.rect(self.x, top, self.inner, bar, chrome, 1, rx))
+        self.bg.append(lambda c: c.rect(self.x, top + bar * 0.75, self.inner, bar * 0.25,
+                                        chrome, 1))
+        self.bg.append(lambda c: c.add(
+            '<rect x="%s" y="%s" width="%s" height="%s" rx="%s" fill="none" %s/>'
+            % (f(self.x + 0.75), f(top + 0.75), f(self.inner - 1.5), f(bot - top - 1.5),
+               f(max(0, rx - 0.75)), so(self.p["acc"], 0.45, 1.4))))
+        r = max(2.5, self.base * 0.18)
+        for i, lamp in enumerate(("#ff5f57", "#febc2e", "#28c840")):
+            self.bg.append(lambda c, i=i, lamp=lamp: c.circle(
+                self.x + self.base * (0.8 + i * 0.75), top + bar / 2, r, lamp, 0.9))
+        tx = self.x + self.base * (0.8 + 3 * 0.75) + self.base * 0.5
+        ty = top + bar / 2 + self.s["micro"] * 0.36
+        self.fg.append(lambda c: c.text(tx, ty, title, self.s["micro"],
+                                        self.p["muted"], "mono", 700))
         self.space(self.base * 0.5)
 
     def pill(self, label, x, y, filled):
@@ -443,16 +519,35 @@ class Flow:
         # loudest thing. This is what stops the body reading as a flat grey document
         # pinned under a decorated banner. Edges stay exactly bg (the layer is faded,
         # never the ground), so the seam-free stacking is untouched.
-        name, kw = ambient_spec(self.t)
-        gid = "amb"
-        c.add('<g opacity="%s">' % f(0.14 if self.variant == "dark" else 0.09))
+        if "ambient" in self.body:
+            name, kw = self.body["ambient"][0], dict(self.body["ambient"][1])
+        else:
+            name, kw = ambient_spec(self.t)
+        op = self.body.get("ambient_op", 0.14 if self.variant == "dark" else 0.09)
+        c.add('<g opacity="%s">' % f(op))
         try:
             getattr(M, name)(c, self.p, (0, 0, self.w, h), **kw)
         except TypeError:
             getattr(M, name)(c, self.p, (0, 0, self.w, h))
         c.add("</g>")
-        for op in self.bg:
-            op(c)
-        for op in self.fg:
-            op(c)
+        for op_ in self.bg:
+            op_(c)
+        for op_ in self.fg:
+            op_(c)
+        edge = self.body.get("edge")
+        if edge and self.edge_pos:
+            eh = max(6, self.base * 0.5)
+            ey = 0 if self.edge_pos == "top" else h - eh
+            if edge == "hazard":
+                M.hazard(c, self.p, (0, 0, self.w, 0), ey, eh, stripe=self.base * 0.7)
+            elif edge == "rivets":
+                c.rect(0, ey, self.w, eh, mix(self.p["bg"], self.p["bg2"], 0.9), 1)
+                step = self.base * 2.2
+                x = step / 2
+                cy = ey + eh / 2
+                while x < self.w:
+                    c.circle(x, cy, max(1.5, self.base * 0.11), self.p["muted"], 0.8)
+                    x += step
+            elif edge == "letterbox":
+                c.rect(0, ey, self.w, eh * 1.6 if False else eh, "#000000", 1)
         return c.render()

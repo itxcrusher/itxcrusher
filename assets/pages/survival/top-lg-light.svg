@@ -25,4 +25,27 @@
 <text x="53.5" y="455.86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="400" fill="#2b2117">PYTHONPATH=src python -S -m lineage_agent.cli demo</text>
 <text x="44" y="497.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#6e5e4c">Expect CAMPAIGN AUDIT: PASSED, 11 of 11 checks. The walkthrough keeps one run that fails its dbt</text>
 <text x="44" y="520.96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#6e5e4c">build on purpose rather than dropping it.</text>
+<rect x="0" y="0" width="900" height="9.5" rx="0" fill="#d6c9b2" fill-opacity="1"/>
+<circle cx="20.9" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="62.7" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="104.5" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="146.3" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="188.1" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="229.9" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="271.7" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="313.5" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="355.3" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="397.1" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="438.9" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="480.7" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="522.5" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="564.3" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="606.1" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="647.9" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="689.7" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="731.5" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="773.3" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="815.1" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="856.9" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
+<circle cx="898.7" cy="4.75" r="2.09" fill="#6e5e4c" fill-opacity="0.8"/>
 </svg>

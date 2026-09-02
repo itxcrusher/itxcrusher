@@ -33,4 +33,18 @@
 <text x="32" y="751.65" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#7a5f3c">Expect CAMPAIGN AUDIT: PASSED, 11 of 11 checks. The</text>
 <text x="32" y="777.75" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#7a5f3c">walkthrough keeps one run that fails its dbt build on</text>
 <text x="32" y="803.85" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#7a5f3c">purpose rather than dropping it.</text>
+<rect x="0" y="0" width="600" height="10.5" rx="0" fill="#e1caa4" fill-opacity="1"/>
+<circle cx="23.1" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="69.3" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="115.5" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="161.7" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="207.9" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="254.1" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="300.3" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="346.5" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="392.7" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="438.9" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="485.1" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="531.3" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
+<circle cx="577.5" cy="5.25" r="2.31" fill="#7a5f3c" fill-opacity="0.8"/>
 </svg>
