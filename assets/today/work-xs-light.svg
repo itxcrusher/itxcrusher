@@ -1,6 +1,6 @@
 <svg width="280" height="2363" viewBox="0 0 280 2363" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">what is public and the stack</title>
-<desc>22 original public repositories. Most of the work is not here: over the last 12 months, 5,911 of 7,093 contributions were in private repositories (client delivery, product builds, and security research).</desc>
+<desc>22 original public repositories. Most of the work is not here: over the last 12 months, 5,934 of 7,153 contributions were in private repositories (client delivery, product builds, and security research).</desc>
 <style>@keyframes k1{from{transform:translate(0,0)}to{transform:translate(-280px,0px)}}.a2{animation:k1 30s linear 0s infinite}</style>
 <defs><clipPath id="c3"><rect x="0" y="0" width="280" height="2363" rx="0"/></clipPath></defs>
 <rect x="0" y="0" width="280" height="2363" fill="#f7e8e2"/>
@@ -84,7 +84,7 @@
 <text x="18" y="53.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="700" fill="#8c290a">what is public</text>
 <text x="18" y="82.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7a4a3a">22 original public repositories. Most</text>
 <text x="18" y="103.06" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7a4a3a">of the work is not here: over the last</text>
-<text x="18" y="123.36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7a4a3a">12 months, 5,911 of 7,093</text>
+<text x="18" y="123.36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7a4a3a">12 months, 5,934 of 7,153</text>
 <text x="18" y="143.66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7a4a3a">contributions were in private</text>
 <text x="18" y="163.96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7a4a3a">repositories (client delivery, product</text>
 <text x="18" y="184.26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#7a4a3a">builds, and security research).</text>

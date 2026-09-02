@@ -1,6 +1,6 @@
 <svg width="460" height="1686" viewBox="0 0 460 1686" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">what is public and the stack</title>
-<desc>22 original public repositories. Most of the work is not here: over the last 12 months, 5,911 of 7,093 contributions were in private repositories (client delivery, product builds, and security research).</desc>
+<desc>22 original public repositories. Most of the work is not here: over the last 12 months, 5,934 of 7,153 contributions were in private repositories (client delivery, product builds, and security research).</desc>
 <style>@keyframes k1{from{transform:translate(0,0)}to{transform:translate(-460px,0px)}}.a2{animation:k1 30s linear 0s infinite}</style>
 <defs><clipPath id="c3"><rect x="0" y="0" width="460" height="1686" rx="0"/></clipPath><filter id="gl4" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="blur"/><feFlood flood-color="#ff4d1a" flood-opacity="0.8" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="gl5" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="blur"/><feFlood flood-color="#ff4d1a" flood-opacity="0.8" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
 <rect x="0" y="0" width="460" height="1686" fill="#0b0605"/>
@@ -83,7 +83,7 @@
 <rect x="285.292" y="1559.35" width="53.349" height="26.5" rx="1.33" fill="none" stroke="#ff4d1a" stroke-opacity="0.5" stroke-width="1.2"/>
 <text x="26" y="58.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#ff4d1a" filter="url(#gl4)">what is public</text>
 <text x="26" y="89.36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#b0837a">22 original public repositories. Most of the work is not here:</text>
-<text x="26" y="109.66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#b0837a">over the last 12 months, 5,911 of 7,093 contributions were in</text>
+<text x="26" y="109.66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#b0837a">over the last 12 months, 5,934 of 7,153 contributions were in</text>
 <text x="26" y="129.96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#b0837a">private repositories (client delivery, product builds, and</text>
 <text x="26" y="150.26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#b0837a">security research).</text>
 <text x="37.2" y="196.36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#ff4d1a">ripple-proof</text>
