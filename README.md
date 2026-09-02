@@ -47,7 +47,7 @@ If infrastructure feels exciting, something is probably wrong. The goal is syste
 
 Expect `CAMPAIGN AUDIT: PASSED`, 11 of 11 checks. The [walkthrough](https://itxcrusher.github.io/ripple-proof/) keeps one run that fails its dbt build on purpose rather than dropping it.
 
-22 original public repositories. Most of the work is not here: over the last 12 months, 5,934 of 7,153 contributions were in private repositories (client delivery, product builds, and security research).
+22 original public repositories. Most of the work is not here: over the last 12 months, 6,196 of 7,429 contributions were in private repositories (client delivery, product builds, and security research).
 
 - **[ripple-proof](https://github.com/itxcrusher/ripple-proof)** - Bounded PostgreSQL column-rename agent: turns DataHub lineage evidence into validated dbt repairs across repositories, refuses ambiguous or stale evidence, and stops at human-reviewed pull requests. Python. Updated 2026-08-09.
 - **[vision-ai-poc](https://github.com/itxcrusher/vision-ai-poc)** - Real-time people detection, per-zone counting and dwell tracking with YOLOv8, ByteTrack and OpenCV. Runs as a local GUI demo or headless against RTSP cameras with server-fetched zones and privacy masking. Python. Updated 2026-08-26.
