@@ -1,0 +1,43 @@
+Scope of the MIT license in LICENSE
+===================================
+
+This repository holds two different things, and only one of them is licensed.
+
+
+The Software, MIT licensed
+--------------------------
+
+The theme engine and its tooling:
+
+  themes/            the catalog, the layout engine, the motif library, the
+                     rendering primitives and the committed font metrics
+  scripts/           the surface reader, the renderer CLI, the rendering contract
+  .github/workflows/ the daily pipeline
+
+Take it, fork it, build your own page on it. The MIT terms ask one thing in
+return: keep the copyright notice.
+
+
+Not licensed, all rights reserved
+---------------------------------
+
+Everything that makes this a particular person's page:
+
+  * the name "Muhammad Hassaan Javed", the handle "@itxcrusher", and the
+    identity, contact details and professional history they refer to;
+  * the hand-authored prose in themes/page.py, which is the opening statement,
+    the trust callout, the stack framing and the colophon;
+  * the artwork committed under assets/, which is that identity and that prose
+    drawn into SVG.
+
+The engine is data-driven from the GitHub API, so a fork populates itself with
+its own account's repositories, contributions and evidence. That is the intended
+way to use it. Shipping a page that presents this person's name or record as
+your own is not covered by any licence, here or anywhere.
+
+
+Attribution
+-----------
+
+Every SVG the engine draws carries a comment naming its source. It costs nothing
+to leave it in place, and it is the whole of what is asked.

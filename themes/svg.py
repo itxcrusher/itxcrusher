@@ -24,6 +24,14 @@ FAMILIES = {"sans": FONT_SANS, "mono": FONT_MONO, "serif": FONT_SERIF}
 
 MIN_FONT = 41
 
+# The rendered SVG is the one artifact that leaves this repository: it is served to
+# every profile visitor and can be saved with a right-click. No licence can stop that,
+# so the file names its own source instead. A comment rather than <metadata> because a
+# human opening the file is the actual audience, and rather than <desc> because <desc>
+# is read aloud by screen readers and belongs to the reader, not to attribution.
+CREDIT = ("<!-- Drawn by the itxcrusher profile theme engine."
+          " Source, and the terms for reuse: https://github.com/itxcrusher/itxcrusher -->")
+
 
 # ----------------------------------------------------------------------------- colour
 
@@ -270,6 +278,7 @@ class Canvas:
         tid = "t"
         out = ['<svg width="%d" height="%d" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg"'
                ' role="img" aria-labelledby="%s">' % (self.w, self.h, self.w, self.h, tid),
+               CREDIT,
                '<title id="%s">%s</title>' % (tid, _esc(self.title))]
         if self.desc:
             out.append("<desc>%s</desc>" % _esc(self.desc))
