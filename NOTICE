@@ -1,7 +1,10 @@
 Scope of the MIT license in LICENSE
 ===================================
 
-This repository holds two different things, and only one of them is licensed.
+LICENSE is kept as the canonical MIT text and nothing else, so that GitHub
+detects it and the terms are machine-readable. This file is where the scope
+lives instead: the repository holds two different things, and only one of them
+is licensed.
 
 
 The Software, MIT licensed
