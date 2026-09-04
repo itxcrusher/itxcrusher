@@ -1,6 +1,7 @@
 <svg width="600" height="2183" viewBox="0 0 600 2183" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<!-- Drawn by the itxcrusher profile theme engine. Source, and the terms for reuse: https://github.com/itxcrusher/itxcrusher -->
 <title id="t">what is public and the stack</title>
-<desc>23 original public repositories. Most of the work is not here: over the last 12 months, 6,263 of 7,774 contributions were in private repositories (client delivery, product builds, and security research).</desc>
+<desc>23 original public repositories. Most of the work is not here: over the last 12 months, 6,273 of 7,787 contributions were in private repositories (client delivery, product builds, and security research).</desc>
 <style>@keyframes k1{0%,100%{opacity:.2}50%{opacity:1}}.a2{animation:k1 3.2s ease-in-out infinite}</style>
 <defs><mask id="m3"><circle cx="0" cy="0" r="9" fill="#fff"/><circle cx="3.78" cy="-1.98" r="7.74" fill="#000"/></mask><mask id="m4"><circle cx="0" cy="0" r="9" fill="#fff"/><circle cx="3.78" cy="-1.98" r="7.74" fill="#000"/></mask></defs>
 <rect x="0" y="0" width="600" height="2183" fill="#04040a"/>
@@ -83,7 +84,7 @@
 <rect x="367.321" y="2020.86" width="69.432" height="34.5" rx="1.98" fill="none" stroke="#ffd28a" stroke-opacity="0.5" stroke-width="1.2"/>
 <text x="32" y="76.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="37" font-weight="700" fill="#ffd28a">what is public</text>
 <text x="32" y="117.24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#8f88ad">23 original public repositories. Most of the work is not here:</text>
-<text x="32" y="143.34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#8f88ad">over the last 12 months, 6,263 of 7,774 contributions were in</text>
+<text x="32" y="143.34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#8f88ad">over the last 12 months, 6,273 of 7,787 contributions were in</text>
 <text x="32" y="169.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#8f88ad">private repositories (client delivery, product builds, and security</text>
 <text x="32" y="195.54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#8f88ad">research).</text>
 <text x="53.35" y="255.94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#ffd28a">ripple-proof</text>
