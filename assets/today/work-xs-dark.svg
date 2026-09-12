@@ -1,187 +1,184 @@
-<svg width="280" height="2363" viewBox="0 0 280 2363" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="280" height="2377" viewBox="0 0 280 2377" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <!-- Drawn by the itxcrusher profile theme engine. Source, and the terms for reuse: https://github.com/itxcrusher/itxcrusher -->
-<title id="t">what is public and the stack</title>
-<desc>24 original public repositories. Most of the work is not here: over the last 12 months, 6,580 of 8,262 contributions were in private repositories (client delivery, product builds, and security research).</desc>
-<rect x="0" y="0" width="280" height="2363" fill="#1a1f2b"/>
-<g opacity="0.14">
-<g><circle cx="99.042" cy="2147.757" r="0.753" fill="#e7ebf3" fill-opacity="0.165"/><circle cx="2.314" cy="1585.638" r="1.211" fill="#e7ebf3" fill-opacity="0.134"/><circle cx="118.983" cy="277.63" r="1.026" fill="#e7ebf3" fill-opacity="0.152"/><circle cx="230.13" cy="2049.49" r="0.854" fill="#e7ebf3" fill-opacity="0.176"/><circle cx="248.556" cy="1568.416" r="0.774" fill="#e7ebf3" fill-opacity="0.142"/><circle cx="216.478" cy="2079.641" r="1.168" fill="#e7ebf3" fill-opacity="0.104"/><circle cx="28.61" cy="1604.557" r="1.063" fill="#e7ebf3" fill-opacity="0.12"/><circle cx="73.002" cy="1439.174" r="0.926" fill="#e7ebf3" fill-opacity="0.128"/><circle cx="249.637" cy="724.032" r="1.391" fill="#e7ebf3" fill-opacity="0.13"/><circle cx="129.832" cy="1713.907" r="0.593" fill="#e7ebf3" fill-opacity="0.16"/><circle cx="163.974" cy="1237.864" r="1.198" fill="#e7ebf3" fill-opacity="0.163"/><circle cx="212.489" cy="1840.448" r="0.748" fill="#e7ebf3" fill-opacity="0.089"/><circle cx="31.589" cy="1894.212" r="0.698" fill="#e7ebf3" fill-opacity="0.155"/><circle cx="22.14" cy="762.051" r="1.017" fill="#e7ebf3" fill-opacity="0.112"/><circle cx="212.358" cy="311.99" r="1.203" fill="#e7ebf3" fill-opacity="0.166"/><circle cx="153.216" cy="1631.339" r="0.439" fill="#e7ebf3" fill-opacity="0.119"/><circle cx="100.059" cy="876.611" r="1.224" fill="#e7ebf3" fill-opacity="0.178"/><circle cx="74.775" cy="652.439" r="0.905" fill="#e7ebf3" fill-opacity="0.076"/><circle cx="24.972" cy="1021.76" r="1.157" fill="#e7ebf3" fill-opacity="0.171"/><circle cx="234.399" cy="18.189" r="1.066" fill="#e7ebf3" fill-opacity="0.09"/><circle cx="161.124" cy="308.257" r="0.748" fill="#e7ebf3" fill-opacity="0.127"/><circle cx="90.726" cy="1749.402" r="1.274" fill="#e7ebf3" fill-opacity="0.175"/><circle cx="55.82" cy="115.458" r="1.155" fill="#e7ebf3" fill-opacity="0.145"/><circle cx="203.611" cy="1348.019" r="1.013" fill="#e7ebf3" fill-opacity="0.082"/><circle cx="22.754" cy="259.469" r="0.528" fill="#e7ebf3" fill-opacity="0.099"/><circle cx="171.695" cy="2146.877" r="1.148" fill="#e7ebf3" fill-opacity="0.087"/><circle cx="113.84" cy="405.517" r="0.717" fill="#e7ebf3" fill-opacity="0.133"/><circle cx="206.879" cy="554.777" r="1.148" fill="#e7ebf3" fill-opacity="0.113"/><circle cx="199.319" cy="1791.146" r="0.586" fill="#e7ebf3" fill-opacity="0.163"/><circle cx="131.332" cy="810.709" r="0.552" fill="#e7ebf3" fill-opacity="0.152"/><circle cx="2.176" cy="403.765" r="1.027" fill="#e7ebf3" fill-opacity="0.135"/><circle cx="103.268" cy="1884.123" r="0.606" fill="#e7ebf3" fill-opacity="0.083"/><circle cx="115.526" cy="2248.133" r="0.888" fill="#e7ebf3" fill-opacity="0.143"/><circle cx="151.966" cy="2006.9" r="0.648" fill="#e7ebf3" fill-opacity="0.167"/><circle cx="32.763" cy="1825.767" r="0.522" fill="#e7ebf3" fill-opacity="0.138"/><circle cx="44.298" cy="1800.602" r="1.106" fill="#e7ebf3" fill-opacity="0.164"/><circle cx="39.125" cy="451.361" r="1.064" fill="#e7ebf3" fill-opacity="0.099"/><circle cx="21.508" cy="1180.384" r="0.558" fill="#e7ebf3" fill-opacity="0.11"/><circle cx="199.97" cy="56.053" r="1.232" fill="#e7ebf3" fill-opacity="0.072"/><circle cx="57.846" cy="2305.136" r="0.955" fill="#e7ebf3" fill-opacity="0.097"/><circle cx="67.772" cy="1403.809" r="1.025" fill="#e7ebf3" fill-opacity="0.163"/><circle cx="257.917" cy="784.508" r="0.687" fill="#e7ebf3" fill-opacity="0.142"/><circle cx="84.186" cy="1375.693" r="0.832" fill="#e7ebf3" fill-opacity="0.076"/><circle cx="197.659" cy="900.648" r="0.503" fill="#e7ebf3" fill-opacity="0.179"/><circle cx="91.025" cy="1331.122" r="1.333" fill="#e7ebf3" fill-opacity="0.143"/><circle cx="254.684" cy="550.475" r="1.165" fill="#e7ebf3" fill-opacity="0.174"/><circle cx="176.485" cy="1586.254" r="0.433" fill="#e7ebf3" fill-opacity="0.171"/><circle cx="14.695" cy="411.661" r="1.089" fill="#e7ebf3" fill-opacity="0.143"/><circle cx="99.782" cy="1442.899" r="1.166" fill="#e7ebf3" fill-opacity="0.076"/><circle cx="158.242" cy="2299.673" r="1.099" fill="#e7ebf3" fill-opacity="0.105"/><circle cx="58.412" cy="1185.808" r="0.543" fill="#e7ebf3" fill-opacity="0.12"/><circle cx="250.91" cy="1898.929" r="0.791" fill="#e7ebf3" fill-opacity="0.072"/><circle cx="117.194" cy="1546.27" r="1.242" fill="#e7ebf3" fill-opacity="0.103"/><circle cx="213.9" cy="2325.439" r="1.384" fill="#e7ebf3" fill-opacity="0.12"/><circle cx="120.749" cy="2260.382" r="1.223" fill="#e7ebf3" fill-opacity="0.12"/><circle cx="218.458" cy="132.496" r="1.039" fill="#e7ebf3" fill-opacity="0.154"/><circle cx="230.044" cy="481.379" r="1.027" fill="#e7ebf3" fill-opacity="0.163"/><circle cx="4.305" cy="1991.377" r="1.264" fill="#e7ebf3" fill-opacity="0.148"/><circle cx="173.046" cy="258.239" r="0.613" fill="#e7ebf3" fill-opacity="0.179"/><circle cx="67.396" cy="1246.283" r="0.719" fill="#e7ebf3" fill-opacity="0.098"/><circle cx="54.465" cy="1021.489" r="1.382" fill="#e7ebf3" fill-opacity="0.154"/><circle cx="237.736" cy="2022.36" r="0.966" fill="#e7ebf3" fill-opacity="0.153"/><circle cx="56.916" cy="911.72" r="1.102" fill="#e7ebf3" fill-opacity="0.143"/><circle cx="123.994" cy="846.787" r="0.787" fill="#e7ebf3" fill-opacity="0.131"/><circle cx="5.935" cy="2037.534" r="1.334" fill="#e7ebf3" fill-opacity="0.148"/><circle cx="156.115" cy="1088.331" r="1.193" fill="#e7ebf3" fill-opacity="0.074"/><circle cx="218.426" cy="1081.843" r="1.246" fill="#e7ebf3" fill-opacity="0.134"/><circle cx="62.82" cy="1054.045" r="0.434" fill="#e7ebf3" fill-opacity="0.104"/><circle cx="255.074" cy="219.893" r="0.822" fill="#e7ebf3" fill-opacity="0.133"/><circle cx="209.015" cy="539.143" r="1.181" fill="#e7ebf3" fill-opacity="0.126"/><circle cx="10.718" cy="719.36" r="0.85" fill="#e7ebf3" fill-opacity="0.17"/><circle cx="258.307" cy="1170.649" r="1.221" fill="#e7ebf3" fill-opacity="0.142"/><circle cx="65.328" cy="1315.886" r="1.352" fill="#e7ebf3" fill-opacity="0.15"/><circle cx="50.858" cy="1083.681" r="0.605" fill="#e7ebf3" fill-opacity="0.162"/><circle cx="87.55" cy="1008.95" r="1.288" fill="#e7ebf3" fill-opacity="0.101"/><circle cx="56.401" cy="2095.186" r="0.837" fill="#e7ebf3" fill-opacity="0.091"/><circle cx="22.654" cy="1641.341" r="1.275" fill="#e7ebf3" fill-opacity="0.087"/><circle cx="44.05" cy="1077.688" r="1.125" fill="#e7ebf3" fill-opacity="0.121"/><circle cx="5.833" cy="1644.623" r="1.358" fill="#e7ebf3" fill-opacity="0.153"/><circle cx="64.316" cy="1408.742" r="1.21" fill="#e7ebf3" fill-opacity="0.144"/><circle cx="59.316" cy="1803.581" r="0.943" fill="#e7ebf3" fill-opacity="0.095"/><circle cx="260.409" cy="1385.297" r="1.011" fill="#e7ebf3" fill-opacity="0.072"/><circle cx="10.946" cy="2209.245" r="1.254" fill="#e7ebf3" fill-opacity="0.175"/><circle cx="60.36" cy="699.714" r="1.087" fill="#e7ebf3" fill-opacity="0.086"/><circle cx="123.73" cy="831.089" r="1.061" fill="#e7ebf3" fill-opacity="0.097"/><circle cx="218.975" cy="2250.369" r="0.979" fill="#e7ebf3" fill-opacity="0.101"/><circle cx="243.158" cy="352.774" r="0.47" fill="#e7ebf3" fill-opacity="0.17"/><circle cx="108.481" cy="1649.044" r="0.732" fill="#e7ebf3" fill-opacity="0.128"/><circle cx="219.549" cy="454.551" r="1.241" fill="#e7ebf3" fill-opacity="0.178"/><circle cx="205.333" cy="791.729" r="0.711" fill="#e7ebf3" fill-opacity="0.176"/></g>
+<title id="t">what is public and the evidence</title>
+<desc>24 original public repositories. Most of the work is not here: over the last 12 months, 6,608 of 8,294 contributions were in private repositories (client delivery, product builds, and security research).</desc>
+<style>@keyframes k1{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}.a2{animation:k1 12s ease-in-out infinite}</style>
+<defs><clipPath id="c3"><rect x="0" y="0" width="280" height="2377" rx="0"/></clipPath></defs>
+<rect x="0" y="0" width="280" height="2377" fill="#08080a"/>
+<g opacity="0.06">
+<g clip-path="url(#c3)" ><g class="a2"><g transform="rotate(-10 140 1188.5)"><rect x="-100" y="-396.167" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="0" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="396.167" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="792.333" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="1188.5" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="1584.667" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="1980.833" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="2377" width="480" height="178.275" fill="#ffffff" fill-opacity="0.09"/></g></g></g>
 </g>
-<line x1="187.548" y1="45.58" x2="244.4" y2="45.58" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.5"/>
-<g transform="translate(254,45.58) scale(0.364)">
-<path d="M-14,2 a7,7 0 0 1 12,-6 a8,8 0 0 1 15,4 a6,6 0 0 1 -1,12 h-24 a5,5 0 0 1 -2,-10 Z" fill="#9fb3d9" fill-opacity="0.95"/>
-</g>
-<rect x="18" y="200.16" width="244" height="211.26" rx="8.8" fill="#232a39" fill-opacity="1"/>
-<rect x="18.75" y="200.91" width="242.5" height="209.76" rx="8.05" fill="none" stroke="#9fb3d9" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="200.16" width="3" height="211.26" rx="0" fill="#9fb3d9" fill-opacity="0.9"/>
-<rect x="18" y="418.14" width="244" height="211.26" rx="8.8" fill="#232a39" fill-opacity="1"/>
-<rect x="18.75" y="418.89" width="242.5" height="209.76" rx="8.05" fill="none" stroke="#9fb3d9" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="418.14" width="3" height="211.26" rx="0" fill="#9fb3d9" fill-opacity="0.9"/>
-<rect x="18" y="636.12" width="244" height="211.26" rx="8.8" fill="#232a39" fill-opacity="1"/>
-<rect x="18.75" y="636.87" width="242.5" height="209.76" rx="8.05" fill="none" stroke="#9fb3d9" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="636.12" width="3" height="211.26" rx="0" fill="#9fb3d9" fill-opacity="0.9"/>
-<rect x="18" y="854.1" width="244" height="231.56" rx="8.8" fill="#232a39" fill-opacity="1"/>
-<rect x="18.75" y="854.85" width="242.5" height="230.06" rx="8.05" fill="none" stroke="#9fb3d9" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="854.1" width="3" height="231.56" rx="0" fill="#9fb3d9" fill-opacity="0.9"/>
-<rect x="18" y="1092.38" width="244" height="190.96" rx="8.8" fill="#232a39" fill-opacity="1"/>
-<rect x="18.75" y="1093.13" width="242.5" height="189.46" rx="8.05" fill="none" stroke="#9fb3d9" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="1092.38" width="3" height="190.96" rx="0" fill="#9fb3d9" fill-opacity="0.9"/>
-<rect x="18" y="1290.06" width="244" height="170.66" rx="8.8" fill="#232a39" fill-opacity="1"/>
-<rect x="18.75" y="1290.81" width="242.5" height="169.16" rx="8.05" fill="none" stroke="#9fb3d9" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="1290.06" width="3" height="170.66" rx="0" fill="#9fb3d9" fill-opacity="0.9"/>
-<line x1="154.272" y1="1660.82" x2="244.4" y2="1660.82" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.5"/>
-<g transform="translate(254,1660.82) scale(0.364)">
-<path d="M-14,2 a7,7 0 0 1 12,-6 a8,8 0 0 1 15,4 a6,6 0 0 1 -1,12 h-24 a5,5 0 0 1 -2,-10 Z" fill="#9fb3d9" fill-opacity="0.95"/>
-</g>
-<rect x="18" y="1800" width="53.929" height="28" rx="14" fill="#9fb3d9" fill-opacity="1"/>
-<rect x="76.729" y="1800" width="47.726" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="77.479" y="1800.75" width="46.226" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="129.255" y="1800" width="54.226" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="130.005" y="1800.75" width="52.726" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="1834.72" width="76.783" height="28" rx="14" fill="#9fb3d9" fill-opacity="1"/>
-<rect x="99.583" y="1834.72" width="91.563" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="100.333" y="1835.47" width="90.063" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="195.946" y="1834.72" width="62.996" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="196.696" y="1835.47" width="61.496" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="1867.52" width="82.778" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="18.75" y="1868.27" width="81.278" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="105.578" y="1867.52" width="51.169" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="106.328" y="1868.27" width="49.669" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="1902.24" width="70.965" height="28" rx="14" fill="#9fb3d9" fill-opacity="1"/>
-<rect x="93.765" y="1902.24" width="117.593" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="94.515" y="1902.99" width="116.093" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="1935.04" width="119.314" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="18.75" y="1935.79" width="117.814" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="142.114" y="1935.04" width="68.472" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="142.864" y="1935.79" width="66.972" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="1967.84" width="61.498" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="18.75" y="1968.59" width="59.998" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2002.56" width="70.327" height="28" rx="14" fill="#9fb3d9" fill-opacity="1"/>
-<rect x="93.127" y="2002.56" width="51.228" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="93.877" y="2003.31" width="49.728" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="149.156" y="2002.56" width="92.083" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="149.906" y="2003.31" width="90.583" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2035.36" width="128.352" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="18.75" y="2036.11" width="126.852" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2070.08" width="27.558" height="28" rx="14" fill="#9fb3d9" fill-opacity="1"/>
-<rect x="50.358" y="2070.08" width="125.31" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="51.108" y="2070.83" width="123.81" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="180.468" y="2070.08" width="46.954" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="181.218" y="2070.83" width="45.454" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2102.88" width="116.495" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="18.75" y="2103.63" width="114.995" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2135.68" width="123.929" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="18.75" y="2136.43" width="122.429" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2170.4" width="86.429" height="28" rx="14" fill="#9fb3d9" fill-opacity="1"/>
-<rect x="109.229" y="2170.4" width="63.071" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="109.979" y="2171.15" width="61.571" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="177.099" y="2170.4" width="47.103" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="177.849" y="2171.15" width="45.603" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2203.2" width="42.74" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="18.75" y="2203.95" width="41.24" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="65.54" y="2203.2" width="54.849" height="28" rx="14" fill="#2b3345" fill-opacity="1"/>
-<rect x="66.29" y="2203.95" width="53.349" height="26.5" rx="13.25" fill="none" stroke="#9fb3d9" stroke-opacity="0.5" stroke-width="1.2"/>
-<text x="18" y="53.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="700" fill="#9fb3d9">what is public</text>
-<text x="18" y="82.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">24 original public repositories. Most</text>
-<text x="18" y="103.06" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">of the work is not here: over the last</text>
-<text x="18" y="123.36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">12 months, 6,580 of 8,262</text>
-<text x="18" y="143.66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">contributions were in private</text>
-<text x="18" y="163.96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">repositories (client delivery, product</text>
-<text x="18" y="184.26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">builds, and security research).</text>
-<text x="34.6" y="230.36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#9fb3d9">ripple-proof</text>
-<text x="34.6" y="251.72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">Bounded PostgreSQL</text>
-<text x="34.6" y="272.02" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">column-rename agent: turns</text>
-<text x="34.6" y="292.32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">DataHub lineage evidence into</text>
-<text x="34.6" y="312.62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">validated dbt repairs across</text>
-<text x="34.6" y="332.92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">repositories, refuses ambiguous</text>
-<text x="34.6" y="353.22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">or stale evidence, and stops at</text>
-<text x="34.6" y="373.52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">human-reviewed pull requests</text>
-<text x="34.6" y="395.74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#97a1b6">Python, updated 2026-08-09</text>
-<text x="34.6" y="448.34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#9fb3d9">vision-ai-poc</text>
-<text x="34.6" y="469.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">Real-time people detection,</text>
-<text x="34.6" y="490" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">per-zone counting and dwell</text>
-<text x="34.6" y="510.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">tracking with YOLOv8, ByteTrack</text>
-<text x="34.6" y="530.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">and OpenCV. Runs as a local GUI</text>
-<text x="34.6" y="550.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">demo or headless against RTSP</text>
-<text x="34.6" y="571.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">cameras with server-fetched</text>
-<text x="34.6" y="591.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">zones and privacy masking</text>
-<text x="34.6" y="613.72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#97a1b6">Python, updated 2026-08-26</text>
-<text x="34.6" y="666.32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#9fb3d9">kind-cluster-recovery</text>
-<text x="34.6" y="687.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">Four-node KIND cluster</text>
-<text x="34.6" y="707.98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">provisioned onto a remote host</text>
-<text x="34.6" y="728.28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">with Terraform over SSH, then</text>
-<text x="34.6" y="748.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">debugged: CoreDNS Corefile</text>
-<text x="34.6" y="768.88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">repair, crash-loop recovery, and</text>
-<text x="34.6" y="789.18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">a least-privilege NetworkPolicy</text>
-<text x="34.6" y="809.48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">expressed in Terraform</text>
-<text x="34.6" y="831.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#97a1b6">HCL, updated 2026-08-26</text>
-<text x="34.6" y="884.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#9fb3d9">k8s-gitops-platform</text>
-<text x="34.6" y="905.66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">ArgoCD app-of-apps GitOps</text>
-<text x="34.6" y="925.96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">configuration for a 17-service</text>
-<text x="34.6" y="946.26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">Kubernetes platform:</text>
-<text x="34.6" y="966.56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">parameterised Helm charts, an</text>
-<text x="34.6" y="986.86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">ELK logging stack, and</text>
-<text x="34.6" y="1007.16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">cert-manager across three</text>
-<text x="34.6" y="1027.46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">environments. Generalised from</text>
-<text x="34.6" y="1047.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">production</text>
-<text x="34.6" y="1069.98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#97a1b6">updated 2026-08-22</text>
-<text x="34.6" y="1122.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#9fb3d9">wordpress-fargate-deployment</text>
-<text x="34.6" y="1143.94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">AWS CloudFormation template</text>
-<text x="34.6" y="1164.24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">and helper scripts to deploy a</text>
-<text x="34.6" y="1184.54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">production-ready WordPress</text>
-<text x="34.6" y="1204.84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">environment on AWS Fargate</text>
-<text x="34.6" y="1225.14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">with RDS, EFS, and an</text>
-<text x="34.6" y="1245.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">Application Load Balancer</text>
-<text x="34.6" y="1267.66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#97a1b6">Shell, updated 2025-08-08</text>
-<text x="34.6" y="1320.26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#9fb3d9">azure-devops-demo</text>
-<text x="34.6" y="1341.62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">End-to-end Terraform and</text>
-<text x="34.6" y="1361.92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">GitHub Actions pipeline that</text>
-<text x="34.6" y="1382.22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">deploys a containerized service</text>
-<text x="34.6" y="1402.52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">to Azure, with six reusable</text>
-<text x="34.6" y="1422.82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#e7ebf3">Terraform modules</text>
-<text x="34.6" y="1445.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#97a1b6">HCL, updated 2025-05-16</text>
-<text x="18" y="1483.84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">Evidence trail for ripple-proof runs</text>
-<text x="18" y="1504.14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">across four public sibling dbt</text>
-<text x="18" y="1524.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">repositories: analytics, finance,</text>
-<text x="18" y="1544.74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">growth, operations. All open and</text>
-<text x="18" y="1565.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">review-only.</text>
-<text x="18" y="1590.14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">Generated 2026-09-11 from the</text>
-<text x="18" y="1610.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">GitHub API.</text>
-<text x="18" y="1670.34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#9fb3d9">the stack</text>
-<text x="18" y="1701.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">Everything in the operating stack</text>
-<text x="18" y="1721.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">below has a public artifact in this</text>
-<text x="18" y="1741.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">account. Work that does not is in</text>
-<text x="18" y="1762.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">private repositories and is not listed</text>
-<text x="18" y="1782.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">here.</text>
-<text x="25.68" y="1819.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1f2b">cloud</text>
-<text x="84.409" y="1819.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">AWS</text>
-<text x="136.935" y="1819.04" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Azure</text>
-<text x="25.68" y="1853.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1f2b">platform</text>
-<text x="107.263" y="1853.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Kubernetes</text>
-<text x="203.626" y="1853.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Docker</text>
-<text x="25.68" y="1886.56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Terraform</text>
-<text x="113.258" y="1886.56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Helm</text>
-<text x="25.68" y="1921.28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1f2b">delivery</text>
-<text x="101.445" y="1921.28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">GitHub Actions</text>
-<text x="25.68" y="1954.08" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">CI/CD pipelines</text>
-<text x="149.794" y="1954.08" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">ArgoCD</text>
-<text x="25.68" y="1986.88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">GitOps</text>
-<text x="25.68" y="2021.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1f2b">systems</text>
-<text x="100.807" y="2021.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Linux</text>
-<text x="156.836" y="2021.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">networking</text>
-<text x="25.68" y="2054.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">shell automation</text>
-<text x="25.68" y="2089.12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1f2b">ai</text>
-<text x="58.038" y="2089.12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">bounded agents</text>
-<text x="188.148" y="2089.12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">MCP</text>
-<text x="25.68" y="2121.92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">LLM workflows</text>
-<text x="25.68" y="2154.72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">computer vision</text>
-<text x="25.68" y="2189.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#1a1f2b">languages</text>
-<text x="116.909" y="2189.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Python</text>
-<text x="184.779" y="2189.44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">Bash</text>
-<text x="25.68" y="2222.24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">HCL</text>
-<text x="73.22" y="2222.24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#e7ebf3">YAML</text>
-<text x="18" y="2257.52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">Upstream, open: skip_cache for</text>
-<text x="18" y="2277.82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">get_lineage in</text>
-<text x="18" y="2298.12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">acryldata/mcp-server-datahub, and a</text>
-<text x="18" y="2318.42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">repair-boundary skill in</text>
-<text x="18" y="2338.72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#97a1b6">datahub-project/datahub-skills.</text>
+<line x1="202.81" y1="45.58" x2="262" y2="45.58" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="18" y="200.16" width="244" height="211.26" rx="0" fill="#0e0e10" fill-opacity="1"/>
+<rect x="18.75" y="200.91" width="242.5" height="209.76" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="200.16" width="4" height="211.26" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
+<rect x="18" y="418.14" width="244" height="231.56" rx="0" fill="#0e0e10" fill-opacity="1"/>
+<rect x="18.75" y="418.89" width="242.5" height="230.06" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="418.14" width="4" height="231.56" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
+<rect x="18" y="656.42" width="244" height="211.26" rx="0" fill="#0e0e10" fill-opacity="1"/>
+<rect x="18.75" y="657.17" width="242.5" height="209.76" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="656.42" width="4" height="211.26" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
+<rect x="18" y="874.4" width="244" height="231.56" rx="0" fill="#0e0e10" fill-opacity="1"/>
+<rect x="18.75" y="875.15" width="242.5" height="230.06" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="874.4" width="4" height="231.56" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
+<rect x="18" y="1112.68" width="244" height="190.96" rx="0" fill="#0e0e10" fill-opacity="1"/>
+<rect x="18.75" y="1113.43" width="242.5" height="189.46" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="1112.68" width="4" height="190.96" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
+<rect x="18" y="1310.36" width="244" height="170.66" rx="0" fill="#0e0e10" fill-opacity="1"/>
+<rect x="18.75" y="1311.11" width="242.5" height="169.16" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="1310.36" width="4" height="170.66" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
+<line x1="185.817" y1="1677.82" x2="262" y2="1677.82" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="18" y="1813.7" width="57.669" height="28" rx="0" fill="#e6e6e6" fill-opacity="1"/>
+<rect x="80.469" y="1813.7" width="48.127" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="81.219" y="1814.45" width="46.627" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="133.396" y="1813.7" width="53.692" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="134.146" y="1814.45" width="52.192" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="1848.42" width="83.03" height="28" rx="0" fill="#e6e6e6" fill-opacity="1"/>
+<rect x="105.83" y="1848.42" width="90.391" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="106.58" y="1849.17" width="88.891" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="1881.22" width="62.418" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="18.75" y="1881.97" width="60.918" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="85.218" y="1881.22" width="83.342" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="85.968" y="1881.97" width="81.842" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="173.36" y="1881.22" width="51.941" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="174.11" y="1881.97" width="50.441" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="1915.94" width="77.005" height="28" rx="0" fill="#e6e6e6" fill-opacity="1"/>
+<rect x="99.805" y="1915.94" width="117.444" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="100.555" y="1916.69" width="115.944" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="1948.74" width="121.258" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="18.75" y="1949.49" width="119.758" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="144.058" y="1948.74" width="67.597" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="144.808" y="1949.49" width="66.097" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="1981.54" width="61.512" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="18.75" y="1982.29" width="60.012" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2016.26" width="75.996" height="28" rx="0" fill="#e6e6e6" fill-opacity="1"/>
+<rect x="98.796" y="2016.26" width="53.469" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="99.546" y="2017.01" width="51.969" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="157.065" y="2016.26" width="90.065" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="157.815" y="2017.01" width="88.565" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2049.06" width="125.562" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="18.75" y="2049.81" width="124.062" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2083.78" width="29.458" height="28" rx="0" fill="#e6e6e6" fill-opacity="1"/>
+<rect x="52.258" y="2083.78" width="119.255" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="53.008" y="2084.53" width="117.755" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="176.313" y="2083.78" width="47.696" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="177.063" y="2084.53" width="46.196" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2116.58" width="118.008" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="18.75" y="2117.33" width="116.508" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2149.38" width="121.377" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="18.75" y="2150.13" width="119.877" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2184.1" width="91.667" height="28" rx="0" fill="#e6e6e6" fill-opacity="1"/>
+<rect x="114.467" y="2184.1" width="62.24" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="115.217" y="2184.85" width="60.74" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="181.507" y="2184.1" width="47.592" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="182.257" y="2184.85" width="46.092" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2216.9" width="45.945" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="18.75" y="2217.65" width="44.445" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="68.745" y="2216.9" width="57.164" height="28" rx="0" fill="#131315" fill-opacity="1"/>
+<rect x="69.495" y="2217.65" width="55.664" height="26.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
+<text x="18" y="53.4" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">what is public</text>
+<text x="18" y="82.76" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">24 original public repositories. Most</text>
+<text x="18" y="103.06" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">of the work is not here: over the last</text>
+<text x="18" y="123.36" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">12 months, 6,608 of 8,294</text>
+<text x="18" y="143.66" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">contributions were in private</text>
+<text x="18" y="163.96" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">repositories (client delivery, product</text>
+<text x="18" y="184.26" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">builds, and security research).</text>
+<text x="35.6" y="230.36" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">ripple-proof</text>
+<text x="35.6" y="251.72" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">Bounded PostgreSQL</text>
+<text x="35.6" y="272.02" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">column-rename agent: turns</text>
+<text x="35.6" y="292.32" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">DataHub lineage evidence into</text>
+<text x="35.6" y="312.62" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">validated dbt repairs across</text>
+<text x="35.6" y="332.92" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">repositories, refuses ambiguous</text>
+<text x="35.6" y="353.22" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">or stale evidence, and stops at</text>
+<text x="35.6" y="373.52" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">human-reviewed pull requests</text>
+<text x="35.6" y="395.74" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#9a9a9f">Python, updated 2026-08-09</text>
+<text x="35.6" y="448.34" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">vision-ai-poc</text>
+<text x="35.6" y="469.7" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">Real-time people detection,</text>
+<text x="35.6" y="490" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">per-zone counting and dwell</text>
+<text x="35.6" y="510.3" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">tracking with YOLOv8,</text>
+<text x="35.6" y="530.6" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">ByteTrack and OpenCV. Runs as</text>
+<text x="35.6" y="550.9" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">a local GUI demo or headless</text>
+<text x="35.6" y="571.2" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">against RTSP cameras with</text>
+<text x="35.6" y="591.5" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">server-fetched zones and</text>
+<text x="35.6" y="611.8" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">privacy masking</text>
+<text x="35.6" y="634.02" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#9a9a9f">Python, updated 2026-08-26</text>
+<text x="35.6" y="686.62" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">kind-cluster-recovery</text>
+<text x="35.6" y="707.98" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">Four-node KIND cluster</text>
+<text x="35.6" y="728.28" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">provisioned onto a remote host</text>
+<text x="35.6" y="748.58" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">with Terraform over SSH, then</text>
+<text x="35.6" y="768.88" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">debugged: CoreDNS Corefile</text>
+<text x="35.6" y="789.18" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">repair, crash-loop recovery, and</text>
+<text x="35.6" y="809.48" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">a least-privilege NetworkPolicy</text>
+<text x="35.6" y="829.78" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">expressed in Terraform</text>
+<text x="35.6" y="852" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#9a9a9f">HCL, updated 2026-08-26</text>
+<text x="35.6" y="904.6" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">k8s-gitops-platform</text>
+<text x="35.6" y="925.96" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">ArgoCD app-of-apps GitOps</text>
+<text x="35.6" y="946.26" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">configuration for a 17-service</text>
+<text x="35.6" y="966.56" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">Kubernetes platform:</text>
+<text x="35.6" y="986.86" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">parameterised Helm charts, an</text>
+<text x="35.6" y="1007.16" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">ELK logging stack, and</text>
+<text x="35.6" y="1027.46" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">cert-manager across three</text>
+<text x="35.6" y="1047.76" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">environments. Generalised from</text>
+<text x="35.6" y="1068.06" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">production</text>
+<text x="35.6" y="1090.28" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#9a9a9f">updated 2026-08-22</text>
+<text x="35.6" y="1142.88" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">wordpress-fargate-deployment</text>
+<text x="35.6" y="1164.24" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">AWS CloudFormation template</text>
+<text x="35.6" y="1184.54" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">and helper scripts to deploy a</text>
+<text x="35.6" y="1204.84" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">production-ready WordPress</text>
+<text x="35.6" y="1225.14" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">environment on AWS Fargate</text>
+<text x="35.6" y="1245.44" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">with RDS, EFS, and an</text>
+<text x="35.6" y="1265.74" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">Application Load Balancer</text>
+<text x="35.6" y="1287.96" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#9a9a9f">Shell, updated 2025-08-08</text>
+<text x="35.6" y="1340.56" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#e6e6e6">azure-devops-demo</text>
+<text x="35.6" y="1361.92" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">End-to-end Terraform and</text>
+<text x="35.6" y="1382.22" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">GitHub Actions pipeline that</text>
+<text x="35.6" y="1402.52" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">deploys a containerized service</text>
+<text x="35.6" y="1422.82" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">to Azure, with six reusable</text>
+<text x="35.6" y="1443.12" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#f2f2f2">Terraform modules</text>
+<text x="35.6" y="1465.34" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#9a9a9f">HCL, updated 2025-05-16</text>
+<text x="18" y="1504.14" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">Evidence trail for ripple-proof runs</text>
+<text x="18" y="1524.44" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">across four public sibling dbt</text>
+<text x="18" y="1544.74" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">repositories: analytics, finance,</text>
+<text x="18" y="1565.04" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">growth, operations. All open and</text>
+<text x="18" y="1585.34" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">review-only.</text>
+<text x="18" y="1610.44" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">Generated 2026-09-12 from the</text>
+<text x="18" y="1630.74" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">GitHub API.</text>
+<text x="18" y="1685.64" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">the evidence</text>
+<text x="18" y="1715" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">Everything in the operating stack</text>
+<text x="18" y="1735.3" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">below has a public artifact in this</text>
+<text x="18" y="1755.6" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">account. Work that does not is in</text>
+<text x="18" y="1775.9" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">private repositories and is not listed</text>
+<text x="18" y="1796.2" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">here.</text>
+<text x="25.68" y="1832.74" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#08080a">cloud</text>
+<text x="88.149" y="1832.74" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">AWS</text>
+<text x="141.076" y="1832.74" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Azure</text>
+<text x="25.68" y="1867.46" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#08080a">platform</text>
+<text x="113.51" y="1867.46" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Kubernetes</text>
+<text x="25.68" y="1900.26" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Docker</text>
+<text x="92.898" y="1900.26" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Terraform</text>
+<text x="181.04" y="1900.26" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Helm</text>
+<text x="25.68" y="1934.98" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#08080a">delivery</text>
+<text x="107.485" y="1934.98" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">GitHub Actions</text>
+<text x="25.68" y="1967.78" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">CI/CD pipelines</text>
+<text x="151.738" y="1967.78" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">ArgoCD</text>
+<text x="25.68" y="2000.58" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">GitOps</text>
+<text x="25.68" y="2035.3" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#08080a">systems</text>
+<text x="106.476" y="2035.3" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Linux</text>
+<text x="164.745" y="2035.3" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">networking</text>
+<text x="25.68" y="2068.1" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">shell automation</text>
+<text x="25.68" y="2102.82" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#08080a">ai</text>
+<text x="59.938" y="2102.82" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">bounded agents</text>
+<text x="183.993" y="2102.82" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">MCP</text>
+<text x="25.68" y="2135.62" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">LLM workflows</text>
+<text x="25.68" y="2168.42" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">computer vision</text>
+<text x="25.68" y="2203.14" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#08080a">languages</text>
+<text x="122.147" y="2203.14" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Python</text>
+<text x="189.187" y="2203.14" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">Bash</text>
+<text x="25.68" y="2235.94" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">HCL</text>
+<text x="76.425" y="2235.94" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="500" fill="#f2f2f2">YAML</text>
+<text x="18" y="2271.22" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">Upstream, open: skip_cache for</text>
+<text x="18" y="2291.52" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">get_lineage in</text>
+<text x="18" y="2311.82" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">acryldata/mcp-server-datahub, and</text>
+<text x="18" y="2332.12" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">a repair-boundary skill in</text>
+<text x="18" y="2352.42" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9a9a9f">datahub-project/datahub-skills.</text>
 </svg>

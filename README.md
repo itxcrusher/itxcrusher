@@ -1,11 +1,11 @@
-<!-- theme: cloudy | mode: daily | date: 2026-09-11 -->
+<!-- theme: noir | mode: daily | date: 2026-09-12 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/art/cloudy/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/art/cloudy/hero-light.svg">
-  <img src="./assets/art/cloudy/hero-light.svg" width="100%" alt="Muhammad Hassaan Javed, GitHub handle @itxcrusher. Cloudy theme." />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/art/noir/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/art/noir/hero-light.svg">
+  <img src="./assets/art/noir/hero-light.svg" width="100%" alt="Muhammad Hassaan Javed, GitHub handle @itxcrusher. Noir theme." />
 </picture>
 
-<picture><source media="(prefers-color-scheme: dark) and (max-width: 479px)" srcset="./assets/pages/cloudy/top-xs-dark.svg"><source media="(max-width: 479px)" srcset="./assets/pages/cloudy/top-xs-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="./assets/pages/cloudy/top-sm-dark.svg"><source media="(max-width: 767px)" srcset="./assets/pages/cloudy/top-sm-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 1199px)" srcset="./assets/pages/cloudy/top-md-dark.svg"><source media="(max-width: 1199px)" srcset="./assets/pages/cloudy/top-md-light.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/pages/cloudy/top-lg-dark.svg"><img src="./assets/pages/cloudy/top-lg-light.svg" width="100%" alt="Opening statement: this account builds infrastructure and bounded automation for other people's production systems, most of it in private repositories, followed by a runnable check that the work is real. The same words are in the plain-text copy at the foot of the page." /></picture>
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 479px)" srcset="./assets/pages/noir/top-xs-dark.svg"><source media="(max-width: 479px)" srcset="./assets/pages/noir/top-xs-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="./assets/pages/noir/top-sm-dark.svg"><source media="(max-width: 767px)" srcset="./assets/pages/noir/top-sm-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 1199px)" srcset="./assets/pages/noir/top-md-dark.svg"><source media="(max-width: 1199px)" srcset="./assets/pages/noir/top-md-light.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/pages/noir/top-lg-dark.svg"><img src="./assets/pages/noir/top-lg-light.svg" width="100%" alt="Opening statement: this account builds infrastructure and bounded automation for other people's production systems, most of it in private repositories, followed by a runnable check that the work is real. The same words are in the plain-text copy at the foot of the page." /></picture>
 
 <details><summary><sub>copy the commands</sub></summary>
 
@@ -19,17 +19,17 @@ PYTHONPATH=src python -S -m lineage_agent.cli demo
 
 <!-- PUBLIC_SURFACE:START -->
 
-## <picture><source media="(prefers-color-scheme: dark) and (max-width: 479px)" srcset="./assets/today/work-xs-dark.svg"><source media="(max-width: 479px)" srcset="./assets/today/work-xs-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="./assets/today/work-sm-dark.svg"><source media="(max-width: 767px)" srcset="./assets/today/work-sm-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 1199px)" srcset="./assets/today/work-md-dark.svg"><source media="(max-width: 1199px)" srcset="./assets/today/work-md-light.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/today/work-lg-dark.svg"><img src="./assets/today/work-lg-light.svg" width="100%" alt="what is public and the stack" /></picture>
+## <picture><source media="(prefers-color-scheme: dark) and (max-width: 479px)" srcset="./assets/today/work-xs-dark.svg"><source media="(max-width: 479px)" srcset="./assets/today/work-xs-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="./assets/today/work-sm-dark.svg"><source media="(max-width: 767px)" srcset="./assets/today/work-sm-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 1199px)" srcset="./assets/today/work-md-dark.svg"><source media="(max-width: 1199px)" srcset="./assets/today/work-md-light.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/today/work-lg-dark.svg"><img src="./assets/today/work-lg-light.svg" width="100%" alt="what is public and the evidence" /></picture>
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-light.svg"><img src="https://raw.githubusercontent.com/itxcrusher/itxcrusher/output/snake-light.svg" width="100%" alt="Contribution snake: an animation eating this account's GitHub contribution squares, regenerated daily from the output branch in today's theme colours." /></picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/art/cloudy/signoff-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/art/cloudy/signoff-light.svg">
-  <img src="./assets/art/cloudy/signoff-light.svg" width="100%" alt="Closing line at the end of the page: clearing later" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/art/noir/signoff-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/art/noir/signoff-light.svg">
+  <img src="./assets/art/noir/signoff-light.svg" width="100%" alt="Closing line at the end of the page: fade to black" />
 </picture>
 
-<picture><source media="(prefers-color-scheme: dark) and (max-width: 479px)" srcset="./assets/pages/cloudy/close-xs-dark.svg"><source media="(max-width: 479px)" srcset="./assets/pages/cloudy/close-xs-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="./assets/pages/cloudy/close-sm-dark.svg"><source media="(max-width: 767px)" srcset="./assets/pages/cloudy/close-sm-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 1199px)" srcset="./assets/pages/cloudy/close-md-dark.svg"><source media="(max-width: 1199px)" srcset="./assets/pages/cloudy/close-md-light.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/pages/cloudy/close-lg-dark.svg"><img src="./assets/pages/cloudy/close-lg-light.svg" width="100%" alt="Contact lines: how to reach Muhammad Hassaan Javed, by the agency site, the personal site, or directly by email. The same words are in the plain-text copy at the foot of the page." /></picture>
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 479px)" srcset="./assets/pages/noir/close-xs-dark.svg"><source media="(max-width: 479px)" srcset="./assets/pages/noir/close-xs-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="./assets/pages/noir/close-sm-dark.svg"><source media="(max-width: 767px)" srcset="./assets/pages/noir/close-sm-light.svg"><source media="(prefers-color-scheme: dark) and (max-width: 1199px)" srcset="./assets/pages/noir/close-md-dark.svg"><source media="(max-width: 1199px)" srcset="./assets/pages/noir/close-md-light.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/pages/noir/close-lg-dark.svg"><img src="./assets/pages/noir/close-lg-light.svg" width="100%" alt="Contact lines: how to reach Muhammad Hassaan Javed, by the agency site, the personal site, or directly by email. The same words are in the plain-text copy at the foot of the page." /></picture>
 
 <p align="center"><sub>
   <a href="https://muhammadhassaanjaved.com">muhammadhassaanjaved.com</a> | <a href="https://infraforge.agency">infraforge.agency</a> | <a href="https://github.com/itxcrusher?tab=repositories&type=source&sort=pushed">repositories</a> | <a href="https://itxcrusher.github.io/ripple-proof/">walkthrough</a> | <a href="https://github.com/itxcrusher/ripple-proof">ripple-proof</a> | <a href="https://github.com/itxcrusher/vision-ai-poc">vision-ai-poc</a> | <a href="https://github.com/itxcrusher/kind-cluster-recovery">kind-cluster-recovery</a> | <a href="https://github.com/itxcrusher/k8s-gitops-platform">k8s-gitops-platform</a> | <a href="https://github.com/itxcrusher/wordpress-fargate-deployment">wordpress-fargate-deployment</a> | <a href="https://github.com/itxcrusher/azure-devops-demo">azure-devops-demo</a> | <a href="https://github.com/itxcrusher/ripple-proof-dbt-analytics/pull/6">dbt analytics</a> | <a href="https://github.com/itxcrusher/ripple-proof-dbt-finance/pull/6">dbt finance</a> | <a href="https://github.com/itxcrusher/ripple-proof-dbt-growth/pull/5">dbt growth</a> | <a href="https://github.com/itxcrusher/ripple-proof-dbt-operations/pull/5">dbt operations</a> | <a href="https://github.com/acryldata/mcp-server-datahub/pull/190">skip_cache PR</a> | <a href="https://github.com/datahub-project/datahub-skills/pull/125">repair-boundary PR</a>
@@ -47,7 +47,7 @@ If infrastructure feels exciting, something is probably wrong. The goal is syste
 
 Expect `CAMPAIGN AUDIT: PASSED`, 11 of 11 checks. The [walkthrough](https://itxcrusher.github.io/ripple-proof/) keeps one run that fails its dbt build on purpose rather than dropping it.
 
-24 original public repositories. Most of the work is not here: over the last 12 months, 6,580 of 8,262 contributions were in private repositories (client delivery, product builds, and security research).
+24 original public repositories. Most of the work is not here: over the last 12 months, 6,608 of 8,294 contributions were in private repositories (client delivery, product builds, and security research).
 
 - **[ripple-proof](https://github.com/itxcrusher/ripple-proof)** - Bounded PostgreSQL column-rename agent: turns DataHub lineage evidence into validated dbt repairs across repositories, refuses ambiguous or stale evidence, and stops at human-reviewed pull requests. Python. Updated 2026-08-09.
 - **[vision-ai-poc](https://github.com/itxcrusher/vision-ai-poc)** - Real-time people detection, per-zone counting and dwell tracking with YOLOv8, ByteTrack and OpenCV. Runs as a local GUI demo or headless against RTSP cameras with server-fetched zones and privacy masking. Python. Updated 2026-08-26.
@@ -73,10 +73,10 @@ Muhammad Hassaan Javed (@itxcrusher). Infrastructure recovery and platform work:
 
 Direct: <muhammadhassaanjaved99@gmail.com>
 
-_Generated 2026-09-11 from the GitHub API._
+_Generated 2026-09-12 from the GitHub API._
 
 </details>
 
 <!-- PUBLIC_SURFACE:END -->
 
-<sub>Today this page wears <b>Cloudy</b>, one of 47 looks it rotates through daily. <a href="assets/pages/README.md">See them all</a>.</sub>
+<sub>Today this page wears <b>Noir</b>, one of 47 looks it rotates through daily. <a href="assets/pages/README.md">See them all</a>.</sub>
