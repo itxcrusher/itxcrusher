@@ -1,223 +1,227 @@
-<svg width="280" height="2674" viewBox="0 0 280 2674" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg width="280" height="2650" viewBox="0 0 280 2650" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <!-- Drawn by the itxcrusher profile theme engine. Source, and the terms for reuse: https://github.com/itxcrusher/itxcrusher -->
-<title id="t">public and stack</title>
-<desc>24 original public repositories. Most of the work is not here: over the last 12 months, 9,535 of 11,392 contributions were in private repositories (client delivery, product builds, and security research).</desc>
-<style>@keyframes k3{from{transform:translate(0,0)}to{transform:translate(0px,2734px)}}.a4{animation:k3 5.5s linear 0s infinite}</style>
-<defs><pattern id="p1" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000000" fill-opacity="0.08"/></pattern><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22e5ff" stop-opacity="0"/><stop offset="0.5" stop-color="#22e5ff" stop-opacity="0.16"/><stop offset="1" stop-color="#22e5ff" stop-opacity="0"/></linearGradient><clipPath id="c5"><rect x="0" y="0" width="280" height="2674" rx="0"/></clipPath><filter id="gl6" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="blur"/><feFlood flood-color="#ff2bd6" flood-opacity="0.8" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="gl7" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="blur"/><feFlood flood-color="#ff2bd6" flood-opacity="0.8" result="c"/><feComposite in="c" in2="blur" operator="in" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-<rect x="0" y="0" width="280" height="2674" fill="#07060f"/>
+<title id="t">channel: public and channel: stack</title>
+<desc>24 original public repositories. Most of the work is not here: over the last 12 months, 9,750 of 11,468 contributions were in private repositories (client delivery, product builds, and security research).</desc>
+<defs><pattern id="p1" width="34.641" height="60" patternUnits="userSpaceOnUse"><polygon points="34.641,30 17.321,40 0,30 0,10 17.321,0 34.641,10" fill="none" stroke="#ffc94a" stroke-opacity="0.12" stroke-width="1"/><polygon points="34.641,30 17.321,40 0,30 0,10 17.321,0 34.641,10" fill="none" stroke="#ffc94a" stroke-opacity="0.12" stroke-width="1" transform="translate(17.321,30)"/></pattern></defs>
+<rect x="0" y="0" width="280" height="2650" fill="#060a12"/>
 <g opacity="0.14">
-<rect x="0" y="0" width="280" height="2674" fill="url(#p1)"/>
-<g clip-path="url(#c5)" ><g class="a4"><rect x="0" y="-60" width="280" height="60" fill="url(#g2)"/></g></g>
+<rect x="0" y="0" width="280" height="2650" fill="url(#p1)"/>
 </g>
-<line x1="134.344" y1="48.88" x2="262" y2="48.88" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.5"/>
-<rect x="18" y="247.36" width="244" height="251.86" rx="1.6" fill="#0d081d" fill-opacity="1"/>
-<rect x="18.75" y="248.11" width="242.5" height="250.36" rx="0.85" fill="none" stroke="#ff2bd6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="247.36" width="3" height="251.86" rx="0" fill="#ff2bd6" fill-opacity="0.9"/>
-<line x1="244.4" y1="247.36" x2="262" y2="247.36" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="262" y1="247.36" x2="262" y2="264.96" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="481.62" x2="18" y2="499.22" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="499.22" x2="35.6" y2="499.22" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<rect x="18" y="505.94" width="244" height="272.16" rx="1.6" fill="#0d081d" fill-opacity="1"/>
-<rect x="18.75" y="506.69" width="242.5" height="270.66" rx="0.85" fill="none" stroke="#ff2bd6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="505.94" width="3" height="272.16" rx="0" fill="#ff2bd6" fill-opacity="0.9"/>
-<line x1="244.4" y1="505.94" x2="262" y2="505.94" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="262" y1="505.94" x2="262" y2="523.54" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="760.5" x2="18" y2="778.1" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="778.1" x2="35.6" y2="778.1" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<rect x="18" y="784.82" width="244" height="251.86" rx="1.6" fill="#0d081d" fill-opacity="1"/>
-<rect x="18.75" y="785.57" width="242.5" height="250.36" rx="0.85" fill="none" stroke="#ff2bd6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="784.82" width="3" height="251.86" rx="0" fill="#ff2bd6" fill-opacity="0.9"/>
-<line x1="244.4" y1="784.82" x2="262" y2="784.82" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="262" y1="784.82" x2="262" y2="802.42" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1019.08" x2="18" y2="1036.68" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1036.68" x2="35.6" y2="1036.68" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<rect x="18" y="1043.4" width="244" height="251.86" rx="1.6" fill="#0d081d" fill-opacity="1"/>
-<rect x="18.75" y="1044.15" width="242.5" height="250.36" rx="0.85" fill="none" stroke="#ff2bd6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="1043.4" width="3" height="251.86" rx="0" fill="#ff2bd6" fill-opacity="0.9"/>
-<line x1="244.4" y1="1043.4" x2="262" y2="1043.4" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="262" y1="1043.4" x2="262" y2="1061" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1277.66" x2="18" y2="1295.26" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1295.26" x2="35.6" y2="1295.26" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<rect x="18" y="1301.98" width="244" height="211.26" rx="1.6" fill="#0d081d" fill-opacity="1"/>
-<rect x="18.75" y="1302.73" width="242.5" height="209.76" rx="0.85" fill="none" stroke="#ff2bd6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="1301.98" width="3" height="211.26" rx="0" fill="#ff2bd6" fill-opacity="0.9"/>
-<line x1="244.4" y1="1301.98" x2="262" y2="1301.98" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="262" y1="1301.98" x2="262" y2="1319.58" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1495.64" x2="18" y2="1513.24" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1513.24" x2="35.6" y2="1513.24" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<rect x="18" y="1519.96" width="244" height="190.96" rx="1.6" fill="#0d081d" fill-opacity="1"/>
-<rect x="18.75" y="1520.71" width="242.5" height="189.46" rx="0.85" fill="none" stroke="#ff2bd6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="18" y="1519.96" width="3" height="190.96" rx="0" fill="#ff2bd6" fill-opacity="0.9"/>
-<line x1="244.4" y1="1519.96" x2="262" y2="1519.96" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="262" y1="1519.96" x2="262" y2="1537.56" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1693.32" x2="18" y2="1710.92" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="18" y1="1710.92" x2="35.6" y2="1710.92" stroke="#ff2bd6" stroke-opacity="0.9" stroke-width="2"/>
-<line x1="116.58" y1="1931.32" x2="262" y2="1931.32" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.5"/>
-<rect x="18" y="2090.8" width="56.17" height="28" rx="2.08" fill="#ff2bd6" fill-opacity="1"/>
-<rect x="78.97" y="2090.8" width="39.846" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="79.72" y="2091.55" width="38.346" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="123.616" y="2090.8" width="56.17" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="124.366" y="2091.55" width="54.67" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2125.52" width="80.656" height="28" rx="2.08" fill="#ff2bd6" fill-opacity="1"/>
-<rect x="103.456" y="2125.52" width="96.98" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="104.206" y="2126.27" width="95.48" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2158.32" width="64.332" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="18.75" y="2159.07" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="87.132" y="2158.32" width="88.818" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="87.882" y="2159.07" width="87.318" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="180.75" y="2158.32" width="48.008" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="181.5" y="2159.07" width="46.508" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2193.04" width="80.656" height="28" rx="2.08" fill="#ff2bd6" fill-opacity="1"/>
-<rect x="103.456" y="2193.04" width="129.628" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="104.206" y="2193.79" width="128.128" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2225.84" width="137.79" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="18.75" y="2226.59" width="136.29" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="160.59" y="2225.84" width="64.332" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="161.34" y="2226.59" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2258.64" width="64.332" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="18.75" y="2259.39" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2293.36" width="72.494" height="28" rx="2.08" fill="#ff2bd6" fill-opacity="1"/>
-<rect x="95.294" y="2293.36" width="56.17" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="96.044" y="2294.11" width="54.67" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="156.264" y="2293.36" width="96.98" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="157.014" y="2294.11" width="95.48" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2326.16" width="145.952" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="18.75" y="2326.91" width="144.452" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2360.88" width="31.684" height="28" rx="2.08" fill="#ff2bd6" fill-opacity="1"/>
-<rect x="54.484" y="2360.88" width="129.628" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="55.234" y="2361.63" width="128.128" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="188.912" y="2360.88" width="39.846" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="189.662" y="2361.63" width="38.346" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2393.68" width="121.466" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="18.75" y="2394.43" width="119.966" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2426.48" width="137.79" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="18.75" y="2427.23" width="136.29" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2461.2" width="88.818" height="28" rx="2.08" fill="#ff2bd6" fill-opacity="1"/>
-<rect x="111.618" y="2461.2" width="64.332" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="112.368" y="2461.95" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="180.75" y="2461.2" width="48.008" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="181.5" y="2461.95" width="46.508" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="18" y="2494" width="39.846" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="18.75" y="2494.75" width="38.346" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="62.646" y="2494" width="48.008" height="28" rx="2.08" fill="#130a29" fill-opacity="1"/>
-<rect x="63.396" y="2494.75" width="46.508" height="26.5" rx="1.33" fill="none" stroke="#ff2bd6" stroke-opacity="0.5" stroke-width="1.2"/>
-<text x="18" y="58.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="#ff2bd6" letter-spacing="1.44" filter="url(#gl6)">PUBLIC</text>
-<text x="18" y="89.36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">24 original public</text>
-<text x="18" y="109.66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">repositories. Most of the</text>
-<text x="18" y="129.96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">work is not here: over the</text>
-<text x="18" y="150.26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">last 12 months, 9,535 of</text>
-<text x="18" y="170.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">11,392 contributions were in</text>
-<text x="18" y="190.86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">private repositories (client</text>
-<text x="18" y="211.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">delivery, product builds, and</text>
-<text x="18" y="231.46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">security research).</text>
-<text x="34.6" y="277.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ff2bd6">ripple-proof</text>
-<text x="34.6" y="298.92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Bounded PostgreSQL</text>
-<text x="34.6" y="319.22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">column-rename agent: turns</text>
-<text x="34.6" y="339.52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">DataHub lineage evidence</text>
-<text x="34.6" y="359.82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">into validated dbt repairs</text>
-<text x="34.6" y="380.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">across repositories,</text>
-<text x="34.6" y="400.42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">refuses ambiguous or stale</text>
-<text x="34.6" y="420.72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">evidence, and stops at</text>
-<text x="34.6" y="441.02" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">human-reviewed pull</text>
-<text x="34.6" y="461.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">requests</text>
-<text x="34.6" y="483.54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#9b90c9">Python, updated 2026-10-19</text>
-<text x="34.6" y="536.14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ff2bd6">vision-ai-poc</text>
-<text x="34.6" y="557.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Real-time people</text>
-<text x="34.6" y="577.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">detection, per-zone</text>
-<text x="34.6" y="598.1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">counting and dwell</text>
-<text x="34.6" y="618.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">tracking with YOLOv8,</text>
-<text x="34.6" y="638.7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">ByteTrack and OpenCV. Runs</text>
-<text x="34.6" y="659" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">as a local GUI demo or</text>
-<text x="34.6" y="679.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">headless against RTSP</text>
-<text x="34.6" y="699.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">cameras with</text>
-<text x="34.6" y="719.9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">server-fetched zones and</text>
-<text x="34.6" y="740.2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">privacy masking</text>
-<text x="34.6" y="762.42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#9b90c9">Python, updated 2026-08-26</text>
-<text x="34.6" y="815.02" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ff2bd6">kind-cluster-recovery</text>
-<text x="34.6" y="836.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Four-node KIND cluster</text>
-<text x="34.6" y="856.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">provisioned onto a remote</text>
-<text x="34.6" y="876.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">host with Terraform over</text>
-<text x="34.6" y="897.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">SSH, then debugged:</text>
-<text x="34.6" y="917.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">CoreDNS Corefile repair,</text>
-<text x="34.6" y="937.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">crash-loop recovery, and a</text>
-<text x="34.6" y="958.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">least-privilege</text>
-<text x="34.6" y="978.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">NetworkPolicy expressed in</text>
-<text x="34.6" y="998.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Terraform</text>
-<text x="34.6" y="1021" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#9b90c9">HCL, updated 2026-08-26</text>
-<text x="34.6" y="1073.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ff2bd6">k8s-gitops-platform</text>
-<text x="34.6" y="1094.96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">ArgoCD app-of-apps GitOps</text>
-<text x="34.6" y="1115.26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">configuration for a</text>
-<text x="34.6" y="1135.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">17-service Kubernetes</text>
-<text x="34.6" y="1155.86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">platform: parameterised</text>
-<text x="34.6" y="1176.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Helm charts, an ELK</text>
-<text x="34.6" y="1196.46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">logging stack, and</text>
-<text x="34.6" y="1216.76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">cert-manager across three</text>
-<text x="34.6" y="1237.06" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">environments. Generalised</text>
-<text x="34.6" y="1257.36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">from production</text>
-<text x="34.6" y="1279.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#9b90c9">updated 2026-08-22</text>
-<text x="34.6" y="1332.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ff2bd6">wordpress-fargate-deployment</text>
-<text x="34.6" y="1353.54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">AWS CloudFormation</text>
-<text x="34.6" y="1373.84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">template and helper</text>
-<text x="34.6" y="1394.14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">scripts to deploy a</text>
-<text x="34.6" y="1414.44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">production-ready WordPress</text>
-<text x="34.6" y="1434.74" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">environment on AWS Fargate</text>
-<text x="34.6" y="1455.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">with RDS, EFS, and an</text>
-<text x="34.6" y="1475.34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Application Load Balancer</text>
-<text x="34.6" y="1497.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#9b90c9">Shell, updated 2025-08-08</text>
-<text x="34.6" y="1550.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ff2bd6">azure-devops-demo</text>
-<text x="34.6" y="1571.52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">End-to-end Terraform and</text>
-<text x="34.6" y="1591.82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">GitHub Actions pipeline</text>
-<text x="34.6" y="1612.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">that deploys a</text>
-<text x="34.6" y="1632.42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">containerized service to</text>
-<text x="34.6" y="1652.72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Azure, with six reusable</text>
-<text x="34.6" y="1673.02" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#f7f3ff">Terraform modules</text>
-<text x="34.6" y="1695.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#9b90c9">HCL, updated 2025-05-16</text>
-<text x="18" y="1734.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">Evidence trail for</text>
-<text x="18" y="1754.34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">ripple-proof runs across four</text>
-<text x="18" y="1774.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">public sibling dbt</text>
-<text x="18" y="1794.94" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">repositories: analytics,</text>
-<text x="18" y="1815.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">finance, growth, operations.</text>
-<text x="18" y="1835.54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">All open and review-only.</text>
-<text x="18" y="1860.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">Generated 2026-10-28 from the</text>
-<text x="18" y="1880.94" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">GitHub API.</text>
-<text x="18" y="1940.84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="#ff2bd6" letter-spacing="1.44" filter="url(#gl7)">STACK</text>
-<text x="18" y="1971.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">Everything in the operating</text>
-<text x="18" y="1992.1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">stack below has a public</text>
-<text x="18" y="2012.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">artifact in this account.</text>
-<text x="18" y="2032.7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">Work that does not is in</text>
-<text x="18" y="2053" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">private repositories and is</text>
-<text x="18" y="2073.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">not listed here.</text>
-<text x="25.68" y="2109.84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#07060f">cloud</text>
-<text x="86.65" y="2109.84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">AWS</text>
-<text x="131.296" y="2109.84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Azure</text>
-<text x="25.68" y="2144.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#07060f">platform</text>
-<text x="111.136" y="2144.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Kubernetes</text>
-<text x="25.68" y="2177.36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Docker</text>
-<text x="94.812" y="2177.36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Terraform</text>
-<text x="188.43" y="2177.36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Helm</text>
-<text x="25.68" y="2212.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#07060f">delivery</text>
-<text x="111.136" y="2212.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">GitHub Actions</text>
-<text x="25.68" y="2244.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">CI/CD pipelines</text>
-<text x="168.27" y="2244.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">ArgoCD</text>
-<text x="25.68" y="2277.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">GitOps</text>
-<text x="25.68" y="2312.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#07060f">systems</text>
-<text x="102.974" y="2312.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Linux</text>
-<text x="163.944" y="2312.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">networking</text>
-<text x="25.68" y="2345.2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">shell automation</text>
-<text x="25.68" y="2379.92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#07060f">ai</text>
-<text x="62.164" y="2379.92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">bounded agents</text>
-<text x="196.592" y="2379.92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">MCP</text>
-<text x="25.68" y="2412.72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">LLM workflows</text>
-<text x="25.68" y="2445.52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">computer vision</text>
-<text x="25.68" y="2480.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#07060f">languages</text>
-<text x="119.298" y="2480.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Python</text>
-<text x="188.43" y="2480.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">Bash</text>
-<text x="25.68" y="2513.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">HCL</text>
-<text x="70.326" y="2513.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#f7f3ff">YAML</text>
-<text x="18" y="2548.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">Upstream, open: skip_cache</text>
-<text x="18" y="2568.62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">for get_lineage in</text>
-<text x="18" y="2588.92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">acryldata/mcp-server-datahub,</text>
-<text x="18" y="2609.22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">and a repair-boundary skill</text>
-<text x="18" y="2629.52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">in</text>
-<text x="18" y="2649.82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#9b90c9">datahub-project/datahub-skills.</text>
+<line x1="195.355" y1="42.94" x2="244.4" y2="42.94" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.5"/>
+<g transform="translate(254,42.94) scale(0.364)">
+<path d="M-14,0 L-12.25,2.828 L-10.5,4 L-8.75,2.828 L-7,0 L-5.25,-2.828 L-3.5,-4 L-1.75,-2.828 L0,0 L1.75,2.828 L3.5,4 L5.25,2.828 L7,0 L8.75,-2.828 L10.5,-4 L12.25,-2.828 L14,0" fill="none" stroke="#ffc94a" stroke-opacity="0.95" stroke-width="2"/>
+</g>
+<rect x="18" y="235.48" width="244" height="251.86" rx="1.6" fill="#090f1b" fill-opacity="1"/>
+<rect x="18.75" y="236.23" width="242.5" height="250.36" rx="0.85" fill="none" stroke="#ffc94a" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="235.48" width="3" height="251.86" rx="0" fill="#ffc94a" fill-opacity="0.9"/>
+<line x1="244.4" y1="235.48" x2="262" y2="235.48" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="262" y1="235.48" x2="262" y2="253.08" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="469.74" x2="18" y2="487.34" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="487.34" x2="35.6" y2="487.34" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<rect x="18" y="494.06" width="244" height="272.16" rx="1.6" fill="#090f1b" fill-opacity="1"/>
+<rect x="18.75" y="494.81" width="242.5" height="270.66" rx="0.85" fill="none" stroke="#ffc94a" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="494.06" width="3" height="272.16" rx="0" fill="#ffc94a" fill-opacity="0.9"/>
+<line x1="244.4" y1="494.06" x2="262" y2="494.06" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="262" y1="494.06" x2="262" y2="511.66" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="748.62" x2="18" y2="766.22" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="766.22" x2="35.6" y2="766.22" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<rect x="18" y="772.94" width="244" height="251.86" rx="1.6" fill="#090f1b" fill-opacity="1"/>
+<rect x="18.75" y="773.69" width="242.5" height="250.36" rx="0.85" fill="none" stroke="#ffc94a" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="772.94" width="3" height="251.86" rx="0" fill="#ffc94a" fill-opacity="0.9"/>
+<line x1="244.4" y1="772.94" x2="262" y2="772.94" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="262" y1="772.94" x2="262" y2="790.54" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1007.2" x2="18" y2="1024.8" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1024.8" x2="35.6" y2="1024.8" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<rect x="18" y="1031.52" width="244" height="251.86" rx="1.6" fill="#090f1b" fill-opacity="1"/>
+<rect x="18.75" y="1032.27" width="242.5" height="250.36" rx="0.85" fill="none" stroke="#ffc94a" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="1031.52" width="3" height="251.86" rx="0" fill="#ffc94a" fill-opacity="0.9"/>
+<line x1="244.4" y1="1031.52" x2="262" y2="1031.52" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="262" y1="1031.52" x2="262" y2="1049.12" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1265.78" x2="18" y2="1283.38" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1283.38" x2="35.6" y2="1283.38" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<rect x="18" y="1290.1" width="244" height="211.26" rx="1.6" fill="#090f1b" fill-opacity="1"/>
+<rect x="18.75" y="1290.85" width="242.5" height="209.76" rx="0.85" fill="none" stroke="#ffc94a" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="1290.1" width="3" height="211.26" rx="0" fill="#ffc94a" fill-opacity="0.9"/>
+<line x1="244.4" y1="1290.1" x2="262" y2="1290.1" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="262" y1="1290.1" x2="262" y2="1307.7" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1483.76" x2="18" y2="1501.36" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1501.36" x2="35.6" y2="1501.36" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<rect x="18" y="1508.08" width="244" height="190.96" rx="1.6" fill="#090f1b" fill-opacity="1"/>
+<rect x="18.75" y="1508.83" width="242.5" height="189.46" rx="0.85" fill="none" stroke="#ffc94a" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="18" y="1508.08" width="3" height="190.96" rx="0" fill="#ffc94a" fill-opacity="0.9"/>
+<line x1="244.4" y1="1508.08" x2="262" y2="1508.08" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="262" y1="1508.08" x2="262" y2="1525.68" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1681.44" x2="18" y2="1699.04" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="18" y1="1699.04" x2="35.6" y2="1699.04" stroke="#ffc94a" stroke-opacity="0.9" stroke-width="2"/>
+<line x1="184.278" y1="1913.5" x2="244.4" y2="1913.5" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.5"/>
+<g transform="translate(254,1913.5) scale(0.364)">
+<path d="M-14,0 L-12.25,2.828 L-10.5,4 L-8.75,2.828 L-7,0 L-5.25,-2.828 L-3.5,-4 L-1.75,-2.828 L0,0 L1.75,2.828 L3.5,4 L5.25,2.828 L7,0 L8.75,-2.828 L10.5,-4 L12.25,-2.828 L14,0" fill="none" stroke="#ffc94a" stroke-opacity="0.95" stroke-width="2"/>
+</g>
+<rect x="18" y="2067.04" width="56.17" height="28" rx="2.08" fill="#ffc94a" fill-opacity="1"/>
+<rect x="78.97" y="2067.04" width="39.846" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="79.72" y="2067.79" width="38.346" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="123.616" y="2067.04" width="56.17" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="124.366" y="2067.79" width="54.67" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2101.76" width="80.656" height="28" rx="2.08" fill="#ffc94a" fill-opacity="1"/>
+<rect x="103.456" y="2101.76" width="96.98" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="104.206" y="2102.51" width="95.48" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2134.56" width="64.332" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="18.75" y="2135.31" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="87.132" y="2134.56" width="88.818" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="87.882" y="2135.31" width="87.318" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="180.75" y="2134.56" width="48.008" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="181.5" y="2135.31" width="46.508" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2169.28" width="80.656" height="28" rx="2.08" fill="#ffc94a" fill-opacity="1"/>
+<rect x="103.456" y="2169.28" width="129.628" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="104.206" y="2170.03" width="128.128" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2202.08" width="137.79" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="18.75" y="2202.83" width="136.29" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="160.59" y="2202.08" width="64.332" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="161.34" y="2202.83" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2234.88" width="64.332" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="18.75" y="2235.63" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2269.6" width="72.494" height="28" rx="2.08" fill="#ffc94a" fill-opacity="1"/>
+<rect x="95.294" y="2269.6" width="56.17" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="96.044" y="2270.35" width="54.67" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="156.264" y="2269.6" width="96.98" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="157.014" y="2270.35" width="95.48" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2302.4" width="145.952" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="18.75" y="2303.15" width="144.452" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2337.12" width="31.684" height="28" rx="2.08" fill="#ffc94a" fill-opacity="1"/>
+<rect x="54.484" y="2337.12" width="129.628" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="55.234" y="2337.87" width="128.128" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="188.912" y="2337.12" width="39.846" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="189.662" y="2337.87" width="38.346" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2369.92" width="121.466" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="18.75" y="2370.67" width="119.966" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2402.72" width="137.79" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="18.75" y="2403.47" width="136.29" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2437.44" width="88.818" height="28" rx="2.08" fill="#ffc94a" fill-opacity="1"/>
+<rect x="111.618" y="2437.44" width="64.332" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="112.368" y="2438.19" width="62.832" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="180.75" y="2437.44" width="48.008" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="181.5" y="2438.19" width="46.508" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="18" y="2470.24" width="39.846" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="18.75" y="2470.99" width="38.346" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="62.646" y="2470.24" width="48.008" height="28" rx="2.08" fill="#0b1424" fill-opacity="1"/>
+<rect x="63.396" y="2470.99" width="46.508" height="26.5" rx="1.33" fill="none" stroke="#ffc94a" stroke-opacity="0.5" stroke-width="1.2"/>
+<text x="18" y="49.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">channel: public</text>
+<text x="18" y="77.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">24 original public</text>
+<text x="18" y="97.78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">repositories. Most of the</text>
+<text x="18" y="118.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">work is not here: over the</text>
+<text x="18" y="138.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">last 12 months, 9,750 of</text>
+<text x="18" y="158.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">11,468 contributions were in</text>
+<text x="18" y="178.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">private repositories (client</text>
+<text x="18" y="199.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">delivery, product builds, and</text>
+<text x="18" y="219.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">security research).</text>
+<text x="34.6" y="265.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">ripple-proof</text>
+<text x="34.6" y="287.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Bounded PostgreSQL</text>
+<text x="34.6" y="307.34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">column-rename agent: turns</text>
+<text x="34.6" y="327.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">DataHub lineage evidence</text>
+<text x="34.6" y="347.94" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">into validated dbt repairs</text>
+<text x="34.6" y="368.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">across repositories,</text>
+<text x="34.6" y="388.54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">refuses ambiguous or stale</text>
+<text x="34.6" y="408.84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">evidence, and stops at</text>
+<text x="34.6" y="429.14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">human-reviewed pull</text>
+<text x="34.6" y="449.44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">requests</text>
+<text x="34.6" y="471.66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#6b83a6">Python, updated 2026-10-19</text>
+<text x="34.6" y="524.26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">vision-ai-poc</text>
+<text x="34.6" y="545.62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Real-time people</text>
+<text x="34.6" y="565.92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">detection, per-zone</text>
+<text x="34.6" y="586.22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">counting and dwell</text>
+<text x="34.6" y="606.52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">tracking with YOLOv8,</text>
+<text x="34.6" y="626.82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">ByteTrack and OpenCV. Runs</text>
+<text x="34.6" y="647.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">as a local GUI demo or</text>
+<text x="34.6" y="667.42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">headless against RTSP</text>
+<text x="34.6" y="687.72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">cameras with</text>
+<text x="34.6" y="708.02" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">server-fetched zones and</text>
+<text x="34.6" y="728.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">privacy masking</text>
+<text x="34.6" y="750.54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#6b83a6">Python, updated 2026-08-26</text>
+<text x="34.6" y="803.14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">kind-cluster-recovery</text>
+<text x="34.6" y="824.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Four-node KIND cluster</text>
+<text x="34.6" y="844.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">provisioned onto a remote</text>
+<text x="34.6" y="865.1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">host with Terraform over</text>
+<text x="34.6" y="885.4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">SSH, then debugged:</text>
+<text x="34.6" y="905.7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">CoreDNS Corefile repair,</text>
+<text x="34.6" y="926" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">crash-loop recovery, and a</text>
+<text x="34.6" y="946.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">least-privilege</text>
+<text x="34.6" y="966.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">NetworkPolicy expressed in</text>
+<text x="34.6" y="986.9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Terraform</text>
+<text x="34.6" y="1009.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#6b83a6">HCL, updated 2026-08-26</text>
+<text x="34.6" y="1061.72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">k8s-gitops-platform</text>
+<text x="34.6" y="1083.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">ArgoCD app-of-apps GitOps</text>
+<text x="34.6" y="1103.38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">configuration for a</text>
+<text x="34.6" y="1123.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">17-service Kubernetes</text>
+<text x="34.6" y="1143.98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">platform: parameterised</text>
+<text x="34.6" y="1164.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Helm charts, an ELK</text>
+<text x="34.6" y="1184.58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">logging stack, and</text>
+<text x="34.6" y="1204.88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">cert-manager across three</text>
+<text x="34.6" y="1225.18" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">environments. Generalised</text>
+<text x="34.6" y="1245.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">from production</text>
+<text x="34.6" y="1267.7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#6b83a6">updated 2026-08-22</text>
+<text x="34.6" y="1320.3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">wordpress-fargate-deployment</text>
+<text x="34.6" y="1341.66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">AWS CloudFormation</text>
+<text x="34.6" y="1361.96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">template and helper</text>
+<text x="34.6" y="1382.26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">scripts to deploy a</text>
+<text x="34.6" y="1402.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">production-ready WordPress</text>
+<text x="34.6" y="1422.86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">environment on AWS Fargate</text>
+<text x="34.6" y="1443.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">with RDS, EFS, and an</text>
+<text x="34.6" y="1463.46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Application Load Balancer</text>
+<text x="34.6" y="1485.68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#6b83a6">Shell, updated 2025-08-08</text>
+<text x="34.6" y="1538.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">azure-devops-demo</text>
+<text x="34.6" y="1559.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">End-to-end Terraform and</text>
+<text x="34.6" y="1579.94" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">GitHub Actions pipeline</text>
+<text x="34.6" y="1600.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">that deploys a</text>
+<text x="34.6" y="1620.54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">containerized service to</text>
+<text x="34.6" y="1640.84" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Azure, with six reusable</text>
+<text x="34.6" y="1661.14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#e8f1ff">Terraform modules</text>
+<text x="34.6" y="1683.36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#6b83a6">HCL, updated 2025-05-16</text>
+<text x="18" y="1722.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">Evidence trail for</text>
+<text x="18" y="1742.46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">ripple-proof runs across four</text>
+<text x="18" y="1762.76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">public sibling dbt</text>
+<text x="18" y="1783.06" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">repositories: analytics,</text>
+<text x="18" y="1803.36" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">finance, growth, operations.</text>
+<text x="18" y="1823.66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">All open and review-only.</text>
+<text x="18" y="1848.76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">Generated 2026-10-29 from the</text>
+<text x="18" y="1869.06" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">GitHub API.</text>
+<text x="18" y="1919.96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#ffc94a">channel: stack</text>
+<text x="18" y="1948.04" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">Everything in the operating</text>
+<text x="18" y="1968.34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">stack below has a public</text>
+<text x="18" y="1988.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">artifact in this account.</text>
+<text x="18" y="2008.94" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">Work that does not is in</text>
+<text x="18" y="2029.24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">private repositories and is</text>
+<text x="18" y="2049.54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">not listed here.</text>
+<text x="25.68" y="2086.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#060a12">cloud</text>
+<text x="86.65" y="2086.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">AWS</text>
+<text x="131.296" y="2086.08" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Azure</text>
+<text x="25.68" y="2120.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#060a12">platform</text>
+<text x="111.136" y="2120.8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Kubernetes</text>
+<text x="25.68" y="2153.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Docker</text>
+<text x="94.812" y="2153.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Terraform</text>
+<text x="188.43" y="2153.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Helm</text>
+<text x="25.68" y="2188.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#060a12">delivery</text>
+<text x="111.136" y="2188.32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">GitHub Actions</text>
+<text x="25.68" y="2221.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">CI/CD pipelines</text>
+<text x="168.27" y="2221.12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">ArgoCD</text>
+<text x="25.68" y="2253.92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">GitOps</text>
+<text x="25.68" y="2288.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#060a12">systems</text>
+<text x="102.974" y="2288.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Linux</text>
+<text x="163.944" y="2288.64" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">networking</text>
+<text x="25.68" y="2321.44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">shell automation</text>
+<text x="25.68" y="2356.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#060a12">ai</text>
+<text x="62.164" y="2356.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">bounded agents</text>
+<text x="196.592" y="2356.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">MCP</text>
+<text x="25.68" y="2388.96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">LLM workflows</text>
+<text x="25.68" y="2421.76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">computer vision</text>
+<text x="25.68" y="2456.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#060a12">languages</text>
+<text x="119.298" y="2456.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Python</text>
+<text x="188.43" y="2456.48" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">Bash</text>
+<text x="25.68" y="2489.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">HCL</text>
+<text x="70.326" y="2489.28" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="500" fill="#e8f1ff">YAML</text>
+<text x="18" y="2524.56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">Upstream, open: skip_cache</text>
+<text x="18" y="2544.86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">for get_lineage in</text>
+<text x="18" y="2565.16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">acryldata/mcp-server-datahub,</text>
+<text x="18" y="2585.46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">and a repair-boundary skill</text>
+<text x="18" y="2605.76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">in</text>
+<text x="18" y="2626.06" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#6b83a6">datahub-project/datahub-skills.</text>
 </svg>
