@@ -1,144 +1,148 @@
 <svg width="900" height="1592" viewBox="0 0 900 1592" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <!-- Drawn by the itxcrusher profile theme engine. Source, and the terms for reuse: https://github.com/itxcrusher/itxcrusher -->
-<title id="t">what is public and the evidence</title>
-<desc>24 original public repositories. Most of the work is not here: over the last 12 months, 11,237 of 13,175 contributions were in private repositories (client delivery, product builds, and security research).</desc>
-<style>@keyframes k1{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}.a2{animation:k1 12s ease-in-out infinite}</style>
-<defs><clipPath id="c3"><rect x="0" y="0" width="900" height="1592" rx="0"/></clipPath></defs>
-<rect x="0" y="0" width="900" height="1592" fill="#08080a"/>
-<g opacity="0.06">
-<g clip-path="url(#c3)" ><g class="a2"><g transform="rotate(-10 450 796)"><rect x="-100" y="-265.333" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="0" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="265.333" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="530.667" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="796" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="1061.333" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="1326.667" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/><rect x="-100" y="1592" width="1100" height="119.4" fill="#ffffff" fill-opacity="0.09"/></g></g></g>
+<title id="t">what is public and the workbench</title>
+<desc>24 original public repositories. Most of the work is not here: over the last 12 months, 11,323 of 13,262 contributions were in private repositories (client delivery, product builds, and security research).</desc>
+<rect x="0" y="0" width="900" height="1592" fill="#1c120b"/>
+<g opacity="0.1">
+<g><path d="M0,29.783 Q56.25,34.816 84.375,33.819 Q112.5,32.822 140.625,32.04 Q168.75,31.259 196.875,29.924 Q225,28.589 253.125,27.545 Q281.25,26.501 309.375,27.795 Q337.5,29.089 365.625,29.483 Q393.75,29.878 421.875,31.614 Q450,33.351 478.125,34.493 Q506.25,35.635 534.375,34.237 Q562.5,32.839 590.625,31.783 Q618.75,30.727 646.875,27.751 Q675,24.774 703.125,25.448 Q731.25,26.123 759.375,28.245 Q787.5,30.367 815.625,32.593 Q843.75,34.819 871.875,35.192 T900,35.565" fill="none" stroke="#58483a" stroke-opacity="0.371" stroke-width="1.417"/><path d="M0,95.547 Q56.25,97.534 84.375,94.792 Q112.5,92.05 140.625,91.226 Q168.75,90.402 196.875,88.144 Q225,85.886 253.125,87.5 Q281.25,89.114 309.375,91.604 Q337.5,94.093 365.625,93.8 Q393.75,93.507 421.875,94.147 Q450,94.787 478.125,94.204 Q506.25,93.621 534.375,92.513 Q562.5,91.404 590.625,90.368 Q618.75,89.333 646.875,89.286 Q675,89.238 703.125,90.38 Q731.25,91.521 759.375,92.753 Q787.5,93.984 815.625,95.236 Q843.75,96.487 871.875,94.764 T900,93.041" fill="none" stroke="#58483a" stroke-opacity="0.416" stroke-width="1.53"/><path d="M0,158.677 Q56.25,155.653 84.375,153.472 Q112.5,151.292 140.625,149.78 Q168.75,148.269 196.875,149.099 Q225,149.93 253.125,152.038 Q281.25,154.145 309.375,156.108 Q337.5,158.072 365.625,157.049 Q393.75,156.027 421.875,154.177 Q450,152.328 478.125,152.224 Q506.25,152.12 534.375,150.731 Q562.5,149.343 590.625,149.146 Q618.75,148.949 646.875,150.769 Q675,152.589 703.125,155.14 Q731.25,157.691 759.375,158.164 Q787.5,158.638 815.625,156.41 Q843.75,154.183 871.875,152.607 T900,151.032" fill="none" stroke="#58483a" stroke-opacity="0.511" stroke-width="1.006"/><path d="M0,213.803 Q56.25,211.674 84.375,211.865 Q112.5,212.056 140.625,211.325 Q168.75,210.593 196.875,212.664 Q225,214.734 253.125,216.042 Q281.25,217.35 309.375,218.393 Q337.5,219.437 365.625,216.605 Q393.75,213.773 421.875,213.433 Q450,213.092 478.125,210.95 Q506.25,208.809 534.375,209.939 Q562.5,211.069 590.625,212.594 Q618.75,214.119 646.875,215.183 Q675,216.247 703.125,217.334 Q731.25,218.422 759.375,215.646 Q787.5,212.87 815.625,211.37 Q843.75,209.87 871.875,209.948 T900,210.027" fill="none" stroke="#58483a" stroke-opacity="0.508" stroke-width="0.863"/><path d="M0,270.664 Q56.25,271.581 84.375,272.157 Q112.5,272.733 140.625,274.047 Q168.75,275.361 196.875,277.349 Q225,279.338 253.125,279.164 Q281.25,278.991 309.375,278.277 Q337.5,277.564 365.625,274.667 Q393.75,271.77 421.875,272.431 Q450,273.093 478.125,274.266 Q506.25,275.439 534.375,275.842 Q562.5,276.244 590.625,278.267 Q618.75,280.29 646.875,280.111 Q675,279.932 703.125,276.807 Q731.25,273.683 759.375,274.042 Q787.5,274.401 815.625,273.576 Q843.75,272.752 871.875,272.897 T900,273.042" fill="none" stroke="#58483a" stroke-opacity="0.316" stroke-width="2.102"/><path d="M0,334.554 Q56.25,333.802 84.375,335.746 Q112.5,337.691 140.625,338.973 Q168.75,340.255 196.875,339.325 Q225,338.395 253.125,336.837 Q281.25,335.279 309.375,333.794 Q337.5,332.308 365.625,332.849 Q393.75,333.391 421.875,333.415 Q450,333.439 478.125,336.62 Q506.25,339.8 534.375,340.472 Q562.5,341.144 590.625,340.999 Q618.75,340.853 646.875,338.112 Q675,335.371 703.125,333.427 Q731.25,331.483 759.375,331.76 Q787.5,332.037 815.625,332.747 Q843.75,333.457 871.875,336.468 T900,339.48" fill="none" stroke="#58483a" stroke-opacity="0.437" stroke-width="1.642"/><path d="M0,395.405 Q56.25,400.895 84.375,402.042 Q112.5,403.19 140.625,402.665 Q168.75,402.14 196.875,399.72 Q225,397.301 253.125,396.618 Q281.25,395.935 309.375,395.474 Q337.5,395.013 365.625,396.215 Q393.75,397.417 421.875,398.147 Q450,398.877 478.125,399.875 Q506.25,400.873 534.375,401.059 Q562.5,401.244 590.625,399.946 Q618.75,398.647 646.875,396.2 Q675,393.752 703.125,394.572 Q731.25,395.391 759.375,397.173 Q787.5,398.955 815.625,399.518 Q843.75,400.08 871.875,400.834 T900,401.587" fill="none" stroke="#58483a" stroke-opacity="0.424" stroke-width="1.842"/><path d="M0,459.974 Q56.25,462.708 84.375,462.366 Q112.5,462.025 140.625,460.157 Q168.75,458.29 196.875,457.313 Q225,456.336 253.125,456.174 Q281.25,456.012 309.375,456.608 Q337.5,457.205 365.625,459.227 Q393.75,461.25 421.875,462.168 Q450,463.087 478.125,462.801 Q506.25,462.515 534.375,460.51 Q562.5,458.505 590.625,456.107 Q618.75,453.709 646.875,454.915 Q675,456.121 703.125,456.649 Q731.25,457.177 759.375,459.92 Q787.5,462.663 815.625,463.382 Q843.75,464.101 871.875,461.908 T900,459.715" fill="none" stroke="#58483a" stroke-opacity="0.564" stroke-width="1.15"/><path d="M0,524.915 Q56.25,523.265 84.375,522.053 Q112.5,520.842 140.625,518.872 Q168.75,516.902 196.875,516.277 Q225,515.653 253.125,518.48 Q281.25,521.307 309.375,522.831 Q337.5,524.356 365.625,524.884 Q393.75,525.412 421.875,524.796 Q450,524.18 478.125,521.253 Q506.25,518.326 534.375,516.602 Q562.5,514.878 590.625,515.241 Q618.75,515.604 646.875,517.164 Q675,518.724 703.125,520.259 Q731.25,521.794 759.375,523.559 Q787.5,525.323 815.625,523.128 Q843.75,520.933 871.875,519.385 T900,517.837" fill="none" stroke="#58483a" stroke-opacity="0.423" stroke-width="2.161"/><path d="M0,583.646 Q56.25,578.804 84.375,578.162 Q112.5,577.519 140.625,579.082 Q168.75,580.644 196.875,581.733 Q225,582.823 253.125,583.254 Q281.25,583.686 309.375,584.47 Q337.5,585.253 365.625,583.624 Q393.75,581.995 421.875,580.974 Q450,579.952 478.125,579.481 Q506.25,579.009 534.375,578.849 Q562.5,578.69 590.625,581.175 Q618.75,583.659 646.875,583.539 Q675,583.419 703.125,584.013 Q731.25,584.607 759.375,584.422 Q787.5,584.236 815.625,582.715 Q843.75,581.193 871.875,578.498 T900,575.803" fill="none" stroke="#58483a" stroke-opacity="0.582" stroke-width="2.068"/><path d="M0,640.095 Q56.25,638.118 84.375,638.189 Q112.5,638.259 140.625,641.242 Q168.75,644.225 196.875,644.482 Q225,644.74 253.125,646.35 Q281.25,647.961 309.375,646.733 Q337.5,645.505 365.625,642.535 Q393.75,639.565 421.875,639.481 Q450,639.397 478.125,639.007 Q506.25,638.618 534.375,641.856 Q562.5,645.093 590.625,645.084 Q618.75,645.074 646.875,645.641 Q675,646.208 703.125,644.995 Q731.25,643.782 759.375,643.078 Q787.5,642.375 815.625,640.04 Q843.75,637.704 871.875,639.299 T900,640.894" fill="none" stroke="#58483a" stroke-opacity="0.565" stroke-width="0.824"/><path d="M0,700.921 Q56.25,700.419 84.375,702.808 Q112.5,705.196 140.625,706.022 Q168.75,706.848 196.875,708.106 Q225,709.364 253.125,706.547 Q281.25,703.73 309.375,702.415 Q337.5,701.1 365.625,699.761 Q393.75,698.421 421.875,699.08 Q450,699.738 478.125,701.539 Q506.25,703.341 534.375,704.667 Q562.5,705.994 590.625,706.947 Q618.75,707.901 646.875,706.003 Q675,704.104 703.125,703.051 Q731.25,701.998 759.375,701.071 Q787.5,700.144 815.625,701.391 Q843.75,702.637 871.875,703.975 T900,705.312" fill="none" stroke="#58483a" stroke-opacity="0.452" stroke-width="0.947"/><path d="M0,761.418 Q56.25,765.662 84.375,768.235 Q112.5,770.807 140.625,769.725 Q168.75,768.643 196.875,767.617 Q225,766.591 253.125,764.466 Q281.25,762.341 309.375,762.638 Q337.5,762.936 365.625,762.702 Q393.75,762.468 421.875,764.691 Q450,766.915 478.125,768.902 Q506.25,770.889 534.375,770.524 Q562.5,770.159 590.625,768.076 Q618.75,765.994 646.875,763.801 Q675,761.609 703.125,762.141 Q731.25,762.674 759.375,762.891 Q787.5,763.108 815.625,764.312 Q843.75,765.516 871.875,766.685 T900,767.853" fill="none" stroke="#58483a" stroke-opacity="0.253" stroke-width="0.902"/><path d="M0,830.081 Q56.25,830.729 84.375,830.964 Q112.5,831.198 140.625,829.415 Q168.75,827.631 196.875,826.316 Q225,825 253.125,823.71 Q281.25,822.42 309.375,824.627 Q337.5,826.835 365.625,828.509 Q393.75,830.182 421.875,830.354 Q450,830.526 478.125,829.844 Q506.25,829.162 534.375,828.303 Q562.5,827.445 590.625,825.079 Q618.75,822.712 646.875,822.202 Q675,821.692 703.125,823.611 Q731.25,825.531 759.375,827.108 Q787.5,828.685 815.625,830.438 Q843.75,832.191 871.875,831.097 T900,830.004" fill="none" stroke="#58483a" stroke-opacity="0.332" stroke-width="1.484"/><path d="M0,890.299 Q56.25,891.731 84.375,888.721 Q112.5,885.71 140.625,885.422 Q168.75,885.134 196.875,885.259 Q225,885.384 253.125,886.653 Q281.25,887.923 309.375,888.025 Q337.5,888.127 365.625,889.153 Q393.75,890.178 421.875,891.156 Q450,892.133 478.125,890.562 Q506.25,888.991 534.375,886.626 Q562.5,884.262 590.625,883.48 Q618.75,882.698 646.875,884.548 Q675,886.399 703.125,888.639 Q731.25,890.88 759.375,891.364 Q787.5,891.847 815.625,891.298 Q843.75,890.75 871.875,888.791 T900,886.831" fill="none" stroke="#58483a" stroke-opacity="0.388" stroke-width="1.437"/><path d="M0,951.037 Q56.25,947.001 84.375,946.26 Q112.5,945.518 140.625,946.423 Q168.75,947.328 196.875,947.705 Q225,948.081 253.125,949.145 Q281.25,950.208 309.375,951.472 Q337.5,952.735 365.625,951.974 Q393.75,951.214 421.875,949.872 Q450,948.53 478.125,946.961 Q506.25,945.393 534.375,946.339 Q562.5,947.286 590.625,947.203 Q618.75,947.12 646.875,949.439 Q675,951.759 703.125,953.283 Q731.25,954.807 759.375,954.142 Q787.5,953.477 815.625,951.732 Q843.75,949.987 871.875,948.336 T900,946.685" fill="none" stroke="#58483a" stroke-opacity="0.593" stroke-width="2.163"/><path d="M0,1010.297 Q56.25,1005.043 84.375,1006.871 Q112.5,1008.699 140.625,1008.279 Q168.75,1007.859 196.875,1010.198 Q225,1012.536 253.125,1013.411 Q281.25,1014.286 309.375,1013.364 Q337.5,1012.441 365.625,1011.508 Q393.75,1010.576 421.875,1009.215 Q450,1007.855 478.125,1006.846 Q506.25,1005.836 534.375,1007.486 Q562.5,1009.135 590.625,1010.967 Q618.75,1012.799 646.875,1013.459 Q675,1014.119 703.125,1013.429 Q731.25,1012.74 759.375,1011.09 Q787.5,1009.441 815.625,1007.419 Q843.75,1005.396 871.875,1005.263 T900,1005.129" fill="none" stroke="#58483a" stroke-opacity="0.375" stroke-width="0.989"/><path d="M0,1068.593 Q56.25,1068.398 84.375,1070.573 Q112.5,1072.747 140.625,1073.777 Q168.75,1074.807 196.875,1074.768 Q225,1074.728 253.125,1074.108 Q281.25,1073.489 309.375,1072.569 Q337.5,1071.649 365.625,1069.562 Q393.75,1067.475 421.875,1066.931 Q450,1066.388 478.125,1068.573 Q506.25,1070.759 534.375,1072.237 Q562.5,1073.715 590.625,1074.427 Q618.75,1075.138 646.875,1073.8 Q675,1072.462 703.125,1071.223 Q731.25,1069.984 759.375,1069.161 Q787.5,1068.338 815.625,1068.712 Q843.75,1069.087 871.875,1069.331 T900,1069.574" fill="none" stroke="#58483a" stroke-opacity="0.352" stroke-width="1.584"/><path d="M0,1131.333 Q56.25,1132.508 84.375,1133.295 Q112.5,1134.083 140.625,1135.518 Q168.75,1136.954 196.875,1136.394 Q225,1135.835 253.125,1134.296 Q281.25,1132.757 309.375,1131.149 Q337.5,1129.54 365.625,1129.282 Q393.75,1129.025 421.875,1130.054 Q450,1131.084 478.125,1132.815 Q506.25,1134.546 534.375,1135.811 Q562.5,1137.076 590.625,1135.942 Q618.75,1134.809 646.875,1132.794 Q675,1130.778 703.125,1129.504 Q731.25,1128.23 759.375,1129.8 Q787.5,1131.37 815.625,1131.952 Q843.75,1132.534 871.875,1134.146 T900,1135.759" fill="none" stroke="#58483a" stroke-opacity="0.338" stroke-width="1.457"/><path d="M0,1195.204 Q56.25,1196.526 84.375,1197.781 Q112.5,1199.036 140.625,1197.771 Q168.75,1196.507 196.875,1193.234 Q225,1189.961 253.125,1189.049 Q281.25,1188.138 309.375,1188.875 Q337.5,1189.611 365.625,1191.762 Q393.75,1193.913 421.875,1196.272 Q450,1198.63 478.125,1197.349 Q506.25,1196.067 534.375,1195.146 Q562.5,1194.226 590.625,1192.192 Q618.75,1190.159 646.875,1189.817 Q675,1189.475 703.125,1190.797 Q731.25,1192.118 759.375,1193.066 Q787.5,1194.015 815.625,1194.868 Q843.75,1195.721 871.875,1196.932 T900,1198.144" fill="none" stroke="#58483a" stroke-opacity="0.292" stroke-width="1.733"/><path d="M0,1259.032 Q56.25,1259.693 84.375,1258.48 Q112.5,1257.266 140.625,1255.71 Q168.75,1254.153 196.875,1252.867 Q225,1251.581 253.125,1251.865 Q281.25,1252.148 309.375,1255 Q337.5,1257.852 365.625,1257.484 Q393.75,1257.115 421.875,1257.28 Q450,1257.444 478.125,1256.005 Q506.25,1254.567 534.375,1253.435 Q562.5,1252.304 590.625,1250.903 Q618.75,1249.502 646.875,1250.279 Q675,1251.056 703.125,1253.35 Q731.25,1255.644 759.375,1257.12 Q787.5,1258.596 815.625,1259.539 Q843.75,1260.481 871.875,1257.946 T900,1255.411" fill="none" stroke="#58483a" stroke-opacity="0.318" stroke-width="0.88"/><path d="M0,1321.319 Q56.25,1316.06 84.375,1313.903 Q112.5,1311.746 140.625,1312.223 Q168.75,1312.701 196.875,1313.047 Q225,1313.394 253.125,1315.637 Q281.25,1317.881 309.375,1318.631 Q337.5,1319.382 365.625,1319.528 Q393.75,1319.674 421.875,1318.921 Q450,1318.168 478.125,1315.052 Q506.25,1311.937 534.375,1313.123 Q562.5,1314.309 590.625,1315.119 Q618.75,1315.929 646.875,1316.707 Q675,1317.485 703.125,1319.393 Q731.25,1321.301 759.375,1320.343 Q787.5,1319.384 815.625,1317.9 Q843.75,1316.416 871.875,1314.95 T900,1313.485" fill="none" stroke="#58483a" stroke-opacity="0.442" stroke-width="2"/><path d="M0,1378.131 Q56.25,1374.121 84.375,1373.544 Q112.5,1372.968 140.625,1374.74 Q168.75,1376.513 196.875,1377.596 Q225,1378.679 253.125,1379.543 Q281.25,1380.406 309.375,1380.307 Q337.5,1380.208 365.625,1379.318 Q393.75,1378.427 421.875,1377.078 Q450,1375.728 478.125,1374.603 Q506.25,1373.478 534.375,1374.296 Q562.5,1375.115 590.625,1377.096 Q618.75,1379.078 646.875,1381.068 Q675,1383.058 703.125,1382.304 Q731.25,1381.55 759.375,1379.128 Q787.5,1376.705 815.625,1374.639 Q843.75,1372.574 871.875,1374.054 T900,1375.533" fill="none" stroke="#58483a" stroke-opacity="0.291" stroke-width="1.614"/><path d="M0,1436.871 Q56.25,1434.633 84.375,1436.763 Q112.5,1438.894 140.625,1440.29 Q168.75,1441.687 196.875,1442.445 Q225,1443.202 253.125,1441.514 Q281.25,1439.826 309.375,1439.037 Q337.5,1438.248 365.625,1437.244 Q393.75,1436.24 421.875,1436.5 Q450,1436.759 478.125,1437.324 Q506.25,1437.889 534.375,1439.233 Q562.5,1440.577 590.625,1442.313 Q618.75,1444.049 646.875,1441.915 Q675,1439.782 703.125,1439.266 Q731.25,1438.75 759.375,1437.023 Q787.5,1435.297 815.625,1435.621 Q843.75,1435.945 871.875,1436.04 T900,1436.134" fill="none" stroke="#58483a" stroke-opacity="0.361" stroke-width="1.033"/><path d="M0,1498.322 Q56.25,1497.837 84.375,1499.64 Q112.5,1501.443 140.625,1503.76 Q168.75,1506.078 196.875,1504.614 Q225,1503.151 253.125,1501.946 Q281.25,1500.74 309.375,1499.019 Q337.5,1497.299 365.625,1497.357 Q393.75,1497.416 421.875,1497.859 Q450,1498.302 478.125,1500.555 Q506.25,1502.807 534.375,1503.638 Q562.5,1504.469 590.625,1503.379 Q618.75,1502.289 646.875,1499.996 Q675,1497.704 703.125,1496.89 Q731.25,1496.076 759.375,1496.401 Q787.5,1496.727 815.625,1497.318 Q843.75,1497.91 871.875,1501.113 T900,1504.316" fill="none" stroke="#58483a" stroke-opacity="0.547" stroke-width="1.295"/><path d="M0,1559.036 Q56.25,1564.886 84.375,1565.25 Q112.5,1565.615 140.625,1564.536 Q168.75,1563.457 196.875,1560.866 Q225,1558.275 253.125,1556.959 Q281.25,1555.644 309.375,1556.761 Q337.5,1557.877 365.625,1560.172 Q393.75,1562.466 421.875,1562.95 Q450,1563.435 478.125,1564.183 Q506.25,1564.931 534.375,1563.886 Q562.5,1562.841 590.625,1560.651 Q618.75,1558.46 646.875,1558.835 Q675,1559.21 703.125,1557.987 Q731.25,1556.765 759.375,1558.47 Q787.5,1560.176 815.625,1562.19 Q843.75,1564.203 871.875,1565.383 T900,1566.562" fill="none" stroke="#58483a" stroke-opacity="0.57" stroke-width="1.76"/><ellipse cx="429.344" cy="251.955" rx="6" ry="3" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="429.344" cy="251.955" rx="13" ry="7" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="429.344" cy="251.955" rx="20" ry="11" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="429.344" cy="251.955" rx="27" ry="15" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="260.646" cy="99.847" rx="6" ry="3" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="260.646" cy="99.847" rx="13" ry="7" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="260.646" cy="99.847" rx="20" ry="11" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="260.646" cy="99.847" rx="27" ry="15" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="611.486" cy="387.304" rx="6" ry="3" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="611.486" cy="387.304" rx="13" ry="7" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="611.486" cy="387.304" rx="20" ry="11" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/><ellipse cx="611.486" cy="387.304" rx="27" ry="15" fill="none" stroke="#58483a" stroke-opacity="0.5" stroke-width="1.2"/></g>
 </g>
-<line x1="306.393" y1="57.88" x2="856" y2="57.88" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.5"/>
-<rect x="44" y="146.96" width="812" height="128.28" rx="0" fill="#0e0e10" fill-opacity="1"/>
-<rect x="44.75" y="147.71" width="810.5" height="126.78" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="44" y="146.96" width="4.75" height="128.28" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
-<rect x="44" y="283.22" width="812" height="151.48" rx="0" fill="#0e0e10" fill-opacity="1"/>
-<rect x="44.75" y="283.97" width="810.5" height="149.98" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="44" y="283.22" width="4.75" height="151.48" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
-<rect x="44" y="442.68" width="812" height="151.48" rx="0" fill="#0e0e10" fill-opacity="1"/>
-<rect x="44.75" y="443.43" width="810.5" height="149.98" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="44" y="442.68" width="4.75" height="151.48" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
-<rect x="44" y="602.14" width="812" height="151.48" rx="0" fill="#0e0e10" fill-opacity="1"/>
-<rect x="44.75" y="602.89" width="810.5" height="149.98" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="44" y="602.14" width="4.75" height="151.48" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
-<rect x="44" y="761.6" width="812" height="128.28" rx="0" fill="#0e0e10" fill-opacity="1"/>
-<rect x="44.75" y="762.35" width="810.5" height="126.78" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="44" y="761.6" width="4.75" height="128.28" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
-<rect x="44" y="897.86" width="812" height="128.28" rx="0" fill="#0e0e10" fill-opacity="1"/>
-<rect x="44.75" y="898.61" width="810.5" height="126.78" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.45" stroke-width="1.4"/>
-<rect x="44" y="897.86" width="4.75" height="128.28" rx="0" fill="#e6e6e6" fill-opacity="0.9"/>
-<line x1="282.012" y1="1164.45" x2="856" y2="1164.45" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.5"/>
-<rect x="44" y="1255.43" width="66.593" height="32" rx="0" fill="#e6e6e6" fill-opacity="1"/>
-<rect x="116.293" y="1255.43" width="55.688" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="117.043" y="1256.18" width="54.188" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="177.681" y="1255.43" width="62.048" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="178.431" y="1256.18" width="60.548" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="44" y="1295.41" width="95.578" height="32" rx="0" fill="#e6e6e6" fill-opacity="1"/>
-<rect x="145.278" y="1295.41" width="103.99" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="146.028" y="1296.16" width="102.49" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="254.967" y="1295.41" width="72.02" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="255.717" y="1296.16" width="70.52" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="332.688" y="1295.41" width="95.934" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="333.438" y="1296.16" width="94.434" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="434.321" y="1295.41" width="60.046" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="435.071" y="1296.16" width="58.546" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="44" y="1335.39" width="88.692" height="32" rx="0" fill="#e6e6e6" fill-opacity="1"/>
-<rect x="138.392" y="1335.39" width="134.908" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="139.142" y="1336.14" width="133.408" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="279" y="1335.39" width="139.267" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="279.75" y="1336.14" width="137.767" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="423.966" y="1335.39" width="77.939" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="424.716" y="1336.14" width="76.439" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="507.605" y="1335.39" width="70.986" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="508.355" y="1336.14" width="69.486" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="44" y="1375.37" width="87.539" height="32" rx="0" fill="#e6e6e6" fill-opacity="1"/>
-<rect x="137.239" y="1375.37" width="61.793" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="137.989" y="1376.12" width="60.293" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="204.732" y="1375.37" width="103.617" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="205.482" y="1376.12" width="102.117" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="314.048" y="1375.37" width="144.185" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="314.798" y="1376.12" width="142.685" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="44" y="1415.35" width="34.352" height="32" rx="0" fill="#e6e6e6" fill-opacity="1"/>
-<rect x="84.052" y="1415.35" width="136.977" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="84.802" y="1416.1" width="135.477" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="226.729" y="1415.35" width="55.196" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="227.479" y="1416.1" width="53.696" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="287.625" y="1415.35" width="135.552" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="288.375" y="1416.1" width="134.052" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="428.877" y="1415.35" width="139.402" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="429.627" y="1416.1" width="137.902" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="44" y="1455.33" width="105.448" height="32" rx="0" fill="#e6e6e6" fill-opacity="1"/>
-<rect x="155.148" y="1455.33" width="71.817" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="155.898" y="1456.08" width="70.317" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="232.665" y="1455.33" width="55.077" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="233.415" y="1456.08" width="53.577" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="293.442" y="1455.33" width="53.195" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="294.192" y="1456.08" width="51.695" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<rect x="352.337" y="1455.33" width="66.016" height="32" rx="0" fill="#131315" fill-opacity="1"/>
-<rect x="353.087" y="1456.08" width="64.516" height="30.5" rx="0" fill="none" stroke="#e6e6e6" stroke-opacity="0.5" stroke-width="1.2"/>
-<text x="44" y="69.1" font-family="Georgia, 'Times New Roman', serif" font-size="33" font-weight="700" fill="#e6e6e6">what is public</text>
-<text x="44" y="105.16" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">24 original public repositories. Most of the work is not here: over the last 12 months, 11,237 of 13,175</text>
-<text x="44" y="128.36" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">contributions were in private repositories (client delivery, product builds, and security research).</text>
-<text x="64.9" y="183.26" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">ripple-proof</text>
-<text x="64.9" y="208.14" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">Bounded PostgreSQL column-rename agent: turns DataHub lineage evidence into validated dbt repairs</text>
-<text x="64.9" y="231.34" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">across repositories, refuses ambiguous or stale evidence, and stops at human-reviewed pull requests</text>
-<text x="64.9" y="256.82" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#9a9a9f">Python, updated 2026-10-29</text>
-<text x="64.9" y="319.52" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">vision-ai-poc</text>
-<text x="64.9" y="344.4" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">Real-time people detection, per-zone counting and dwell tracking with YOLOv8, ByteTrack and</text>
-<text x="64.9" y="367.6" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">OpenCV. Runs as a local GUI demo or headless against RTSP cameras with server-fetched zones and</text>
-<text x="64.9" y="390.8" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">privacy masking</text>
-<text x="64.9" y="416.28" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#9a9a9f">Python, updated 2026-08-26</text>
-<text x="64.9" y="478.98" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">kind-cluster-recovery</text>
-<text x="64.9" y="503.86" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">Four-node KIND cluster provisioned onto a remote host with Terraform over SSH, then debugged:</text>
-<text x="64.9" y="527.06" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">CoreDNS Corefile repair, crash-loop recovery, and a least-privilege NetworkPolicy expressed in</text>
-<text x="64.9" y="550.26" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">Terraform</text>
-<text x="64.9" y="575.74" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#9a9a9f">HCL, updated 2026-08-26</text>
-<text x="64.9" y="638.44" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">k8s-gitops-platform</text>
-<text x="64.9" y="663.32" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">ArgoCD app-of-apps GitOps configuration for a 17-service Kubernetes platform: parameterised Helm</text>
-<text x="64.9" y="686.52" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">charts, an ELK logging stack, and cert-manager across three environments. Generalised from</text>
-<text x="64.9" y="709.72" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">production</text>
-<text x="64.9" y="735.2" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#9a9a9f">updated 2026-08-22</text>
-<text x="64.9" y="797.9" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">wordpress-fargate-deployment</text>
-<text x="64.9" y="822.78" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">AWS CloudFormation template and helper scripts to deploy a production-ready WordPress</text>
-<text x="64.9" y="845.98" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">environment on AWS Fargate with RDS, EFS, and an Application Load Balancer</text>
-<text x="64.9" y="871.46" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#9a9a9f">Shell, updated 2025-08-08</text>
-<text x="64.9" y="934.16" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e6e6e6">azure-devops-demo</text>
-<text x="64.9" y="959.04" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">End-to-end Terraform and GitHub Actions pipeline that deploys a containerized service to Azure, with</text>
-<text x="64.9" y="982.24" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f2f2f2">six reusable Terraform modules</text>
-<text x="64.9" y="1007.72" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#9a9a9f">HCL, updated 2025-05-16</text>
-<text x="44" y="1052.97" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">Evidence trail for ripple-proof runs across four public sibling dbt repositories: analytics, finance, growth,</text>
-<text x="44" y="1076.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">operations. All open and review-only.</text>
-<text x="44" y="1105.07" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">Generated 2026-11-12 from the GitHub API.</text>
-<text x="44" y="1175.67" font-family="Georgia, 'Times New Roman', serif" font-size="33" font-weight="700" fill="#e6e6e6">the evidence</text>
-<text x="44" y="1211.73" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">Everything in the operating stack below has a public artifact in this account. Work that does not is in private</text>
-<text x="44" y="1234.93" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">repositories and is not listed here.</text>
-<text x="53.12" y="1277.19" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#08080a">cloud</text>
-<text x="125.413" y="1277.19" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">AWS</text>
-<text x="186.801" y="1277.19" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Azure</text>
-<text x="53.12" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#08080a">platform</text>
-<text x="154.398" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Kubernetes</text>
-<text x="264.087" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Docker</text>
-<text x="341.808" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Terraform</text>
-<text x="443.441" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Helm</text>
-<text x="53.12" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#08080a">delivery</text>
-<text x="147.512" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">GitHub Actions</text>
-<text x="288.12" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">CI/CD pipelines</text>
-<text x="433.086" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">ArgoCD</text>
-<text x="516.725" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">GitOps</text>
-<text x="53.12" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#08080a">systems</text>
-<text x="146.359" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Linux</text>
-<text x="213.852" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">networking</text>
-<text x="323.168" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">shell automation</text>
-<text x="53.12" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#08080a">ai</text>
-<text x="93.172" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">bounded agents</text>
-<text x="235.849" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">MCP</text>
-<text x="296.745" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">LLM workflows</text>
-<text x="437.997" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">computer vision</text>
-<text x="53.12" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#08080a">languages</text>
-<text x="164.268" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Python</text>
-<text x="241.785" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">Bash</text>
-<text x="302.562" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">HCL</text>
-<text x="361.457" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f2f2f2">YAML</text>
-<text x="44" y="1517.96" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">Upstream, open: skip_cache for get_lineage in acryldata/mcp-server-datahub, and a repair-boundary skill</text>
-<text x="44" y="1541.16" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#9a9a9f">in datahub-project/datahub-skills.</text>
+<line x1="306.393" y1="57.88" x2="835.1" y2="57.88" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.5"/>
+<g transform="translate(846.5,57.88) scale(0.432)">
+<path d="M-10,-10 c14,-2 22,8 20,20 c-12,2 -22,-6 -20,-20 Z" fill="#e0a25c" fill-opacity="0.95"/>
+</g>
+<rect x="44" y="146.96" width="812" height="128.28" rx="0" fill="#26180d" fill-opacity="1"/>
+<rect x="44.75" y="147.71" width="810.5" height="126.78" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="44" y="146.96" width="4.75" height="128.28" rx="0" fill="#e0a25c" fill-opacity="0.9"/>
+<rect x="44" y="283.22" width="812" height="151.48" rx="0" fill="#26180d" fill-opacity="1"/>
+<rect x="44.75" y="283.97" width="810.5" height="149.98" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="44" y="283.22" width="4.75" height="151.48" rx="0" fill="#e0a25c" fill-opacity="0.9"/>
+<rect x="44" y="442.68" width="812" height="151.48" rx="0" fill="#26180d" fill-opacity="1"/>
+<rect x="44.75" y="443.43" width="810.5" height="149.98" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="44" y="442.68" width="4.75" height="151.48" rx="0" fill="#e0a25c" fill-opacity="0.9"/>
+<rect x="44" y="602.14" width="812" height="151.48" rx="0" fill="#26180d" fill-opacity="1"/>
+<rect x="44.75" y="602.89" width="810.5" height="149.98" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="44" y="602.14" width="4.75" height="151.48" rx="0" fill="#e0a25c" fill-opacity="0.9"/>
+<rect x="44" y="761.6" width="812" height="128.28" rx="0" fill="#26180d" fill-opacity="1"/>
+<rect x="44.75" y="762.35" width="810.5" height="126.78" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="44" y="761.6" width="4.75" height="128.28" rx="0" fill="#e0a25c" fill-opacity="0.9"/>
+<rect x="44" y="897.86" width="812" height="128.28" rx="0" fill="#26180d" fill-opacity="1"/>
+<rect x="44.75" y="898.61" width="810.5" height="126.78" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.45" stroke-width="1.4"/>
+<rect x="44" y="897.86" width="4.75" height="128.28" rx="0" fill="#e0a25c" fill-opacity="0.9"/>
+<line x1="325.702" y1="1164.45" x2="835.1" y2="1164.45" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.5"/>
+<g transform="translate(846.5,1164.45) scale(0.432)">
+<path d="M-10,-10 c14,-2 22,8 20,20 c-12,2 -22,-6 -20,-20 Z" fill="#e0a25c" fill-opacity="0.95"/>
+</g>
+<rect x="44" y="1255.43" width="66.593" height="32" rx="0" fill="#e0a25c" fill-opacity="1"/>
+<rect x="116.293" y="1255.43" width="55.688" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="117.043" y="1256.18" width="54.188" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="177.681" y="1255.43" width="62.048" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="178.431" y="1256.18" width="60.548" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="44" y="1295.41" width="95.578" height="32" rx="0" fill="#e0a25c" fill-opacity="1"/>
+<rect x="145.278" y="1295.41" width="103.99" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="146.028" y="1296.16" width="102.49" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="254.967" y="1295.41" width="72.02" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="255.717" y="1296.16" width="70.52" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="332.688" y="1295.41" width="95.934" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="333.438" y="1296.16" width="94.434" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="434.321" y="1295.41" width="60.046" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="435.071" y="1296.16" width="58.546" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="44" y="1335.39" width="88.692" height="32" rx="0" fill="#e0a25c" fill-opacity="1"/>
+<rect x="138.392" y="1335.39" width="134.908" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="139.142" y="1336.14" width="133.408" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="279" y="1335.39" width="139.267" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="279.75" y="1336.14" width="137.767" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="423.966" y="1335.39" width="77.939" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="424.716" y="1336.14" width="76.439" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="507.605" y="1335.39" width="70.986" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="508.355" y="1336.14" width="69.486" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="44" y="1375.37" width="87.539" height="32" rx="0" fill="#e0a25c" fill-opacity="1"/>
+<rect x="137.239" y="1375.37" width="61.793" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="137.989" y="1376.12" width="60.293" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="204.732" y="1375.37" width="103.617" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="205.482" y="1376.12" width="102.117" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="314.048" y="1375.37" width="144.185" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="314.798" y="1376.12" width="142.685" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="44" y="1415.35" width="34.352" height="32" rx="0" fill="#e0a25c" fill-opacity="1"/>
+<rect x="84.052" y="1415.35" width="136.977" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="84.802" y="1416.1" width="135.477" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="226.729" y="1415.35" width="55.196" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="227.479" y="1416.1" width="53.696" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="287.625" y="1415.35" width="135.552" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="288.375" y="1416.1" width="134.052" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="428.877" y="1415.35" width="139.402" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="429.627" y="1416.1" width="137.902" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="44" y="1455.33" width="105.448" height="32" rx="0" fill="#e0a25c" fill-opacity="1"/>
+<rect x="155.148" y="1455.33" width="71.817" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="155.898" y="1456.08" width="70.317" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="232.665" y="1455.33" width="55.077" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="233.415" y="1456.08" width="53.577" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="293.442" y="1455.33" width="53.195" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="294.192" y="1456.08" width="51.695" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<rect x="352.337" y="1455.33" width="66.016" height="32" rx="0" fill="#2e1d0e" fill-opacity="1"/>
+<rect x="353.087" y="1456.08" width="64.516" height="30.5" rx="0" fill="none" stroke="#e0a25c" stroke-opacity="0.5" stroke-width="1.2"/>
+<text x="44" y="69.1" font-family="Georgia, 'Times New Roman', serif" font-size="33" font-weight="700" fill="#e0a25c">what is public</text>
+<text x="44" y="105.16" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">24 original public repositories. Most of the work is not here: over the last 12 months, 11,323 of 13,262</text>
+<text x="44" y="128.36" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">contributions were in private repositories (client delivery, product builds, and security research).</text>
+<text x="64.9" y="183.26" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e0a25c">ripple-proof</text>
+<text x="64.9" y="208.14" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">Bounded PostgreSQL column-rename agent: turns DataHub lineage evidence into validated dbt repairs</text>
+<text x="64.9" y="231.34" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">across repositories, refuses ambiguous or stale evidence, and stops at human-reviewed pull requests</text>
+<text x="64.9" y="256.82" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#b39a7c">Python, updated 2026-10-29</text>
+<text x="64.9" y="319.52" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e0a25c">vision-ai-poc</text>
+<text x="64.9" y="344.4" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">Real-time people detection, per-zone counting and dwell tracking with YOLOv8, ByteTrack and</text>
+<text x="64.9" y="367.6" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">OpenCV. Runs as a local GUI demo or headless against RTSP cameras with server-fetched zones and</text>
+<text x="64.9" y="390.8" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">privacy masking</text>
+<text x="64.9" y="416.28" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#b39a7c">Python, updated 2026-08-26</text>
+<text x="64.9" y="478.98" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e0a25c">kind-cluster-recovery</text>
+<text x="64.9" y="503.86" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">Four-node KIND cluster provisioned onto a remote host with Terraform over SSH, then debugged:</text>
+<text x="64.9" y="527.06" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">CoreDNS Corefile repair, crash-loop recovery, and a least-privilege NetworkPolicy expressed in</text>
+<text x="64.9" y="550.26" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">Terraform</text>
+<text x="64.9" y="575.74" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#b39a7c">HCL, updated 2026-08-26</text>
+<text x="64.9" y="638.44" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e0a25c">k8s-gitops-platform</text>
+<text x="64.9" y="663.32" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">ArgoCD app-of-apps GitOps configuration for a 17-service Kubernetes platform: parameterised Helm</text>
+<text x="64.9" y="686.52" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">charts, an ELK logging stack, and cert-manager across three environments. Generalised from</text>
+<text x="64.9" y="709.72" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">production</text>
+<text x="64.9" y="735.2" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#b39a7c">updated 2026-08-22</text>
+<text x="64.9" y="797.9" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e0a25c">wordpress-fargate-deployment</text>
+<text x="64.9" y="822.78" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">AWS CloudFormation template and helper scripts to deploy a production-ready WordPress</text>
+<text x="64.9" y="845.98" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">environment on AWS Fargate with RDS, EFS, and an Application Load Balancer</text>
+<text x="64.9" y="871.46" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#b39a7c">Shell, updated 2025-08-08</text>
+<text x="64.9" y="934.16" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700" fill="#e0a25c">azure-devops-demo</text>
+<text x="64.9" y="959.04" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">End-to-end Terraform and GitHub Actions pipeline that deploys a containerized service to Azure, with</text>
+<text x="64.9" y="982.24" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#f3e6d3">six reusable Terraform modules</text>
+<text x="64.9" y="1007.72" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#b39a7c">HCL, updated 2025-05-16</text>
+<text x="44" y="1052.97" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">Evidence trail for ripple-proof runs across four public sibling dbt repositories: analytics, finance, growth,</text>
+<text x="44" y="1076.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">operations. All open and review-only.</text>
+<text x="44" y="1105.07" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">Generated 2026-11-13 from the GitHub API.</text>
+<text x="44" y="1175.67" font-family="Georgia, 'Times New Roman', serif" font-size="33" font-weight="700" fill="#e0a25c">the workbench</text>
+<text x="44" y="1211.73" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">Everything in the operating stack below has a public artifact in this account. Work that does not is in private</text>
+<text x="44" y="1234.93" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">repositories and is not listed here.</text>
+<text x="53.12" y="1277.19" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#1c120b">cloud</text>
+<text x="125.413" y="1277.19" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">AWS</text>
+<text x="186.801" y="1277.19" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Azure</text>
+<text x="53.12" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#1c120b">platform</text>
+<text x="154.398" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Kubernetes</text>
+<text x="264.087" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Docker</text>
+<text x="341.808" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Terraform</text>
+<text x="443.441" y="1317.17" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Helm</text>
+<text x="53.12" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#1c120b">delivery</text>
+<text x="147.512" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">GitHub Actions</text>
+<text x="288.12" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">CI/CD pipelines</text>
+<text x="433.086" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">ArgoCD</text>
+<text x="516.725" y="1357.15" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">GitOps</text>
+<text x="53.12" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#1c120b">systems</text>
+<text x="146.359" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Linux</text>
+<text x="213.852" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">networking</text>
+<text x="323.168" y="1397.13" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">shell automation</text>
+<text x="53.12" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#1c120b">ai</text>
+<text x="93.172" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">bounded agents</text>
+<text x="235.849" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">MCP</text>
+<text x="296.745" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">LLM workflows</text>
+<text x="437.997" y="1437.11" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">computer vision</text>
+<text x="53.12" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#1c120b">languages</text>
+<text x="164.268" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Python</text>
+<text x="241.785" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">Bash</text>
+<text x="302.562" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">HCL</text>
+<text x="361.457" y="1477.09" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="500" fill="#f3e6d3">YAML</text>
+<text x="44" y="1517.96" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">Upstream, open: skip_cache for get_lineage in acryldata/mcp-server-datahub, and a repair-boundary skill</text>
+<text x="44" y="1541.16" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#b39a7c">in datahub-project/datahub-skills.</text>
 </svg>
